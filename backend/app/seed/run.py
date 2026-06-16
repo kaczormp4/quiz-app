@@ -6,10 +6,21 @@ from app.core.database import AsyncSessionLocal
 from app.quizzes.models import Answer, Category, Question
 from app.seed.data import QUIZ_CATEGORIES
 
+try:
+    from app.seed.extra_categories import EXTRA_QUIZ_CATEGORIES
+except ImportError:
+    EXTRA_QUIZ_CATEGORIES = []
+
+
+ALL_QUIZ_CATEGORIES = [
+    *QUIZ_CATEGORIES,
+    *EXTRA_QUIZ_CATEGORIES,
+]
+
 
 async def seed_categories() -> None:
     async with AsyncSessionLocal() as db:
-        for category_data in QUIZ_CATEGORIES:
+        for category_data in ALL_QUIZ_CATEGORIES:
             category_result = await db.execute(
                 select(Category).where(Category.slug == category_data["slug"])
             )
