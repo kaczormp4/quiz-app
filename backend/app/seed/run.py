@@ -4,66 +4,74 @@ from sqlalchemy import select
 
 from app.core.database import AsyncSessionLocal
 from app.quizzes.models import Answer, Category, Question
-from app.seed.data import GENERAL_IT_CATEGORY
+from app.seed.data import QUIZ_CATEGORIES
 
 
-async def seed_general_it_category() -> None:
+async def seed_categories() -> None:
     async with AsyncSessionLocal() as db:
-        existing_category_result = await db.execute(
-            select(Category).where(Category.slug == GENERAL_IT_CATEGORY["slug"])
-        )
-        existing_category = existing_category_result.scalar_one_or_none()
-
-        if existing_category is not None:
-            print("Seed skipped: category already exists")
-            return
-
-        category = Category(
-            slug=GENERAL_IT_CATEGORY["slug"],
-            name=GENERAL_IT_CATEGORY["name"],
-            description=GENERAL_IT_CATEGORY["description"],
-        )
-
-        db.add(category)
-        await db.flush()
-
-        for question_position, question_data in enumerate(
-            GENERAL_IT_CATEGORY["questions"],
-            start=1,
-        ):
-            question = Question(
-                category_id=category.id,
-                question=question_data["question"],
-                difficulty=question_data["difficulty"],
-                points=question_data["points"],
-                explanation_html=question_data["explanation_html"],
+        for category_data in QUIZ_CATEGORIES:
+            category_result = await db.execute(
+                select(Category).where(Category.slug == category_data["slug"])
             )
+            category = category_result.scalar_one_or_none()
 
-            db.add(question)
-            await db.flush()
+            if category is None:
+                category = Category(
+                    slug=category_data["slug"],
+                    name=category_data["name"],
+                    description=category_data["description"],
+                )
+                db.add(category)
+                await db.flush()
 
-            for answer_position, answer_data in enumerate(
-                question_data["answers"],
-                start=1,
-            ):
-                answer = Answer(
-                    question_id=question.id,
-                    text=answer_data["text"],
-                    is_correct=answer_data["is_correct"],
-                    position=answer_position,
+                print(f"Added category: {category.name}")
+            else:
+                category.name = category_data["name"]
+                category.description = category_data["description"]
+
+                print(f"Updated category: {category.name}")
+
+            for question_data in category_data["questions"]:
+                existing_question_result = await db.execute(
+                    select(Question).where(
+                        Question.category_id == category.id,
+                        Question.question == question_data["question"],
+                    )
+                )
+                existing_question = existing_question_result.scalar_one_or_none()
+
+                if existing_question is not None:
+                    print(f"Skipped existing question: {existing_question.question}")
+                    continue
+
+                question = Question(
+                    category_id=category.id,
+                    question=question_data["question"],
+                    difficulty=question_data["difficulty"],
+                    points=question_data["points"],
+                    explanation_html=question_data["explanation_html"],
                 )
 
-                db.add(answer)
+                db.add(question)
+                await db.flush()
 
-            print(f"Added question {question_position}: {question.question}")
+                for position, answer_data in enumerate(question_data["answers"], start=1):
+                    answer = Answer(
+                        question_id=question.id,
+                        text=answer_data["text"],
+                        is_correct=answer_data["is_correct"],
+                        position=position,
+                    )
+                    db.add(answer)
+
+                print(f"Added question: {question.question}")
 
         await db.commit()
-
         print("Seed completed")
 
 
 async def main() -> None:
-    await seed_general_it_category()
+    await seed_categories()
 
 
 if __name__ == "__main__":
