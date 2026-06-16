@@ -42,3 +42,19 @@ class QuestionDetailsResponse(BaseModel):
     answers: list[AnswerResponse]
 
     model_config = ConfigDict(from_attributes=True)
+
+class SubmitAnswerRequest(BaseModel):
+    answer_id: uuid.UUID
+
+
+class CorrectAnswerResponse(BaseModel):
+    id: uuid.UUID
+    text: str
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class SubmitAnswerResponse(BaseModel):
+    is_correct: bool
+    correct_answer: CorrectAnswerResponse
+    explanation_html: str

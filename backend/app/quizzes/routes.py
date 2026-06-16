@@ -11,6 +11,8 @@ from app.quizzes.schemas import (
     CategoryResponse,
     QuestionDetailsResponse,
     QuestionListItemResponse,
+    SubmitAnswerRequest,
+    SubmitAnswerResponse,
 )
 
 
@@ -90,3 +92,68 @@ async def get_question(
     question.answers.sort(key=lambda answer: answer.position)
 
     return question
+
+@router.post(
+    "/questions/{question_id}/answer",
+    response_model=SubmitAnswerResponse,
+)
+async def submit_question_answer(
+    question_id: uuid.UUID,
+    payload: SubmitAnswerRequest,
+    db: AsyncSession = Depends(get_db),
+):
+    result = await db.execute(
+        select(Question)
+        .options(selectinload(Question.answers))
+        .where(
+            Question.id == question_id,
+            Question.is_active.is_(True),
+        )
+    )
+
+    question = result.scalar_one_or_none()
+
+    if question is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Question not found",
+        )
+
+    selected_answer = next(
+        (
+            answer
+            for answer in question.answers
+            if answer.id == payload.answer_id
+        ),
+        None,
+    )
+
+    if selected_answer is None:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Answer does not belong to this question",
+        )
+
+    correct_answer = next(
+        (
+            answer
+            for answer in question.answers
+            if answer.is_correct
+        ),
+        None,
+    )
+
+    if correct_answer is None:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Question has no correct answer configured",
+        )
+
+    return {
+        "is_correct": selected_answer.is_correct,
+        "correct_answer": {
+            "id": correct_answer.id,
+            "text": correct_answer.text,
+        },
+        "explanation_html": question.explanation_html,
+    }
