@@ -5,6 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
 from app.core.database import get_db
+from app.quizzes.routes import router as quizzes_router
 
 
 app = FastAPI(title=settings.app_name)
@@ -19,6 +20,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+app.include_router(quizzes_router)
 
 
 @app.get("/")
