@@ -19,7 +19,12 @@ target_metadata = Base.metadata
 
 
 def get_sync_database_url() -> str:
-    return settings.database_url.replace("+asyncpg", "+psycopg")
+    url = settings.database_url
+
+    url = url.replace("postgresql+asyncpg://", "postgresql+psycopg://")
+    url = url.replace("ssl=require", "sslmode=require")
+
+    return url
 
 
 config.set_main_option("sqlalchemy.url", get_sync_database_url())
