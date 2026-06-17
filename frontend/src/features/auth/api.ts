@@ -1,5 +1,14 @@
 ﻿import { apiClient } from "../../shared/api/client";
-import type { AuthResponse, LoginPayload, RegisterPayload, User } from "./types";
+import type {
+  AuthResponse,
+  ChangePasswordPayload,
+  LoginPayload,
+  MessageResponse,
+  RankingUser,
+  RegisterPayload,
+  UpdateProfilePayload,
+  User,
+} from "./types";
 
 export const registerRequest = (payload: RegisterPayload) =>
   apiClient<AuthResponse>("/auth/register", {
@@ -15,5 +24,28 @@ export const loginRequest = (payload: LoginPayload) =>
 
 export const getMeRequest = (token: string) =>
   apiClient<User>("/auth/me", {
+    token,
+  });
+
+export const getRankingRequest = () =>
+  apiClient<RankingUser[]>("/users/ranking");
+
+export const updateProfileRequest = (
+  payload: UpdateProfilePayload,
+  token: string,
+) =>
+  apiClient<User>("/users/me/profile", {
+    method: "PATCH",
+    body: payload,
+    token,
+  });
+
+export const changePasswordRequest = (
+  payload: ChangePasswordPayload,
+  token: string,
+) =>
+  apiClient<MessageResponse>("/users/me/password", {
+    method: "PATCH",
+    body: payload,
     token,
   });

@@ -21,19 +21,32 @@ export function Header() {
               }`
             }
           >
-            Kategorie
+            Ranking
           </NavLink>
+
+          {isAuthenticated ? (
+            <NavLink
+              to="/quizzes"
+              className={({ isActive }) =>
+                `text-sm font-medium ${
+                  isActive ? "text-slate-950" : "text-slate-500"
+                }`
+              }
+            >
+              Quizy
+            </NavLink>
+          ) : null}
 
           {isLoadingUser ? (
             <span className="text-sm text-slate-500">Ładowanie...</span>
           ) : isAuthenticated && user ? (
             <div className="flex items-center gap-3 rounded-full border border-slate-200 bg-slate-50 px-3 py-2">
-              <div className="text-right">
+              <Link to="/profile" className="text-right">
                 <p className="text-sm font-semibold text-slate-950">
                   {user.username}
                 </p>
                 <p className="text-xs text-slate-500">{user.points} pkt</p>
-              </div>
+              </Link>
 
               <button
                 type="button"

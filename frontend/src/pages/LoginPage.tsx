@@ -24,7 +24,7 @@ export default function LoginPage() {
         password,
       });
 
-      navigate("/");
+      navigate("/quizzes");
     } catch (error) {
       setErrorMessage(
         error instanceof Error ? error.message : "Nie udało się zalogować",

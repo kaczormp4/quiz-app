@@ -28,6 +28,8 @@ type AuthContextValue = {
   login: (payload: LoginPayload) => Promise<void>;
   register: (payload: RegisterPayload) => Promise<void>;
   logout: () => void;
+  refreshUser: () => Promise<void>;
+  setUser: (user: User) => void;
 };
 
 const AuthContext = createContext<AuthContextValue | null>(null);
@@ -42,6 +44,22 @@ export function AuthProvider({ children }: AuthProviderProps) {
   );
   const [user, setUser] = useState<User | null>(null);
   const [isLoadingUser, setIsLoadingUser] = useState(Boolean(token));
+
+  const clearSession = () => {
+    localStorage.removeItem(TOKEN_STORAGE_KEY);
+    setToken(null);
+    setUser(null);
+  };
+
+  const refreshUser = async () => {
+    if (!token) {
+      setUser(null);
+      return;
+    }
+
+    const currentUser = await getMeRequest(token);
+    setUser(currentUser);
+  };
 
   useEffect(() => {
     if (!token) {
@@ -61,11 +79,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
         }
       })
       .catch(() => {
-        localStorage.removeItem(TOKEN_STORAGE_KEY);
-
         if (isMounted) {
-          setToken(null);
-          setUser(null);
+          clearSession();
         }
       })
       .finally(() => {
@@ -96,9 +111,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   };
 
   const logout = () => {
-    localStorage.removeItem(TOKEN_STORAGE_KEY);
-    setToken(null);
-    setUser(null);
+    clearSession();
   };
 
   const value = useMemo<AuthContextValue>(
@@ -110,6 +123,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
       login,
       register,
       logout,
+      refreshUser,
+      setUser,
     }),
     [user, token, isLoadingUser],
   );

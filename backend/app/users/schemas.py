@@ -15,6 +15,15 @@ class LoginRequest(BaseModel):
     password: str = Field(min_length=6, max_length=128)
 
 
+class UpdateProfileRequest(BaseModel):
+    username: str = Field(min_length=3, max_length=50)
+
+
+class ChangePasswordRequest(BaseModel):
+    current_password: str = Field(min_length=6, max_length=128)
+    new_password: str = Field(min_length=6, max_length=128)
+
+
 class UserPublic(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -25,7 +34,20 @@ class UserPublic(BaseModel):
     created_at: datetime
 
 
+class RankingUser(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: UUID
+    username: str
+    points: int
+    created_at: datetime
+
+
 class AuthResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
     user: UserPublic
+
+
+class MessageResponse(BaseModel):
+    message: str

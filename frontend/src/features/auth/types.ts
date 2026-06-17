@@ -6,6 +6,13 @@
   created_at: string;
 };
 
+export type RankingUser = {
+  id: string;
+  username: string;
+  points: number;
+  created_at: string;
+};
+
 export type AuthResponse = {
   access_token: string;
   token_type: "bearer";
@@ -21,4 +28,17 @@ export type RegisterPayload = {
 export type LoginPayload = {
   login: string;
   password: string;
+};
+
+export type UpdateProfilePayload = {
+  username: string;
+};
+
+export type ChangePasswordPayload = {
+  current_password: string;
+  new_password: string;
+};
+
+export type MessageResponse = {
+  message: string;
 };
