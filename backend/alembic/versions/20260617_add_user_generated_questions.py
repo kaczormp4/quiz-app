@@ -1,6 +1,6 @@
 """add user generated categories and pending questions
 
-Revision ID: 20260617_user_generated_questions
+Revision ID: 20260617_user_questions
 Revises: 20260617_streak_user_answers
 Create Date: 2026-06-17
 """
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 from sqlalchemy.dialects import postgresql
 
 
-revision: str = "20260617_user_generated_questions"
+revision: str = "20260617_user_questions"
 down_revision: Union[str, None] = "20260617_streak_user_answers"
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None

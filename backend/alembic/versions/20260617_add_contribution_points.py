@@ -1,7 +1,7 @@
 """add contribution points and question author
 
 Revision ID: 20260617_contribution_points
-Revises: 20260617_user_generated_questions
+Revises: 20260617_user_questions
 Create Date: 2026-06-17
 """
 
@@ -13,7 +13,7 @@ from sqlalchemy.dialects import postgresql
 
 
 revision: str = "20260617_contribution_points"
-down_revision: Union[str, None] = "20260617_user_generated_questions"
+down_revision: Union[str, None] = "20260617_user_questions"
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
