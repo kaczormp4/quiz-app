@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./app/providers/AuthProvider";
 import { QueryProvider } from "./app/providers/QueryProvider";
 import App from "./App";
+import "./shared/i18n";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(

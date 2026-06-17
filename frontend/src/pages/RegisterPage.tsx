@@ -1,9 +1,11 @@
 ﻿import { FormEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
 
 export default function RegisterPage() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { register } = useAuth();
 
@@ -30,7 +32,7 @@ export default function RegisterPage() {
       navigate("/quizzes");
     } catch (error) {
       setErrorMessage(
-        error instanceof Error ? error.message : "Nie udało się zarejestrować",
+        error instanceof Error ? error.message : t("auth.registerError"),
       );
     } finally {
       setIsSubmitting(false);
@@ -40,46 +42,50 @@ export default function RegisterPage() {
   return (
     <main className="mx-auto max-w-md px-4 py-10">
       <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h1 className="text-2xl font-bold text-slate-950">Rejestracja</h1>
+        <h1 className="text-2xl font-bold text-slate-950">
+          {t("auth.registerTitle")}
+        </h1>
         <p className="mt-2 text-sm text-slate-500">
-          Utwórz konto użytkownika w Quiz App.
+          {t("auth.registerDescription")}
         </p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <label className="block">
             <span className="text-sm font-medium text-slate-700">
-              Username
+              {t("auth.username")}
             </span>
             <input
               value={username}
               onChange={(event) => setUsername(event.target.value)}
               className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-              placeholder="bartek"
               minLength={3}
               required
             />
           </label>
 
           <label className="block">
-            <span className="text-sm font-medium text-slate-700">Email</span>
+            <span className="text-sm font-medium text-slate-700">
+              {t("auth.email")}
+            </span>
             <input
               type="email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-              placeholder="email@example.com"
               required
             />
           </label>
 
           <label className="block">
-            <span className="text-sm font-medium text-slate-700">Hasło</span>
+            <span className="text-sm font-medium text-slate-700">
+              {t("auth.password")}
+            </span>
             <input
               type="password"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-              placeholder="Minimum 6 znaków"
+              placeholder={t("auth.minPassword")}
               minLength={6}
               required
             />
@@ -96,14 +102,14 @@ export default function RegisterPage() {
             disabled={isSubmitting}
             className="w-full rounded-2xl bg-slate-950 px-4 py-3 font-semibold text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
           >
-            {isSubmitting ? "Tworzenie konta..." : "Zarejestruj"}
+            {isSubmitting ? t("auth.creatingAccount") : t("auth.registerButton")}
           </button>
         </form>
 
         <p className="mt-5 text-center text-sm text-slate-500">
-          Masz już konto?{" "}
+          {t("auth.alreadyHaveAccount")}{" "}
           <Link to="/login" className="font-semibold text-slate-950">
-            Zaloguj się
+            {t("nav.login")}
           </Link>
         </p>
       </div>

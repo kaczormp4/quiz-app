@@ -1,5 +1,6 @@
 ﻿import { FormEvent, useMemo, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
 import {
@@ -18,6 +19,7 @@ const defaultAnswers: PendingAnswerCreatePayload[] = [
 ];
 
 export default function ContributePage() {
+  const { t } = useTranslation();
   const queryClient = useQueryClient();
   const { token } = useAuth();
 
@@ -59,7 +61,7 @@ export default function ContributePage() {
         token!,
       ),
     onSuccess: async (category) => {
-      setMessage("Kategoria została dodana.");
+      setMessage(t("contribute.categoryAdded"));
       setNewCategoryName("");
       setNewCategoryDescription("");
       setSelectedCategoryId(category.id);
@@ -81,7 +83,7 @@ export default function ContributePage() {
         token!,
       ),
     onSuccess: async () => {
-      setMessage("Pytanie zostało wysłane do akceptacji administratora.");
+      setMessage(t("contribute.sentForApproval"));
       setQuestion("");
       setDifficulty("easy");
       setPoints(1);
@@ -124,10 +126,8 @@ export default function ContributePage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-950">Dodaj pytania</h1>
-        <p className="mt-2 text-slate-500">
-          Najpierw wybierz istniejącą kategorię albo dodaj nową. Pytania trafią do kolejki administratora.
-        </p>
+        <h1 className="text-3xl font-bold text-slate-950">{t("contribute.title")}</h1>
+        <p className="mt-2 text-slate-500">{t("contribute.subtitle")}</p>
       </div>
 
       {message ? (
@@ -138,7 +138,7 @@ export default function ContributePage() {
 
       <div className="grid gap-6 lg:grid-cols-[1fr_1.4fr]">
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-slate-950">Kategorie</h2>
+          <h2 className="text-xl font-bold text-slate-950">{t("contribute.categories")}</h2>
 
           <div className="mt-4 grid gap-2">
             {categoriesQuery.data?.map((category) => (
@@ -153,19 +153,19 @@ export default function ContributePage() {
                 }`}
               >
                 <p className="font-semibold">{category.name}</p>
-                <p className="text-sm opacity-75">{category.description || "Brak opisu"}</p>
+                <p className="text-sm opacity-75">{category.description || t("contribute.noDescription")}</p>
               </button>
             ))}
           </div>
 
           <form onSubmit={handleCreateCategory} className="mt-6 space-y-3">
-            <h3 className="font-bold text-slate-950">Dodaj nową kategorię</h3>
+            <h3 className="font-bold text-slate-950">{t("contribute.addNewCategory")}</h3>
 
             <input
               value={newCategoryName}
               onChange={(event) => setNewCategoryName(event.target.value)}
               className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-slate-950"
-              placeholder="Nazwa kategorii"
+              placeholder={t("contribute.categoryName")}
               required
             />
 
@@ -173,14 +173,14 @@ export default function ContributePage() {
               value={newCategoryDescription}
               onChange={(event) => setNewCategoryDescription(event.target.value)}
               className="min-h-24 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-slate-950"
-              placeholder="Opis kategorii"
+              placeholder={t("contribute.categoryDescription")}
             />
 
             {createCategoryMutation.isError ? (
               <div className="rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
                 {createCategoryMutation.error instanceof Error
                   ? createCategoryMutation.error.message
-                  : "Nie udało się dodać kategorii"}
+                  : t("contribute.categoryError")}
               </div>
             ) : null}
 
@@ -189,24 +189,26 @@ export default function ContributePage() {
               disabled={createCategoryMutation.isPending}
               className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white disabled:opacity-60"
             >
-              {createCategoryMutation.isPending ? "Dodawanie..." : "Dodaj kategorię"}
+              {createCategoryMutation.isPending ? t("contribute.addingCategory") : t("contribute.addCategory")}
             </button>
           </form>
         </section>
 
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-slate-950">
-            Nowe pytanie {selectedCategory ? `do: ${selectedCategory.name}` : ""}
+            {selectedCategory
+              ? t("contribute.newQuestionFor", { category: selectedCategory.name })
+              : t("contribute.newQuestion")}
           </h2>
 
           {!selectedCategoryId ? (
             <div className="mt-6 rounded-2xl bg-slate-50 p-4 text-slate-500">
-              Wybierz kategorię po lewej stronie.
+              {t("contribute.chooseCategory")}
             </div>
           ) : (
             <form onSubmit={handleSubmitQuestion} className="mt-6 space-y-4">
               <label className="block">
-                <span className="text-sm font-semibold text-slate-700">Treść pytania</span>
+                <span className="text-sm font-semibold text-slate-700">{t("contribute.questionText")}</span>
                 <textarea
                   value={question}
                   onChange={(event) => setQuestion(event.target.value)}
@@ -217,7 +219,7 @@ export default function ContributePage() {
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="block">
-                  <span className="text-sm font-semibold text-slate-700">Difficulty</span>
+                  <span className="text-sm font-semibold text-slate-700">{t("common.difficulty")}</span>
                   <select
                     value={difficulty}
                     onChange={(event) => setDifficulty(event.target.value)}
@@ -230,7 +232,7 @@ export default function ContributePage() {
                 </label>
 
                 <label className="block">
-                  <span className="text-sm font-semibold text-slate-700">Punkty</span>
+                  <span className="text-sm font-semibold text-slate-700">{t("common.points")}</span>
                   <input
                     type="number"
                     min={1}
@@ -243,7 +245,7 @@ export default function ContributePage() {
               </div>
 
               <div className="space-y-3">
-                <h3 className="font-bold text-slate-950">Odpowiedzi — dokładnie 4</h3>
+                <h3 className="font-bold text-slate-950">{t("contribute.exactAnswers")}</h3>
 
                 {answers.map((answer) => (
                   <div key={answer.position} className="flex gap-3">
@@ -259,7 +261,7 @@ export default function ContributePage() {
                       value={answer.text}
                       onChange={(event) => updateAnswerText(answer.position, event.target.value)}
                       className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-slate-950"
-                      placeholder={`Odpowiedź ${answer.position}`}
+                      placeholder={t("contribute.answerPlaceholder", { position: answer.position })}
                       required
                     />
                   </div>
@@ -268,13 +270,13 @@ export default function ContributePage() {
 
               <label className="block">
                 <span className="text-sm font-semibold text-slate-700">
-                  Explanation HTML
+                  {t("contribute.explanationHtml")}
                 </span>
                 <textarea
                   value={explanationHtml}
                   onChange={(event) => setExplanationHtml(event.target.value)}
                   className="mt-1 min-h-32 w-full rounded-2xl border border-slate-300 px-4 py-3 font-mono text-sm outline-none focus:border-slate-950"
-                  placeholder="<p>Wyjaśnienie odpowiedzi...</p>"
+                  placeholder={t("contribute.explanationPlaceholder")}
                   required
                 />
               </label>
@@ -283,7 +285,7 @@ export default function ContributePage() {
                 <div className="rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
                   {submitQuestionMutation.error instanceof Error
                     ? submitQuestionMutation.error.message
-                    : "Nie udało się wysłać pytania"}
+                    : t("contribute.submitError")}
                 </div>
               ) : null}
 
@@ -292,7 +294,7 @@ export default function ContributePage() {
                 disabled={submitQuestionMutation.isPending}
                 className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white disabled:opacity-60"
               >
-                {submitQuestionMutation.isPending ? "Wysyłanie..." : "Wyślij do akceptacji"}
+                {submitQuestionMutation.isPending ? t("contribute.sending") : t("contribute.sendForApproval")}
               </button>
             </form>
           )}
@@ -300,7 +302,7 @@ export default function ContributePage() {
       </div>
 
       <section className="mt-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 className="text-xl font-bold text-slate-950">Moje pytania w kolejce</h2>
+        <h2 className="text-xl font-bold text-slate-950">{t("contribute.myPending")}</h2>
 
         <div className="mt-4 grid gap-3">
           {myPendingQuery.data && myPendingQuery.data.length > 0 ? (
@@ -319,7 +321,7 @@ export default function ContributePage() {
               </article>
             ))
           ) : (
-            <p className="text-slate-500">Nie masz jeszcze pytań w kolejce.</p>
+            <p className="text-slate-500">{t("contribute.noPending")}</p>
           )}
         </div>
       </section>

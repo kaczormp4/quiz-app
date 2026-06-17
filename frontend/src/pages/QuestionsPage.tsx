@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
 import {
@@ -16,6 +17,7 @@ import {
 import type { SubmitAnswerResponse } from "../features/quizzes/types";
 
 export default function QuestionsPage() {
+  const { t } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
   const queryClient = useQueryClient();
   const { token, setUser } = useAuth();
@@ -106,19 +108,11 @@ export default function QuestionsPage() {
     submitAnswerMutation.mutate(answerId);
   };
 
-  const goToPreviousQuestion = () => {
-    setCurrentIndex((previous) => Math.max(previous - 1, 0));
-  };
-
-  const goToNextQuestion = () => {
-    setCurrentIndex((previous) => Math.min(previous + 1, questions.length - 1));
-  };
-
   if (!slug) {
     return (
       <main className="mx-auto max-w-4xl px-4 py-10">
         <div className="rounded-3xl border border-red-200 bg-red-50 p-6 text-red-700">
-          Missing category slug.
+          {t("questions.missingSlug")}
         </div>
       </main>
     );
@@ -128,7 +122,7 @@ export default function QuestionsPage() {
     return (
       <main className="mx-auto max-w-4xl px-4 py-10">
         <div className="rounded-3xl border border-slate-200 bg-white p-6 text-slate-500 shadow-sm">
-          Ładowanie pytań...
+          {t("questions.loadingQuestions")}
         </div>
       </main>
     );
@@ -140,7 +134,7 @@ export default function QuestionsPage() {
         <div className="rounded-3xl border border-red-200 bg-red-50 p-6 text-red-700">
           {questionsQuery.error instanceof Error
             ? questionsQuery.error.message
-            : "Nie udało się pobrać pytań"}
+            : t("questions.loadError")}
         </div>
       </main>
     );
@@ -150,7 +144,7 @@ export default function QuestionsPage() {
     return (
       <main className="mx-auto max-w-4xl px-4 py-10">
         <div className="rounded-3xl border border-slate-200 bg-white p-6 text-slate-500 shadow-sm">
-          Brak pytań w tej kategorii.
+          {t("questions.noQuestions")}
         </div>
       </main>
     );
@@ -160,7 +154,7 @@ export default function QuestionsPage() {
     <main className="mx-auto max-w-4xl px-4 py-10">
       <div className="mb-6 flex items-center justify-between">
         <Link to="/quizzes" className="text-sm font-semibold text-slate-500 hover:text-slate-950">
-          ← Kategorie
+          ← {t("questions.backToCategories")}
         </Link>
 
         <span className="text-sm font-semibold text-slate-500">
@@ -177,12 +171,12 @@ export default function QuestionsPage() {
 
       <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
         {questionQuery.isLoading ? (
-          <div className="text-slate-500">Ładowanie pytania...</div>
+          <div className="text-slate-500">{t("questions.loadingQuestion")}</div>
         ) : questionQuery.isError ? (
           <div className="text-red-600">
             {questionQuery.error instanceof Error
               ? questionQuery.error.message
-              : "Nie udało się pobrać pytania"}
+              : t("questions.questionLoadError")}
           </div>
         ) : question ? (
           <>
@@ -192,11 +186,11 @@ export default function QuestionsPage() {
               </span>
 
               <span className="rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-orange-700">
-                🔥 +1 za odpowiedź
+                {t("questions.answerReward")}
               </span>
 
               <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
-                ⚡ streak za aktywność dzienną
+                {t("questions.streakInfo")}
               </span>
             </div>
 
@@ -237,7 +231,7 @@ export default function QuestionsPage() {
               <div className="mt-5 rounded-2xl bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
                 {submitAnswerMutation.error instanceof Error
                   ? submitAnswerMutation.error.message
-                  : "Nie udało się sprawdzić odpowiedzi"}
+                  : t("questions.answerCheckError")}
               </div>
             ) : null}
 
@@ -249,8 +243,8 @@ export default function QuestionsPage() {
                   }`}
                 >
                   {result.is_correct
-                    ? "Poprawna odpowiedź — zapisano w historii i dodano 🔥 +1 pkt"
-                    : "Niepoprawna odpowiedź — zapisano w historii, dodano 🔥 +1 pkt i pytanie do powtórki"}
+                    ? t("questions.correctMessage")
+                    : t("questions.incorrectMessage")}
                 </p>
 
                 <div
@@ -268,11 +262,11 @@ export default function QuestionsPage() {
       <div className="mt-6 flex justify-between">
         <button
           type="button"
-          onClick={goToPreviousQuestion}
+          onClick={() => setCurrentIndex((previous) => Math.max(previous - 1, 0))}
           disabled={currentIndex === 0}
           className="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          Poprzednie
+          {t("common.previous")}
         </button>
 
         {isLastQuestion ? (
@@ -280,15 +274,15 @@ export default function QuestionsPage() {
             to="/quizzes"
             className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
           >
-            Powrót do kategorii
+            {t("questions.backToCategoriesButton")}
           </Link>
         ) : (
           <button
             type="button"
-            onClick={goToNextQuestion}
+            onClick={() => setCurrentIndex((previous) => Math.min(previous + 1, questions.length - 1))}
             className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
           >
-            Następne
+            {t("common.next")}
           </button>
         )}
       </div>

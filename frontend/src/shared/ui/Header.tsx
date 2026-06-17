@@ -1,15 +1,17 @@
 ﻿import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../../app/providers/AuthProvider";
 
 export function Header() {
+  const { t } = useTranslation();
   const { user, isAuthenticated, isLoadingUser } = useAuth();
 
   return (
     <header className="border-b border-slate-200 bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link to="/" className="text-lg font-bold text-slate-950">
-          Quiz App
+          {t("common.appName")}
         </Link>
 
         <nav className="flex items-center gap-4">
@@ -19,7 +21,7 @@ export function Header() {
               `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
             }
           >
-            Ranking
+            {t("nav.ranking")}
           </NavLink>
 
           {isAuthenticated ? (
@@ -30,7 +32,7 @@ export function Header() {
                   `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
                 }
               >
-                Quizy
+                {t("nav.quizzes")}
               </NavLink>
 
               <NavLink
@@ -39,7 +41,7 @@ export function Header() {
                   `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
                 }
               >
-                Dodaj pytania
+                {t("nav.contribute")}
               </NavLink>
 
               <NavLink
@@ -48,7 +50,7 @@ export function Header() {
                   `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
                 }
               >
-                Powtórki
+                {t("nav.review")}
               </NavLink>
 
               <NavLink
@@ -57,7 +59,7 @@ export function Header() {
                   `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
                 }
               >
-                Historia
+                {t("nav.history")}
               </NavLink>
 
               {user?.role === "admin" ? (
@@ -67,14 +69,14 @@ export function Header() {
                     `text-sm font-medium ${isActive ? "text-slate-950" : "text-red-600"}`
                   }
                 >
-                  Admin
+                  {t("nav.admin")}
                 </NavLink>
               ) : null}
             </>
           ) : null}
 
           {isLoadingUser ? (
-            <span className="text-sm text-slate-500">Ładowanie...</span>
+            <span className="text-sm text-slate-500">{t("common.loading")}</span>
           ) : isAuthenticated && user ? (
             <Link
               to="/profile"
@@ -89,7 +91,7 @@ export function Header() {
                   {user.username}
                 </p>
                 <p className="text-xs font-semibold text-orange-600">
-                  🔥 {user.points} pkt · ⚡ {user.current_streak}
+                  🔥 {user.points} · ⚡ {user.current_streak}
                 </p>
               </div>
             </Link>
@@ -99,14 +101,14 @@ export function Header() {
                 to="/login"
                 className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
               >
-                Logowanie
+                {t("nav.login")}
               </Link>
 
               <Link
                 to="/register"
                 className="rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
               >
-                Rejestracja
+                {t("nav.register")}
               </Link>
             </div>
           )}

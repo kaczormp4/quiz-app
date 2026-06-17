@@ -1,5 +1,6 @@
 ﻿import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
 import {
@@ -8,6 +9,7 @@ import {
 } from "../features/auth/api";
 
 export default function ProfilePage() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { user, token, setUser, logout } = useAuth();
 
@@ -49,10 +51,10 @@ export default function ProfilePage() {
       );
 
       setUser(updatedUser);
-      setProfileMessage("Profil został zaktualizowany.");
+      setProfileMessage(t("profile.profileUpdated"));
     } catch (error) {
       setProfileError(
-        error instanceof Error ? error.message : "Nie udało się zapisać profilu",
+        error instanceof Error ? error.message : t("profile.profileError"),
       );
     } finally {
       setIsSavingProfile(false);
@@ -79,10 +81,10 @@ export default function ProfilePage() {
 
       setCurrentPassword("");
       setNewPassword("");
-      setPasswordMessage("Hasło zostało zmienione.");
+      setPasswordMessage(t("profile.passwordChanged"));
     } catch (error) {
       setPasswordError(
-        error instanceof Error ? error.message : "Nie udało się zmienić hasła",
+        error instanceof Error ? error.message : t("profile.passwordError"),
       );
     } finally {
       setIsChangingPassword(false);
@@ -122,13 +124,16 @@ export default function ProfilePage() {
 
               <div className="mt-3 flex flex-wrap gap-2">
                 <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
-                  🔥 {user.points} pkt
+                  🔥 {user.points}
+                </span>
+                <span className="rounded-full bg-blue-100 px-3 py-1 text-sm font-bold text-blue-700">
+                  🧠 {user.contribution_points}
                 </span>
                 <span className="rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-700">
-                  ⚡ Streak: {user.current_streak}
+                  ⚡ {t("ranking.streak")}: {user.current_streak}
                 </span>
                 <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-bold text-slate-700">
-                  Best: {user.longest_streak}
+                  {t("profile.bestStreak")}: {user.longest_streak}
                 </span>
               </div>
             </div>
@@ -139,66 +144,52 @@ export default function ProfilePage() {
             onClick={handleLogout}
             className="rounded-2xl border border-red-200 bg-red-50 px-5 py-3 text-sm font-semibold text-red-700 transition hover:bg-red-100"
           >
-            Wyloguj
+            {t("profile.logout")}
           </button>
         </div>
       </section>
 
       <div className="grid gap-6">
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-slate-950">Profil publiczny</h2>
+          <h2 className="text-xl font-bold text-slate-950">{t("profile.publicProfile")}</h2>
 
           <form onSubmit={handleProfileSubmit} className="mt-6 space-y-4">
-            <label className="block">
-              <span className="text-sm font-medium text-slate-700">Nick</span>
-              <input
-                value={username}
-                onChange={(event) => setUsername(event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-                minLength={3}
-                required
-              />
-            </label>
+            <input
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
+              className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+              placeholder={t("auth.username")}
+              minLength={3}
+              required
+            />
 
-            <label className="block">
-              <span className="text-sm font-medium text-slate-700">Bio</span>
-              <textarea
-                value={bio}
-                onChange={(event) => setBio(event.target.value)}
-                className="mt-1 min-h-28 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-                placeholder="Napisz kilka słów o sobie..."
-              />
-            </label>
+            <textarea
+              value={bio}
+              onChange={(event) => setBio(event.target.value)}
+              className="min-h-28 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+              placeholder={t("profile.bioPlaceholder")}
+            />
 
-            <label className="block">
-              <span className="text-sm font-medium text-slate-700">LinkedIn URL</span>
-              <input
-                value={linkedinUrl}
-                onChange={(event) => setLinkedinUrl(event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-                placeholder="https://www.linkedin.com/in/twoj-profil"
-              />
-            </label>
+            <input
+              value={linkedinUrl}
+              onChange={(event) => setLinkedinUrl(event.target.value)}
+              className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+              placeholder={t("profile.linkedinUrl")}
+            />
 
-            <label className="block">
-              <span className="text-sm font-medium text-slate-700">GitHub URL</span>
-              <input
-                value={githubUrl}
-                onChange={(event) => setGithubUrl(event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-                placeholder="https://github.com/twoj-login"
-              />
-            </label>
+            <input
+              value={githubUrl}
+              onChange={(event) => setGithubUrl(event.target.value)}
+              className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+              placeholder={t("profile.githubUrl")}
+            />
 
-            <label className="block">
-              <span className="text-sm font-medium text-slate-700">Website URL</span>
-              <input
-                value={websiteUrl}
-                onChange={(event) => setWebsiteUrl(event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-                placeholder="https://twojastrona.pl"
-              />
-            </label>
+            <input
+              value={websiteUrl}
+              onChange={(event) => setWebsiteUrl(event.target.value)}
+              className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+              placeholder={t("profile.websiteUrl")}
+            />
 
             {profileMessage ? (
               <div className="rounded-2xl bg-green-50 px-4 py-3 text-sm font-medium text-green-700">
@@ -217,13 +208,13 @@ export default function ProfilePage() {
               disabled={isSavingProfile}
               className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:opacity-60"
             >
-              {isSavingProfile ? "Zapisywanie..." : "Zapisz profil"}
+              {isSavingProfile ? t("common.saving") : t("profile.saveProfile")}
             </button>
           </form>
         </section>
 
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-slate-950">Zmiana hasła</h2>
+          <h2 className="text-xl font-bold text-slate-950">{t("profile.passwordChange")}</h2>
 
           <form onSubmit={handlePasswordSubmit} className="mt-6 space-y-4">
             <input
@@ -231,7 +222,7 @@ export default function ProfilePage() {
               value={currentPassword}
               onChange={(event) => setCurrentPassword(event.target.value)}
               className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-              placeholder="Aktualne hasło"
+              placeholder={t("auth.currentPassword")}
               minLength={6}
               required
             />
@@ -241,7 +232,7 @@ export default function ProfilePage() {
               value={newPassword}
               onChange={(event) => setNewPassword(event.target.value)}
               className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-              placeholder="Nowe hasło"
+              placeholder={t("auth.newPassword")}
               minLength={6}
               required
             />
@@ -263,7 +254,7 @@ export default function ProfilePage() {
               disabled={isChangingPassword}
               className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:opacity-60"
             >
-              {isChangingPassword ? "Zmiana hasła..." : "Zmień hasło"}
+              {isChangingPassword ? t("profile.changingPassword") : t("profile.passwordChange")}
             </button>
           </form>
         </section>

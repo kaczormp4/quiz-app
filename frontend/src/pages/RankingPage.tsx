@@ -1,5 +1,6 @@
 ﻿import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
 import { getRankingRequest } from "../features/auth/api";
@@ -19,6 +20,7 @@ function LinkedinIconLink({ url }: { url: string }) {
 }
 
 export default function RankingPage() {
+  const { t } = useTranslation();
   const { isAuthenticated } = useAuth();
 
   const { data, isLoading, isError, error } = useQuery({
@@ -30,15 +32,15 @@ export default function RankingPage() {
     <main className="mx-auto max-w-6xl px-4 py-10">
       <section className="mb-8 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-          Quiz App
+          {t("common.appName")}
         </p>
 
         <h1 className="mt-2 text-4xl font-bold tracking-tight text-slate-950">
-          Ranking użytkowników
+          {t("ranking.title")}
         </h1>
 
         <p className="mt-3 max-w-2xl text-slate-600">
-          Ranking pokazuje punkty z quizów, streak oraz punkty za zaakceptowane pytania.
+          {t("ranking.subtitle")}
         </p>
 
         <div className="mt-6 flex gap-3">
@@ -47,7 +49,7 @@ export default function RankingPage() {
               to="/quizzes"
               className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
             >
-              Przejdź do quizów
+              {t("ranking.goToQuizzes")}
             </Link>
           ) : (
             <>
@@ -55,14 +57,14 @@ export default function RankingPage() {
                 to="/login"
                 className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
               >
-                Zaloguj się
+                {t("nav.login")}
               </Link>
 
               <Link
                 to="/register"
                 className="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
               >
-                Zarejestruj się
+                {t("nav.register")}
               </Link>
             </>
           )}
@@ -71,14 +73,16 @@ export default function RankingPage() {
 
       <section className="rounded-3xl border border-slate-200 bg-white shadow-sm">
         <div className="border-b border-slate-200 px-6 py-4">
-          <h2 className="text-xl font-bold text-slate-950">Top users</h2>
+          <h2 className="text-xl font-bold text-slate-950">
+            {t("ranking.topUsers")}
+          </h2>
         </div>
 
         {isLoading ? (
-          <div className="p-6 text-slate-500">Ładowanie rankingu...</div>
+          <div className="p-6 text-slate-500">{t("common.loading")}</div>
         ) : isError ? (
           <div className="p-6 text-red-600">
-            {error instanceof Error ? error.message : "Nie udało się pobrać rankingu"}
+            {error instanceof Error ? error.message : t("ranking.loadError")}
           </div>
         ) : data && data.length > 0 ? (
           <div className="overflow-x-auto">
@@ -86,11 +90,11 @@ export default function RankingPage() {
               <thead className="bg-slate-50 text-sm text-slate-500">
                 <tr>
                   <th className="px-6 py-3">#</th>
-                  <th className="px-6 py-3">Użytkownik</th>
-                  <th className="px-6 py-3">LinkedIn</th>
-                  <th className="px-6 py-3 text-right">Streak</th>
-                  <th className="px-6 py-3 text-right">Pytania</th>
-                  <th className="px-6 py-3 text-right">Total</th>
+                  <th className="px-6 py-3">{t("common.user")}</th>
+                  <th className="px-6 py-3">{t("ranking.linkedin")}</th>
+                  <th className="px-6 py-3 text-right">{t("ranking.streak")}</th>
+                  <th className="px-6 py-3 text-right">{t("ranking.contributionPoints")}</th>
+                  <th className="px-6 py-3 text-right">{t("common.total")}</th>
                 </tr>
               </thead>
 
@@ -108,7 +112,7 @@ export default function RankingPage() {
 
                       {user.role === "admin" ? (
                         <div className="mt-1 text-xs font-bold uppercase text-red-600">
-                          admin
+                          {t("ranking.roleAdmin")}
                         </div>
                       ) : null}
                     </td>
@@ -139,7 +143,7 @@ export default function RankingPage() {
           </div>
         ) : (
           <div className="p-6 text-slate-500">
-            Brak użytkowników w rankingu. Zarejestruj pierwsze konto.
+            {t("ranking.noUsers")}
           </div>
         )}
       </section>
