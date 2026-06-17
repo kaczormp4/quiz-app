@@ -116,6 +116,28 @@
     roleAdmin: "admin",
   },
 
+  billing: {
+    title: "Subscription",
+    currentPackage: "Current package",
+    accessStatus: "Access status",
+    validUntil: "Valid until",
+    nextPayment: "Next payment",
+    daysLeft: "Days left",
+    noActiveSubscription: "No active paid subscription",
+    freePlan: "Free plan",
+    lifetime: "Lifetime access",
+    noNextPayment: "No scheduled payment",
+    renewalWarning: "Your access ends soon. Renew your plan to keep full access.",
+    managePlan: "Manage plan",
+    upgradePlan: "Upgrade plan",
+    comingSoon: "Billing management is coming soon.",
+    statusFree: "Free",
+    statusActive: "Active",
+    statusExpired: "Expired",
+    statusPending: "Pending",
+    statusCancelled: "Cancelled",
+  },
+
   profile: {
     title: "User profile",
     publicProfile: "Public profile",
@@ -166,6 +188,11 @@
     loadError: "Could not load review questions.",
     empty: "You don't have any questions to review yet.",
     openQuestion: "Open question",
+    reviewMode: "Review mode",
+    backToReviewList: "Back to review list",
+    onlyReviewQuestions: "This slider contains only questions from your review list.",
+    previousReview: "Previous review question",
+    nextReview: "Next review question",
   },
 
   history: {
@@ -274,5 +301,7 @@
     loadingUser: "Loading user...",
   },
 };
+
+
 
 

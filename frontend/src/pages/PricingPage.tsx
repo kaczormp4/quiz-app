@@ -1,7 +1,13 @@
-﻿import { Link } from "react-router-dom";
+﻿import { useState } from "react";
+import { useMutation } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import { useAuth } from "../app/providers/AuthProvider";
+import { createCheckoutRequest } from "../features/billing/api";
+
 type PricingCardProps = {
+  planCode: string;
   name: string;
   price: string;
   period: string;
@@ -9,9 +15,12 @@ type PricingCardProps = {
   features: string[];
   cta: string;
   highlighted?: boolean;
+  isLoading?: boolean;
+  onSelectPlan: (planCode: string) => void;
 };
 
 function PricingCard({
+  planCode,
   name,
   price,
   period,
@@ -19,6 +28,8 @@ function PricingCard({
   features,
   cta,
   highlighted = false,
+  isLoading = false,
+  onSelectPlan,
 }: PricingCardProps) {
   const { t } = useTranslation();
 
@@ -74,16 +85,18 @@ function PricingCard({
         ))}
       </ul>
 
-      <Link
-        to="/register"
-        className={`mt-8 flex w-full justify-center rounded-2xl px-5 py-3 text-sm font-black transition ${
+      <button
+        type="button"
+        disabled={isLoading}
+        onClick={() => onSelectPlan(planCode)}
+        className={`mt-8 flex w-full justify-center rounded-2xl px-5 py-3 text-sm font-black transition disabled:cursor-not-allowed disabled:opacity-60 ${
           highlighted
             ? "bg-white text-slate-950 hover:bg-slate-100"
             : "bg-slate-950 text-white hover:bg-slate-800"
         }`}
       >
-        {cta}
-      </Link>
+        {isLoading ? t("common.loading") : cta}
+      </button>
 
       <p
         className={`mt-3 text-center text-xs ${
@@ -98,6 +111,48 @@ function PricingCard({
 
 export default function PricingPage() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { isAuthenticated, token } = useAuth();
+  const [checkoutMessage, setCheckoutMessage] = useState<string | null>(null);
+
+  const checkoutMutation = useMutation({
+    mutationFn: (planCode: string) => {
+      if (!token) {
+        throw new Error("You must be logged in to buy a package.");
+      }
+
+      return createCheckoutRequest(planCode, token);
+    },
+    onSuccess: (response) => {
+      if (response.checkout_url) {
+        window.location.href = response.checkout_url;
+        return;
+      }
+
+      setCheckoutMessage(response.message);
+    },
+    onError: (error) => {
+      setCheckoutMessage(
+        error instanceof Error ? error.message : "Could not start checkout.",
+      );
+    },
+  });
+
+  const handleSelectPlan = (planCode: string) => {
+    setCheckoutMessage(null);
+
+    if (!isAuthenticated) {
+      navigate("/register");
+      return;
+    }
+
+    if (planCode === "free") {
+      navigate("/quizzes");
+      return;
+    }
+
+    checkoutMutation.mutate(planCode);
+  };
 
   return (
     <main className="bg-slate-50">
@@ -114,16 +169,25 @@ export default function PricingPage() {
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-600">
             {t("pricing.subtitle")}
           </p>
+
+          {checkoutMessage ? (
+            <div className="mx-auto mt-8 max-w-2xl rounded-2xl bg-amber-50 px-5 py-4 text-sm font-semibold text-amber-800">
+              {checkoutMessage}
+            </div>
+          ) : null}
         </div>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-5 px-4 py-14 lg:grid-cols-4">
         <PricingCard
+          planCode="free"
           name={t("pricing.freeName")}
           price={t("pricing.freePrice")}
           period={t("pricing.freePeriod")}
           description={t("pricing.freeDescription")}
           cta={t("pricing.freeCta")}
+          onSelectPlan={handleSelectPlan}
+          isLoading={checkoutMutation.isPending}
           features={[
             t("pricing.freeFeatureOne"),
             t("pricing.freeFeatureTwo"),
@@ -133,12 +197,15 @@ export default function PricingPage() {
         />
 
         <PricingCard
+          planCode="pro_monthly"
           name={t("pricing.proName")}
           price={t("pricing.proPrice")}
           period={t("pricing.proPeriod")}
           description={t("pricing.proDescription")}
           cta={t("pricing.proCta")}
           highlighted
+          onSelectPlan={handleSelectPlan}
+          isLoading={checkoutMutation.isPending}
           features={[
             t("pricing.proFeatureOne"),
             t("pricing.proFeatureTwo"),
@@ -149,11 +216,14 @@ export default function PricingPage() {
         />
 
         <PricingCard
+          planCode="interview_sprint"
           name={t("pricing.sprintName")}
           price={t("pricing.sprintPrice")}
           period={t("pricing.sprintPeriod")}
           description={t("pricing.sprintDescription")}
           cta={t("pricing.sprintCta")}
+          onSelectPlan={handleSelectPlan}
+          isLoading={checkoutMutation.isPending}
           features={[
             t("pricing.sprintFeatureOne"),
             t("pricing.sprintFeatureTwo"),
@@ -163,11 +233,14 @@ export default function PricingPage() {
         />
 
         <PricingCard
+          planCode="lifetime_early_access"
           name={t("pricing.lifetimeName")}
           price={t("pricing.lifetimePrice")}
           period={t("pricing.lifetimePeriod")}
           description={t("pricing.lifetimeDescription")}
           cta={t("pricing.lifetimeCta")}
+          onSelectPlan={handleSelectPlan}
+          isLoading={checkoutMutation.isPending}
           features={[
             t("pricing.lifetimeFeatureOne"),
             t("pricing.lifetimeFeatureTwo"),

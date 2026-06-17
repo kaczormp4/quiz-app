@@ -1,5 +1,6 @@
 ﻿import { FormEvent, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
@@ -7,11 +8,149 @@ import {
   changePasswordRequest,
   updateProfileRequest,
 } from "../features/auth/api";
+import { getMyBillingStatusRequest } from "../features/billing/api";
+import type { BillingStatus } from "../features/billing/types";
+
+function formatDate(value: string | null): string {
+  if (!value) {
+    return "—";
+  }
+
+  return new Intl.DateTimeFormat("en", {
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+  }).format(new Date(value));
+}
+
+function formatStatus(status: string, translate: (key: string) => string): string {
+  const statusMap: Record<string, string> = {
+    free: translate("billing.statusFree"),
+    active: translate("billing.statusActive"),
+    expired: translate("billing.statusExpired"),
+    pending: translate("billing.statusPending"),
+    cancelled: translate("billing.statusCancelled"),
+  };
+
+  return statusMap[status] ?? status;
+}
+
+function SubscriptionCard({
+  billing,
+  isLoading,
+}: {
+  billing: BillingStatus | undefined;
+  isLoading: boolean;
+}) {
+  const { t } = useTranslation();
+
+  const planName = billing?.current_plan?.name ?? t("billing.freePlan");
+  const accessStatus = billing
+    ? formatStatus(billing.access_status, t)
+    : t("common.loading");
+
+  const validUntil = billing?.subscription_expires_at
+    ? formatDate(billing.subscription_expires_at)
+    : billing?.current_plan?.billing_period === "lifetime"
+      ? t("billing.lifetime")
+      : "—";
+
+  const nextPayment = billing?.next_payment_at
+    ? formatDate(billing.next_payment_at)
+    : t("billing.noNextPayment");
+
+  const daysLeft =
+    billing?.days_left !== null && billing?.days_left !== undefined
+      ? String(billing.days_left)
+      : "—";
+
+  return (
+    <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <h2 className="text-xl font-bold text-slate-950">
+            {t("billing.title")}
+          </h2>
+
+          <p className="mt-2 text-sm text-slate-500">
+            {t("pricing.note")}
+          </p>
+        </div>
+
+        <Link
+          to="/pricing"
+          className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-slate-800"
+        >
+          {billing?.is_pro ? t("billing.managePlan") : t("billing.upgradePlan")}
+        </Link>
+      </div>
+
+      {billing?.should_show_renewal_warning ? (
+        <div className="mt-5 rounded-2xl bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
+          {t("billing.renewalWarning")}
+        </div>
+      ) : null}
+
+      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="rounded-2xl bg-slate-50 p-4">
+          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+            {t("billing.currentPackage")}
+          </p>
+          <p className="mt-2 text-lg font-black text-slate-950">
+            {isLoading ? t("common.loading") : planName}
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-slate-50 p-4">
+          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+            {t("billing.accessStatus")}
+          </p>
+          <p className="mt-2 text-lg font-black text-slate-950">
+            {accessStatus}
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-slate-50 p-4">
+          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+            {t("billing.validUntil")}
+          </p>
+          <p className="mt-2 text-lg font-black text-slate-950">
+            {validUntil}
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-slate-50 p-4">
+          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+            {t("billing.daysLeft")}
+          </p>
+          <p className="mt-2 text-lg font-black text-slate-950">
+            {daysLeft}
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-slate-50 p-4">
+          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+            {t("billing.nextPayment")}
+          </p>
+          <p className="mt-2 text-lg font-black text-slate-950">
+            {nextPayment}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function ProfilePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { user, token, setUser, logout } = useAuth();
+
+  const billingQuery = useQuery({
+    queryKey: ["my-billing"],
+    queryFn: () => getMyBillingStatusRequest(token!),
+    enabled: Boolean(token),
+  });
 
   const [username, setUsername] = useState(user?.username ?? "");
   const [bio, setBio] = useState(user?.bio ?? "");
@@ -101,7 +240,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-10">
+    <main className="mx-auto max-w-5xl px-4 py-10">
       <section className="mb-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-4">
@@ -150,6 +289,11 @@ export default function ProfilePage() {
       </section>
 
       <div className="grid gap-6">
+        <SubscriptionCard
+          billing={billingQuery.data}
+          isLoading={billingQuery.isLoading}
+        />
+
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-slate-950">{t("profile.publicProfile")}</h2>
 

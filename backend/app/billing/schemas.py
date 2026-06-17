@@ -31,8 +31,13 @@ class SubscriptionPublic(BaseModel):
 
 class BillingStatusResponse(BaseModel):
     is_pro: bool
-    subscription_expires_at: Optional[datetime]
+    access_status: str
+    current_plan: Optional[PlanPublic]
     active_subscription: Optional[SubscriptionPublic]
+    subscription_expires_at: Optional[datetime]
+    next_payment_at: Optional[datetime]
+    days_left: Optional[int]
+    should_show_renewal_warning: bool
 
 
 class CreateCheckoutRequest(BaseModel):
