@@ -9,6 +9,7 @@ import QuestionPage from "./pages/QuestionPage";
 import QuestionsPage from "./pages/QuestionsPage";
 import RankingPage from "./pages/RankingPage";
 import RegisterPage from "./pages/RegisterPage";
+import ReviewPage from "./pages/ReviewPage";
 
 export default function App() {
   return (
@@ -41,6 +42,15 @@ export default function App() {
           element={
             <ProtectedRoute>
               <QuestionPage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/review"
+          element={
+            <ProtectedRoute>
+              <ReviewPage />
             </ProtectedRoute>
           }
         />

@@ -1,36 +1,25 @@
-import { apiClient } from "../../shared/api/client";
+﻿import { apiClient } from "../../shared/api/client";
 import type {
   Category,
   QuestionDetails,
-  QuestionListItem,
+  QuestionSummary,
+  SubmitAnswerPayload,
   SubmitAnswerResponse,
 } from "./types";
 
-export function getCategories() {
-  return apiClient<Category[]>("/quizzes/categories");
-}
+export const getCategories = () => apiClient<Category[]>("/quizzes/categories");
 
-export function getCategoryQuestions(slug: string) {
-  return apiClient<QuestionListItem[]>(
-    `/quizzes/categories/${slug}/questions`,
-  );
-}
+export const getCategoryQuestions = (slug: string) =>
+  apiClient<QuestionSummary[]>(`/quizzes/categories/${slug}/questions`);
 
-export function getQuestion(questionId: string) {
-  return apiClient<QuestionDetails>(`/quizzes/questions/${questionId}`);
-}
+export const getQuestion = (questionId: string) =>
+  apiClient<QuestionDetails>(`/quizzes/questions/${questionId}`);
 
-export function submitAnswer(params: {
-  questionId: string;
-  answerId: string;
-}) {
-  return apiClient<SubmitAnswerResponse>(
-    `/quizzes/questions/${params.questionId}/answer`,
-    {
-      method: "POST",
-      body: {
-        answer_id: params.answerId,
-      },
-    },
-  );
-}
+export const submitAnswer = (
+  questionId: string,
+  payload: SubmitAnswerPayload,
+) =>
+  apiClient<SubmitAnswerResponse>(`/quizzes/questions/${questionId}/answer`, {
+    method: "POST",
+    body: payload,
+  });

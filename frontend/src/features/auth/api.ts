@@ -8,6 +8,8 @@ import type {
   RegisterPayload,
   UpdateProfilePayload,
   User,
+  WrongAnswerCreatePayload,
+  WrongAnswerReviewItem,
 } from "./types";
 
 export const registerRequest = (payload: RegisterPayload) =>
@@ -47,5 +49,26 @@ export const changePasswordRequest = (
   apiClient<MessageResponse>("/users/me/password", {
     method: "PATCH",
     body: payload,
+    token,
+  });
+
+export const addQuizVisitPointRequest = (token: string) =>
+  apiClient<User>("/users/me/quiz-visit", {
+    method: "POST",
+    token,
+  });
+
+export const addWrongAnswerRequest = (
+  payload: WrongAnswerCreatePayload,
+  token: string,
+) =>
+  apiClient<MessageResponse>("/users/me/wrong-answers", {
+    method: "POST",
+    body: payload,
+    token,
+  });
+
+export const getWrongAnswersRequest = (token: string) =>
+  apiClient<WrongAnswerReviewItem[]>("/users/me/wrong-answers", {
     token,
   });

@@ -6,7 +6,8 @@ from sqlalchemy import desc, func, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import AsyncSessionLocal
-from app.users.models import User
+from app.quizzes.models import Category, Question
+from app.users.models import User, WrongAnswer
 from app.users.schemas import (
     AuthResponse,
     ChangePasswordRequest,
@@ -16,6 +17,8 @@ from app.users.schemas import (
     RegisterRequest,
     UpdateProfileRequest,
     UserPublic,
+    WrongAnswerCreateRequest,
+    WrongAnswerReviewItem,
 )
 from app.users.security import (
     create_access_token,
@@ -67,6 +70,18 @@ async def get_current_user(
         )
 
     return user
+
+
+def normalize_optional_url(value: str | None) -> str | None:
+    if value is None:
+        return None
+
+    normalized = value.strip()
+
+    if not normalized:
+        return None
+
+    return normalized
 
 
 @auth_router.post("/register", response_model=AuthResponse, status_code=status.HTTP_201_CREATED)
@@ -185,6 +200,7 @@ async def update_profile(
         )
 
     current_user.username = username
+    current_user.linkedin_url = normalize_optional_url(payload.linkedin_url)
 
     await db.commit()
     await db.refresh(current_user)
@@ -209,3 +225,82 @@ async def change_password(
     await db.commit()
 
     return MessageResponse(message="Password changed successfully")
+
+
+@users_router.post("/me/quiz-visit", response_model=UserPublic)
+async def add_quiz_visit_point(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> UserPublic:
+    current_user.points += 1
+
+    await db.commit()
+    await db.refresh(current_user)
+
+    return UserPublic.model_validate(current_user)
+
+
+@users_router.post("/me/wrong-answers", response_model=MessageResponse, status_code=status.HTTP_201_CREATED)
+async def add_wrong_answer(
+    payload: WrongAnswerCreateRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> MessageResponse:
+    question_result = await db.execute(
+        select(Question).where(Question.id == payload.question_id)
+    )
+    question = question_result.scalar_one_or_none()
+
+    if question is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Question not found",
+        )
+
+    existing_result = await db.execute(
+        select(WrongAnswer).where(
+            WrongAnswer.user_id == current_user.id,
+            WrongAnswer.question_id == payload.question_id,
+        )
+    )
+    existing_wrong_answer = existing_result.scalar_one_or_none()
+
+    if existing_wrong_answer is None:
+        wrong_answer = WrongAnswer(
+            user_id=current_user.id,
+            question_id=payload.question_id,
+        )
+        db.add(wrong_answer)
+        await db.commit()
+
+    return MessageResponse(message="Question added to review list")
+
+
+@users_router.get("/me/wrong-answers", response_model=list[WrongAnswerReviewItem])
+async def get_wrong_answers(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> list[WrongAnswerReviewItem]:
+    result = await db.execute(
+        select(WrongAnswer, Question, Category)
+        .join(Question, WrongAnswer.question_id == Question.id)
+        .join(Category, Question.category_id == Category.id)
+        .where(WrongAnswer.user_id == current_user.id)
+        .order_by(desc(WrongAnswer.created_at))
+    )
+
+    rows = result.all()
+
+    return [
+        WrongAnswerReviewItem(
+            id=wrong_answer.id,
+            question_id=question.id,
+            question=question.question,
+            difficulty=question.difficulty,
+            explanation_html=question.explanation_html,
+            category_slug=category.slug,
+            category_name=category.name,
+            created_at=wrong_answer.created_at,
+        )
+        for wrong_answer, question, category in rows
+    ]

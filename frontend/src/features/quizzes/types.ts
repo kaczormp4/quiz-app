@@ -1,18 +1,18 @@
-export type Category = {
+﻿export type Category = {
   id: string;
   slug: string;
   name: string;
-  description: string | null;
+  description: string;
   is_active: boolean;
   created_at: string;
 };
 
-export type QuestionListItem = {
+export type QuestionSummary = {
   id: string;
-  category_id: string;
   question: string;
-  difficulty: "easy" | "medium" | "hard" | "expert" | string;
+  difficulty: string;
   points: number;
+  created_at: string;
 };
 
 export type Answer = {
@@ -23,11 +23,15 @@ export type Answer = {
 
 export type QuestionDetails = {
   id: string;
-  category_id: string;
   question: string;
   difficulty: string;
   points: number;
+  explanation_html: string;
   answers: Answer[];
+};
+
+export type SubmitAnswerPayload = {
+  answer_id: string;
 };
 
 export type SubmitAnswerResponse = {

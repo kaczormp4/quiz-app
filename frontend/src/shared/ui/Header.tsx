@@ -3,7 +3,7 @@
 import { useAuth } from "../../app/providers/AuthProvider";
 
 export function Header() {
-  const { user, isAuthenticated, isLoadingUser, logout } = useAuth();
+  const { user, isAuthenticated, isLoadingUser } = useAuth();
 
   return (
     <header className="border-b border-slate-200 bg-white">
@@ -25,37 +25,51 @@ export function Header() {
           </NavLink>
 
           {isAuthenticated ? (
-            <NavLink
-              to="/quizzes"
-              className={({ isActive }) =>
-                `text-sm font-medium ${
-                  isActive ? "text-slate-950" : "text-slate-500"
-                }`
-              }
-            >
-              Quizy
-            </NavLink>
+            <>
+              <NavLink
+                to="/quizzes"
+                className={({ isActive }) =>
+                  `text-sm font-medium ${
+                    isActive ? "text-slate-950" : "text-slate-500"
+                  }`
+                }
+              >
+                Quizy
+              </NavLink>
+
+              <NavLink
+                to="/review"
+                className={({ isActive }) =>
+                  `text-sm font-medium ${
+                    isActive ? "text-slate-950" : "text-slate-500"
+                  }`
+                }
+              >
+                Do powtórzenia
+              </NavLink>
+            </>
           ) : null}
 
           {isLoadingUser ? (
             <span className="text-sm text-slate-500">Ładowanie...</span>
           ) : isAuthenticated && user ? (
-            <div className="flex items-center gap-3 rounded-full border border-slate-200 bg-slate-50 px-3 py-2">
-              <Link to="/profile" className="text-right">
+            <Link
+              to="/profile"
+              className="flex items-center gap-3 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 transition hover:border-slate-300 hover:bg-white"
+            >
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-950 text-sm font-bold text-white">
+                {user.username.slice(0, 1).toUpperCase()}
+              </div>
+
+              <div className="text-right">
                 <p className="text-sm font-semibold text-slate-950">
                   {user.username}
                 </p>
-                <p className="text-xs text-slate-500">{user.points} pkt</p>
-              </Link>
-
-              <button
-                type="button"
-                onClick={logout}
-                className="rounded-full bg-slate-950 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-slate-700"
-              >
-                Wyloguj
-              </button>
-            </div>
+                <p className="text-xs font-semibold text-orange-600">
+                  🔥 {user.points} pkt
+                </p>
+              </div>
+            </Link>
           ) : (
             <div className="flex items-center gap-2">
               <Link

@@ -1,4 +1,5 @@
 ﻿import { FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { useAuth } from "../app/providers/AuthProvider";
 import {
@@ -7,9 +8,11 @@ import {
 } from "../features/auth/api";
 
 export default function ProfilePage() {
-  const { user, token, setUser } = useAuth();
+  const navigate = useNavigate();
+  const { user, token, setUser, logout } = useAuth();
 
   const [username, setUsername] = useState(user?.username ?? "");
+  const [linkedinUrl, setLinkedinUrl] = useState(user?.linkedin_url ?? "");
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
 
@@ -31,7 +34,13 @@ export default function ProfilePage() {
     setIsSavingProfile(true);
 
     try {
-      const updatedUser = await updateProfileRequest({ username }, token);
+      const updatedUser = await updateProfileRequest(
+        {
+          username,
+          linkedin_url: linkedinUrl.trim() ? linkedinUrl.trim() : null,
+        },
+        token,
+      );
 
       setUser(updatedUser);
       setProfileMessage("Profil został zaktualizowany.");
@@ -74,31 +83,48 @@ export default function ProfilePage() {
     }
   };
 
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
+
   if (!user) {
     return null;
   }
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-950">Profil użytkownika</h1>
-        <p className="mt-2 text-slate-500">
-          Zarządzaj nickiem i hasłem konta.
-        </p>
-      </div>
+      <section className="mb-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-4">
+            <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-slate-950 text-2xl font-bold text-white">
+              {user.username.slice(0, 1).toUpperCase()}
+            </div>
+
+            <div>
+              <h1 className="text-3xl font-bold text-slate-950">
+                {user.username}
+              </h1>
+              <p className="mt-1 text-sm text-slate-500">{user.email}</p>
+              <p className="mt-2 text-sm font-bold text-orange-600">
+                🔥 {user.points} pkt
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onClick={handleLogout}
+            className="rounded-2xl border border-red-200 bg-red-50 px-5 py-3 text-sm font-semibold text-red-700 transition hover:bg-red-100"
+          >
+            Wyloguj
+          </button>
+        </div>
+      </section>
 
       <div className="grid gap-6">
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-slate-950">Dane profilu</h2>
-
-          <div className="mt-4 rounded-2xl bg-slate-50 p-4 text-sm text-slate-600">
-            <p>
-              <strong>Email:</strong> {user.email}
-            </p>
-            <p>
-              <strong>Punkty:</strong> {user.points}
-            </p>
-          </div>
 
           <form onSubmit={handleProfileSubmit} className="mt-6 space-y-4">
             <label className="block">
@@ -109,6 +135,18 @@ export default function ProfilePage() {
                 className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
                 minLength={3}
                 required
+              />
+            </label>
+
+            <label className="block">
+              <span className="text-sm font-medium text-slate-700">
+                LinkedIn URL
+              </span>
+              <input
+                value={linkedinUrl}
+                onChange={(event) => setLinkedinUrl(event.target.value)}
+                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+                placeholder="https://www.linkedin.com/in/twoj-profil"
               />
             </label>
 

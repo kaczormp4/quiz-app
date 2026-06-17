@@ -4,6 +4,20 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../app/providers/AuthProvider";
 import { getRankingRequest } from "../features/auth/api";
 
+function LinkedinIconLink({ url }: { url: string }) {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-blue-600 text-xs font-bold text-white transition hover:bg-blue-700"
+      title="LinkedIn profile"
+    >
+      in
+    </a>
+  );
+}
+
 export default function RankingPage() {
   const { isAuthenticated } = useAuth();
 
@@ -73,6 +87,7 @@ export default function RankingPage() {
                 <tr>
                   <th className="px-6 py-3">#</th>
                   <th className="px-6 py-3">Użytkownik</th>
+                  <th className="px-6 py-3">LinkedIn</th>
                   <th className="px-6 py-3 text-right">Punkty</th>
                 </tr>
               </thead>
@@ -83,9 +98,19 @@ export default function RankingPage() {
                     <td className="px-6 py-4 font-semibold text-slate-500">
                       {index + 1}
                     </td>
+
                     <td className="px-6 py-4 font-semibold text-slate-950">
                       {user.username}
                     </td>
+
+                    <td className="px-6 py-4">
+                      {user.linkedin_url ? (
+                        <LinkedinIconLink url={user.linkedin_url} />
+                      ) : (
+                        <span className="text-sm text-slate-400">—</span>
+                      )}
+                    </td>
+
                     <td className="px-6 py-4 text-right font-bold text-slate-950">
                       {user.points}
                     </td>
