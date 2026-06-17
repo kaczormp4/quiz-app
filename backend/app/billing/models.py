@@ -7,6 +7,7 @@ from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import relationship
 
 from app.core.database import Base
+from app.users.models import User  # noqa: F401 - register users table for foreign keys
 
 
 class Plan(Base):

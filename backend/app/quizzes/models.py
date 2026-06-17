@@ -6,6 +6,7 @@ from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String, T
 from sqlalchemy.dialects.postgresql import UUID
 
 from app.core.database import Base
+from app.users.models import User  # noqa: F401 - register users table for foreign keys
 
 
 class Category(Base):
