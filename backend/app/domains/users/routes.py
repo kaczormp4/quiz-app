@@ -7,9 +7,9 @@ from sqlalchemy import desc, func, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import AsyncSessionLocal
-from app.quizzes.models import Answer, Category, PendingQuestion, Question
-from app.users.models import User, UserAnswer, WrongAnswer
-from app.users.schemas import (
+from app.domains.quizzes.models import Answer, Category, PendingQuestion, Question
+from app.domains.users.models import User, UserAnswer, WrongAnswer
+from app.domains.users.schemas import (
     AnswerHistoryItem,
     AuthResponse,
     ChangePasswordRequest,
@@ -28,7 +28,7 @@ from app.users.schemas import (
     WrongAnswerCreateRequest,
     WrongAnswerReviewItem,
 )
-from app.users.security import create_access_token, decode_access_token, hash_password, verify_password
+from app.domains.users.security import create_access_token, decode_access_token, hash_password, verify_password
 
 
 auth_router = APIRouter(prefix="/auth", tags=["auth"])

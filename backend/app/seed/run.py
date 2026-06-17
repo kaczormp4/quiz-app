@@ -3,7 +3,7 @@ import asyncio
 from sqlalchemy import select
 
 from app.core.database import AsyncSessionLocal
-from app.quizzes.models import Answer, Category, Question
+from app.domains.quizzes.models import Answer, Category, Question
 from app.seed.data import QUIZ_CATEGORIES
 
 try:

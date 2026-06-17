@@ -5,8 +5,8 @@ from sqlalchemy import engine_from_config, pool
 
 from app.core.config import settings
 from app.core.database import Base
-from app.quizzes.models import Answer, Category, Question
-from app.users.models import User
+from app.domains.quizzes.models import Answer, Category, Question
+from app.domains.users.models import User
 
 
 config = context.config
