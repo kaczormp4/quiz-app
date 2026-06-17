@@ -287,3 +287,5 @@ export function QuestionsPage() {
     </main>
   );
 }
+
+export default QuestionsPage;

@@ -161,3 +161,5 @@ export function QuestionPage() {
     </main>
   );
 }
+
+export default QuestionPage;

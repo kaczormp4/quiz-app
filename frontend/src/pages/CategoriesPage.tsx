@@ -63,3 +63,5 @@ export function CategoriesPage() {
     </main>
   );
 }
+
+export default CategoriesPage;
