@@ -3,7 +3,7 @@
 import uuid
 
 from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String, Text, func
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import relationship
 
 from app.core.database import Base
@@ -17,8 +17,17 @@ class Plan(Base):
     name = Column(String(100), nullable=False)
     description = Column(Text, nullable=False)
     price_amount = Column(Integer, nullable=False, default=0)
-    currency = Column(String(10), nullable=False, default="PLN")
+    currency = Column(String(10), nullable=False, default="USD")
     billing_period = Column(String(30), nullable=False)
+    features = Column(JSONB, nullable=False, default=list)
+
+    max_difficulty = Column(String(30), nullable=False, default="easy")
+    can_answer_questions = Column(Boolean, nullable=False, default=False)
+    can_view_explanations = Column(Boolean, nullable=False, default=False)
+    can_use_review = Column(Boolean, nullable=False, default=False)
+    can_submit_questions = Column(Boolean, nullable=False, default=False)
+    has_unlimited_questions = Column(Boolean, nullable=False, default=False)
+
     is_active = Column(Boolean, nullable=False, default=True)
     sort_order = Column(Integer, nullable=False, default=0)
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
@@ -53,7 +62,7 @@ class Payment(Base):
     provider = Column(String(50), nullable=False, default="manual")
     provider_payment_id = Column(String(255), nullable=True)
     amount = Column(Integer, nullable=False)
-    currency = Column(String(10), nullable=False, default="PLN")
+    currency = Column(String(10), nullable=False, default="USD")
     status = Column(String(30), nullable=False, default="pending")
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 

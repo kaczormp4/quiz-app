@@ -3,6 +3,8 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
+import { useBillingAccess } from "../features/billing/hooks";
+import { LockedFeaturePreview } from "../shared/ui/LockedFeaturePreview";
 import {
   createCategoryRequest,
   getCategories,
@@ -22,6 +24,7 @@ export default function ContributePage() {
   const { t } = useTranslation();
   const queryClient = useQueryClient();
   const { token } = useAuth();
+  const billingAccess = useBillingAccess();
 
   const [newCategoryName, setNewCategoryName] = useState("");
   const [newCategoryDescription, setNewCategoryDescription] = useState("");
@@ -122,6 +125,52 @@ export default function ContributePage() {
       })),
     );
   };
+
+  if (!billingAccess.isLoading && !billingAccess.canSubmitQuestions) {
+    return (
+      <main className="mx-auto max-w-5xl px-4 py-10">
+        <LockedFeaturePreview
+          title={t("access.unlockContributeTitle")}
+          description={t("access.unlockContributeDescription")}
+        >
+          <div className="grid gap-6 lg:grid-cols-[1fr_1.4fr]">
+            <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-xl font-bold text-slate-950">Categories</h2>
+
+              <div className="mt-4 grid gap-2">
+                <div className="rounded-2xl border border-slate-200 px-4 py-3">
+                  <p className="font-semibold">Frontend Interview</p>
+                  <p className="text-sm text-slate-500">React, JavaScript and browser topics</p>
+                </div>
+                <div className="rounded-2xl border border-slate-200 px-4 py-3">
+                  <p className="font-semibold">General Computer Science</p>
+                  <p className="text-sm text-slate-500">Algorithms, HTTP, Git and databases</p>
+                </div>
+              </div>
+            </section>
+
+            <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-xl font-bold text-slate-950">Submit question preview</h2>
+
+              <div className="mt-6 space-y-4">
+                <div className="h-24 rounded-2xl border border-slate-300 bg-slate-50" />
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="h-12 rounded-2xl border border-slate-300 bg-slate-50" />
+                  <div className="h-12 rounded-2xl border border-slate-300 bg-slate-50" />
+                </div>
+                <div className="grid gap-3">
+                  <div className="h-12 rounded-2xl border border-slate-300 bg-slate-50" />
+                  <div className="h-12 rounded-2xl border border-slate-300 bg-slate-50" />
+                  <div className="h-12 rounded-2xl border border-slate-300 bg-slate-50" />
+                  <div className="h-12 rounded-2xl border border-slate-300 bg-slate-50" />
+                </div>
+              </div>
+            </section>
+          </div>
+        </LockedFeaturePreview>
+      </main>
+    );
+  }
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">

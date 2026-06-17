@@ -5,6 +5,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
+import { useBillingAccess } from "../features/billing/hooks";
 import {
   addWrongAnswerRequest,
   recordAnswerRequest,
@@ -15,12 +16,32 @@ import {
   submitAnswer,
 } from "../features/quizzes/api";
 import type { SubmitAnswerResponse } from "../features/quizzes/types";
+import { LockedFeaturePreview } from "../shared/ui/LockedFeaturePreview";
+
+function QuestionMeta({
+  createdBy,
+  approvedBy,
+  viewsCount,
+}: {
+  createdBy?: string | null;
+  approvedBy?: string | null;
+  viewsCount?: number;
+}) {
+  return (
+    <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 px-2 text-[11px] text-slate-400">
+      <span>Created by: {createdBy ?? "System"}</span>
+      <span>Approved by: {approvedBy ?? "System"}</span>
+      <span>Views: {viewsCount ?? 0}</span>
+    </div>
+  );
+}
 
 export default function QuestionsPage() {
   const { t } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
   const queryClient = useQueryClient();
   const { token, setUser } = useAuth();
+  const billingAccess = useBillingAccess();
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswerId, setSelectedAnswerId] = useState<string | null>(null);
@@ -43,6 +64,16 @@ export default function QuestionsPage() {
   });
 
   const question = questionQuery.data;
+
+  const isDifficultyLocked = question
+    ? !billingAccess.isDifficultyAllowed(question.difficulty)
+    : false;
+
+  // Free users can solve easy questions.
+  // Medium/hard answers are visible, but read-only.
+  const canAnswerQuestion = !isDifficultyLocked;
+
+  const canViewExplanation = billingAccess.canViewExplanations;
 
   const progress = useMemo(() => {
     if (!questions.length) return 0;
@@ -102,6 +133,7 @@ export default function QuestionsPage() {
   });
 
   const handleAnswerClick = (answerId: string) => {
+    if (!canAnswerQuestion) return;
     if (result || submitAnswerMutation.isPending) return;
 
     setSelectedAnswerId(answerId);
@@ -153,7 +185,10 @@ export default function QuestionsPage() {
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
       <div className="mb-6 flex items-center justify-between">
-        <Link to="/quizzes" className="text-sm font-semibold text-slate-500 hover:text-slate-950">
+        <Link
+          to="/quizzes"
+          className="text-sm font-semibold text-slate-500 hover:text-slate-950"
+        >
           ← {t("questions.backToCategories")}
         </Link>
 
@@ -192,6 +227,12 @@ export default function QuestionsPage() {
               <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
                 {t("questions.streakInfo")}
               </span>
+
+              {isDifficultyLocked ? (
+                <span className="rounded-full bg-slate-950 px-3 py-1 text-xs font-semibold text-white">
+                  Pro
+                </span>
+              ) : null}
             </div>
 
             <h1 className="text-2xl font-bold text-slate-950">
@@ -210,7 +251,11 @@ export default function QuestionsPage() {
                     key={answer.id}
                     type="button"
                     onClick={() => handleAnswerClick(answer.id)}
-                    disabled={Boolean(result) || submitAnswerMutation.isPending}
+                    disabled={
+                      Boolean(result) ||
+                      submitAnswerMutation.isPending ||
+                      !canAnswerQuestion
+                    }
                     className={`rounded-2xl border px-4 py-4 text-left font-medium transition ${
                       isCorrectAnswer
                         ? "border-green-400 bg-green-50 text-green-800"
@@ -218,7 +263,9 @@ export default function QuestionsPage() {
                           ? "border-red-400 bg-red-50 text-red-800"
                           : isSelected
                             ? "border-slate-950 bg-slate-100 text-slate-950"
-                            : "border-slate-200 bg-white text-slate-700 hover:border-slate-400"
+                            : !canAnswerQuestion
+                              ? "cursor-not-allowed border-slate-200 bg-slate-50 text-slate-700"
+                              : "border-slate-200 bg-white text-slate-700 hover:border-slate-400"
                     }`}
                   >
                     {answer.text}
@@ -226,6 +273,28 @@ export default function QuestionsPage() {
                 );
               })}
             </div>
+
+            {!canAnswerQuestion ? (
+              <div className="mt-6">
+                <LockedFeaturePreview
+                  title={t("access.unlockDifficultyTitle")}
+                  description={t("access.unlockDifficultyDescription")}
+                >
+                  <div className="prose prose-slate max-w-none rounded-2xl bg-white p-5 text-sm">
+                    <h3>Solution preview</h3>
+                    <p>
+                      This section explains how to reason about the question,
+                      which answer is correct, and how to explain it during a
+                      real technical interview.
+                    </p>
+                    <p>
+                      It also highlights common mistakes and what interviewers
+                      usually expect from a strong answer.
+                    </p>
+                  </div>
+                </LockedFeaturePreview>
+              </div>
+            ) : null}
 
             {submitAnswerMutation.isError ? (
               <div className="mt-5 rounded-2xl bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
@@ -247,17 +316,45 @@ export default function QuestionsPage() {
                     : t("questions.incorrectMessage")}
                 </p>
 
-                <div
-                  className="prose prose-slate max-w-none text-sm"
-                  dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(result.explanation_html),
-                  }}
-                />
+                {canViewExplanation ? (
+                  <div
+                    className="prose prose-slate max-w-none text-sm"
+                    dangerouslySetInnerHTML={{
+                      __html: DOMPurify.sanitize(result.explanation_html),
+                    }}
+                  />
+                ) : (
+                  <LockedFeaturePreview
+                    title={t("access.unlockExplanationTitle")}
+                    description={t("access.unlockExplanationDescription")}
+                  >
+                    <div className="prose prose-slate max-w-none rounded-2xl bg-white p-5 text-sm">
+                      <h3>Detailed explanation preview</h3>
+                      <p>
+                        This section explains why the correct answer works,
+                        what mistakes to avoid, and how to answer this topic
+                        during a real technical interview.
+                      </p>
+                      <p>
+                        Upgrade to Pro to unlock full explanations for every
+                        question.
+                      </p>
+                    </div>
+                  </LockedFeaturePreview>
+                )}
               </div>
             ) : null}
           </>
         ) : null}
       </section>
+
+      {question ? (
+        <QuestionMeta
+          createdBy={question.created_by_username}
+          approvedBy={question.approved_by_username}
+          viewsCount={question.views_count}
+        />
+      ) : null}
 
       <div className="mt-6 flex justify-between">
         <button
@@ -279,7 +376,11 @@ export default function QuestionsPage() {
         ) : (
           <button
             type="button"
-            onClick={() => setCurrentIndex((previous) => Math.min(previous + 1, questions.length - 1))}
+            onClick={() =>
+              setCurrentIndex((previous) =>
+                Math.min(previous + 1, questions.length - 1),
+              )
+            }
             className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
           >
             {t("common.next")}

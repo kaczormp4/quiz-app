@@ -3,17 +3,60 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
+import { useBillingAccess } from "../features/billing/hooks";
+import { LockedFeaturePreview } from "../shared/ui/LockedFeaturePreview";
 import { getAnswerHistoryRequest } from "../features/auth/api";
 
 export default function HistoryPage() {
   const { t } = useTranslation();
   const { token } = useAuth();
+  const billingAccess = useBillingAccess();
 
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["answer-history"],
     queryFn: () => getAnswerHistoryRequest(token!),
     enabled: Boolean(token),
   });
+
+  if (!billingAccess.isLoading && !billingAccess.canUseReview) {
+    return (
+      <main className="mx-auto max-w-5xl px-4 py-10">
+        <LockedFeaturePreview
+          title={t("access.unlockHistoryTitle")}
+          description={t("access.unlockHistoryDescription")}
+        >
+          <section className="rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left">
+                <thead className="bg-slate-50 text-sm text-slate-500">
+                  <tr>
+                    <th className="px-6 py-3">Status</th>
+                    <th className="px-6 py-3">Question</th>
+                    <th className="px-6 py-3">Selected answer</th>
+                    <th className="px-6 py-3">Category</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {[
+                    "React reconciliation",
+                    "JavaScript event loop",
+                    "HTTP authentication",
+                  ].map((item) => (
+                    <tr key={item}>
+                      <td className="px-6 py-4">Correct</td>
+                      <td className="px-6 py-4">{item}</td>
+                      <td className="px-6 py-4">Example answer</td>
+                      <td className="px-6 py-4">Frontend</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </LockedFeaturePreview>
+      </main>
+    );
+  }
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">

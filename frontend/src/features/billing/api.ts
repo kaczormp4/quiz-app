@@ -1,4 +1,4 @@
-﻿import type { BillingStatus, CheckoutResponse } from "./types";
+﻿import type { BillingPlan, BillingStatus, CheckoutResponse } from "./types";
 
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
@@ -10,6 +10,12 @@ async function parseResponse<T>(response: Response): Promise<T> {
   }
 
   return response.json() as Promise<T>;
+}
+
+export async function getBillingPlansRequest(): Promise<BillingPlan[]> {
+  const response = await fetch(`${API_URL}/billing/plans`);
+
+  return parseResponse<BillingPlan[]>(response);
 }
 
 export async function getMyBillingStatusRequest(

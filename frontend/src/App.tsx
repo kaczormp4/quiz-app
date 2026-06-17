@@ -10,8 +10,10 @@ import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 import QuestionPage from "./pages/QuestionPage";
 import QuestionsPage from "./pages/QuestionsPage";
+import HomePage from "./pages/HomePage";
 import RankingPage from "./pages/RankingPage";
 import PricingPage from "./pages/PricingPage";
+import DashboardPage from "./pages/DashboardPage";
 import RegisterPage from "./pages/RegisterPage";
 import ReviewPage from "./pages/ReviewPage";
 
@@ -21,8 +23,16 @@ export default function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<RankingPage />} />
+        <Route path="/" element={<HomePage />} />
           <Route path="/pricing" element={<PricingPage />} />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <DashboardPage />
+              </ProtectedRoute>
+            }
+          />
 
         <Route
           path="/quizzes"

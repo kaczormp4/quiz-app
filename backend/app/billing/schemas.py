@@ -17,6 +17,15 @@ class PlanPublic(BaseModel):
     price_amount: int
     currency: str
     billing_period: str
+    features: list[str]
+
+    max_difficulty: str
+    can_answer_questions: bool
+    can_view_explanations: bool
+    can_use_review: bool
+    can_submit_questions: bool
+    has_unlimited_questions: bool
+
     is_active: bool
     sort_order: int
 

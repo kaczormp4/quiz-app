@@ -6,6 +6,15 @@
   price_amount: number;
   currency: string;
   billing_period: string;
+  features: string[];
+
+  max_difficulty: string;
+  can_answer_questions: boolean;
+  can_view_explanations: boolean;
+  can_use_review: boolean;
+  can_submit_questions: boolean;
+  has_unlimited_questions: boolean;
+
   is_active: boolean;
   sort_order: number;
 };

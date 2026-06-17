@@ -17,6 +17,9 @@ export type QuestionSummary = {
   question: string;
   difficulty: string;
   points: number;
+  created_by_username?: string | null;
+  approved_by_username?: string | null;
+  views_count?: number;
   created_at: string;
 };
 

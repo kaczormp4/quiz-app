@@ -4,6 +4,26 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../app/providers/AuthProvider";
+import { useBillingAccess } from "../features/billing/hooks";
+import { LockedFeaturePreview } from "../shared/ui/LockedFeaturePreview";
+
+function QuestionMeta({
+  createdBy,
+  approvedBy,
+  viewsCount,
+}: {
+  createdBy?: string | null;
+  approvedBy?: string | null;
+  viewsCount?: number;
+}) {
+  return (
+    <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 px-2 text-[11px] text-slate-400">
+      <span>Created by: {createdBy ?? "System"}</span>
+      <span>Approved by: {approvedBy ?? "System"}</span>
+      <span>Views: {viewsCount ?? 0}</span>
+    </div>
+  );
+}
 import {
   addWrongAnswerRequest,
   getWrongAnswersRequest,
@@ -16,6 +36,7 @@ export default function ReviewPage() {
   const { t } = useTranslation();
   const queryClient = useQueryClient();
   const { token, setUser } = useAuth();
+  const billingAccess = useBillingAccess();
 
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [selectedAnswerId, setSelectedAnswerId] = useState<string | null>(null);
@@ -138,6 +159,38 @@ export default function ReviewPage() {
 
     setCurrentIndex(Math.min(currentIndex + 1, reviewItems.length - 1));
   };
+
+  if (!billingAccess.isLoading && !billingAccess.canUseReview) {
+    return (
+      <main className="mx-auto max-w-5xl px-4 py-10">
+        <LockedFeaturePreview
+          title={t("access.unlockReviewTitle")}
+          description={t("access.unlockReviewDescription")}
+        >
+          <div className="rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <div className="divide-y divide-slate-100">
+              {[
+                "React reconciliation and keys",
+                "JavaScript event loop",
+                "HTTP authentication flow",
+                "Database transactions",
+              ].map((title) => (
+                <div
+                  key={title}
+                  className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                >
+                  <span className="font-semibold text-slate-950">
+                    {title}
+                  </span>
+                  <span className="text-xl text-slate-300">?</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </LockedFeaturePreview>
+      </main>
+    );
+  }
 
   if (wrongAnswersQuery.isLoading) {
     return (
@@ -297,6 +350,14 @@ export default function ReviewPage() {
             </>
           ) : null}
         </section>
+
+        {question ? (
+          <QuestionMeta
+            createdBy={question.created_by_username}
+            approvedBy={question.approved_by_username}
+            viewsCount={question.views_count}
+          />
+        ) : null}
 
         <div className="mt-6 flex justify-between">
           <button
