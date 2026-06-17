@@ -46,6 +46,7 @@ class UserPublic(BaseModel):
     username: str
     role: str
     points: int
+    contribution_points: int
     current_streak: int
     longest_streak: int
     last_activity_date: date | None = None
@@ -63,6 +64,7 @@ class RankingUser(BaseModel):
     username: str
     role: str
     points: int
+    contribution_points: int
     current_streak: int
     longest_streak: int
     linkedin_url: str | None = None
@@ -90,6 +92,37 @@ class AnswerHistoryItem(BaseModel):
     category_slug: str
     category_name: str
     created_at: datetime
+
+class UserContributionCategory(BaseModel):
+    id: UUID
+    slug: str
+    name: str
+    created_at: datetime
+
+
+class UserContributionQuestion(BaseModel):
+    id: UUID
+    category_name: str
+    question: str
+    difficulty: str
+    points: int
+    created_at: datetime
+
+
+class UserContributionPendingQuestion(BaseModel):
+    id: UUID
+    category_name: str
+    question: str
+    difficulty: str
+    points: int
+    status: str
+    created_at: datetime
+
+
+class UserContributionsResponse(BaseModel):
+    categories: list[UserContributionCategory]
+    accepted_questions: list[UserContributionQuestion]
+    pending_questions: list[UserContributionPendingQuestion]
 
 
 class AuthResponse(BaseModel):

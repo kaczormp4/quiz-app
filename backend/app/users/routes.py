@@ -7,7 +7,7 @@ from sqlalchemy import desc, func, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import AsyncSessionLocal
-from app.quizzes.models import Answer, Category, Question
+from app.quizzes.models import Answer, Category, PendingQuestion, Question
 from app.users.models import User, UserAnswer, WrongAnswer
 from app.users.schemas import (
     AnswerHistoryItem,
@@ -20,6 +20,10 @@ from app.users.schemas import (
     UpdateProfileRequest,
     UserAnswerCreateRequest,
     UserAnswerResponse,
+    UserContributionCategory,
+    UserContributionPendingQuestion,
+    UserContributionQuestion,
+    UserContributionsResponse,
     UserPublic,
     WrongAnswerCreateRequest,
     WrongAnswerReviewItem,
@@ -346,3 +350,67 @@ async def get_wrong_answers(
         )
         for wrong_answer, question, category in rows
     ]
+
+
+@users_router.get("/me/contributions", response_model=UserContributionsResponse)
+async def get_my_contributions(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> UserContributionsResponse:
+    categories_result = await db.execute(
+        select(Category)
+        .where(Category.created_by_user_id == current_user.id)
+        .order_by(Category.created_at.desc())
+    )
+    categories = categories_result.scalars().all()
+
+    accepted_questions_result = await db.execute(
+        select(Question, Category)
+        .join(Category, Question.category_id == Category.id)
+        .where(Question.created_by_user_id == current_user.id)
+        .order_by(Question.created_at.desc())
+    )
+    accepted_question_rows = accepted_questions_result.all()
+
+    pending_questions_result = await db.execute(
+        select(PendingQuestion, Category)
+        .join(Category, PendingQuestion.category_id == Category.id)
+        .where(PendingQuestion.submitted_by_user_id == current_user.id)
+        .order_by(PendingQuestion.created_at.desc())
+    )
+    pending_question_rows = pending_questions_result.all()
+
+    return UserContributionsResponse(
+        categories=[
+            UserContributionCategory(
+                id=category.id,
+                slug=category.slug,
+                name=category.name,
+                created_at=category.created_at,
+            )
+            for category in categories
+        ],
+        accepted_questions=[
+            UserContributionQuestion(
+                id=question.id,
+                category_name=category.name,
+                question=question.question,
+                difficulty=question.difficulty,
+                points=question.points,
+                created_at=question.created_at,
+            )
+            for question, category in accepted_question_rows
+        ],
+        pending_questions=[
+            UserContributionPendingQuestion(
+                id=pending_question.id,
+                category_name=category.name,
+                question=pending_question.question,
+                difficulty=pending_question.difficulty,
+                points=pending_question.points,
+                status=pending_question.status,
+                created_at=pending_question.created_at,
+            )
+            for pending_question, category in pending_question_rows
+        ],
+    )

@@ -38,7 +38,7 @@ export default function RankingPage() {
         </h1>
 
         <p className="mt-3 max-w-2xl text-slate-600">
-          Strona główna pokazuje ranking, punkty i streak użytkowników.
+          Ranking pokazuje punkty z quizów, streak oraz punkty za zaakceptowane pytania.
         </p>
 
         <div className="mt-6 flex gap-3">
@@ -89,7 +89,8 @@ export default function RankingPage() {
                   <th className="px-6 py-3">Użytkownik</th>
                   <th className="px-6 py-3">LinkedIn</th>
                   <th className="px-6 py-3 text-right">Streak</th>
-                  <th className="px-6 py-3 text-right">Punkty</th>
+                  <th className="px-6 py-3 text-right">Pytania</th>
+                  <th className="px-6 py-3 text-right">Total</th>
                 </tr>
               </thead>
 
@@ -100,8 +101,16 @@ export default function RankingPage() {
                       {index + 1}
                     </td>
 
-                    <td className="px-6 py-4 font-semibold text-slate-950">
-                      {user.username}
+                    <td className="px-6 py-4">
+                      <div className="font-semibold text-slate-950">
+                        {user.username}
+                      </div>
+
+                      {user.role === "admin" ? (
+                        <div className="mt-1 text-xs font-bold uppercase text-red-600">
+                          admin
+                        </div>
+                      ) : null}
                     </td>
 
                     <td className="px-6 py-4">
@@ -114,6 +123,10 @@ export default function RankingPage() {
 
                     <td className="px-6 py-4 text-right font-bold text-amber-600">
                       ⚡ {user.current_streak}
+                    </td>
+
+                    <td className="px-6 py-4 text-right font-bold text-blue-600">
+                      🧠 {user.contribution_points}
                     </td>
 
                     <td className="px-6 py-4 text-right font-bold text-orange-600">

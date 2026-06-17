@@ -4,6 +4,7 @@
   username: string;
   role: "user" | "admin";
   points: number;
+  contribution_points: number;
   current_streak: number;
   longest_streak: number;
   last_activity_date: string | null;
@@ -19,6 +20,7 @@ export type RankingUser = {
   username: string;
   role: string;
   points: number;
+  contribution_points: number;
   current_streak: number;
   longest_streak: number;
   linkedin_url: string | null;

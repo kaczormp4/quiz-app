@@ -390,6 +390,7 @@ async def approve_pending_question(
         difficulty=pending_question.difficulty,
         explanation_html=pending_question.explanation_html,
         points=pending_question.points,
+        created_by_user_id=pending_question.submitted_by_user_id,
     )
 
     db.add(question)
@@ -408,6 +409,13 @@ async def approve_pending_question(
     pending_question.status = "accepted"
     pending_question.reviewed_by_user_id = current_user.id
     pending_question.reviewed_at = datetime.now(timezone.utc)
+
+    if pending_question.submitted_by_user_id is not None:
+        contributor = await db.get(User, pending_question.submitted_by_user_id)
+
+        if contributor is not None:
+            contributor.contribution_points += pending_question.points
+            contributor.points += pending_question.points
 
     await db.commit()
 

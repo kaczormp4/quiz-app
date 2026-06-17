@@ -17,6 +17,7 @@ class User(Base):
     role = Column(String(20), nullable=False, default="user")
 
     points = Column(Integer, nullable=False, default=0)
+    contribution_points = Column(Integer, nullable=False, default=0)
     current_streak = Column(Integer, nullable=False, default=0)
     longest_streak = Column(Integer, nullable=False, default=0)
     last_activity_date = Column(Date, nullable=True)
