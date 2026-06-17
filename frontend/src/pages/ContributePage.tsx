@@ -1,4 +1,5 @@
-﻿import { FormEvent, useMemo, useState } from "react";
+﻿import { useMemo, useState } from "react";
+import type { FormEvent } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 

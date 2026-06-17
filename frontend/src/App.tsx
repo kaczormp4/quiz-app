@@ -11,7 +11,6 @@ import ProfilePage from "./pages/ProfilePage";
 import QuestionPage from "./pages/QuestionPage";
 import QuestionsPage from "./pages/QuestionsPage";
 import HomePage from "./pages/HomePage";
-import RankingPage from "./pages/RankingPage";
 import PricingPage from "./pages/PricingPage";
 import DashboardPage from "./pages/DashboardPage";
 import RegisterPage from "./pages/RegisterPage";

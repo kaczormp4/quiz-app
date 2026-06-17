@@ -34,6 +34,9 @@ export type QuestionDetails = {
   question: string;
   difficulty: string;
   points: number;
+  created_by_username?: string | null;
+  approved_by_username?: string | null;
+  views_count?: number;
   explanation_html: string;
   answers: Answer[];
 };
@@ -62,6 +65,9 @@ export type PendingQuestionCreatePayload = {
   difficulty: string;
   explanation_html: string;
   points: number;
+  created_by_username?: string | null;
+  approved_by_username?: string | null;
+  views_count?: number;
   answers: PendingAnswerCreatePayload[];
 };
 
@@ -81,6 +87,9 @@ export type PendingQuestion = {
   difficulty: string;
   explanation_html: string;
   points: number;
+  created_by_username?: string | null;
+  approved_by_username?: string | null;
+  views_count?: number;
   status: string;
   created_at: string;
   answers: PendingAnswer[];
