@@ -1,9 +1,7 @@
-import uuid
-from datetime import datetime
+﻿import uuid
 
-from sqlalchemy import Boolean, DateTime, ForeignKey, Integer, String, Text
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String, Text, func
 from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.core.database import Base
 
@@ -11,138 +9,95 @@ from app.core.database import Base
 class Category(Base):
     __tablename__ = "categories"
 
-    id: Mapped[uuid.UUID] = mapped_column(
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    slug = Column(String(120), unique=True, nullable=False, index=True)
+    name = Column(String(120), unique=True, nullable=False)
+    description = Column(Text, nullable=False, default="")
+    is_active = Column(Boolean, nullable=False, default=True)
+    created_by_user_id = Column(
         UUID(as_uuid=True),
-        primary_key=True,
-        default=uuid.uuid4,
-    )
-
-    slug: Mapped[str] = mapped_column(
-        String(100),
-        unique=True,
-        index=True,
-        nullable=False,
-    )
-
-    name: Mapped[str] = mapped_column(
-        String(255),
-        nullable=False,
-    )
-
-    description: Mapped[str | None] = mapped_column(
-        Text,
+        ForeignKey("users.id", ondelete="SET NULL"),
         nullable=True,
+        index=True,
     )
-
-    is_active: Mapped[bool] = mapped_column(
-        Boolean,
-        default=True,
-        nullable=False,
-    )
-
-    created_at: Mapped[datetime] = mapped_column(
-        DateTime,
-        default=datetime.utcnow,
-        nullable=False,
-    )
-
-    questions: Mapped[list["Question"]] = relationship(
-        back_populates="category",
-        cascade="all, delete-orphan",
-    )
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
 
 class Question(Base):
     __tablename__ = "questions"
 
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True),
-        primary_key=True,
-        default=uuid.uuid4,
-    )
-
-    category_id: Mapped[uuid.UUID] = mapped_column(
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    category_id = Column(
         UUID(as_uuid=True),
         ForeignKey("categories.id", ondelete="CASCADE"),
+        nullable=False,
         index=True,
-        nullable=False,
     )
-
-    question: Mapped[str] = mapped_column(
-        Text,
-        nullable=False,
-    )
-
-    difficulty: Mapped[str] = mapped_column(
-        String(30),
-        nullable=False,
-    )
-
-    explanation_html: Mapped[str] = mapped_column(
-        Text,
-        nullable=False,
-    )
-
-    points: Mapped[int] = mapped_column(
-        Integer,
-        default=1,
-        nullable=False,
-    )
-
-    is_active: Mapped[bool] = mapped_column(
-        Boolean,
-        default=True,
-        nullable=False,
-    )
-
-    created_at: Mapped[datetime] = mapped_column(
-        DateTime,
-        default=datetime.utcnow,
-        nullable=False,
-    )
-
-    category: Mapped["Category"] = relationship(
-        back_populates="questions",
-    )
-
-    answers: Mapped[list["Answer"]] = relationship(
-        back_populates="question",
-        cascade="all, delete-orphan",
-    )
+    question = Column(Text, nullable=False)
+    difficulty = Column(String(30), nullable=False)
+    explanation_html = Column(Text, nullable=False)
+    points = Column(Integer, nullable=False, default=1)
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
 
 class Answer(Base):
     __tablename__ = "answers"
 
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True),
-        primary_key=True,
-        default=uuid.uuid4,
-    )
-
-    question_id: Mapped[uuid.UUID] = mapped_column(
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    question_id = Column(
         UUID(as_uuid=True),
         ForeignKey("questions.id", ondelete="CASCADE"),
+        nullable=False,
         index=True,
+    )
+    text = Column(Text, nullable=False)
+    is_correct = Column(Boolean, nullable=False, default=False)
+    position = Column(Integer, nullable=False)
+
+
+class PendingQuestion(Base):
+    __tablename__ = "pending_questions"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    category_id = Column(
+        UUID(as_uuid=True),
+        ForeignKey("categories.id", ondelete="CASCADE"),
         nullable=False,
+        index=True,
+    )
+    submitted_by_user_id = Column(
+        UUID(as_uuid=True),
+        ForeignKey("users.id", ondelete="SET NULL"),
+        nullable=True,
+        index=True,
+    )
+    reviewed_by_user_id = Column(
+        UUID(as_uuid=True),
+        ForeignKey("users.id", ondelete="SET NULL"),
+        nullable=True,
+        index=True,
     )
 
-    text: Mapped[str] = mapped_column(
-        Text,
-        nullable=False,
-    )
+    question = Column(Text, nullable=False)
+    difficulty = Column(String(30), nullable=False)
+    explanation_html = Column(Text, nullable=False)
+    points = Column(Integer, nullable=False, default=1)
 
-    is_correct: Mapped[bool] = mapped_column(
-        Boolean,
-        default=False,
-        nullable=False,
-    )
+    status = Column(String(30), nullable=False, default="pending")
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+    reviewed_at = Column(DateTime(timezone=True), nullable=True)
 
-    position: Mapped[int] = mapped_column(
-        Integer,
-        nullable=False,
-    )
 
-    question: Mapped["Question"] = relationship(
-        back_populates="answers",
+class PendingAnswer(Base):
+    __tablename__ = "pending_answers"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    pending_question_id = Column(
+        UUID(as_uuid=True),
+        ForeignKey("pending_questions.id", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
     )
+    text = Column(Text, nullable=False)
+    is_correct = Column(Boolean, nullable=False, default=False)
+    position = Column(Integer, nullable=False)

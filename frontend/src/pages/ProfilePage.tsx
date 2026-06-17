@@ -12,7 +12,10 @@ export default function ProfilePage() {
   const { user, token, setUser, logout } = useAuth();
 
   const [username, setUsername] = useState(user?.username ?? "");
+  const [bio, setBio] = useState(user?.bio ?? "");
   const [linkedinUrl, setLinkedinUrl] = useState(user?.linkedin_url ?? "");
+  const [githubUrl, setGithubUrl] = useState(user?.github_url ?? "");
+  const [websiteUrl, setWebsiteUrl] = useState(user?.website_url ?? "");
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
 
@@ -37,7 +40,10 @@ export default function ProfilePage() {
       const updatedUser = await updateProfileRequest(
         {
           username,
+          bio: bio.trim() ? bio.trim() : null,
           linkedin_url: linkedinUrl.trim() ? linkedinUrl.trim() : null,
+          github_url: githubUrl.trim() ? githubUrl.trim() : null,
+          website_url: websiteUrl.trim() ? websiteUrl.trim() : null,
         },
         token,
       );
@@ -102,13 +108,29 @@ export default function ProfilePage() {
             </div>
 
             <div>
-              <h1 className="text-3xl font-bold text-slate-950">
-                {user.username}
-              </h1>
+              <div className="flex items-center gap-2">
+                <h1 className="text-3xl font-bold text-slate-950">
+                  {user.username}
+                </h1>
+
+                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold uppercase text-slate-600">
+                  {user.role}
+                </span>
+              </div>
+
               <p className="mt-1 text-sm text-slate-500">{user.email}</p>
-              <p className="mt-2 text-sm font-bold text-orange-600">
-                🔥 {user.points} pkt
-              </p>
+
+              <div className="mt-3 flex flex-wrap gap-2">
+                <span className="rounded-full bg-orange-100 px-3 py-1 text-sm font-bold text-orange-700">
+                  🔥 {user.points} pkt
+                </span>
+                <span className="rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-700">
+                  ⚡ Streak: {user.current_streak}
+                </span>
+                <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-bold text-slate-700">
+                  Best: {user.longest_streak}
+                </span>
+              </div>
             </div>
           </div>
 
@@ -124,7 +146,7 @@ export default function ProfilePage() {
 
       <div className="grid gap-6">
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-slate-950">Dane profilu</h2>
+          <h2 className="text-xl font-bold text-slate-950">Profil publiczny</h2>
 
           <form onSubmit={handleProfileSubmit} className="mt-6 space-y-4">
             <label className="block">
@@ -139,14 +161,42 @@ export default function ProfilePage() {
             </label>
 
             <label className="block">
-              <span className="text-sm font-medium text-slate-700">
-                LinkedIn URL
-              </span>
+              <span className="text-sm font-medium text-slate-700">Bio</span>
+              <textarea
+                value={bio}
+                onChange={(event) => setBio(event.target.value)}
+                className="mt-1 min-h-28 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+                placeholder="Napisz kilka słów o sobie..."
+              />
+            </label>
+
+            <label className="block">
+              <span className="text-sm font-medium text-slate-700">LinkedIn URL</span>
               <input
                 value={linkedinUrl}
                 onChange={(event) => setLinkedinUrl(event.target.value)}
                 className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
                 placeholder="https://www.linkedin.com/in/twoj-profil"
+              />
+            </label>
+
+            <label className="block">
+              <span className="text-sm font-medium text-slate-700">GitHub URL</span>
+              <input
+                value={githubUrl}
+                onChange={(event) => setGithubUrl(event.target.value)}
+                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+                placeholder="https://github.com/twoj-login"
+              />
+            </label>
+
+            <label className="block">
+              <span className="text-sm font-medium text-slate-700">Website URL</span>
+              <input
+                value={websiteUrl}
+                onChange={(event) => setWebsiteUrl(event.target.value)}
+                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+                placeholder="https://twojastrona.pl"
               />
             </label>
 
@@ -176,33 +226,25 @@ export default function ProfilePage() {
           <h2 className="text-xl font-bold text-slate-950">Zmiana hasła</h2>
 
           <form onSubmit={handlePasswordSubmit} className="mt-6 space-y-4">
-            <label className="block">
-              <span className="text-sm font-medium text-slate-700">
-                Aktualne hasło
-              </span>
-              <input
-                type="password"
-                value={currentPassword}
-                onChange={(event) => setCurrentPassword(event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-                minLength={6}
-                required
-              />
-            </label>
+            <input
+              type="password"
+              value={currentPassword}
+              onChange={(event) => setCurrentPassword(event.target.value)}
+              className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+              placeholder="Aktualne hasło"
+              minLength={6}
+              required
+            />
 
-            <label className="block">
-              <span className="text-sm font-medium text-slate-700">
-                Nowe hasło
-              </span>
-              <input
-                type="password"
-                value={newPassword}
-                onChange={(event) => setNewPassword(event.target.value)}
-                className="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
-                minLength={6}
-                required
-              />
-            </label>
+            <input
+              type="password"
+              value={newPassword}
+              onChange={(event) => setNewPassword(event.target.value)}
+              className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-slate-950"
+              placeholder="Nowe hasło"
+              minLength={6}
+              required
+            />
 
             {passwordMessage ? (
               <div className="rounded-2xl bg-green-50 px-4 py-3 text-sm font-medium text-green-700">

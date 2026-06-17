@@ -16,9 +16,7 @@ export function Header() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `text-sm font-medium ${
-                isActive ? "text-slate-950" : "text-slate-500"
-              }`
+              `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
             }
           >
             Ranking
@@ -29,24 +27,49 @@ export function Header() {
               <NavLink
                 to="/quizzes"
                 className={({ isActive }) =>
-                  `text-sm font-medium ${
-                    isActive ? "text-slate-950" : "text-slate-500"
-                  }`
+                  `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
                 }
               >
                 Quizy
               </NavLink>
 
               <NavLink
-                to="/review"
+                to="/contribute"
                 className={({ isActive }) =>
-                  `text-sm font-medium ${
-                    isActive ? "text-slate-950" : "text-slate-500"
-                  }`
+                  `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
                 }
               >
-                Do powtórzenia
+                Dodaj pytania
               </NavLink>
+
+              <NavLink
+                to="/review"
+                className={({ isActive }) =>
+                  `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
+                }
+              >
+                Powtórki
+              </NavLink>
+
+              <NavLink
+                to="/history"
+                className={({ isActive }) =>
+                  `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
+                }
+              >
+                Historia
+              </NavLink>
+
+              {user?.role === "admin" ? (
+                <NavLink
+                  to="/admin/pending"
+                  className={({ isActive }) =>
+                    `text-sm font-medium ${isActive ? "text-slate-950" : "text-red-600"}`
+                  }
+                >
+                  Admin
+                </NavLink>
+              ) : null}
             </>
           ) : null}
 
@@ -66,7 +89,7 @@ export function Header() {
                   {user.username}
                 </p>
                 <p className="text-xs font-semibold text-orange-600">
-                  🔥 {user.points} pkt
+                  🔥 {user.points} pkt · ⚡ {user.current_streak}
                 </p>
               </div>
             </Link>

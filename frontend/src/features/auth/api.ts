@@ -1,5 +1,6 @@
 ﻿import { apiClient } from "../../shared/api/client";
 import type {
+  AnswerHistoryItem,
   AuthResponse,
   ChangePasswordPayload,
   LoginPayload,
@@ -8,6 +9,8 @@ import type {
   RegisterPayload,
   UpdateProfilePayload,
   User,
+  UserAnswerCreatePayload,
+  UserAnswerResponse,
   WrongAnswerCreatePayload,
   WrongAnswerReviewItem,
 } from "./types";
@@ -52,9 +55,18 @@ export const changePasswordRequest = (
     token,
   });
 
-export const addQuizVisitPointRequest = (token: string) =>
-  apiClient<User>("/users/me/quiz-visit", {
+export const recordAnswerRequest = (
+  payload: UserAnswerCreatePayload,
+  token: string,
+) =>
+  apiClient<UserAnswerResponse>("/users/me/answers", {
     method: "POST",
+    body: payload,
+    token,
+  });
+
+export const getAnswerHistoryRequest = (token: string) =>
+  apiClient<AnswerHistoryItem[]>("/users/me/answers", {
     token,
   });
 

@@ -1,4 +1,5 @@
-﻿from uuid import UUID
+﻿from datetime import date, timedelta
+from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
@@ -6,9 +7,10 @@ from sqlalchemy import desc, func, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import AsyncSessionLocal
-from app.quizzes.models import Category, Question
-from app.users.models import User, WrongAnswer
+from app.quizzes.models import Answer, Category, Question
+from app.users.models import User, UserAnswer, WrongAnswer
 from app.users.schemas import (
+    AnswerHistoryItem,
     AuthResponse,
     ChangePasswordRequest,
     LoginRequest,
@@ -16,16 +18,13 @@ from app.users.schemas import (
     RankingUser,
     RegisterRequest,
     UpdateProfileRequest,
+    UserAnswerCreateRequest,
+    UserAnswerResponse,
     UserPublic,
     WrongAnswerCreateRequest,
     WrongAnswerReviewItem,
 )
-from app.users.security import (
-    create_access_token,
-    decode_access_token,
-    hash_password,
-    verify_password,
-)
+from app.users.security import create_access_token, decode_access_token, hash_password, verify_password
 
 
 auth_router = APIRouter(prefix="/auth", tags=["auth"])
@@ -47,48 +46,49 @@ async def get_current_user(
     user_id = payload.get("sub")
 
     if not user_id:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid token payload",
-        )
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token payload")
 
     try:
         parsed_user_id = UUID(user_id)
     except ValueError as error:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid user id",
-        ) from error
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid user id") from error
 
     result = await db.execute(select(User).where(User.id == parsed_user_id))
     user = result.scalar_one_or_none()
 
     if user is None:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="User not found",
-        )
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found")
 
     return user
 
 
-def normalize_optional_url(value: str | None) -> str | None:
+def normalize_optional_text(value: str | None) -> str | None:
     if value is None:
         return None
 
     normalized = value.strip()
 
-    if not normalized:
-        return None
+    return normalized or None
 
-    return normalized
+
+def update_user_streak(user: User) -> None:
+    today = date.today()
+
+    if user.last_activity_date is None:
+        user.current_streak = 1
+    elif user.last_activity_date == today:
+        return
+    elif user.last_activity_date == today - timedelta(days=1):
+        user.current_streak += 1
+    else:
+        user.current_streak = 1
+
+    user.last_activity_date = today
+    user.longest_streak = max(user.longest_streak, user.current_streak)
 
 
 @auth_router.post("/register", response_model=AuthResponse, status_code=status.HTTP_201_CREATED)
-async def register(
-    payload: RegisterRequest,
-    db: AsyncSession = Depends(get_db),
-) -> AuthResponse:
+async def register(payload: RegisterRequest, db: AsyncSession = Depends(get_db)) -> AuthResponse:
     email = payload.email.strip().lower()
     username = payload.username.strip()
 
@@ -112,7 +112,10 @@ async def register(
         email=email,
         username=username,
         password_hash=hash_password(payload.password),
+        role="user",
         points=0,
+        current_streak=0,
+        longest_streak=0,
     )
 
     db.add(user)
@@ -121,17 +124,11 @@ async def register(
 
     access_token = create_access_token(subject=str(user.id))
 
-    return AuthResponse(
-        access_token=access_token,
-        user=UserPublic.model_validate(user),
-    )
+    return AuthResponse(access_token=access_token, user=UserPublic.model_validate(user))
 
 
 @auth_router.post("/login", response_model=AuthResponse)
-async def login(
-    payload: LoginRequest,
-    db: AsyncSession = Depends(get_db),
-) -> AuthResponse:
+async def login(payload: LoginRequest, db: AsyncSession = Depends(get_db)) -> AuthResponse:
     login_value = payload.login.strip().lower()
 
     result = await db.execute(
@@ -145,17 +142,11 @@ async def login(
     user = result.scalar_one_or_none()
 
     if user is None or not verify_password(payload.password, user.password_hash):
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid login or password",
-        )
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid login or password")
 
     access_token = create_access_token(subject=str(user.id))
 
-    return AuthResponse(
-        access_token=access_token,
-        user=UserPublic.model_validate(user),
-    )
+    return AuthResponse(access_token=access_token, user=UserPublic.model_validate(user))
 
 
 @auth_router.get("/me", response_model=UserPublic)
@@ -164,12 +155,10 @@ async def me(current_user: User = Depends(get_current_user)) -> UserPublic:
 
 
 @users_router.get("/ranking", response_model=list[RankingUser])
-async def ranking(
-    db: AsyncSession = Depends(get_db),
-) -> list[RankingUser]:
+async def ranking(db: AsyncSession = Depends(get_db)) -> list[RankingUser]:
     result = await db.execute(
         select(User)
-        .order_by(desc(User.points), User.username.asc())
+        .order_by(desc(User.points), desc(User.current_streak), User.username.asc())
         .limit(50)
     )
     users = result.scalars().all()
@@ -194,13 +183,13 @@ async def update_profile(
     existing_user = existing_user_result.scalar_one_or_none()
 
     if existing_user is not None:
-        raise HTTPException(
-            status_code=status.HTTP_409_CONFLICT,
-            detail="Username is already taken",
-        )
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Username is already taken")
 
     current_user.username = username
-    current_user.linkedin_url = normalize_optional_url(payload.linkedin_url)
+    current_user.bio = normalize_optional_text(payload.bio)
+    current_user.linkedin_url = normalize_optional_text(payload.linkedin_url)
+    current_user.github_url = normalize_optional_text(payload.github_url)
+    current_user.website_url = normalize_optional_text(payload.website_url)
 
     await db.commit()
     await db.refresh(current_user)
@@ -215,10 +204,7 @@ async def change_password(
     db: AsyncSession = Depends(get_db),
 ) -> MessageResponse:
     if not verify_password(payload.current_password, current_user.password_hash):
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Current password is incorrect",
-        )
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Current password is incorrect")
 
     current_user.password_hash = hash_password(payload.new_password)
 
@@ -227,17 +213,81 @@ async def change_password(
     return MessageResponse(message="Password changed successfully")
 
 
-@users_router.post("/me/quiz-visit", response_model=UserPublic)
-async def add_quiz_visit_point(
+@users_router.post("/me/answers", response_model=UserAnswerResponse, status_code=status.HTTP_201_CREATED)
+async def record_answer(
+    payload: UserAnswerCreateRequest,
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
-) -> UserPublic:
+) -> UserAnswerResponse:
+    question_result = await db.execute(select(Question).where(Question.id == payload.question_id))
+    question = question_result.scalar_one_or_none()
+
+    if question is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Question not found")
+
+    answer_result = await db.execute(
+        select(Answer).where(
+            Answer.id == payload.selected_answer_id,
+            Answer.question_id == payload.question_id,
+        )
+    )
+    answer = answer_result.scalar_one_or_none()
+
+    if answer is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Selected answer not found")
+
+    user_answer = UserAnswer(
+        user_id=current_user.id,
+        question_id=payload.question_id,
+        selected_answer_id=payload.selected_answer_id,
+        is_correct=payload.is_correct,
+    )
+
     current_user.points += 1
+    update_user_streak(current_user)
+
+    db.add(user_answer)
 
     await db.commit()
     await db.refresh(current_user)
 
-    return UserPublic.model_validate(current_user)
+    return UserAnswerResponse(
+        message="Answer recorded successfully",
+        user=UserPublic.model_validate(current_user),
+    )
+
+
+@users_router.get("/me/answers", response_model=list[AnswerHistoryItem])
+async def get_answer_history(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> list[AnswerHistoryItem]:
+    result = await db.execute(
+        select(UserAnswer, Question, Answer, Category)
+        .join(Question, UserAnswer.question_id == Question.id)
+        .join(Answer, UserAnswer.selected_answer_id == Answer.id)
+        .join(Category, Question.category_id == Category.id)
+        .where(UserAnswer.user_id == current_user.id)
+        .order_by(desc(UserAnswer.created_at))
+        .limit(100)
+    )
+
+    rows = result.all()
+
+    return [
+        AnswerHistoryItem(
+            id=user_answer.id,
+            question_id=question.id,
+            question=question.question,
+            selected_answer_id=answer.id,
+            selected_answer_text=answer.text,
+            is_correct=user_answer.is_correct,
+            category_slug=category.slug,
+            category_name=category.name,
+            created_at=user_answer.created_at,
+        )
+        for user_answer, question, answer, category in rows
+    ]
 
 
 @users_router.post("/me/wrong-answers", response_model=MessageResponse, status_code=status.HTTP_201_CREATED)
@@ -246,16 +296,11 @@ async def add_wrong_answer(
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ) -> MessageResponse:
-    question_result = await db.execute(
-        select(Question).where(Question.id == payload.question_id)
-    )
+    question_result = await db.execute(select(Question).where(Question.id == payload.question_id))
     question = question_result.scalar_one_or_none()
 
     if question is None:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Question not found",
-        )
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Question not found")
 
     existing_result = await db.execute(
         select(WrongAnswer).where(
@@ -266,10 +311,7 @@ async def add_wrong_answer(
     existing_wrong_answer = existing_result.scalar_one_or_none()
 
     if existing_wrong_answer is None:
-        wrong_answer = WrongAnswer(
-            user_id=current_user.id,
-            question_id=payload.question_id,
-        )
+        wrong_answer = WrongAnswer(user_id=current_user.id, question_id=payload.question_id)
         db.add(wrong_answer)
         await db.commit()
 

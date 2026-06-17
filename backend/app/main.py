@@ -4,7 +4,7 @@ from sqlalchemy import text
 
 from app.core.config import get_cors_origins, settings
 from app.core.database import AsyncSessionLocal
-from app.quizzes.routes import router as quizzes_router
+from app.quizzes.routes import admin_router, router as quizzes_router
 from app.users.routes import auth_router, users_router
 
 
@@ -47,5 +47,6 @@ async def health_db():
 
 
 app.include_router(quizzes_router)
+app.include_router(admin_router)
 app.include_router(auth_router)
 app.include_router(users_router)

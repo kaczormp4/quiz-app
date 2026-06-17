@@ -7,6 +7,11 @@
   created_at: string;
 };
 
+export type CategoryCreatePayload = {
+  name: string;
+  description: string;
+};
+
 export type QuestionSummary = {
   id: string;
   question: string;
@@ -41,4 +46,43 @@ export type SubmitAnswerResponse = {
     text: string;
   };
   explanation_html: string;
+};
+
+export type PendingAnswerCreatePayload = {
+  text: string;
+  is_correct: boolean;
+  position: number;
+};
+
+export type PendingQuestionCreatePayload = {
+  question: string;
+  difficulty: string;
+  explanation_html: string;
+  points: number;
+  answers: PendingAnswerCreatePayload[];
+};
+
+export type PendingAnswer = {
+  id: string;
+  text: string;
+  is_correct: boolean;
+  position: number;
+};
+
+export type PendingQuestion = {
+  id: string;
+  category_id: string;
+  category_name: string;
+  submitted_by_username: string | null;
+  question: string;
+  difficulty: string;
+  explanation_html: string;
+  points: number;
+  status: string;
+  created_at: string;
+  answers: PendingAnswer[];
+};
+
+export type MessageResponse = {
+  message: string;
 };

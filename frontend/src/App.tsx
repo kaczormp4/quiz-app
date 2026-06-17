@@ -2,7 +2,10 @@
 
 import { Header } from "./shared/ui/Header";
 import { ProtectedRoute } from "./shared/ui/ProtectedRoute";
+import AdminPendingQuestionsPage from "./pages/AdminPendingQuestionsPage";
 import CategoriesPage from "./pages/CategoriesPage";
+import ContributePage from "./pages/ContributePage";
+import HistoryPage from "./pages/HistoryPage";
 import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 import QuestionPage from "./pages/QuestionPage";
@@ -47,10 +50,37 @@ export default function App() {
         />
 
         <Route
+          path="/contribute"
+          element={
+            <ProtectedRoute>
+              <ContributePage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/admin/pending"
+          element={
+            <ProtectedRoute>
+              <AdminPendingQuestionsPage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
           path="/review"
           element={
             <ProtectedRoute>
               <ReviewPage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/history"
+          element={
+            <ProtectedRoute>
+              <HistoryPage />
             </ProtectedRoute>
           }
         />

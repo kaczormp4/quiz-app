@@ -5,8 +5,8 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
 import { useAuth } from "../app/providers/AuthProvider";
 import {
-  addQuizVisitPointRequest,
   addWrongAnswerRequest,
+  recordAnswerRequest,
 } from "../features/auth/api";
 import {
   getCategoryQuestions,
@@ -63,18 +63,26 @@ export default function QuestionsPage() {
         answer_id: answerId,
       });
     },
-    onSuccess: async (response) => {
+    onSuccess: async (response, answerId) => {
       setResult(response);
 
-      if (token) {
+      if (token && question) {
         try {
-          const updatedUser = await addQuizVisitPointRequest(token);
+          const recordResponse = await recordAnswerRequest(
+            {
+              question_id: question.id,
+              selected_answer_id: answerId,
+              is_correct: response.is_correct,
+            },
+            token,
+          );
 
-          setUser(updatedUser);
+          setUser(recordResponse.user);
 
           await queryClient.invalidateQueries({ queryKey: ["ranking"] });
+          await queryClient.invalidateQueries({ queryKey: ["answer-history"] });
         } catch {
-          // Points update should not block quiz flow.
+          // Recording answer should not block quiz flow.
         }
       }
 
@@ -186,6 +194,10 @@ export default function QuestionsPage() {
               <span className="rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-orange-700">
                 🔥 +1 za odpowiedź
               </span>
+
+              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
+                ⚡ streak za aktywność dzienną
+              </span>
             </div>
 
             <h1 className="text-2xl font-bold text-slate-950">
@@ -237,8 +249,8 @@ export default function QuestionsPage() {
                   }`}
                 >
                   {result.is_correct
-                    ? "Poprawna odpowiedź — dodano 🔥 +1 pkt"
-                    : "Niepoprawna odpowiedź — dodano 🔥 +1 pkt i pytanie do powtórki"}
+                    ? "Poprawna odpowiedź — zapisano w historii i dodano 🔥 +1 pkt"
+                    : "Niepoprawna odpowiedź — zapisano w historii, dodano 🔥 +1 pkt i pytanie do powtórki"}
                 </p>
 
                 <div
