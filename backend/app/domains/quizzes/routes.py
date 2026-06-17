@@ -9,8 +9,8 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
-from app.quizzes.models import Answer, Category, PendingAnswer, PendingQuestion, Question
-from app.quizzes.schemas import (
+from app.domains.quizzes.models import Answer, Category, PendingAnswer, PendingQuestion, Question
+from app.domains.quizzes.schemas import (
     AnswerPublic,
     CategoryCreateRequest,
     CategoryPublic,
@@ -22,8 +22,8 @@ from app.quizzes.schemas import (
     SubmitAnswerRequest,
     SubmitAnswerResponse,
 )
-from app.users.models import User
-from app.users.routes import get_current_user
+from app.domains.users.models import User
+from app.domains.users.routes import get_current_user
 
 router = APIRouter(prefix="/quizzes", tags=["quizzes"])
 admin_router = APIRouter(prefix="/admin", tags=["admin"])

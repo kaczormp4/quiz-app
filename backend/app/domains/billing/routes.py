@@ -7,8 +7,8 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
-from app.billing.models import Plan, Subscription
-from app.billing.schemas import (
+from app.domains.billing.models import Plan, Subscription
+from app.domains.billing.schemas import (
     BillingStatusResponse,
     CheckoutResponse,
     CreateCheckoutRequest,
@@ -16,8 +16,8 @@ from app.billing.schemas import (
     SubscriptionPublic,
 )
 from app.core.database import get_db
-from app.users.models import User
-from app.users.routes import get_current_user
+from app.domains.users.models import User
+from app.domains.users.routes import get_current_user
 
 router = APIRouter(prefix="/billing", tags=["billing"])
 
