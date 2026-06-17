@@ -11,6 +11,7 @@ import ProfilePage from "./pages/ProfilePage";
 import QuestionPage from "./pages/QuestionPage";
 import QuestionsPage from "./pages/QuestionsPage";
 import RankingPage from "./pages/RankingPage";
+import PricingPage from "./pages/PricingPage";
 import RegisterPage from "./pages/RegisterPage";
 import ReviewPage from "./pages/ReviewPage";
 
@@ -21,6 +22,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<RankingPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
 
         <Route
           path="/quizzes"
@@ -100,3 +102,4 @@ export default function App() {
     </div>
   );
 }
+

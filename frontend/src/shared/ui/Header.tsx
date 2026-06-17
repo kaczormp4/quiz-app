@@ -24,6 +24,15 @@ export function Header() {
             {t("nav.ranking")}
           </NavLink>
 
+          <NavLink
+            to="/pricing"
+            className={({ isActive }) =>
+              `text-sm font-medium ${isActive ? "text-slate-950" : "text-slate-500"}`
+            }
+          >
+            {t("nav.pricing")}
+          </NavLink>
+
           {isAuthenticated ? (
             <>
               <NavLink
@@ -117,3 +126,4 @@ export function Header() {
     </header>
   );
 }
+

@@ -1,6 +1,6 @@
 ﻿export const enTranslations = {
   common: {
-    appName: "Quiz App",
+    appName: "DevPrep",
     loading: "Loading...",
     saving: "Saving...",
     submit: "Submit",
@@ -33,6 +33,7 @@
 
   nav: {
     ranking: "Ranking",
+    pricing: "Pricing",
     quizzes: "Quizzes",
     contribute: "Add questions",
     review: "Review",
@@ -63,6 +64,43 @@
     registerError: "Could not register.",
     alreadyHaveAccount: "Already have an account?",
     minPassword: "Minimum 6 characters",
+  },
+
+  home: {
+    badge: "Technical interview preparation",
+    title: "Learn faster. Practice smarter. Walk into interviews prepared.",
+    subtitle: "DevPrep is a learning platform for anyone preparing for technical interviews — frontend developers, backend developers, juniors, mids and seniors.",
+    primaryCta: "Start learning",
+    secondaryCta: "View ranking",
+    loginCta: "Log in",
+    registerCta: "Create account",
+
+    statQuestions: "Interview-style questions",
+    statReview: "Review mode",
+    statProgress: "Progress tracking",
+
+    featureTitle: "Everything you need to prepare",
+    featureSubtitle: "Practice real technical topics, track your progress and improve weak areas before the interview.",
+
+    featureQuizzesTitle: "Topic-based quizzes",
+    featureQuizzesText: "Practice questions grouped by categories like frontend, JavaScript, HTTP, React and general computer science.",
+
+    featureReviewTitle: "Learn from mistakes",
+    featureReviewText: "Wrong answers are saved to your review list so you can repeat what actually needs work.",
+
+    featureCommunityTitle: "Community questions",
+    featureCommunityText: "Users can submit new questions. Admins approve them before they become part of the platform.",
+
+    howItWorksTitle: "How it works",
+    stepOneTitle: "Choose a topic",
+    stepOneText: "Pick the area you want to improve before your next interview.",
+    stepTwoTitle: "Answer questions",
+    stepTwoText: "Get instant feedback and explanations after every answer.",
+    stepThreeTitle: "Track progress",
+    stepThreeText: "Build streaks, collect points and review your weak spots.",
+
+    rankingTitle: "Community leaderboard",
+    rankingSubtitle: "See who is practicing regularly and contributing new interview questions.",
   },
 
   ranking: {
@@ -179,7 +217,62 @@
     reject: "Reject",
   },
 
+  pricing: {
+    title: "Choose your interview prep plan",
+    subtitle: "Start for free, then upgrade when you want unlimited practice, advanced topics and focused interview preparation.",
+    badge: "Pricing",
+
+    freeName: "Free",
+    freePrice: "0 zł",
+    freePeriod: "forever",
+    freeDescription: "Perfect for trying DevPrep and building a habit.",
+    freeFeatureOne: "Basic quiz categories",
+    freeFeatureTwo: "Limited daily questions",
+    freeFeatureThree: "Ranking access",
+    freeFeatureFour: "Basic progress tracking",
+    freeCta: "Start free",
+
+    proName: "Pro",
+    proPrice: "29 zł",
+    proPeriod: "per month",
+    proDescription: "Best for regular preparation before technical interviews.",
+    proFeatureOne: "Unlimited questions",
+    proFeatureTwo: "All categories and difficulty levels",
+    proFeatureThree: "Advanced review mode",
+    proFeatureFour: "Answer history and progress tracking",
+    proFeatureFive: "Senior-level interview topics",
+    proCta: "Upgrade to Pro",
+
+    sprintName: "Interview Sprint",
+    sprintPrice: "79 zł",
+    sprintPeriod: "30 days",
+    sprintDescription: "For people who have an interview soon and need focused practice.",
+    sprintFeatureOne: "Full access for 30 days",
+    sprintFeatureTwo: "Frontend interview path",
+    sprintFeatureThree: "React and JavaScript focus",
+    sprintFeatureFour: "Weak areas review",
+    sprintCta: "Start sprint",
+
+    lifetimeName: "Lifetime Early Access",
+    lifetimePrice: "199 zł",
+    lifetimePeriod: "one-time",
+    lifetimeDescription: "Early supporter deal for the first users.",
+    lifetimeFeatureOne: "Lifetime access",
+    lifetimeFeatureTwo: "All future updates",
+    lifetimeFeatureThree: "Early user badge later",
+    lifetimeFeatureFour: "Limited offer",
+    lifetimeCta: "Get lifetime access",
+
+    popular: "Most popular",
+    comingSoon: "Payments coming soon",
+    note: "Payments are not enabled yet. This page is ready for future Stripe, Paddle or PayU integration.",
+    faqTitle: "Simple pricing for serious preparation",
+    faqText: "The free plan helps you start. Paid plans are designed for people who want structured, unlimited and focused interview preparation.",
+  },
+
   protectedRoute: {
     loadingUser: "Loading user...",
   },
 };
+
+
