@@ -18,6 +18,8 @@ class User(Base):
 
     points = Column(Integer, nullable=False, default=0)
     contribution_points = Column(Integer, nullable=False, default=0)
+    is_pro = Column(Boolean, nullable=False, default=False)
+    subscription_expires_at = Column(DateTime(timezone=True), nullable=True)
     current_streak = Column(Integer, nullable=False, default=0)
     longest_streak = Column(Integer, nullable=False, default=0)
     last_activity_date = Column(Date, nullable=True)

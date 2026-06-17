@@ -47,6 +47,8 @@ class UserPublic(BaseModel):
     role: str
     points: int
     contribution_points: int
+    is_pro: bool
+    subscription_expires_at: datetime | None
     current_streak: int
     longest_streak: int
     last_activity_date: date | None = None
@@ -65,6 +67,8 @@ class RankingUser(BaseModel):
     role: str
     points: int
     contribution_points: int
+    is_pro: bool
+    subscription_expires_at: datetime | None
     current_streak: int
     longest_streak: int
     linkedin_url: str | None = None
