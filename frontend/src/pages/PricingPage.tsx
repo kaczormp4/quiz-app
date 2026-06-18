@@ -1,4 +1,4 @@
-﻿import { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
 
@@ -144,7 +144,7 @@ async function createCheckout(
 }
 
 function formatPrice(amount: number, currency: string) {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("pl-PL", {
     style: "currency",
     currency,
   }).format(amount / 100);
@@ -198,7 +198,7 @@ function getHighlight(plan: Plan) {
   }
 
   if (plan.code === "pro_monthly") {
-    return "$9.99/month, but requires at least 12 months.";
+    return `${formatPrice(plan.price_amount, plan.currency)} / month, minimum 12 months.`;
   }
 
   if (plan.code === "pro_yearly") {
@@ -265,6 +265,7 @@ export default function PricingPage() {
 
       return {
         ...fallbackPlan,
+        ...(fetchedPlan ?? {}),
         id: fetchedPlan?.id ?? fallbackPlan.id,
         is_active: fetchedPlan?.is_active ?? fallbackPlan.is_active,
       };

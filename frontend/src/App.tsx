@@ -17,6 +17,7 @@ import VerifyEmailPage from "./pages/VerifyEmailPage";
 import DashboardPage from "./pages/DashboardPage";
 import RegisterPage from "./pages/RegisterPage";
 import ReviewPage from "./pages/ReviewPage";
+import { BillingSuccessPage } from "./pages/BillingSuccessPage";
 
 export default function App() {
   return (
@@ -111,7 +112,8 @@ export default function App() {
 
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-      </Routes>
+                <Route path="/billing/success" element={<BillingSuccessPage />} />
+        </Routes>
     </div>
   );
 }

@@ -1,10 +1,11 @@
-﻿from fastapi import FastAPI
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
 
 from app.core.config import get_cors_origins, settings
 from app.core.database import AsyncSessionLocal
 from app.domains.billing.routes import router as billing_router
+from app.domains.billing.stripe_routes import router as stripe_billing_router
 from app.domains.quizzes.routes import admin_router, router as quizzes_router
 from app.domains.users.routes import auth_router, users_router
 
@@ -49,6 +50,7 @@ async def health_db():
 
 app.include_router(quizzes_router)
 app.include_router(billing_router)
+app.include_router(stripe_billing_router)
 app.include_router(admin_router)
 app.include_router(auth_router)
 app.include_router(users_router)
