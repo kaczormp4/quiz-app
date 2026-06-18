@@ -2,6 +2,8 @@
 
 import os
 
+from fastapi import HTTPException, status
+
 
 async def send_email(
     *,
@@ -26,17 +28,31 @@ async def send_email(
 
     try:
         import resend
-    except ImportError:
-        print("resend package is not installed. Email was not sent.")
-        return
 
-    resend.api_key = api_key
+        resend.api_key = api_key
 
-    resend.Emails.send(
-        {
-            "from": email_from,
-            "to": [to],
-            "subject": subject,
-            "html": html,
-        }
-    )
+        resend.Emails.send(
+            {
+                "from": email_from,
+                "to": [to],
+                "subject": subject,
+                "html": html,
+            }
+        )
+    except Exception as exc:
+        print("")
+        print("======================================")
+        print("EMAIL PROVIDER ERROR")
+        print(f"TO: {to}")
+        print(f"FROM: {email_from}")
+        print(f"ERROR: {exc}")
+        print("======================================")
+        print("")
+
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail=(
+                "Email provider error. "
+                "Check RESEND_API_KEY, EMAIL_FROM and Resend domain verification."
+            ),
+        )
