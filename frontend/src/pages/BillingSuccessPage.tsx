@@ -1,7 +1,9 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
 type ConfirmState = "loading" | "success" | "error";
+
+const API_BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
 function getAuthToken() {
   return (
@@ -42,7 +44,7 @@ export function BillingSuccessPage() {
       }
 
       try {
-        const response = await fetch("http://localhost:8000/billing/stripe/confirm", {
+        const response = await fetch(`${API_BASE_URL}/billing/stripe/confirm`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
