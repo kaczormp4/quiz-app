@@ -2,7 +2,9 @@
 
 Full-stack quiz application built with **FastAPI**, **PostgreSQL**, **React**, **TypeScript**, **Vite** and **Tailwind CSS**.
 
-The project is structured as a monorepo with a Python backend and a React frontend. The backend exposes quiz categories, questions, answers and answer validation endpoints. The frontend displays categories and runs a quiz flow using a question slider.
+The project is structured as a monorepo with a Python backend and a React frontend. The backend exposes authentication, email verification, quiz categories, questions, answers, answer validation, user progress and billing-related endpoints. The frontend displays categories, runs a quiz flow using a question slider and supports account-based features such as login, email verification and protected user features.
+
+---
 
 ## Live Demo
 
@@ -41,6 +43,8 @@ https://quiz-app-api-gujn.onrender.com/quizzes/categories
 - asyncpg
 - psycopg
 - Pydantic Settings
+- JWT authentication
+- Resend for transactional emails
 - Docker Compose for local PostgreSQL
 
 ### Frontend
@@ -58,6 +62,7 @@ https://quiz-app-api-gujn.onrender.com/quizzes/categories
 - Frontend: Vercel
 - Backend: Render Web Service
 - Database: Neon PostgreSQL
+- Email delivery: Resend
 
 ---
 
@@ -68,18 +73,28 @@ quiz-app/
   backend/
     alembic/
     app/
+      auth/
+        email_verification.py
       core/
         config.py
         database.py
-      quizzes/
-        models.py
-        routes.py
-        schemas.py
+        email.py
+      domains/
+        billing/
+          models.py
+          routes.py
+          schemas.py
+        quizzes/
+          models.py
+          routes.py
+          schemas.py
+        users/
+          models.py
+          routes.py
+          schemas.py
       seed/
         data.py
         run.py
-      users/
-        models.py
       main.py
     alembic.ini
     requirements.txt
@@ -91,6 +106,7 @@ quiz-app/
     src/
       app/
         providers/
+          AuthProvider.tsx
           QueryProvider.tsx
       features/
         quizzes/
@@ -98,16 +114,25 @@ quiz-app/
           types.ts
       pages/
         CategoriesPage.tsx
+        DashboardPage.tsx
+        LoginPage.tsx
+        PricingPage.tsx
+        ProfilePage.tsx
         QuestionsPage.tsx
-        QuestionPage.tsx
+        RegisterPage.tsx
+        VerifyEmailPage.tsx
       shared/
         api/
           client.ts
+        ui/
+          EmailVerificationBanner.tsx
+          Header.tsx
       App.tsx
       main.tsx
       index.css
     package.json
     vite.config.ts
+    vercel.json
     .env.example
 
   docker-compose.yml
@@ -144,10 +169,16 @@ app.add_middleware(
 )
 ```
 
-Quiz routes are attached with:
+Main backend areas:
 
-```python
-app.include_router(quizzes_router)
+```txt
+- authentication
+- email verification
+- users
+- quizzes
+- billing/plans
+- admin question approval
+- seed data
 ```
 
 ---
@@ -174,12 +205,30 @@ CORS_ORIGINS=http://localhost:5173,http://localhost:5174,http://localhost:5175,h
 JWT_SECRET_KEY=local-dev-secret-change-me
 JWT_ALGORITHM=HS256
 JWT_ACCESS_TOKEN_EXPIRE_MINUTES=60
+
+RESEND_API_KEY=
+EMAIL_FROM=DevPrep <onboarding@resend.dev>
+FRONTEND_URL=http://localhost:5173
 ```
 
 Production `DATABASE_URL` example:
 
 ```env
 DATABASE_URL=postgresql+asyncpg://user:password@host.neon.tech/neondb?ssl=require
+```
+
+Production email variables:
+
+```env
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxx
+EMAIL_FROM=DevPrep <onboarding@resend.dev>
+FRONTEND_URL=https://quiz-app-sand.vercel.app
+```
+
+For production with a custom verified domain, `EMAIL_FROM` can be changed to:
+
+```env
+EMAIL_FROM=DevPrep <noreply@yourdomain.com>
 ```
 
 ---
@@ -224,7 +273,7 @@ volumes:
 Model file:
 
 ```txt
-backend/app/users/models.py
+backend/app/domains/users/models.py
 ```
 
 Fields:
@@ -235,18 +284,33 @@ users
 - email
 - username
 - password_hash
+- role
 - points
+- contribution_points
+- is_pro
+- subscription_expires_at
+- current_streak
+- longest_streak
+- last_activity_date
+- bio
+- linkedin_url
+- github_url
+- website_url
+- is_email_verified
+- email_verification_token_hash
+- email_verification_sent_at
+- email_verified_at
 - created_at
 ```
 
-The `User` model is already prepared for future authentication, scoring and ranking features.
+The `User` model supports authentication, scoring, profile data, subscription status and email verification.
 
 ### Category
 
 Model file:
 
 ```txt
-backend/app/quizzes/models.py
+backend/app/domains/quizzes/models.py
 ```
 
 Fields:
@@ -258,6 +322,7 @@ categories
 - name
 - description
 - is_active
+- created_by_user_id
 - created_at
 ```
 
@@ -283,6 +348,9 @@ questions
 - explanation_html
 - points
 - is_active
+- created_by_username
+- approved_by_username
+- views_count
 - created_at
 ```
 
@@ -302,6 +370,40 @@ answers
 ```
 
 Each question has multiple answers. Only one answer should be marked as correct.
+
+### Plan
+
+Fields:
+
+```txt
+plans
+- id
+- code
+- name
+- description
+- price_amount
+- currency
+- billing_period
+- features
+- max_difficulty
+- can_answer_questions
+- can_view_explanations
+- can_use_review
+- can_submit_questions
+- has_unlimited_questions
+- is_active
+- sort_order
+- created_at
+```
+
+Current pricing model:
+
+```txt
+Free                  $0
+30-Day Pass            $14.99 / 30 days, one payment
+Monthly Subscription   $9.99 / month, minimum 12 months
+Annual Upfront         $99 / year, paid upfront
+```
 
 ---
 
@@ -347,6 +449,12 @@ FastAPI -> asyncpg
 Alembic -> psycopg
 ```
 
+Run migrations locally:
+
+```bash
+alembic upgrade head
+```
+
 ---
 
 ## Seed Data
@@ -358,7 +466,7 @@ backend/app/seed/data.py
 backend/app/seed/run.py
 ```
 
-Seed data creates initial quiz categories and questions.
+Seed data creates initial quiz categories, questions and plans.
 
 Run seed locally:
 
@@ -369,6 +477,184 @@ python -m app.seed.run
 The seed script is designed to be idempotent, meaning that it should not duplicate existing questions when executed multiple times.
 
 In production, seed runs automatically from `start.sh`.
+
+---
+
+## Email Verification System
+
+The application includes an email verification flow for registered users.
+
+Flow:
+
+```txt
+1. User registers or logs in.
+2. If the email is not verified, the frontend displays an email verification banner.
+3. User clicks "Send verification email".
+4. Backend generates a secure one-time verification token.
+5. Backend stores only the SHA-256 hash of the token in the database.
+6. Backend sends an email with a verification link.
+7. User opens /verify-email?token=...
+8. Frontend sends the token to the backend.
+9. Backend validates the token and marks the email as verified.
+```
+
+Verification links are valid for:
+
+```txt
+24 hours
+```
+
+### Email Provider
+
+Email delivery is handled by **Resend**.
+
+Backend email helper:
+
+```txt
+backend/app/core/email.py
+```
+
+Email verification router:
+
+```txt
+backend/app/auth/email_verification.py
+```
+
+Frontend verification page:
+
+```txt
+frontend/src/pages/VerifyEmailPage.tsx
+```
+
+Frontend verification banner:
+
+```txt
+frontend/src/shared/ui/EmailVerificationBanner.tsx
+```
+
+### User Email Verification Fields
+
+The `users` table contains:
+
+```txt
+users
+- is_email_verified
+- email_verification_token_hash
+- email_verification_sent_at
+- email_verified_at
+```
+
+Only the hashed token is stored in the database. The raw token is sent only in the email verification link.
+
+### Local Email Development Mode
+
+If `RESEND_API_KEY` is not configured, the backend does not send a real email. Instead, it prints the email HTML and verification link in the backend logs.
+
+Example log:
+
+```txt
+EMAIL DEV MODE - RESEND_API_KEY missing
+TO: user@example.com
+SUBJECT: Confirm your DevPrep email
+HTML:
+<a href="http://localhost:5173/verify-email?token=...">Verify email</a>
+```
+
+This allows testing the full verification flow locally without using a real email provider.
+
+### Required Email Environment Variables
+
+Local:
+
+```env
+RESEND_API_KEY=
+EMAIL_FROM=DevPrep <onboarding@resend.dev>
+FRONTEND_URL=http://localhost:5173
+```
+
+Production:
+
+```env
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxx
+EMAIL_FROM=DevPrep <onboarding@resend.dev>
+FRONTEND_URL=https://quiz-app-sand.vercel.app
+```
+
+For production, `EMAIL_FROM` can later be changed to a verified custom domain, for example:
+
+```env
+EMAIL_FROM=DevPrep <noreply@yourdomain.com>
+```
+
+### Email Verification API
+
+#### Send or resend verification email
+
+```http
+POST /auth/resend-verification-email
+```
+
+Requires authentication:
+
+```http
+Authorization: Bearer <access_token>
+```
+
+Response:
+
+```json
+{
+  "message": "Verification email has been sent. The link is valid for 24 hours."
+}
+```
+
+If the email is already verified:
+
+```json
+{
+  "message": "Email is already verified."
+}
+```
+
+#### Verify email
+
+```http
+POST /auth/verify-email
+```
+
+Request body:
+
+```json
+{
+  "token": "verification-token-from-email"
+}
+```
+
+Response:
+
+```json
+{
+  "message": "Email has been verified."
+}
+```
+
+There is also a GET variant for direct browser links:
+
+```http
+GET /auth/verify-email?token=...
+```
+
+### Frontend Verification Route
+
+The verification link points to the frontend:
+
+```txt
+/verify-email?token=...
+```
+
+The frontend route reads the token from the URL and sends it to the backend.
+
+Because React Strict Mode can run effects twice in development, the verification page guards against sending duplicate verification requests.
 
 ---
 
@@ -416,6 +702,46 @@ Response:
 {
   "status": "ok",
   "database": 1
+}
+```
+
+### Register
+
+```http
+POST /auth/register
+```
+
+Creates a new user account.
+
+### Login
+
+```http
+POST /auth/login
+```
+
+Returns an access token.
+
+### Current User
+
+```http
+GET /auth/me
+```
+
+Requires authentication.
+
+Response includes user profile information and email verification status:
+
+```json
+{
+  "id": "uuid",
+  "email": "user@example.com",
+  "username": "user",
+  "role": "user",
+  "points": 0,
+  "contribution_points": 0,
+  "is_pro": false,
+  "is_email_verified": true,
+  "email_verified_at": "2026-01-01T00:00:00"
 }
 ```
 
@@ -491,6 +817,22 @@ Response:
 }
 ```
 
+### Billing Plans
+
+```http
+GET /billing/plans
+```
+
+Returns active pricing plans.
+
+### Current Billing Access
+
+```http
+GET /billing/me
+```
+
+Returns current user billing access and permissions.
+
 ---
 
 ## Frontend Overview
@@ -513,22 +855,40 @@ Main pages:
 
 ```txt
 src/pages/CategoriesPage.tsx
+src/pages/DashboardPage.tsx
+src/pages/LoginPage.tsx
+src/pages/PricingPage.tsx
+src/pages/ProfilePage.tsx
 src/pages/QuestionsPage.tsx
-src/pages/QuestionPage.tsx
+src/pages/RegisterPage.tsx
+src/pages/VerifyEmailPage.tsx
 ```
 
 Current routes:
 
 ```txt
-/                       -> categories
+/                       -> marketing / home page
+/dashboard              -> logged-in user dashboard
+/pricing                -> pricing page
+/login                  -> login page
+/register               -> register page
+/profile                -> user profile
+/quizzes                -> quiz categories
 /categories/:slug       -> quiz slider for selected category
 /questions/:questionId  -> single question view
+/verify-email           -> email verification page
 ```
 
 The main quiz flow is implemented in:
 
 ```txt
 src/pages/QuestionsPage.tsx
+```
+
+The email verification banner is implemented in:
+
+```txt
+src/shared/ui/EmailVerificationBanner.tsx
 ```
 
 ---
@@ -669,6 +1029,85 @@ This reduces the risk of XSS when rendering HTML content.
 
 ---
 
+## Pricing Model
+
+The app has a free plan and paid Pro plans.
+
+### Free
+
+```txt
+Price: $0
+```
+
+Includes:
+
+```txt
+- easy level questions
+- correct answer for easy questions
+- community question submissions
+- no full explanations
+- no review mode
+- no answer history
+```
+
+### 30-Day Pass
+
+```txt
+Price: $14.99
+Billing: one payment
+Duration: 30 days
+```
+
+Includes:
+
+```txt
+- 30 days of Pro access
+- no subscription
+- all difficulty levels
+- full explanations
+- review mode
+- answer history
+```
+
+### Monthly Subscription
+
+```txt
+Price: $9.99/month
+Billing: monthly
+Commitment: minimum 12 months
+```
+
+Includes:
+
+```txt
+- all difficulty levels
+- full explanations
+- review mode
+- answer history
+- community question submissions
+```
+
+### Annual Upfront
+
+```txt
+Price: $99/year
+Billing: paid upfront
+```
+
+Includes:
+
+```txt
+- one year of Pro access
+- equivalent to $8.25/month
+- all difficulty levels
+- full explanations
+- review mode
+- answer history
+- community question submissions
+```
+
+---
+
 ## Tailwind CSS
 
 Tailwind CSS is integrated through the Vite plugin.
@@ -724,8 +1163,6 @@ Tailwind import:
 From project root:
 
 ```bash
-cd "/Users/bart/Desktop/HERO CODE/quiz-app"
-
 docker compose up -d
 ```
 
@@ -746,9 +1183,9 @@ quiz_postgres
 ### 2. Start Backend
 
 ```bash
-cd "/Users/bart/Desktop/HERO CODE/quiz-app/backend"
+cd backend
 
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
@@ -773,6 +1210,22 @@ http://localhost:8000/health
 http://localhost:8000/quizzes/categories
 ```
 
+### Windows PowerShell example
+
+```powershell
+cd "E:\REACT CWICZENIA\quiz-app\backend"
+
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python -m alembic upgrade head
+python -m app.seed.run
+
+python -m uvicorn app.main:app --reload
+```
+
 ---
 
 ### 3. Start Frontend
@@ -780,7 +1233,7 @@ http://localhost:8000/quizzes/categories
 Open a second terminal:
 
 ```bash
-cd "/Users/bart/Desktop/HERO CODE/quiz-app/frontend"
+cd frontend
 
 npm install
 cp .env.example .env
@@ -800,6 +1253,48 @@ If the port is busy, Vite may use:
 http://localhost:5174
 http://localhost:5175
 http://localhost:5176
+```
+
+### Windows PowerShell example
+
+```powershell
+cd "E:\REACT CWICZENIA\quiz-app\frontend"
+
+npm install
+npm run dev
+```
+
+---
+
+## Local Email Testing
+
+Without a Resend API key, email verification works in development mode.
+
+Start backend normally:
+
+```powershell
+cd "E:\REACT CWICZENIA\quiz-app\backend"
+python -m uvicorn app.main:app --reload
+```
+
+Then click:
+
+```txt
+Send verification email
+```
+
+The backend will print the verification link in the logs.
+
+To test real email delivery locally, set environment variables before starting the backend:
+
+```powershell
+cd "E:\REACT CWICZENIA\quiz-app\backend"
+
+$env:RESEND_API_KEY="re_xxxxxxxxxxxxxxxxx"
+$env:EMAIL_FROM="DevPrep <onboarding@resend.dev>"
+$env:FRONTEND_URL="http://localhost:5173"
+
+python -m uvicorn app.main:app --reload
 ```
 
 ---
@@ -830,9 +1325,14 @@ APP_NAME=Quiz API
 APP_ENV=production
 DATABASE_URL=postgresql+asyncpg://user:password@host.neon.tech/neondb?ssl=require
 CORS_ORIGINS=http://localhost:5173,http://localhost:5176,https://quiz-app-sand.vercel.app
+
 JWT_SECRET_KEY=production-secret
 JWT_ALGORITHM=HS256
 JWT_ACCESS_TOKEN_EXPIRE_MINUTES=60
+
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxx
+EMAIL_FROM=DevPrep <onboarding@resend.dev>
+FRONTEND_URL=https://quiz-app-sand.vercel.app
 ```
 
 Production start script:
@@ -883,6 +1383,38 @@ VITE_API_URL=https://quiz-app-api-gujn.onrender.com
 
 After changing Vercel environment variables, redeploy the project.
 
+### Vercel SPA Routing
+
+Because the frontend uses React Router, Vercel needs a SPA fallback rewrite.
+
+File:
+
+```txt
+frontend/vercel.json
+```
+
+Required configuration:
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
+
+Without this file, direct links such as these may return `404: NOT_FOUND` on Vercel:
+
+```txt
+/verify-email?token=...
+/dashboard
+/pricing
+/quizzes
+```
+
 ---
 
 ## Common Issues
@@ -907,6 +1439,12 @@ Restart backend:
 
 ```bash
 uvicorn app.main:app --reload
+```
+
+On Windows, you can also start the backend on another port:
+
+```powershell
+python -m uvicorn app.main:app --reload --port 8001
 ```
 
 ---
@@ -934,6 +1472,80 @@ https://quiz-app-sand.vercel.app
 ```
 
 then this domain must be present in backend `CORS_ORIGINS`.
+
+---
+
+### Email verification email is not received
+
+If the request succeeds but no email is delivered, check backend logs.
+
+If logs contain:
+
+```txt
+EMAIL DEV MODE - RESEND_API_KEY missing
+```
+
+then the backend is running without a Resend API key.
+
+Add the following environment variables to Render:
+
+```env
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxx
+EMAIL_FROM=DevPrep <onboarding@resend.dev>
+FRONTEND_URL=https://quiz-app-sand.vercel.app
+```
+
+After changing environment variables on Render, redeploy the backend.
+
+---
+
+### Email verification link returns `Invalid verification token`
+
+Possible reasons:
+
+```txt
+- the link was already used
+- the link expired after 24 hours
+- a newer verification link was generated and replaced the previous token
+- React Strict Mode sent duplicate verification requests in development
+```
+
+Fix:
+
+```txt
+1. Go back to the app.
+2. Click "Send verification email" again.
+3. Use the newest link from the email or backend logs.
+```
+
+---
+
+### Vercel returns `404: NOT_FOUND` after refreshing a route
+
+This happens when a React Router route is opened directly, for example:
+
+```txt
+/verify-email?token=...
+/dashboard
+/pricing
+```
+
+Fix by adding SPA rewrites in:
+
+```txt
+frontend/vercel.json
+```
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
 
 ---
 
@@ -966,6 +1578,13 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+On Windows:
+
+```powershell
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
 ---
 
 ### Vite uses a different port
@@ -976,6 +1595,24 @@ Force port 5173:
 
 ```bash
 npm run dev -- --port 5173
+```
+
+---
+
+### JWT secret key warning
+
+If you see:
+
+```txt
+InsecureKeyLengthWarning
+```
+
+then the JWT secret key is too short.
+
+Use a longer secret in production:
+
+```env
+JWT_SECRET_KEY=replace-with-a-long-random-secret-at-least-32-characters
 ```
 
 ---
@@ -992,11 +1629,28 @@ Implemented:
 - SQLAlchemy models
 - Alembic migrations
 - seed data
+- registration
+- login
+- JWT authentication
+- email verification flow
+- email verification banner
+- email verification page
+- transactional email integration with Resend
 - quiz categories
 - quiz questions
 - quiz answers
 - answer validation
 - explanation_html
+- question metadata
+- answer history
+- wrong answer tracking
+- review mode
+- user points
+- contribution points
+- public ranking
+- pricing page
+- billing plans
+- free/pro access rules
 - React frontend
 - Vite
 - TypeScript
@@ -1004,21 +1658,19 @@ Implemented:
 - quiz slider
 - Render backend deployment
 - Vercel frontend deployment
+- Vercel SPA routing fallback
 ```
 
 Planned:
 
 ```txt
-- registration
-- login
-- JWT authentication
-- user points
-- wrong answer tracking
-- reminders / revision mode
-- public ranking
-- admin panel for adding questions
+- full payment provider integration
+- Stripe checkout
+- admin analytics
+- richer user statistics
 - filtering questions by difficulty
-- user statistics
+- reminders / revision notifications
+- custom verified email domain
 ```
 
 ---
@@ -1041,12 +1693,54 @@ python -m app.seed.run
 uvicorn app.main:app --reload
 ```
 
+### Local backend on Windows
+
+```powershell
+cd "E:\REACT CWICZENIA\quiz-app\backend"
+.venv\Scripts\activate
+python -m alembic upgrade head
+python -m app.seed.run
+python -m uvicorn app.main:app --reload
+```
+
 ### Local frontend
 
 ```bash
 cd frontend
 npm install
 npm run dev
+```
+
+### Local frontend on Windows
+
+```powershell
+cd "E:\REACT CWICZENIA\quiz-app\frontend"
+npm install
+npm run dev
+```
+
+### Check backend routes
+
+```powershell
+Invoke-RestMethod http://localhost:8000/openapi.json |
+  Select-Object -ExpandProperty paths |
+  Get-Member -MemberType NoteProperty |
+  Select-Object -ExpandProperty Name
+```
+
+### Check production backend routes
+
+```powershell
+Invoke-RestMethod https://quiz-app-api-gujn.onrender.com/openapi.json |
+  Select-Object -ExpandProperty paths |
+  Get-Member -MemberType NoteProperty |
+  Select-Object -ExpandProperty Name
+```
+
+### Check production plans
+
+```powershell
+Invoke-RestMethod https://quiz-app-api-gujn.onrender.com/billing/plans
 ```
 
 ### Push changes
@@ -1064,7 +1758,3 @@ Render deploys automatically from GitHub.
 ### Production frontend
 
 Vercel deploys automatically from GitHub.
-
-```
-
-```
