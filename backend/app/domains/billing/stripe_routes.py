@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import os
 from datetime import datetime, timedelta, timezone
@@ -20,7 +20,7 @@ router = APIRouter(tags=["billing"])
 
 
 class CheckoutRequest(BaseModel):
-    plan_code: Literal["pro_30_days", "pro_yearly"]
+    plan_code: Literal["pro_30_days", "pro_monthly", "pro_yearly"]
 
 
 class CheckoutResponse(BaseModel):
@@ -44,6 +44,15 @@ PLANS = {
         "amount": 5900,
         "currency": "pln",
         "mode": "payment",
+        "access_days": 30,
+    },
+    "pro_monthly": {
+        "name": "Monthly Subscription",
+        "description": "Monthly premium access to IT interview preparation quizzes and learning materials.",
+        "amount": 3900,
+        "currency": "pln",
+        "mode": "subscription",
+        "recurring_interval": "month",
         "access_days": 30,
     },
     "pro_yearly": {
@@ -134,31 +143,47 @@ async def create_checkout_session(
             detail="Unknown plan code.",
         )
 
+    price_data = {
+        "currency": plan["currency"],
+        "product_data": {
+            "name": plan["name"],
+            "description": plan["description"],
+        },
+        "unit_amount": plan["amount"],
+    }
+
+    if plan["mode"] == "subscription":
+        price_data["recurring"] = {
+            "interval": plan["recurring_interval"],
+        }
+
+    metadata = {
+        "user_id": str(current_user.id),
+        "plan_code": payload.plan_code,
+    }
+
+    session_payload = {
+        "mode": plan["mode"],
+        "payment_method_types": ["card"] if plan["mode"] == "subscription" else ["card", "blik", "p24"],
+        "line_items": [
+            {
+                "price_data": price_data,
+                "quantity": 1,
+            }
+        ],
+        "success_url": f"{frontend_url}/billing/success?session_id={{CHECKOUT_SESSION_ID}}",
+        "cancel_url": f"{frontend_url}/pricing",
+        "customer_email": current_user.email,
+        "metadata": metadata,
+    }
+
+    if plan["mode"] == "subscription":
+        session_payload["subscription_data"] = {
+            "metadata": metadata,
+        }
+
     try:
-        session = stripe.checkout.Session.create(
-            mode=plan["mode"],
-            payment_method_types=["card", "blik", "p24"],
-            line_items=[
-                {
-                    "price_data": {
-                        "currency": plan["currency"],
-                        "product_data": {
-                            "name": plan["name"],
-                            "description": plan["description"],
-                        },
-                        "unit_amount": plan["amount"],
-                    },
-                    "quantity": 1,
-                }
-            ],
-            success_url=f"{frontend_url}/billing/success?session_id={{CHECKOUT_SESSION_ID}}",
-            cancel_url=f"{frontend_url}/pricing",
-            customer_email=current_user.email,
-            metadata={
-                "user_id": str(current_user.id),
-                "plan_code": payload.plan_code,
-            },
-        )
+        session = stripe.checkout.Session.create(**session_payload)
     except Exception as exc:
         print("")
         print("======================================")
@@ -169,7 +194,7 @@ async def create_checkout_session(
 
         raise HTTPException(
             status_code=status.HTTP_502_BAD_GATEWAY,
-            detail="Stripe checkout error.",
+            detail=f"Stripe checkout error: {exc}",
         )
 
     if not session.url:
@@ -226,7 +251,12 @@ async def confirm_checkout_session(
             detail="Payment is not completed yet.",
         )
 
-    provider_payment_id = str(get_stripe_value(session, "payment_intent") or get_stripe_value(session, "id") or payload.session_id)
+    provider_payment_id = str(
+        get_stripe_value(session, "payment_intent")
+        or get_stripe_value(session, "subscription")
+        or get_stripe_value(session, "id")
+        or payload.session_id
+    )
 
     existing_payment_result = await db.execute(
         select(Payment).where(
