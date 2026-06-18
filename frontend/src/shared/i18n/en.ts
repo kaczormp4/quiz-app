@@ -315,7 +315,7 @@
     freeCta: "Start free",
 
     proName: "Pro",
-    proPrice: "$10",
+    proPrice: "$14.99",
     proPeriod: "per month",
     proDescription: "Best for regular preparation before technical interviews.",
     proFeatureOne: "Unlimited questions",
@@ -326,7 +326,7 @@
     proCta: "Upgrade to Pro",
     proMonthlyCta: "Choose monthly",
     proYearlyCta: "Choose yearly",
-    proYearlyPrice: "$100",
+    proYearlyPrice: "$14.990",
     proYearlyPeriod: "per year",
 
     sprintName: "Interview Sprint",
