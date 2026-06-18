@@ -1,4 +1,5 @@
-﻿from datetime import date, datetime
+from datetime import datetime
+from datetime import date, datetime
 from uuid import UUID
 
 from pydantic import BaseModel, ConfigDict, Field
@@ -57,7 +58,8 @@ class UserPublic(BaseModel):
     github_url: str | None = None
     website_url: str | None = None
     created_at: datetime
-
+    is_email_verified: bool = False
+    email_verified_at: datetime | None = None
 
 class RankingUser(BaseModel):
     model_config = ConfigDict(from_attributes=True)
@@ -73,7 +75,8 @@ class RankingUser(BaseModel):
     longest_streak: int
     linkedin_url: str | None = None
     created_at: datetime
-
+    is_email_verified: bool = False
+    email_verified_at: datetime | None = None
 
 class WrongAnswerReviewItem(BaseModel):
     id: UUID
@@ -84,7 +87,8 @@ class WrongAnswerReviewItem(BaseModel):
     category_slug: str
     category_name: str
     created_at: datetime
-
+    is_email_verified: bool = False
+    email_verified_at: datetime | None = None
 
 class AnswerHistoryItem(BaseModel):
     id: UUID
@@ -96,13 +100,15 @@ class AnswerHistoryItem(BaseModel):
     category_slug: str
     category_name: str
     created_at: datetime
-
+    is_email_verified: bool = False
+    email_verified_at: datetime | None = None
 class UserContributionCategory(BaseModel):
     id: UUID
     slug: str
     name: str
     created_at: datetime
-
+    is_email_verified: bool = False
+    email_verified_at: datetime | None = None
 
 class UserContributionQuestion(BaseModel):
     id: UUID
@@ -111,7 +117,8 @@ class UserContributionQuestion(BaseModel):
     difficulty: str
     points: int
     created_at: datetime
-
+    is_email_verified: bool = False
+    email_verified_at: datetime | None = None
 
 class UserContributionPendingQuestion(BaseModel):
     id: UUID
@@ -121,7 +128,8 @@ class UserContributionPendingQuestion(BaseModel):
     points: int
     status: str
     created_at: datetime
-
+    is_email_verified: bool = False
+    email_verified_at: datetime | None = None
 
 class UserContributionsResponse(BaseModel):
     categories: list[UserContributionCategory]

@@ -1,9 +1,10 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import hashlib
 import os
 import secrets
 from datetime import datetime, timedelta, timezone
+from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
@@ -53,13 +54,32 @@ def build_verification_email_html(username: str, verification_link: str) -> str:
     """
 
 
+async def get_user_in_current_session(
+    *,
+    db: AsyncSession,
+    user_id: Any,
+) -> User:
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalars().first()
+
+    if user is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="User not found.",
+        )
+
+    return user
+
+
 async def issue_and_send_verification_email(
     *,
     db: AsyncSession,
-    user: User,
-) -> None:
+    user_id: Any,
+) -> str:
+    user = await get_user_in_current_session(db=db, user_id=user_id)
+
     if getattr(user, "is_email_verified", False):
-        return
+        return "Email is already verified."
 
     token = secrets.token_urlsafe(32)
     token_hash = hash_email_verification_token(token)
@@ -70,7 +90,6 @@ async def issue_and_send_verification_email(
     user.email_verification_sent_at = now
 
     await db.commit()
-    await db.refresh(user)
 
     frontend_url = os.getenv("FRONTEND_URL", "http://localhost:5173")
     verification_link = f"{frontend_url}/verify-email?token={token}"
@@ -86,20 +105,20 @@ async def issue_and_send_verification_email(
         html=html,
     )
 
+    return "Verification email has been sent. The link is valid for 24 hours."
+
 
 @router.post("/resend-verification-email", response_model=VerificationEmailResponse)
 async def resend_verification_email(
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ) -> VerificationEmailResponse:
-    if current_user.is_email_verified:
-        return VerificationEmailResponse(message="Email is already verified.")
-
-    await issue_and_send_verification_email(db=db, user=current_user)
-
-    return VerificationEmailResponse(
-        message="Verification email has been sent. The link is valid for 24 hours.",
+    message = await issue_and_send_verification_email(
+        db=db,
+        user_id=current_user.id,
     )
+
+    return VerificationEmailResponse(message=message)
 
 
 @router.post("/send-verification-email", response_model=VerificationEmailResponse)

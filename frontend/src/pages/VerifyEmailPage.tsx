@@ -1,4 +1,4 @@
-﻿import { useEffect, useMemo, useState } from "react";
+﻿import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
 const API_BASE_URL =
@@ -16,6 +16,7 @@ export default function VerifyEmailPage() {
 
   const [state, setState] = useState<VerifyState>("idle");
   const [message, setMessage] = useState<string>("");
+  const hasRequestedVerificationRef = useRef(false);
 
   const hasToken = useMemo(() => Boolean(token), [token]);
 
@@ -25,6 +26,12 @@ export default function VerifyEmailPage() {
       setMessage("Verification token is missing.");
       return;
     }
+
+    if (hasRequestedVerificationRef.current) {
+      return;
+    }
+
+    hasRequestedVerificationRef.current = true;
 
     const verifyEmail = async () => {
       setState("loading");
