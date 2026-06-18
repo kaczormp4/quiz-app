@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from datetime import datetime
 from typing import Optional
@@ -65,6 +65,7 @@ class SubmitAnswerResponse(BaseModel):
 
 class PendingAnswerCreateRequest(BaseModel):
     text: str
+    explanation_html: str = ""
     is_correct: bool
     position: int
 
@@ -74,6 +75,7 @@ class PendingAnswerPublic(BaseModel):
 
     id: UUID
     text: str
+    explanation_html: str = ""
     is_correct: bool
     position: int
 
@@ -103,6 +105,37 @@ class PendingQuestionCreateRequest(BaseModel):
 
         return answers
 
+
+
+
+class AdminImportAnswerRequest(BaseModel):
+    id: Optional[str] = None
+    text: str
+    is_correct: bool
+    explanation_html: str
+
+
+class AdminImportQuestionRequest(BaseModel):
+    category_code: str
+    difficulty: str
+    question: str
+    question_html: Optional[str] = None
+    points: int = 1
+    answers: list[AdminImportAnswerRequest]
+    tags: list[str] = []
+
+    @field_validator("answers")
+    @classmethod
+    def validate_answers(cls, answers: list[AdminImportAnswerRequest]) -> list[AdminImportAnswerRequest]:
+        if len(answers) != 4:
+            raise ValueError("Question must have exactly 4 answers")
+
+        correct_answers_count = sum(1 for answer in answers if answer.is_correct)
+
+        if correct_answers_count != 1:
+            raise ValueError("Question must have exactly one correct answer")
+
+        return answers
 
 class PendingQuestionPublic(BaseModel):
     id: UUID

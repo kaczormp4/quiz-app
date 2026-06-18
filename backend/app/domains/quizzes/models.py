@@ -64,6 +64,7 @@ class Answer(Base):
     question_id = Column(UUID(as_uuid=True), ForeignKey("questions.id", ondelete="CASCADE"), index=True, nullable=False)
     text = Column(Text, nullable=False)
     is_correct = Column(Boolean, nullable=False, default=False)
+    explanation_html = Column(Text, nullable=False, default="")
     position = Column(Integer, nullable=False)
 
 
@@ -90,4 +91,5 @@ class PendingAnswer(Base):
     pending_question_id = Column(UUID(as_uuid=True), ForeignKey("pending_questions.id", ondelete="CASCADE"), index=True, nullable=False)
     text = Column(Text, nullable=False)
     is_correct = Column(Boolean, nullable=False, default=False)
+    explanation_html = Column(Text, nullable=False, default="")
     position = Column(Integer, nullable=False)

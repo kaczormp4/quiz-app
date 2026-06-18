@@ -1,4 +1,5 @@
-﻿import DOMPurify from "dompurify";
+import { useMemo, useState } from "react";
+import DOMPurify from "dompurify";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
@@ -6,6 +7,7 @@ import { useAuth } from "../app/providers/AuthProvider";
 import {
   approvePendingQuestionRequest,
   getAdminPendingQuestionsRequest,
+  importAdminQuestionPayloadRequest,
   rejectPendingQuestionRequest,
 } from "../features/quizzes/api";
 
@@ -13,6 +15,57 @@ export default function AdminPendingQuestionsPage() {
   const { t } = useTranslation();
   const queryClient = useQueryClient();
   const { token, user } = useAuth();
+
+  const examplePayload = useMemo(
+    () =>
+      JSON.stringify(
+        {
+          category_code: "react",
+          difficulty: "medium",
+          question: "Why should React list items have stable keys?",
+          question_html:
+            "<p>Why should React list items have <strong>stable keys</strong>?</p>",
+          answers: [
+            {
+              id: "A",
+              text: "Because keys help React identify which items changed, were added, or removed.",
+              is_correct: true,
+              explanation_html:
+                "<p><strong>Correct.</strong> React uses keys during reconciliation to match previous and next elements.</p>",
+            },
+            {
+              id: "B",
+              text: "Because keys are required for CSS styling.",
+              is_correct: false,
+              explanation_html:
+                "<p><strong>Incorrect.</strong> Keys are not used for CSS styling.</p>",
+            },
+            {
+              id: "C",
+              text: "Because keys make components render only once.",
+              is_correct: false,
+              explanation_html:
+                "<p><strong>Incorrect.</strong> Keys do not prevent re-renders.</p>",
+            },
+            {
+              id: "D",
+              text: "Because keys replace state management.",
+              is_correct: false,
+              explanation_html:
+                "<p><strong>Incorrect.</strong> Keys do not replace state management.</p>",
+            },
+          ],
+          tags: ["react", "reconciliation", "keys"],
+        },
+        null,
+        2,
+      ),
+    [],
+  );
+
+  const [payloadText, setPayloadText] = useState(examplePayload);
+  const [payloadError, setPayloadError] = useState<string | null>(null);
+  const [payloadSuccess, setPayloadSuccess] = useState<string | null>(null);
 
   const pendingQuery = useQuery({
     queryKey: ["admin-pending-questions"],
@@ -39,6 +92,38 @@ export default function AdminPendingQuestionsPage() {
     },
   });
 
+  const importPayloadMutation = useMutation({
+    mutationFn: async () => {
+      setPayloadError(null);
+      setPayloadSuccess(null);
+
+      if (!token) {
+        throw new Error("Missing auth token.");
+      }
+
+      let parsedPayload: unknown;
+
+      try {
+        parsedPayload = JSON.parse(payloadText);
+      } catch {
+        throw new Error("Invalid JSON payload.");
+      }
+
+      return importAdminQuestionPayloadRequest(parsedPayload as never, token);
+    },
+    onSuccess: async () => {
+      setPayloadSuccess("Payload imported successfully.");
+      setPayloadError(null);
+      await queryClient.invalidateQueries({ queryKey: ["admin-pending-questions"] });
+      await queryClient.invalidateQueries({ queryKey: ["category-questions"] });
+      await queryClient.invalidateQueries({ queryKey: ["categories"] });
+    },
+    onError: (error) => {
+      setPayloadSuccess(null);
+      setPayloadError(error instanceof Error ? error.message : "Import failed.");
+    },
+  });
+
   if (user?.role !== "admin") {
     return (
       <main className="mx-auto max-w-4xl px-4 py-10">
@@ -55,6 +140,58 @@ export default function AdminPendingQuestionsPage() {
         <h1 className="text-3xl font-bold text-slate-950">{t("adminPanel.title")}</h1>
         <p className="mt-2 text-slate-500">{t("adminPanel.subtitle")}</p>
       </div>
+
+      <section className="mb-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="mb-4">
+          <h2 className="text-xl font-bold text-slate-950">Import question payload</h2>
+          <p className="mt-1 text-sm text-slate-500">
+            Paste a ready JSON object with category_code, difficulty, question and exactly 4 answers.
+          </p>
+        </div>
+
+        <textarea
+          value={payloadText}
+          onChange={(event) => setPayloadText(event.target.value)}
+          className="min-h-[420px] w-full rounded-2xl border border-slate-300 bg-slate-950 p-4 font-mono text-sm text-slate-50 outline-none focus:border-blue-500"
+          spellCheck={false}
+        />
+
+        {payloadError ? (
+          <div className="mt-3 rounded-2xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">
+            {payloadError}
+          </div>
+        ) : null}
+
+        {payloadSuccess ? (
+          <div className="mt-3 rounded-2xl border border-green-200 bg-green-50 p-3 text-sm text-green-700">
+            {payloadSuccess}
+          </div>
+        ) : null}
+
+        <div className="mt-4 flex flex-wrap gap-3">
+          <button
+            type="button"
+            onClick={() => importPayloadMutation.mutate()}
+            disabled={importPayloadMutation.isPending}
+            className="rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-60"
+          >
+            {importPayloadMutation.isPending ? "Importing..." : "Import payload"}
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              setPayloadText(examplePayload);
+              setPayloadError(null);
+              setPayloadSuccess(null);
+            }}
+            className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          >
+            Reset example
+          </button>
+        </div>
+      </section>
+
 
       {pendingQuery.isLoading ? (
         <div className="rounded-3xl border border-slate-200 bg-white p-6 text-slate-500">

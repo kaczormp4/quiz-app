@@ -76,3 +76,31 @@ export const rejectPendingQuestionRequest = (
     method: "POST",
     token,
   });
+
+
+export type AdminQuestionPayloadAnswer = {
+  id?: "A" | "B" | "C" | "D";
+  text: string;
+  is_correct: boolean;
+  explanation_html: string;
+};
+
+export type AdminQuestionPayload = {
+  category_code: string;
+  difficulty: "easy" | "medium" | "hard";
+  question: string;
+  question_html?: string;
+  answers: AdminQuestionPayloadAnswer[];
+  tags?: string[];
+};
+
+export const importAdminQuestionPayloadRequest = (
+  payload: AdminQuestionPayload,
+  token: string,
+) =>
+  apiClient<MessageResponse>("/admin/import-payload", {
+    method: "POST",
+    body: payload,
+    token,
+  });
+

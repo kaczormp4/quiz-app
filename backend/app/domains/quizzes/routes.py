@@ -11,6 +11,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
 from app.domains.quizzes.models import Answer, Category, PendingAnswer, PendingQuestion, Question
 from app.domains.quizzes.schemas import (
+    AdminImportQuestionRequest,
     AnswerPublic,
     CategoryCreateRequest,
     CategoryPublic,
@@ -79,7 +80,7 @@ async def serialize_question(
         category_id=question.category_id,
         question=question.question,
         difficulty=question.difficulty,
-        explanation_html=correct_answer.explanation_html or question.explanation_html,
+        explanation_html=question.explanation_html,
         points=question.points,
         answers=[
             AnswerPublic(
@@ -138,6 +139,7 @@ async def serialize_pending_question(
             PendingAnswerPublic(
                 id=answer.id,
                 text=answer.text,
+                explanation_html=answer.explanation_html,
                 is_correct=answer.is_correct,
                 position=answer.position,
             )
@@ -282,7 +284,7 @@ async def submit_answer(
             text=correct_answer.text,
             position=correct_answer.position,
         ),
-        explanation_html=correct_answer.explanation_html or question.explanation_html,
+        explanation_html=question.explanation_html,
     )
 
 
@@ -323,6 +325,7 @@ async def submit_pending_question(
             PendingAnswer(
                 pending_question_id=pending_question.id,
                 text=answer.text,
+                explanation_html=answer.explanation_html,
                 is_correct=answer.is_correct,
                 position=answer.position,
             )
@@ -350,6 +353,84 @@ async def get_my_pending_questions(
         await serialize_pending_question(pending_question, db)
         for pending_question in pending_questions
     ]
+
+
+
+@admin_router.post(
+    "/import-payload",
+    response_model=PendingQuestionPublic,
+    status_code=status.HTTP_201_CREATED,
+)
+async def import_admin_question_payload(
+    payload: AdminImportQuestionRequest,
+    current_user: User = Depends(require_admin),
+    db: AsyncSession = Depends(get_db),
+) -> PendingQuestionPublic:
+    category_slug = slugify(payload.category_code)
+
+    category_result = await db.execute(
+        select(Category).where(Category.slug == category_slug)
+    )
+    category = category_result.scalars().first()
+
+    if category is None:
+        category = Category(
+            slug=category_slug,
+            name=payload.category_code.replace("_", " ").replace("-", " ").title(),
+            description=None,
+            is_active=True,
+            created_by_user_id=current_user.id,
+        )
+        db.add(category)
+        await db.flush()
+
+    correct_answer = next(answer for answer in payload.answers if answer.is_correct)
+
+    pending_question = PendingQuestion(
+        category_id=category.id,
+        submitted_by_user_id=current_user.id,
+        question=payload.question,
+        difficulty=payload.difficulty,
+        explanation_html=correct_answer.explanation_html,
+        points=payload.points,
+        status="pending",
+    )
+
+    db.add(pending_question)
+    await db.flush()
+
+    answer_position_by_id = {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+    }
+
+    used_positions = set()
+
+    for index, answer in enumerate(payload.answers, start=1):
+        position = answer_position_by_id.get(str(answer.id), index)
+
+        if position in used_positions:
+            position = index
+
+        used_positions.add(position)
+
+        db.add(
+            PendingAnswer(
+                pending_question_id=pending_question.id,
+                text=answer.text,
+                explanation_html=answer.explanation_html,
+                is_correct=answer.is_correct,
+                position=position,
+            )
+        )
+
+    await db.commit()
+    await db.refresh(pending_question)
+
+    return await serialize_pending_question(pending_question, db)
+
 
 
 @admin_router.get("/pending-questions", response_model=list[PendingQuestionPublic])
@@ -423,6 +504,7 @@ async def approve_pending_question(
             Answer(
                 question_id=question.id,
                 text=pending_answer.text,
+                explanation_html=pending_answer.explanation_html,
                 is_correct=pending_answer.is_correct,
                 position=pending_answer.position,
             )
