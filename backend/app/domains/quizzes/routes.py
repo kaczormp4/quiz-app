@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import re
 from datetime import datetime, timezone
@@ -79,7 +79,7 @@ async def serialize_question(
         category_id=question.category_id,
         question=question.question,
         difficulty=question.difficulty,
-        explanation_html=question.explanation_html,
+        explanation_html=correct_answer.explanation_html or question.explanation_html,
         points=question.points,
         answers=[
             AnswerPublic(
@@ -282,7 +282,7 @@ async def submit_answer(
             text=correct_answer.text,
             position=correct_answer.position,
         ),
-        explanation_html=question.explanation_html,
+        explanation_html=correct_answer.explanation_html or question.explanation_html,
     )
 
 
