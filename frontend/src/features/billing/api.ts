@@ -1,4 +1,4 @@
-﻿import type { BillingPlan, BillingStatus, CheckoutResponse } from "./types";
+import type { BillingPlan, BillingStatus, CheckoutResponse } from "./types";
 
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
@@ -34,7 +34,7 @@ export async function createCheckoutRequest(
   planCode: string,
   token: string,
 ): Promise<CheckoutResponse> {
-  const response = await fetch(`${API_URL}/billing/checkout`, {
+  const response = await fetch(`${API_URL}/billing/stripe/checkout`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -125,7 +125,7 @@ async function createCheckout(
   planCode: string,
   token: string,
 ): Promise<CheckoutResponse> {
-  const response = await fetch(`${API_BASE_URL}/billing/checkout`, {
+  const response = await fetch(`${API_BASE_URL}/billing/stripe/checkout`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
