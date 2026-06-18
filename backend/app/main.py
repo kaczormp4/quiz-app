@@ -52,3 +52,10 @@ app.include_router(billing_router)
 app.include_router(admin_router)
 app.include_router(auth_router)
 app.include_router(users_router)
+
+try:
+    from app.auth.email_verification import router as email_verification_router
+
+    app.include_router(email_verification_router)
+except Exception as exc:
+    print(f"Email verification router include failed: {exc}")

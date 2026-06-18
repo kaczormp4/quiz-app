@@ -29,6 +29,12 @@ class User(Base):
     github_url = Column(String(500), nullable=True)
     website_url = Column(String(500), nullable=True)
 
+
+    is_email_verified = Column(Boolean, nullable=False, default=False)
+    email_verification_token_hash = Column(String(128), nullable=True, index=True)
+    email_verification_sent_at = Column(DateTime(timezone=True), nullable=True)
+    email_verified_at = Column(DateTime(timezone=True), nullable=True)
+
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
 

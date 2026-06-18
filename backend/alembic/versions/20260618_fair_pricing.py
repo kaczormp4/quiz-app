@@ -19,6 +19,7 @@ depends_on: Union[str, Sequence[str], None] = None
 def upgrade() -> None:
     op.execute("""
         INSERT INTO plans (
+            id,
             code,
             name,
             description,
@@ -37,6 +38,7 @@ def upgrade() -> None:
         )
         VALUES
         (
+            '00000000-0000-0000-0000-000000000001',
             'free',
             'Free',
             'Start learning for free with easy questions and community submissions.',
@@ -61,20 +63,21 @@ def upgrade() -> None:
             1
         ),
         (
-            'pro_monthly',
-            'Pro Monthly',
-            'Flexible monthly access for short-term interview preparation.',
+            '00000000-0000-0000-0000-000000000002',
+            'pro_30_days',
+            '30-Day Pass',
+            'One payment for 30 days of full Pro access. No subscription.',
             1499,
             'USD',
-            'monthly',
+            'one_time_30_days',
             '[
-                "Unlimited questions",
+                "30 days of Pro access",
+                "One payment",
+                "No subscription",
                 "All difficulty levels",
                 "Full explanations",
                 "Review mode",
-                "Answer history and progress tracking",
-                "Community question submissions",
-                "Cancel anytime"
+                "Answer history"
             ]'::jsonb,
             'hard',
             true,
@@ -86,21 +89,22 @@ def upgrade() -> None:
             2
         ),
         (
-            'pro_yearly',
-            'Pro Annual',
-            'Best value ? billed yearly. Equivalent to $8.33/month.',
-            9999,
+            '00000000-0000-0000-0000-000000000003',
+            'pro_monthly',
+            'Monthly Subscription',
+            'Pay monthly with a minimum 12-month commitment.',
+            999,
             'USD',
-            'yearly',
+            'monthly_min_12',
             '[
-                "Unlimited questions",
+                "$9.99/month",
+                "Minimum 12-month commitment",
+                "Billed monthly",
                 "All difficulty levels",
                 "Full explanations",
                 "Review mode",
-                "Answer history and progress tracking",
-                "Community question submissions",
-                "Equivalent to $8.33/month",
-                "Save 44% compared to monthly"
+                "Answer history",
+                "Community question submissions"
             ]'::jsonb,
             'hard',
             true,
@@ -110,6 +114,34 @@ def upgrade() -> None:
             true,
             true,
             3
+        ),
+        (
+            '00000000-0000-0000-0000-000000000004',
+            'pro_yearly',
+            'Annual Upfront',
+            'Pay upfront for one year. Best value.',
+            9900,
+            'USD',
+            'yearly_upfront',
+            '[
+                "$99 paid upfront",
+                "One year of Pro access",
+                "Equivalent to $8.25/month",
+                "Save $20.88 vs monthly subscription",
+                "All difficulty levels",
+                "Full explanations",
+                "Review mode",
+                "Answer history",
+                "Community question submissions"
+            ]'::jsonb,
+            'hard',
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            4
         )
         ON CONFLICT (code) DO UPDATE SET
             name = EXCLUDED.name,
@@ -136,20 +168,26 @@ def upgrade() -> None:
 
 
 def downgrade() -> None:
+    op.execute("UPDATE plans SET is_active = false WHERE code = 'pro_30_days'")
+
     op.execute("""
         UPDATE plans
         SET
-            price_amount = 1000,
+            name = 'Pro Monthly',
+            description = 'Flexible monthly access.',
+            price_amount = 1499,
             billing_period = 'monthly',
-            description = 'Full access to interview preparation features.'
+            sort_order = 2
         WHERE code = 'pro_monthly'
     """)
 
     op.execute("""
         UPDATE plans
         SET
-            price_amount = 10000,
+            name = 'Pro Annual',
+            description = 'Best value ? billed yearly.',
+            price_amount = 9999,
             billing_period = 'yearly',
-            description = 'Full access billed yearly.'
+            sort_order = 3
         WHERE code = 'pro_yearly'
     """)

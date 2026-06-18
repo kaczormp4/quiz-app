@@ -12,6 +12,7 @@ import QuestionPage from "./pages/QuestionPage";
 import QuestionsPage from "./pages/QuestionsPage";
 import HomePage from "./pages/HomePage";
 import PricingPage from "./pages/PricingPage";
+import VerifyEmailPage from "./pages/VerifyEmailPage";
 import DashboardPage from "./pages/DashboardPage";
 import RegisterPage from "./pages/RegisterPage";
 import ReviewPage from "./pages/ReviewPage";
@@ -24,6 +25,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
           <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/verify-email" element={<VerifyEmailPage />} />
           <Route
             path="/dashboard"
             element={

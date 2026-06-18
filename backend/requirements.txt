@@ -23,3 +23,5 @@ typing_extensions==4.15.0
 uvicorn==0.49.0
 bcrypt
 PyJWT
+
+resend
