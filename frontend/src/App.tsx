@@ -1,3 +1,4 @@
+import EmailVerificationBanner from "./shared/ui/EmailVerificationBanner";
 ﻿import { Route, Routes } from "react-router-dom";
 
 import { Header } from "./shared/ui/Header";
@@ -21,6 +22,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50">
       <Header />
+      <EmailVerificationBanner />
 
       <Routes>
         <Route path="/" element={<HomePage />} />
