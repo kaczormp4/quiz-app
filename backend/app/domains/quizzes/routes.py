@@ -1,12 +1,14 @@
 from __future__ import annotations
 
+import os
+
 import random
 import re
 from datetime import datetime, timezone
 from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy import select
+from sqlalchemy import select, text
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
@@ -432,6 +434,62 @@ async def import_admin_question_payload(
     await db.refresh(pending_question)
 
     return await serialize_pending_question(pending_question, db)
+
+
+
+
+@admin_router.delete("/quiz-data")
+async def clear_quiz_data(
+    confirm: str,
+    current_user: User = Depends(require_admin),
+    db: AsyncSession = Depends(get_db),
+):
+    if os.getenv("ENABLE_ADMIN_DANGER_ACTIONS") != "true":
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Danger admin actions are disabled.",
+        )
+
+    if confirm != "YES_DELETE_QUIZZES_AND_CATEGORIES":
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Invalid confirmation value.",
+        )
+
+    tables = [
+        "pending_answers",
+        "pending_questions",
+        "answers",
+        "questions",
+        "categories",
+    ]
+
+    before = {}
+
+    for table_name in tables:
+        result = await db.execute(text(f"SELECT COUNT(*) FROM {table_name}"))
+        before[table_name] = int(result.scalar_one())
+
+    await db.execute(
+        text(
+            """
+            TRUNCATE TABLE
+                pending_answers,
+                pending_questions,
+                answers,
+                questions,
+                categories
+            RESTART IDENTITY CASCADE
+            """
+        )
+    )
+
+    await db.commit()
+
+    return {
+        "message": "Quiz data and categories deleted.",
+        "deleted": before,
+    }
 
 
 
