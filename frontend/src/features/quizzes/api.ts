@@ -98,7 +98,7 @@ export const importAdminQuestionPayloadRequest = (
   payload: AdminQuestionPayload,
   token: string,
 ) =>
-  apiClient<MessageResponse>("/admin/import-payload", {
+  apiClient<PendingQuestion>("/admin/import-payload", {
     method: "POST",
     body: payload,
     token,

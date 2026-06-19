@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import random
 import re
 from datetime import datetime, timezone
 from uuid import UUID
@@ -74,6 +75,7 @@ async def serialize_question(
         .order_by(Answer.position.asc())
     )
     answers = answers_result.scalars().all()
+    random.shuffle(answers)
 
     return QuestionPublic(
         id=question.id,
@@ -86,9 +88,9 @@ async def serialize_question(
             AnswerPublic(
                 id=answer.id,
                 text=answer.text,
-                position=answer.position,
+                position=index,
             )
-            for answer in answers
+            for index, answer in enumerate(answers, start=1)
         ],
         created_by_username=question.created_by_username,
         approved_by_username=question.approved_by_username,

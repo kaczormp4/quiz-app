@@ -66,6 +66,7 @@ export default function AdminPendingQuestionsPage() {
   const [payloadText, setPayloadText] = useState(examplePayload);
   const [payloadError, setPayloadError] = useState<string | null>(null);
   const [payloadSuccess, setPayloadSuccess] = useState<string | null>(null);
+  const [approveAutomatically, setApproveAutomatically] = useState(false);
 
   const pendingQuery = useQuery({
     queryKey: ["admin-pending-questions"],
@@ -109,12 +110,46 @@ export default function AdminPendingQuestionsPage() {
         throw new Error("Invalid JSON payload.");
       }
 
-      return importAdminQuestionPayloadRequest(parsedPayload as never, token);
+      const payloads = Array.isArray(parsedPayload)
+        ? parsedPayload
+        : [parsedPayload];
+
+      const importedQuestions = [];
+      let approvedCount = 0;
+
+      for (const payload of payloads) {
+        const importedQuestion = await importAdminQuestionPayloadRequest(
+          payload as never,
+          token,
+        );
+
+        importedQuestions.push(importedQuestion);
+
+        if (approveAutomatically) {
+          await approvePendingQuestionRequest(importedQuestion.id, token);
+          approvedCount += 1;
+        }
+      }
+
+      return {
+        importedCount: importedQuestions.length,
+        approvedCount,
+      };
     },
-    onSuccess: async () => {
-      setPayloadSuccess("Payload imported successfully.");
+    onSuccess: async (result) => {
+      const importedMessage = `Imported ${result.importedCount} question${
+        result.importedCount === 1 ? "" : "s"
+      }`;
+
+      const approvedMessage = approveAutomatically
+        ? ` and approved ${result.approvedCount}`
+        : "";
+
+      setPayloadSuccess(`${importedMessage}${approvedMessage} successfully.`);
       setPayloadError(null);
+
       await queryClient.invalidateQueries({ queryKey: ["admin-pending-questions"] });
+      await queryClient.invalidateQueries({ queryKey: ["ranking"] });
       await queryClient.invalidateQueries({ queryKey: ["category-questions"] });
       await queryClient.invalidateQueries({ queryKey: ["categories"] });
     },
@@ -168,6 +203,16 @@ export default function AdminPendingQuestionsPage() {
           </div>
         ) : null}
 
+        <label className="mt-4 flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700">
+          <input
+            type="checkbox"
+            checked={approveAutomatically}
+            onChange={(event) => setApproveAutomatically(event.target.checked)}
+            className="h-4 w-4 rounded border-slate-300"
+          />
+          <span>Approve automatically after import</span>
+        </label>
+
         <div className="mt-4 flex flex-wrap gap-3">
           <button
             type="button"
@@ -184,6 +229,7 @@ export default function AdminPendingQuestionsPage() {
               setPayloadText(examplePayload);
               setPayloadError(null);
               setPayloadSuccess(null);
+              setApproveAutomatically(false);
             }}
             className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
           >
