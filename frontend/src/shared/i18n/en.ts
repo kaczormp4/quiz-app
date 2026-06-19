@@ -1,6 +1,6 @@
-﻿export const enTranslations = {
+export const enTranslations = {
   common: {
-    appName: "DevPrep",
+    appName: "ReadyWise",
     loading: "Loading...",
     saving: "Saving...",
     submit: "Submit",
@@ -97,7 +97,7 @@
   home: {
     badge: "Technical interview preparation",
     title: "Learn faster. Practice smarter. Walk into interviews prepared.",
-    subtitle: "DevPrep is a learning platform for anyone preparing for technical interviews — frontend developers, backend developers, juniors, mids and seniors.",
+    subtitle: "ReadyWise is a learning platform for anyone preparing for technical interviews — frontend developers, backend developers, juniors, mids and seniors.",
     primaryCta: "Start learning",
     secondaryCta: "View ranking",
     loginCta: "Log in",
@@ -146,7 +146,7 @@
 
   access: {
     upgradeTitle: "Upgrade to unlock this feature",
-    upgradeDescription: "This feature is available in DevPrep Pro.",
+    upgradeDescription: "This feature is available in ReadyWise Pro.",
     freeReadOnlyTitle: "Free plan is read-only",
     freeReadOnlyDescription: "Free users can browse easy questions, but answering and explanations are available in Pro.",
     reviewLockedTitle: "Review mode is available in Pro",
@@ -307,7 +307,7 @@
     freeName: "Free",
     freePrice: "$0",
     freePeriod: "forever",
-    freeDescription: "Perfect for trying DevPrep and building a habit.",
+    freeDescription: "Perfect for trying ReadyWise and building a habit.",
     freeFeatureOne: "Read-only access to questions",
     freeFeatureTwo: "Easy level only",
     freeFeatureThree: "No explanations",

@@ -1,0 +1,17 @@
+﻿{
+  "name": "ReadyWise",
+  "short_name": "ReadyWise",
+  "description": "Practice for interviews, exams and professional knowledge checks.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

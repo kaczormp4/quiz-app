@@ -14,9 +14,15 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link
           to={isAuthenticated ? "/dashboard" : "/"}
-          className="text-lg font-bold text-slate-950"
+          className="flex items-center gap-2 text-lg font-black tracking-tight text-slate-950"
         >
-          {t("common.appName")}
+          <img
+            src="/favicon.svg"
+            alt={`${t("common.appName")} logo`}
+            className="h-9 w-9"
+          />
+
+          <span>{t("common.appName")}</span>
         </Link>
 
         <nav className="flex items-center gap-4">
