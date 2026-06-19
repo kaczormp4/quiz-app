@@ -1,4 +1,4 @@
-﻿import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { useAuth } from "../../app/providers/AuthProvider";
@@ -37,19 +37,19 @@ export function Header() {
             {t("nav.pricing")}
           </NavLink>
 
+          <NavLink
+            to="/quizzes"
+            className={({ isActive }) =>
+              `text-sm font-medium ${
+                isActive ? "text-slate-950" : "text-slate-500"
+              }`
+            }
+          >
+            {t("nav.quizzes")}
+          </NavLink>
+
           {isAuthenticated ? (
             <>
-              <NavLink
-                to="/quizzes"
-                className={({ isActive }) =>
-                  `text-sm font-medium ${
-                    isActive ? "text-slate-950" : "text-slate-500"
-                  }`
-                }
-              >
-                {t("nav.quizzes")}
-              </NavLink>
-
               <NavLink
                 to="/contribute"
                 className={({ isActive }) =>

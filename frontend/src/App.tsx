@@ -38,32 +38,11 @@ export default function App() {
             }
           />
 
-        <Route
-          path="/quizzes"
-          element={
-            <ProtectedRoute>
-              <CategoriesPage />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/quizzes" element={<CategoriesPage />} />
 
-        <Route
-          path="/categories/:slug"
-          element={
-            <ProtectedRoute>
-              <QuestionsPage />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/categories/:slug" element={<QuestionsPage />} />
 
-        <Route
-          path="/questions/:questionId"
-          element={
-            <ProtectedRoute>
-              <QuestionPage />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/questions/:questionId" element={<QuestionPage />} />
 
         <Route
           path="/contribute"

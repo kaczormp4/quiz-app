@@ -40,7 +40,7 @@ export default function QuestionsPage() {
   const { t } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
   const queryClient = useQueryClient();
-  const { token, setUser } = useAuth();
+  const { token, setUser, isAuthenticated } = useAuth();
   const billingAccess = useBillingAccess();
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -220,13 +220,24 @@ export default function QuestionsPage() {
                 {question.difficulty}
               </span>
 
-              <span className="rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-orange-700">
-                {t("questions.answerReward")}
-              </span>
+              {isAuthenticated ? (
+                <>
+                  <span className="rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-orange-700">
+                    {t("questions.answerReward")}
+                  </span>
 
-              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
-                {t("questions.streakInfo")}
-              </span>
+                  <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
+                    {t("questions.streakInfo")}
+                  </span>
+                </>
+              ) : (
+                <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+                  {t(
+                    "questions.loginToSaveProgress",
+                    "Log in to save points and daily streak",
+                  )}
+                </span>
+              )}
 
               {isDifficultyLocked ? (
                 <span className="rounded-full bg-slate-950 px-3 py-1 text-xs font-semibold text-white">
@@ -312,8 +323,18 @@ export default function QuestionsPage() {
                   }`}
                 >
                   {result.is_correct
-                    ? t("questions.correctMessage")
-                    : t("questions.incorrectMessage")}
+                    ? isAuthenticated
+                      ? t("questions.correctMessage")
+                      : t(
+                          "questions.correctAnonymousMessage",
+                          "Nice! That's correct. Sign in to save your progress, earn +1 point, and keep your streak going.",
+                        )
+                    : isAuthenticated
+                      ? t("questions.incorrectMessage")
+                      : t(
+                          "questions.incorrectAnonymousMessage",
+                          "Not quite, but good practice. Sign in to save this question, earn +1 point, and review it later with Pro Review Mode.",
+                        )}
                 </p>
 
                 {canViewExplanation ? (
@@ -331,9 +352,9 @@ export default function QuestionsPage() {
                     <div className="prose prose-slate max-w-none rounded-2xl bg-white p-5 text-sm">
                       <h3>Detailed explanation preview</h3>
                       <p>
-                        This section explains why the correct answer works,
-                        what mistakes to avoid, and how to answer this topic
-                        during a real technical interview.
+                        This section explains why the correct answer works, what
+                        mistakes to avoid, and how to answer this topic during a
+                        real technical interview.
                       </p>
                       <p>
                         Upgrade to Pro to unlock full explanations for every
@@ -359,7 +380,9 @@ export default function QuestionsPage() {
       <div className="mt-6 flex justify-between">
         <button
           type="button"
-          onClick={() => setCurrentIndex((previous) => Math.max(previous - 1, 0))}
+          onClick={() =>
+            setCurrentIndex((previous) => Math.max(previous - 1, 0))
+          }
           disabled={currentIndex === 0}
           className="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
         >
@@ -390,4 +413,3 @@ export default function QuestionsPage() {
     </main>
   );
 }
-
