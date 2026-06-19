@@ -1,0 +1,13 @@
+﻿User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /history
+Disallow: /review
+Disallow: /billing
+Disallow: /login
+Disallow: /register
+
+Sitemap: https://readywise.app/sitemap.xml

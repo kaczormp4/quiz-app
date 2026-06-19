@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
 
 import { useAuth } from "../../app/providers/AuthProvider";
+import { Seo } from "../../shared/seo";
 
 type Plan = {
   id?: string;
@@ -296,195 +297,213 @@ export default function PricingPage() {
   };
 
   return (
-    <main className="bg-slate-50">
-      <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-16 text-center">
-          <p className="text-sm font-black uppercase tracking-[0.2em] text-slate-400">
-            Pricing
-          </p>
+    <>
+      <Seo
+        canonicalPath="/pricing"
+        title="ReadyWise pricing — Interview and exam preparation plans"
+        description="Choose a ReadyWise plan and prepare for interviews, exams and professional knowledge checks with practical quizzes and explanations."
+      />
 
-          <h1 className="mx-auto mt-4 max-w-4xl text-5xl font-black tracking-tight text-slate-950">
-            Choose how you want to unlock Pro
-          </h1>
+      <main className="bg-slate-50">
+        <section className="border-b border-slate-200 bg-white">
+          <div className="mx-auto max-w-6xl px-4 py-16 text-center">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-slate-400">
+              Pricing
+            </p>
 
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-600">
-            Free access stays useful. Pro can be bought for 30 days, paid
-            monthly with a 12-month commitment, or paid upfront for the best
-            yearly price.
-          </p>
-        </div>
-      </section>
+            <h1 className="mx-auto mt-4 max-w-4xl text-5xl font-black tracking-tight text-slate-950">
+              Choose how you want to unlock Pro
+            </h1>
 
-      <section className="mx-auto max-w-7xl px-4 py-12">
-        {plansQuery.isError ? (
-          <div className="mb-6 rounded-3xl border border-amber-200 bg-amber-50 p-5 text-sm font-medium text-amber-800">
-            Pricing API could not be loaded. Showing fallback pricing.
-          </div>
-        ) : null}
-
-        {checkoutMessage ? (
-          <div className="mb-6 rounded-3xl border border-slate-200 bg-white p-5 text-sm font-semibold text-slate-700 shadow-sm">
-            {checkoutMessage}
-          </div>
-        ) : null}
-
-        <div className="grid gap-6 xl:grid-cols-4 md:grid-cols-2">
-          {plans.map((plan) => (
-            <article
-              key={plan.code}
-              className={`relative flex flex-col rounded-[2rem] border p-6 shadow-sm ${
-                isRecommended(plan)
-                  ? "border-slate-950 bg-slate-950 text-white shadow-2xl"
-                  : "border-slate-200 bg-white text-slate-950"
-              }`}
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p
-                    className={`text-sm font-black uppercase tracking-wide ${
-                      isRecommended(plan) ? "text-slate-300" : "text-slate-400"
-                    }`}
-                  >
-                    {getBadge(plan)}
-                  </p>
-
-                  <h2 className="mt-2 text-2xl font-black">{plan.name}</h2>
-                </div>
-
-                {isRecommended(plan) ? (
-                  <span className="rounded-full bg-white px-3 py-1 text-xs font-black uppercase text-slate-950">
-                    Recommended
-                  </span>
-                ) : null}
-              </div>
-
-              <p
-                className={`mt-4 min-h-16 text-sm leading-6 ${
-                  isRecommended(plan) ? "text-slate-300" : "text-slate-600"
-                }`}
-              >
-                {plan.description}
-              </p>
-
-              <div className="mt-7">
-                <div className="flex flex-wrap items-end gap-2">
-                  <span className="text-5xl font-black tracking-tight">
-                    {formatPrice(plan.price_amount, plan.currency)}
-                  </span>
-
-                  <span
-                    className={`pb-2 text-sm font-bold ${
-                      isRecommended(plan) ? "text-slate-300" : "text-slate-500"
-                    }`}
-                  >
-                    {getPriceSuffix(plan)}
-                  </span>
-                </div>
-
-                <p
-                  className={`mt-3 text-sm font-bold ${
-                    isRecommended(plan) ? "text-emerald-300" : "text-slate-600"
-                  }`}
-                >
-                  {getHighlight(plan)}
-                </p>
-
-                <p
-                  className={`mt-2 text-xs font-semibold uppercase tracking-wide ${
-                    isRecommended(plan) ? "text-slate-400" : "text-slate-400"
-                  }`}
-                >
-                  {getShortInfo(plan)}
-                </p>
-              </div>
-
-              <button
-                type="button"
-                onClick={() => handlePlanClick(plan)}
-                disabled={checkoutMutation.isPending}
-                className={`mt-7 w-full rounded-2xl px-5 py-4 text-sm font-black transition disabled:cursor-not-allowed disabled:opacity-60 ${
-                  isRecommended(plan)
-                    ? "bg-white text-slate-950 hover:bg-slate-100"
-                    : "bg-slate-950 text-white hover:bg-slate-800"
-                }`}
-              >
-                {plan.code === "free"
-                  ? "Start free"
-                  : checkoutMutation.isPending
-                    ? "Preparing checkout..."
-                    : "Choose plan"}
-              </button>
-
-              <ul className="mt-7 grow space-y-3">
-                {plan.features.map((feature) => (
-                  <li
-                    key={feature}
-                    className={`flex gap-3 text-sm leading-6 ${
-                      isRecommended(plan) ? "text-slate-200" : "text-slate-600"
-                    }`}
-                  >
-                    <span
-                      className={`mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-xs font-black ${
-                        isRecommended(plan)
-                          ? "bg-white text-slate-950"
-                          : "bg-slate-100 text-slate-950"
-                      }`}
-                    >
-                      âś“
-                    </span>
-
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
-
-        <section className="mt-12 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
-          <div className="grid gap-6 md:grid-cols-4">
-            <div>
-              <h3 className="text-lg font-black text-slate-950">Free</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Free access gives users a real product preview, not just a
-                landing page.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-black text-slate-950">30-Day Pass</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Best for people who want one short interview preparation sprint.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-black text-slate-950">Monthly</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Lower monthly price, but with a minimum 12-month commitment.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-black text-slate-950">Annual</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Cheapest yearly option. Paid upfront for one year.
-              </p>
-            </div>
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+              Free access stays useful. Pro can be bought for 30 days, paid
+              monthly with a 12-month commitment, or paid upfront for the best
+              yearly price.
+            </p>
           </div>
         </section>
 
-        <div className="mt-8 text-center text-sm text-slate-500">
-          Already have an account?{" "}
-          <Link
-            to="/login"
-            className="font-bold text-slate-950 hover:underline"
-          >
-            Log in
-          </Link>
-        </div>
-      </section>
-    </main>
+        <section className="mx-auto max-w-7xl px-4 py-12">
+          {plansQuery.isError ? (
+            <div className="mb-6 rounded-3xl border border-amber-200 bg-amber-50 p-5 text-sm font-medium text-amber-800">
+              Pricing API could not be loaded. Showing fallback pricing.
+            </div>
+          ) : null}
+
+          {checkoutMessage ? (
+            <div className="mb-6 rounded-3xl border border-slate-200 bg-white p-5 text-sm font-semibold text-slate-700 shadow-sm">
+              {checkoutMessage}
+            </div>
+          ) : null}
+
+          <div className="grid gap-6 xl:grid-cols-4 md:grid-cols-2">
+            {plans.map((plan) => (
+              <article
+                key={plan.code}
+                className={`relative flex flex-col rounded-[2rem] border p-6 shadow-sm ${
+                  isRecommended(plan)
+                    ? "border-slate-950 bg-slate-950 text-white shadow-2xl"
+                    : "border-slate-200 bg-white text-slate-950"
+                }`}
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p
+                      className={`text-sm font-black uppercase tracking-wide ${
+                        isRecommended(plan)
+                          ? "text-slate-300"
+                          : "text-slate-400"
+                      }`}
+                    >
+                      {getBadge(plan)}
+                    </p>
+
+                    <h2 className="mt-2 text-2xl font-black">{plan.name}</h2>
+                  </div>
+
+                  {isRecommended(plan) ? (
+                    <span className="rounded-full bg-white px-3 py-1 text-xs font-black uppercase text-slate-950">
+                      Recommended
+                    </span>
+                  ) : null}
+                </div>
+
+                <p
+                  className={`mt-4 min-h-16 text-sm leading-6 ${
+                    isRecommended(plan) ? "text-slate-300" : "text-slate-600"
+                  }`}
+                >
+                  {plan.description}
+                </p>
+
+                <div className="mt-7">
+                  <div className="flex flex-wrap items-end gap-2">
+                    <span className="text-5xl font-black tracking-tight">
+                      {formatPrice(plan.price_amount, plan.currency)}
+                    </span>
+
+                    <span
+                      className={`pb-2 text-sm font-bold ${
+                        isRecommended(plan)
+                          ? "text-slate-300"
+                          : "text-slate-500"
+                      }`}
+                    >
+                      {getPriceSuffix(plan)}
+                    </span>
+                  </div>
+
+                  <p
+                    className={`mt-3 text-sm font-bold ${
+                      isRecommended(plan)
+                        ? "text-emerald-300"
+                        : "text-slate-600"
+                    }`}
+                  >
+                    {getHighlight(plan)}
+                  </p>
+
+                  <p
+                    className={`mt-2 text-xs font-semibold uppercase tracking-wide ${
+                      isRecommended(plan) ? "text-slate-400" : "text-slate-400"
+                    }`}
+                  >
+                    {getShortInfo(plan)}
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => handlePlanClick(plan)}
+                  disabled={checkoutMutation.isPending}
+                  className={`mt-7 w-full rounded-2xl px-5 py-4 text-sm font-black transition disabled:cursor-not-allowed disabled:opacity-60 ${
+                    isRecommended(plan)
+                      ? "bg-white text-slate-950 hover:bg-slate-100"
+                      : "bg-slate-950 text-white hover:bg-slate-800"
+                  }`}
+                >
+                  {plan.code === "free"
+                    ? "Start free"
+                    : checkoutMutation.isPending
+                      ? "Preparing checkout..."
+                      : "Choose plan"}
+                </button>
+
+                <ul className="mt-7 grow space-y-3">
+                  {plan.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className={`flex gap-3 text-sm leading-6 ${
+                        isRecommended(plan)
+                          ? "text-slate-200"
+                          : "text-slate-600"
+                      }`}
+                    >
+                      <span
+                        className={`mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-xs font-black ${
+                          isRecommended(plan)
+                            ? "bg-white text-slate-950"
+                            : "bg-slate-100 text-slate-950"
+                        }`}
+                      >
+                        âś“
+                      </span>
+
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+
+          <section className="mt-12 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="grid gap-6 md:grid-cols-4">
+              <div>
+                <h3 className="text-lg font-black text-slate-950">Free</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  Free access gives users a real product preview, not just a
+                  landing page.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-black text-slate-950">
+                  30-Day Pass
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  Best for people who want one short interview preparation
+                  sprint.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-black text-slate-950">Monthly</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  Lower monthly price, but with a minimum 12-month commitment.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-black text-slate-950">Annual</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  Cheapest yearly option. Paid upfront for one year.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <div className="mt-8 text-center text-sm text-slate-500">
+            Already have an account?{" "}
+            <Link
+              to="/login"
+              className="font-bold text-slate-950 hover:underline"
+            >
+              Log in
+            </Link>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
-
