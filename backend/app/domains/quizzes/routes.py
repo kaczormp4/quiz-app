@@ -384,6 +384,7 @@ async def import_admin_question_payload(
             description=None,
             is_active=True,
             created_by_user_id=current_user.id,
+            created_at=datetime.now(timezone.utc),
         )
         db.add(category)
         await db.flush()
