@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is JavaScript?",
+    "question_html": "<p>What is JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A database management system.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A database management system. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A markup language used to structure HTML documents.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A markup language used to structure HTML documents. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A CSS preprocessor used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS preprocessor used only for styling. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A programming language mainly used to add interactivity and logic to web pages.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A programming language mainly used to add interactivity and logic to web pages.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Where can JavaScript run?",
+    "question_html": "<p>Where can JavaScript run?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "In web browsers and in runtime environments such as Node.js.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> In web browsers and in runtime environments such as Node.js.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only on backend servers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only on backend servers. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Only inside CSS stylesheets.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only inside CSS stylesheets. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Only inside HTML files.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only inside HTML files. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between JavaScript and Java?",
+    "question_html": "<p>What is the difference between JavaScript and Java?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "JavaScript is just a shorter name for Java.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> JavaScript is just a shorter name for Java. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are different languages with different syntax, ecosystems, and common use cases.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They are different languages with different syntax, ecosystems, and common use cases.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are the same language but different versions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are the same language but different versions. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Java only runs in browsers, while JavaScript only runs on servers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Java only runs in browsers, while JavaScript only runs on servers. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Is JavaScript interpreted or compiled?",
+    "question_html": "<p>Is JavaScript interpreted or compiled?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It can only be interpreted and never optimized.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It can only be interpreted and never optimized. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only manually compiled by the developer before every run.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only manually compiled by the developer before every run. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Modern JavaScript engines use a mix of interpretation and just-in-time compilation.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Modern JavaScript engines use a mix of interpretation and just-in-time compilation.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a markup language, so it is neither interpreted nor compiled.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a markup language, so it is neither interpreted nor compiled. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is ECMAScript?",
+    "question_html": "<p>What is ECMAScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The language specification that standardizes JavaScript.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The language specification that standardizes JavaScript.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A browser-only debugging tool.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser-only debugging tool. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A JavaScript framework for building user interfaces.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A JavaScript framework for building user interfaces. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A package manager for JavaScript libraries.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A package manager for JavaScript libraries. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between var, let, and const?",
+    "question_html": "<p>What is the difference between var, let, and const?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "const values can always be reassigned, while let cannot.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> const values can always be reassigned, while let cannot. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "var and const are block-scoped, while let is global-scoped.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> var and const are block-scoped, while let is global-scoped. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are exactly the same in modern JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are exactly the same in modern JavaScript. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "var is function-scoped, while let and const are block-scoped; const cannot be reassigned.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> var is function-scoped, while let and const are block-scoped; const cannot be reassigned.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "When should you use const?",
+    "question_html": "<p>When should you use const?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use const only for numbers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use const only for numbers. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use const only inside loops.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use const only inside loops. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use const when a value must be globally available.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use const when a value must be globally available. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use const when the variable binding should not be reassigned.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use const when the variable binding should not be reassigned.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Can a const object be mutated?",
+    "question_html": "<p>Can a const object be mutated?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "No, const makes the whole object deeply immutable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> No, const makes the whole object deeply immutable. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Yes, but only in strict mode.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Yes, but only in strict mode. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "No, const objects cannot have properties.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> No, const objects cannot have properties. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Yes, the object’s properties can be changed, but the variable cannot be reassigned.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, the object’s properties can be changed, but the variable cannot be reassigned.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a variable?",
+    "question_html": "<p>What is a variable?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A browser event type.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser event type. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A named reference used to store or point to a value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A named reference used to store or point to a value.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function that always returns a number.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that always returns a number. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A reserved HTML tag.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A reserved HTML tag. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you declare a variable in JavaScript?",
+    "question_html": "<p>How do you declare a variable in JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Using variable tags in HTML.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using variable tags in HTML. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Using only the function keyword.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using only the function keyword. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Using def, val, or int.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using def, val, or int. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Using let, const, or var.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Using let, const, or var.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "javascript-basics"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What are primitive data types in JavaScript?",
+    "question_html": "<p>What are primitive data types in JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Only values created with classes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only values created with classes. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only arrays and objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only arrays and objects. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Only strings and functions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only strings and functions. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Basic immutable value types such as string, number, boolean, undefined, null, symbol, and bigint.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Basic immutable value types such as string, number, boolean, undefined, null, symbol, and bigint.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between primitive and reference types?",
+    "question_html": "<p>What is the difference between primitive and reference types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Primitives store simple values, while reference types store references to objects in memory.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Primitives store simple values, while reference types store references to objects in memory.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Primitive types can contain methods, while reference types cannot.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Primitive types can contain methods, while reference types cannot. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Reference types are always faster than primitives.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Reference types are always faster than primitives. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "There is no difference between them.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> There is no difference between them. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a string?",
+    "question_html": "<p>What is a string?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A sequence of characters used to represent text.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A sequence of characters used to represent text.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A browser storage API.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser storage API. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A value that can only be true or false.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that can only be true or false. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A special type of loop.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A special type of loop. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a number?",
+    "question_html": "<p>What is a number?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function that handles clicks.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that handles clicks. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A numeric value used for integers and floating-point values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A numeric value used for integers and floating-point values.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A collection of key-value pairs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A collection of key-value pairs. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A text value wrapped in quotes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A text value wrapped in quotes. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a boolean?",
+    "question_html": "<p>What is a boolean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A number with decimal places.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A number with decimal places. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A value that is either true or false.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A value that is either true or false.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An object used only for dates.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An object used only for dates. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A value that always contains text.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that always contains text. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is undefined?",
+    "question_html": "<p>What is undefined?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A string with the text undefined.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A string with the text undefined. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A syntax error thrown by the browser.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax error thrown by the browser. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A value that means a variable has been declared but has not been assigned a value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A value that means a variable has been declared but has not been assigned a value.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A value that means the variable was deleted from memory.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that means the variable was deleted from memory. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is null?",
+    "question_html": "<p>What is null?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A number equal to zero.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A number equal to zero. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A value automatically assigned to every new variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value automatically assigned to every new variable. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The same thing as false.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The same thing as false. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An intentional absence of a value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An intentional absence of a value.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between null and undefined?",
+    "question_html": "<p>What is the difference between null and undefined?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "undefined is used only in arrays, while null is used only in objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> undefined is used only in arrays, while null is used only in objects. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "null means a syntax error, while undefined means a runtime error.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> null means a syntax error, while undefined means a runtime error. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are always exactly the same in every comparison.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are always exactly the same in every comparison. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "undefined usually means no value was assigned, while null is intentionally assigned as empty.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> undefined usually means no value was assigned, while null is intentionally assigned as empty.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a symbol?",
+    "question_html": "<p>What is a symbol?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A built-in loop statement.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A built-in loop statement. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A special kind of CSS class.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A special kind of CSS class. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A number stored with arbitrary precision.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A number stored with arbitrary precision. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A primitive value often used to create unique property keys.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A primitive value often used to create unique property keys.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is BigInt?",
+    "question_html": "<p>What is BigInt?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A primitive type used to represent integers larger than Number can safely handle.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A primitive type used to represent integers larger than Number can safely handle.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A large string value.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A large string value. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A built-in array sorting method.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A built-in array sorting method. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A special object used for dates.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A special object used for dates. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "data-types"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between == and ===?",
+    "question_html": "<p>What is the difference between == and ===?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "== compares objects only, while === compares strings only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> == compares objects only, while === compares strings only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They always behave exactly the same.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They always behave exactly the same. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "== allows type coercion, while === compares value and type without coercion.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> == allows type coercion, while === compares value and type without coercion.</p>"
+      },
+      {
+        "id": "D",
+        "text": "=== allows coercion, while == does not.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> === allows coercion, while == does not. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Why is === usually preferred?",
+    "question_html": "<p>Why is === usually preferred?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because it is required in every if statement.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because it is required in every if statement. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because it converts every value to a string.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because it converts every value to a string. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because it is slower and therefore safer.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because it is slower and therefore safer. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because it avoids unexpected type coercion and makes comparisons more predictable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because it avoids unexpected type coercion and makes comparisons more predictable.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between != and !==?",
+    "question_html": "<p>What is the difference between != and !==?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They are identical in all cases.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are identical in all cases. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "!= allows type coercion, while !== checks inequality without type coercion.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> != allows type coercion, while !== checks inequality without type coercion.</p>"
+      },
+      {
+        "id": "C",
+        "text": "!== allows coercion, while != never does.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> !== allows coercion, while != never does. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "!= is used only for numbers, while !== is used only for strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> != is used only for numbers, while !== is used only for strings. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the modulo operator %?",
+    "question_html": "<p>What is the modulo operator %?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An operator that creates a new object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An operator that creates a new object. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An operator that calculates a percentage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An operator that calculates a percentage automatically. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An operator that returns the remainder after division.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An operator that returns the remainder after division.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An operator that joins two strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An operator that joins two strings. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does the typeof operator do?",
+    "question_html": "<p>What does the typeof operator do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns a string describing the type of a value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns a string describing the type of a value.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates a new data type.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new data type. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It converts a value into a boolean.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts a value into a boolean. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It checks whether a variable exists in CSS.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks whether a variable exists in CSS. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does the ! operator do?",
+    "question_html": "<p>What does the ! operator do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It increments a number by one.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It increments a number by one. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It negates a boolean-like value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It negates a boolean-like value.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It compares two values strictly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It compares two values strictly. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It creates a new variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new variable. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between && and ||?",
+    "question_html": "<p>What is the difference between &amp;&amp; and ||?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "&& returns the first falsy value or the last value; || returns the first truthy value or the last value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> &amp;&amp; returns the first falsy value or the last value; || returns the first truthy value or the last value.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are only used for comparing numbers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are only used for comparing numbers. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "&& means addition, while || means subtraction.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> &amp;&amp; means addition, while || means subtraction. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They always return true or false only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They always return true or false only. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does the ?? operator do?",
+    "question_html": "<p>What does the ?? operator do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns the right-hand value when the left-hand value is any falsy value.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns the right-hand value when the left-hand value is any falsy value. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It returns the right-hand value only when the left-hand value is null or undefined.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns the right-hand value only when the left-hand value is null or undefined.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It creates an optional function parameter.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates an optional function parameter. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It checks if two values are equal.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks if two values are equal. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is optional chaining ?.?",
+    "question_html": "<p>What is optional chaining ?.?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A replacement for every if statement.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A replacement for every if statement. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A way to create an optional import.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to create an optional import. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A method for sorting arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method for sorting arrays. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A syntax that safely accesses nested properties or calls methods when a value may be null or undefined.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A syntax that safely accesses nested properties or calls methods when a value may be null or undefined.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the ternary operator?",
+    "question_html": "<p>What is the ternary operator?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A loop that runs exactly three times.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A loop that runs exactly three times. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An operator that always returns three values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An operator that always returns three values. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A shorthand conditional expression written as condition ? valueIfTrue : valueIfFalse.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A shorthand conditional expression written as condition ? valueIfTrue : valueIfFalse.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A syntax used only for objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax used only for objects. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "operators"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How does an if statement work?",
+    "question_html": "<p>How does an if statement work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for catching errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for catching errors. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates a new function scope.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new function scope. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It always runs both code branches.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs both code branches. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It runs a block of code when a condition evaluates to true.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It runs a block of code when a condition evaluates to true.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is an else block?",
+    "question_html": "<p>What is an else block?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A block used only inside switch statements.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A block used only inside switch statements. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A block that always runs before if.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A block that always runs before if. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A block that declares global variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A block that declares global variables. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A block that runs when the if condition is false.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A block that runs when the if condition is false.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is an else if block?",
+    "question_html": "<p>What is an else if block?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A block that runs at the same time as if.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A block that runs at the same time as if. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A syntax used only with promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax used only with promises. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An additional conditional branch checked after the first if condition fails.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An additional conditional branch checked after the first if condition fails.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A loop used for arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A loop used for arrays. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "When would you use a switch statement?",
+    "question_html": "<p>When would you use a switch statement?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Only for checking if a value is truthy.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only for checking if a value is truthy. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only when defining classes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only when defining classes. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "When comparing one value against multiple possible cases.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When comparing one value against multiple possible cases.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Only when handling network requests.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only when handling network requests. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a truthy value?",
+    "question_html": "<p>What is a truthy value?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A value that can only exist inside arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that can only exist inside arrays. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A value that behaves like true in a boolean context.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A value that behaves like true in a boolean context.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A value that must literally be true.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that must literally be true. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A value that is always a string.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that is always a string. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a falsy value?",
+    "question_html": "<p>What is a falsy value?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A value that behaves like false in a boolean context.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A value that behaves like false in a boolean context.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A value that cannot be stored in variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that cannot be stored in variables. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A value that must literally be false only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that must literally be false only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A value that is always an error.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that is always an error. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Name common falsy values in JavaScript.",
+    "question_html": "<p>Name common falsy values in JavaScript.</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Only false and null.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only false and null. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only empty arrays and empty objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only empty arrays and empty objects. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "true, 1, [], {}, and 'hello'.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> true, 1, [], {}, and &#x27;hello&#x27;. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "false, 0, -0, 0n, '', null, undefined, and NaN.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> false, 0, -0, 0n, &#x27;&#x27;, null, undefined, and NaN.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does Boolean(value) do?",
+    "question_html": "<p>What does Boolean(value) do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It checks whether a value is an object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks whether a value is an object. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates a new boolean variable automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new boolean variable automatically. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It converts a value to a number.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts a value to a number. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It converts a value to true or false based on its truthiness.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It converts a value to true or false based on its truthiness.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is short-circuit evaluation?",
+    "question_html": "<p>What is short-circuit evaluation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A method for speeding up CSS selectors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method for speeding up CSS selectors. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A syntax error caused by missing parentheses.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax error caused by missing parentheses. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A way to run every condition in a chain.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to run every condition in a chain. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A behavior where logical operators stop evaluating once the result is already determined.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A behavior where logical operators stop evaluating once the result is already determined.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How can you check if a value exists?",
+    "question_html": "<p>How can you check if a value exists?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "You must convert it to an array first.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> You must convert it to an array first. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "You must always use JSON.stringify.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> You must always use JSON.stringify. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "You can check its truthiness or compare it explicitly against null and undefined.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You can check its truthiness or compare it explicitly against null and undefined.</p>"
+      },
+      {
+        "id": "D",
+        "text": "You can only use a try/catch block.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> You can only use a try/catch block. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "conditions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a function?",
+    "question_html": "<p>What is a function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type of HTML element.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A type of HTML element. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A CSS selector.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS selector. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A reusable block of code that can be called to perform a task.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A reusable block of code that can be called to perform a task.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A built-in browser database.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A built-in browser database. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you declare a function?",
+    "question_html": "<p>How do you declare a function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Using the class keyword only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using the class keyword only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Using the function keyword or an arrow function assigned to a variable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Using the function keyword or an arrow function assigned to a variable.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Using only HTML attributes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using only HTML attributes. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Using the import keyword.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using the import keyword. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a function expression?",
+    "question_html": "<p>What is a function expression?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function that is always global.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that is always global. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A function that can never be called.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that can never be called. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function written only inside JSX.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function written only inside JSX. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function assigned to a variable or used as a value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function assigned to a variable or used as a value.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is an arrow function?",
+    "question_html": "<p>What is an arrow function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function that points to the DOM.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that points to the DOM. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A shorter function syntax using the => arrow.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A shorter function syntax using the =&gt; arrow.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function used only in Node.js.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function used only in Node.js. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function that must return an object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that must return an object. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between a function declaration and a function expression?",
+    "question_html": "<p>What is the difference between a function declaration and a function expression?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Function declarations are hoisted with their body, while function expressions are available only after assignment.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Function declarations are hoisted with their body, while function expressions are available only after assignment.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Function expressions cannot accept parameters.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Function expressions cannot accept parameters. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are exactly identical in all situations.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are exactly identical in all situations. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Function declarations can only be used inside objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Function declarations can only be used inside objects. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What are function parameters?",
+    "question_html": "<p>What are function parameters?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Named placeholders listed in a function definition.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Named placeholders listed in a function definition.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Actual values passed during a function call.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Actual values passed during a function call. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Return values from a function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Return values from a function. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Variables that can only be global.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Variables that can only be global. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What are function arguments?",
+    "question_html": "<p>What are function arguments?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A special kind of object property.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A special kind of object property. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Actual values passed to a function when it is called.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Actual values passed to a function when it is called.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Names listed in the function definition only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Names listed in the function definition only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Values returned from a function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Values returned from a function. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a return value?",
+    "question_html": "<p>What is a return value?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A value that is always undefined.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A value that is always undefined. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The name of the function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The name of the function. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The value a function gives back using return.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The value a function gives back using return.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The first parameter of every function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The first parameter of every function. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What happens if a function does not return anything?",
+    "question_html": "<p>What happens if a function does not return anything?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns null automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns null automatically. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It throws an error automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It throws an error automatically. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It returns undefined by default.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns undefined by default.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It returns the last variable declared.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns the last variable declared. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What are default parameters?",
+    "question_html": "<p>What are default parameters?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Parameter values used when an argument is not provided.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Parameter values used when an argument is not provided.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Parameters that can never be changed.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Parameters that can never be changed. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Required arguments that must always be passed.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Required arguments that must always be passed. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Global variables created by a function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Global variables created by a function. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is scope?",
+    "question_html": "<p>What is scope?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The area of code where a variable can be accessed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The area of code where a variable can be accessed.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A browser window size.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser window size. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A CSS layout rule.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS layout rule. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The result of a mathematical operation.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The result of a mathematical operation. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is global scope?",
+    "question_html": "<p>What is global scope?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A scope available only in modules with no imports.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope available only in modules with no imports. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The outermost scope where variables are accessible from many parts of the program.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The outermost scope where variables are accessible from many parts of the program.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A scope that exists only inside loops.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope that exists only inside loops. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A scope that is created by every if statement only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope that is created by every if statement only. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is function scope?",
+    "question_html": "<p>What is function scope?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A scope used only for CSS functions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope used only for CSS functions. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A scope created inside a function.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A scope created inside a function.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A scope created by every object literal.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope created by every object literal. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The scope of imported packages only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The scope of imported packages only. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is block scope?",
+    "question_html": "<p>What is block scope?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A browser feature that blocks scripts.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser feature that blocks scripts. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A scope created by blocks such as if statements or loops using curly braces.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A scope created by blocks such as if statements or loops using curly braces.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A scope created only by functions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope created only by functions. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A scope used only for arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope used only for arrays. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Which variable declarations are block-scoped?",
+    "question_html": "<p>Which variable declarations are block-scoped?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "No JavaScript variables are block-scoped.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> No JavaScript variables are block-scoped. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only var is block-scoped.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only var is block-scoped. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "let and const are block-scoped.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> let and const are block-scoped.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Only function declarations are block-scoped.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only function declarations are block-scoped. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Is var block-scoped?",
+    "question_html": "<p>Is var block-scoped?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "No, var is function-scoped, not block-scoped.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No, var is function-scoped, not block-scoped.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only when used with const.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only when used with const. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Yes, var is always block-scoped.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Yes, var is always block-scoped. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Only inside object literals.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only inside object literals. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is lexical scope?",
+    "question_html": "<p>What is lexical scope?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A scope that changes randomly at runtime.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope that changes randomly at runtime. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Scope determined by the value type.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Scope determined by the value type. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Scope determined by where code is written in the source, not where it is called from.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Scope determined by where code is written in the source, not where it is called from.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A scope created only by the browser console.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A scope created only by the browser console. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Can an inner function access variables from an outer function?",
+    "question_html": "<p>Can an inner function access variables from an outer function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Only in Node.js, not in browsers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only in Node.js, not in browsers. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Yes, because JavaScript uses lexical scope and closures.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, because JavaScript uses lexical scope and closures.</p>"
+      },
+      {
+        "id": "C",
+        "text": "No, functions cannot access outer variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> No, functions cannot access outer variables. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Only if the variable is declared with var.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only if the variable is declared with var. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is variable shadowing?",
+    "question_html": "<p>What is variable shadowing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "When a variable changes from string to number.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When a variable changes from string to number. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "When an inner scope declares a variable with the same name as one in an outer scope.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When an inner scope declares a variable with the same name as one in an outer scope.</p>"
+      },
+      {
+        "id": "C",
+        "text": "When a variable is hidden in localStorage.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When a variable is hidden in localStorage. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "When a variable is deleted automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When a variable is deleted automatically. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "Why should global variables be avoided?",
+    "question_html": "<p>Why should global variables be avoided?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They cannot store objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They cannot store objects. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are not allowed in JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are not allowed in JavaScript. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They can cause naming conflicts and make code harder to reason about.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They can cause naming conflicts and make code harder to reason about.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They are always slower than local variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are always slower than local variables. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "scope"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is an array?",
+    "question_html": "<p>What is an array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A key-value object with no order.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A key-value object with no order. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A browser API for forms.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser API for forms. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function that runs repeatedly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that runs repeatedly. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An ordered list-like collection of values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An ordered list-like collection of values.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you create an array?",
+    "question_html": "<p>How do you create an array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Using the function keyword only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using the function keyword only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Using curly braces only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using curly braces only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Using angle brackets only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using angle brackets only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Using square brackets, for example const items = [1, 2, 3].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Using square brackets, for example const items = [1, 2, 3].</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you access an item in an array?",
+    "question_html": "<p>How do you access an item in an array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "By using a CSS selector.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By using a CSS selector. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "By calling the array name as a function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By calling the array name as a function. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "By using only Object.keys().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By using only Object.keys(). This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "By using its index, for example items[0].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> By using its index, for example items[0].</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is an array index?",
+    "question_html": "<p>What is an array index?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The total number of items in an array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The total number of items in an array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A method that removes an item.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method that removes an item. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The numeric position of an item in an array, starting from 0.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The numeric position of an item in an array, starting from 0.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A unique string key required for every item.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A unique string key required for every item. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does array.length return?",
+    "question_html": "<p>What does array.length return?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The last item in the array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The last item in the array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The memory address of the array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The memory address of the array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The number of items in the array.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The number of items in the array.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The first index of the array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The first index of the array. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you add an item to the end of an array?",
+    "question_html": "<p>How do you add an item to the end of an array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use shift() only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use shift() only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use push() or create a new array with the spread operator.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use push() or create a new array with the spread operator.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use typeof.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use typeof. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use pop().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use pop(). This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you remove the last item from an array?",
+    "question_html": "<p>How do you remove the last item from an array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use push().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use push(). This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use map().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use map(). This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use pop().",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use pop().</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use Object.values().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Object.values(). This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does push() do?",
+    "question_html": "<p>What does push() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It adds one or more items to the end of an array and returns the new length.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It adds one or more items to the end of an array and returns the new length.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates a copy without changing the array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a copy without changing the array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It removes the first item from an array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the first item from an array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It sorts the array alphabetically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It sorts the array alphabetically. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does pop() do?",
+    "question_html": "<p>What does pop() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It checks if an item exists.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks if an item exists. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It removes and returns the last item from an array.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It removes and returns the last item from an array.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It converts the array to a string.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts the array to a string. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It adds an item to the end.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It adds an item to the end. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does includes() do?",
+    "question_html": "<p>What does includes() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It creates a new object from an array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new object from an array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It checks whether an array or string contains a specific value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It checks whether an array or string contains a specific value.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It sorts values by length.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It sorts values by length. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It removes duplicate items.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes duplicate items. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "arrays"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does map() do?",
+    "question_html": "<p>What does map() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It removes all falsy values automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes all falsy values automatically. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates a new array by transforming each item.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates a new array by transforming each item.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It changes every item in place and returns nothing.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It changes every item in place and returns nothing. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It finds only the first matching item.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It finds only the first matching item. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does filter() do?",
+    "question_html": "<p>What does filter() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns only the first matching item.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns only the first matching item. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates a new array with items that pass a condition.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates a new array with items that pass a condition.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It changes the original array into an object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It changes the original array into an object. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It sorts values alphabetically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It sorts values alphabetically. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does find() do?",
+    "question_html": "<p>What does find() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns all matching items.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns all matching items. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It always returns a boolean.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always returns a boolean. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It returns the first item that matches a condition.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns the first item that matches a condition.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It modifies the original array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It modifies the original array. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does forEach() do?",
+    "question_html": "<p>What does forEach() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns the first matching item.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns the first matching item. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It sorts the array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It sorts the array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It creates a new transformed array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new transformed array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It runs a function for each item and returns undefined.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It runs a function for each item and returns undefined.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does reduce() do?",
+    "question_html": "<p>What does reduce() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It combines array items into a single accumulated result.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It combines array items into a single accumulated result.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It removes the last item from an array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the last item from an array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It checks if all values are true.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks if all values are true. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It creates a shallow copy only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a shallow copy only. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between map() and forEach()?",
+    "question_html": "<p>What is the difference between map() and forEach()?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "map() returns a new array, while forEach() is mainly for side effects and returns undefined.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> map() returns a new array, while forEach() is mainly for side effects and returns undefined.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are exactly the same.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are exactly the same. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "forEach() returns a new array, while map() returns undefined.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> forEach() returns a new array, while map() returns undefined. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "map() works only on objects, while forEach() works only on arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> map() works only on objects, while forEach() works only on arrays. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between find() and filter()?",
+    "question_html": "<p>What is the difference between find() and filter()?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "filter() modifies the original array, while find() does not.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> filter() modifies the original array, while find() does not. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "find() returns all items, while filter() returns only one.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> find() returns all items, while filter() returns only one. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Both always return booleans.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Both always return booleans. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "find() returns the first matching item, while filter() returns an array of all matching items.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> find() returns the first matching item, while filter() returns an array of all matching items.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does some() do?",
+    "question_html": "<p>What does some() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns true only if every item passes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns true only if every item passes. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It removes matching items.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes matching items. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It transforms every item.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It transforms every item. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It returns true if at least one item passes the condition.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns true if at least one item passes the condition.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does every() do?",
+    "question_html": "<p>What does every() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns true if at least one item passes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns true if at least one item passes. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It returns true if every item passes the condition.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns true if every item passes the condition.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It returns the first matching item.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns the first matching item. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It creates a new array of all items.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new array of all items. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does slice() do?",
+    "question_html": "<p>What does slice() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It checks if an item exists.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks if an item exists. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It adds items to the beginning of an array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It adds items to the beginning of an array. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It removes items from the original array by default.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes items from the original array by default. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It returns a shallow copy of part of an array without mutating the original.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns a shallow copy of part of an array without mutating the original.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "array-methods"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is an object in JavaScript?",
+    "question_html": "<p>What is an object in JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type that can only store numbers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A type that can only store numbers. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A collection of key-value pairs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A collection of key-value pairs.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A string with special formatting.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A string with special formatting. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An ordered list of values only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An ordered list of values only. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you create an object?",
+    "question_html": "<p>How do you create an object?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Using only the new Array() constructor.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using only the new Array() constructor. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Using object literal syntax, for example const user = { name: 'Ana' }.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Using object literal syntax, for example const user = { name: &#x27;Ana&#x27; }.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Using the if keyword.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using the if keyword. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Using square brackets with no keys.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using square brackets with no keys. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you access object properties?",
+    "question_html": "<p>How do you access object properties?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Only with JSON.stringify().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only with JSON.stringify(). This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only by using array indexes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only by using array indexes. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Using dot notation or bracket notation.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Using dot notation or bracket notation.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Only through CSS selectors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only through CSS selectors. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between dot notation and bracket notation?",
+    "question_html": "<p>What is the difference between dot notation and bracket notation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Dot notation can use variables directly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Dot notation can use variables directly. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Dot notation uses a fixed property name, while bracket notation can use variables or special property names.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Dot notation uses a fixed property name, while bracket notation can use variables or special property names.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Bracket notation works only on arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Bracket notation works only on arrays. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They are always exactly the same in syntax.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are always exactly the same in syntax. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you add a property to an object?",
+    "question_html": "<p>How do you add a property to an object?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use pop().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use pop(). This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use document.querySelector().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use document.querySelector(). This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use typeof.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use typeof. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Assign a value to a new key, for example user.age = 30.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Assign a value to a new key, for example user.age = 30.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you remove a property from an object?",
+    "question_html": "<p>How do you remove a property from an object?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Set the whole object to true.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Set the whole object to true. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use addEventListener().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use addEventListener(). This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use push().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use push(). This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use the delete operator.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the delete operator.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does the delete operator do?",
+    "question_html": "<p>What does the delete operator do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It deletes an array method.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It deletes an array method. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It removes a variable declaration from source code.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes a variable declaration from source code. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It removes a property from an object.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It removes a property from an object.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It deletes the browser history.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It deletes the browser history. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you check if an object has a property?",
+    "question_html": "<p>How do you check if an object has a property?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use the in operator or Object.hasOwn() / hasOwnProperty().",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the in operator or Object.hasOwn() / hasOwnProperty().</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use Boolean() only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Boolean() only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use array.length only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use array.length only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use querySelector().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use querySelector(). This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does Object.keys() return?",
+    "question_html": "<p>What does Object.keys() return?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An array of property values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An array of property values. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A single string with all values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A single string with all values. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The number of object methods.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The number of object methods. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An array of an object’s own enumerable property names.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An array of an object’s own enumerable property names.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does Object.values() return?",
+    "question_html": "<p>What does Object.values() return?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A boolean indicating if the object is empty.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A boolean indicating if the object is empty. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An array of an object’s own enumerable property values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An array of an object’s own enumerable property values.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A copy of the original object with no values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A copy of the original object with no values. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An array of property names.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An array of property names. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the DOM?",
+    "question_html": "<p>What is the DOM?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A programming interface representing the structure of a web page as objects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A programming interface representing the structure of a web page as objects.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A JavaScript package manager.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A JavaScript package manager. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A database used by browsers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A database used by browsers. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A CSS animation framework.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS animation framework. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How can JavaScript change HTML content?",
+    "question_html": "<p>How can JavaScript change HTML content?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "By changing the server operating system.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By changing the server operating system. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "By editing CSS files only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By editing CSS files only. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "By selecting DOM elements and updating properties such as textContent or innerHTML.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> By selecting DOM elements and updating properties such as textContent or innerHTML.</p>"
+      },
+      {
+        "id": "D",
+        "text": "By recompiling the browser.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By recompiling the browser. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does document.querySelector() do?",
+    "question_html": "<p>What does document.querySelector() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It creates a new HTML document.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new HTML document. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It submits a form automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It submits a form automatically. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It returns the first element that matches a CSS selector.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns the first element that matches a CSS selector.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It returns all elements as an array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns all elements as an array. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does document.getElementById() do?",
+    "question_html": "<p>What does document.getElementById() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It returns all elements with the same class.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns all elements with the same class. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates a new id for an element.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new id for an element. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It removes an element from the DOM.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes an element from the DOM. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It returns the element with the matching id.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns the element with the matching id.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "How do you add an event listener?",
+    "question_html": "<p>How do you add an event listener?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use Object.keys() on the document.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Object.keys() on the document. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use the delete operator.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use the delete operator. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use the typeof operator.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use the typeof operator. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use addEventListener() on an element.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use addEventListener() on an element.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is a click event?",
+    "question_html": "<p>What is a click event?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An event fired only when the page loads.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An event fired only when the page loads. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A method that creates a new button.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method that creates a new button. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An event fired when the user clicks an element.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An event fired when the user clicks an element.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A CSS property used for hover styles.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS property used for hover styles. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is an input event?",
+    "question_html": "<p>What is an input event?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A browser storage operation.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser storage operation. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A special JavaScript data type.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A special JavaScript data type. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An event fired only when a form is submitted.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An event fired only when a form is submitted. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An event fired when the value of an input-like element changes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An event fired when the value of an input-like element changes.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What does event.preventDefault() do?",
+    "question_html": "<p>What does event.preventDefault() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It prevents the browser’s default behavior for an event.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It prevents the browser’s default behavior for an event.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It always stops all future events globally.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always stops all future events globally. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It deletes the event from memory.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It deletes the event from memory. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It prevents JavaScript from running.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It prevents JavaScript from running. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is console.log() used for?",
+    "question_html": "<p>What is console.log() used for?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Showing alerts to all website users.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Showing alerts to all website users. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Changing the HTML content automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Changing the HTML content automatically. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Printing values to the developer console for debugging.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Printing values to the developer console for debugging.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Saving values to a database.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Saving values to a database. This does not accurately describe the JavaScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  },
+  {
+    "category_code": "javascript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between browser JavaScript and Node.js?",
+    "question_html": "<p>What is the difference between browser JavaScript and Node.js?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Node.js can only run CSS, while browsers run JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Node.js can only run CSS, while browsers run JavaScript. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are different names for the same browser.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are different names for the same browser. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Browser JavaScript can access files directly by default, while Node.js cannot.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Browser JavaScript can access files directly by default, while Node.js cannot. This does not accurately describe the JavaScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Browser JavaScript has Web APIs and DOM access, while Node.js runs on the server and provides server-side APIs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Browser JavaScript has Web APIs and DOM access, while Node.js runs on the server and provides server-side APIs.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "easy",
+      "dom-browser"
+    ]
+  }
+]
