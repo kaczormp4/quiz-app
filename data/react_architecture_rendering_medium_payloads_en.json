@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What happens internally when a React component re-renders?",
+    "question_html": "<p>What happens internally when a React component re-renders?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React calls the component again to produce a new React element tree, compares it with the previous tree, and commits only the necessary DOM changes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React calls the component again to produce a new React element tree, compares it with the previous tree, and commits only the necessary DOM changes.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between render phase and commit phase?",
+    "question_html": "<p>What is the difference between render phase and commit phase?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "The render phase calculates the next UI and can be interrupted; the commit phase applies the final changes to the DOM and runs layout-related effects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The render phase calculates the next UI and can be interrupted; the commit phase applies the final changes to the DOM and runs layout-related effects.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is reconciliation in React?",
+    "question_html": "<p>What is reconciliation in React?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Reconciliation is React's process of comparing the previous and next element trees to decide what changed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Reconciliation is React&#x27;s process of comparing the previous and next element trees to decide what changed.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How does React decide whether to update the DOM?",
+    "question_html": "<p>How does React decide whether to update the DOM?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "React compares the new React tree with the previous one and updates the real DOM only for changes that need to be committed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React compares the new React tree with the previous one and updates the real DOM only for changes that need to be committed.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the role of the Virtual DOM?",
+    "question_html": "<p>What is the role of the Virtual DOM?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "The Virtual DOM is React's in-memory representation of UI that helps React calculate efficient updates before touching the real DOM.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The Virtual DOM is React&#x27;s in-memory representation of UI that helps React calculate efficient updates before touching the real DOM.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Does React compare the whole DOM tree on every update?",
+    "question_html": "<p>Does React compare the whole DOM tree on every update?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React compares React element trees using heuristics, component boundaries, element types, and keys rather than doing a full expensive real DOM comparison.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React compares React element trees using heuristics, component boundaries, element types, and keys rather than doing a full expensive real DOM comparison.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why are stable keys important during reconciliation?",
+    "question_html": "<p>Why are stable keys important during reconciliation?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Stable keys help React match list items between renders so it can preserve the right component instances and state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Stable keys help React match list items between renders so it can preserve the right component instances and state.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What problems can happen when using array indexes as keys?",
+    "question_html": "<p>What problems can happen when using array indexes as keys?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Indexes as keys can cause wrong state preservation, incorrect UI behavior, and unnecessary remounts when list order changes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Indexes as keys can cause wrong state preservation, incorrect UI behavior, and unnecessary remounts when list order changes.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between mounting, updating, and unmounting?",
+    "question_html": "<p>What is the difference between mounting, updating, and unmounting?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Mounting creates a component, updating re-renders it with new data, and unmounting removes it from the UI and runs cleanup.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Mounting creates a component, updating re-renders it with new data, and unmounting removes it from the UI and runs cleanup.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What can cause unnecessary re-renders?",
+    "question_html": "<p>What can cause unnecessary re-renders?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Unnecessary re-renders can be caused by unstable props, inline objects/functions, broad context updates, or state stored too high in the tree.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Unnecessary re-renders can be caused by unstable props, inline objects/functions, broad context updates, or state stored too high in the tree.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-architecture-and-rendering"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is component composition?",
+    "question_html": "<p>What is component composition?</p>",
+    "answers": [
+      {
+        "text": "Component composition means building larger UIs by combining smaller components and passing data or behavior through props and children.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Component composition means building larger UIs by combining smaller components and passing data or behavior through props and children.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why is composition preferred over inheritance in React?",
+    "question_html": "<p>Why is composition preferred over inheritance in React?</p>",
+    "answers": [
+      {
+        "text": "Composition is preferred because it is simpler, more flexible, and matches React's component model better than class inheritance.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Composition is preferred because it is simpler, more flexible, and matches React&#x27;s component model better than class inheritance.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between a smart component and a dumb component?",
+    "question_html": "<p>What is the difference between a smart component and a dumb component?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "A smart component usually owns data or logic, while a dumb component mainly renders UI from props.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A smart component usually owns data or logic, while a dumb component mainly renders UI from props.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between container and presentational components?",
+    "question_html": "<p>What is the difference between container and presentational components?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Container components manage data and behavior, while presentational components focus on displaying UI.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Container components manage data and behavior, while presentational components focus on displaying UI.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are compound components?",
+    "question_html": "<p>What are compound components?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Compound components are related components designed to work together through shared parent state or context, such as Tabs and Tab.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Compound components are related components designed to work together through shared parent state or context, such as Tabs and Tab.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the children-as-a-function pattern?",
+    "question_html": "<p>What is the children-as-a-function pattern?</p>",
+    "answers": [
+      {
+        "text": "Children-as-a-function is a pattern where a component receives a function as children and calls it to render UI with provided data.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Children-as-a-function is a pattern where a component receives a function as children and calls it to render UI with provided data.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is a render prop?",
+    "question_html": "<p>What is a render prop?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "A render prop is a prop that is a function used by a component to decide what UI to render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A render prop is a prop that is a function used by a component to decide what UI to render.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What problem do render props solve?",
+    "question_html": "<p>What problem do render props solve?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Render props help share reusable logic between components while allowing the caller to control the rendered UI.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Render props help share reusable logic between components while allowing the caller to control the rendered UI.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are higher-order components?",
+    "question_html": "<p>What are higher-order components?</p>",
+    "answers": [
+      {
+        "text": "A higher-order component is a function that takes a component and returns a new component with extra behavior or props.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A higher-order component is a function that takes a component and returns a new component with extra behavior or props.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are the downsides of higher-order components?",
+    "question_html": "<p>What are the downsides of higher-order components?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "HOCs can create wrapper hell, make props harder to trace, and complicate debugging and TypeScript typing.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> HOCs can create wrapper hell, make props harder to trace, and complicate debugging and TypeScript typing.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "components-and-composition"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is prop drilling?",
+    "question_html": "<p>What is prop drilling?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Prop drilling is passing props through many intermediate components that do not actually need the data themselves.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Prop drilling is passing props through many intermediate components that do not actually need the data themselves.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How can you avoid prop drilling?",
+    "question_html": "<p>How can you avoid prop drilling?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "You can avoid prop drilling with component composition, Context, state management libraries, or moving state closer to where it is used.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You can avoid prop drilling with component composition, Context, state management libraries, or moving state closer to where it is used.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When should state be lifted up?",
+    "question_html": "<p>When should state be lifted up?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "State should be lifted up when multiple sibling components need to read or update the same data.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> State should be lifted up when multiple sibling components need to read or update the same data.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What does “single source of truth” mean in React?",
+    "question_html": "<p>What does “single source of truth” mean in React?</p>",
+    "answers": [
+      {
+        "text": "A single source of truth means one place owns a piece of data, and other parts of the UI derive from that source instead of duplicating it.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A single source of truth means one place owns a piece of data, and other parts of the UI derive from that source instead of duplicating it.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How do you decide whether data should be stored in local state?",
+    "question_html": "<p>How do you decide whether data should be stored in local state?</p>",
+    "answers": [
+      {
+        "text": "Store data in local state when it is used only by that component or a small nearby part of the tree and changes due to UI interaction.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Store data in local state when it is used only by that component or a small nearby part of the tree and changes due to UI interaction.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What kind of data should not be stored in React state?",
+    "question_html": "<p>What kind of data should not be stored in React state?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Do not store values that can be derived from props/state, constants, refs-only values, or server cache data that belongs in a data-fetching cache.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Do not store values that can be derived from props/state, constants, refs-only values, or server cache data that belongs in a data-fetching cache.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is derived state?",
+    "question_html": "<p>What is derived state?</p>",
+    "answers": [
+      {
+        "text": "Derived state is state calculated from other state or props, such as filtered items computed from items and search text.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Derived state is state calculated from other state or props, such as filtered items computed from items and search text.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why can derived state be problematic?",
+    "question_html": "<p>Why can derived state be problematic?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Derived state can become duplicated data that gets out of sync with its original source.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Derived state can become duplicated data that gets out of sync with its original source.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How can you compute derived values without storing them in state?",
+    "question_html": "<p>How can you compute derived values without storing them in state?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Compute derived values during render or with useMemo when the calculation is expensive.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Compute derived values during render or with useMemo when the calculation is expensive.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is state colocation?",
+    "question_html": "<p>What is state colocation?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "State colocation means keeping state as close as possible to the components that actually use it.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> State colocation means keeping state as close as possible to the components that actually use it.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "props-and-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are the rules of hooks?",
+    "question_html": "<p>What are the rules of hooks?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Hooks must be called at the top level and only from React components or custom hooks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Hooks must be called at the top level and only from React components or custom hooks.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why can hooks not be called conditionally?",
+    "question_html": "<p>Why can hooks not be called conditionally?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React relies on hooks being called in the same order on every render to match hook state correctly.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React relies on hooks being called in the same order on every render to match hook state correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why can hooks only be called inside React components or custom hooks?",
+    "question_html": "<p>Why can hooks only be called inside React components or custom hooks?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Hooks need React's render context to attach state and effects to the correct component instance.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Hooks need React&#x27;s render context to attach state and effects to the correct component instance.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is a custom hook?",
+    "question_html": "<p>What is a custom hook?</p>",
+    "answers": [
+      {
+        "text": "A custom hook is a reusable function whose name starts with use and that can call other hooks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A custom hook is a reusable function whose name starts with use and that can call other hooks.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When should you create a custom hook?",
+    "question_html": "<p>When should you create a custom hook?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Create a custom hook when you want to reuse stateful logic or side-effect logic between components.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Create a custom hook when you want to reuse stateful logic or side-effect logic between components.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between a hook and a normal function?",
+    "question_html": "<p>What is the difference between a hook and a normal function?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "A hook can use React hooks and participate in React's hook system; a normal function cannot call hooks unless it is itself a custom hook.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A hook can use React hooks and participate in React&#x27;s hook system; a normal function cannot call hooks unless it is itself a custom hook.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Can custom hooks use other hooks?",
+    "question_html": "<p>Can custom hooks use other hooks?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Yes. Custom hooks can call built-in hooks and other custom hooks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes. Custom hooks can call built-in hooks and other custom hooks.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How do you share logic between components using hooks?",
+    "question_html": "<p>How do you share logic between components using hooks?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Extract the shared stateful logic into a custom hook and call that hook from each component.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Extract the shared stateful logic into a custom hook and call that hook from each component.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are common mistakes when using hooks?",
+    "question_html": "<p>What are common mistakes when using hooks?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Common mistakes include missing dependencies, calling hooks conditionally, storing derived values unnecessarily, and overusing effects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Common mistakes include missing dependencies, calling hooks conditionally, storing derived values unnecessarily, and overusing effects.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How does React track hook state between renders?",
+    "question_html": "<p>How does React track hook state between renders?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "React tracks hook state by the order in which hooks are called for each component render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React tracks hook state by the order in which hooks are called for each component render.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "hooks"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the main purpose of useEffect?",
+    "question_html": "<p>What is the main purpose of useEffect?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "useEffect is mainly used to synchronize a component with external systems such as APIs, subscriptions, timers, or browser APIs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useEffect is mainly used to synchronize a component with external systems such as APIs, subscriptions, timers, or browser APIs.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between side effects and rendering logic?",
+    "question_html": "<p>What is the difference between side effects and rendering logic?</p>",
+    "answers": [
+      {
+        "text": "Rendering logic calculates UI from props and state; side effects interact with something outside React's render output.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Rendering logic calculates UI from props and state; side effects interact with something outside React&#x27;s render output.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why should API calls usually be done inside useEffect?",
+    "question_html": "<p>Why should API calls usually be done inside useEffect?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "API calls are side effects because they interact with an external system and should not run directly during render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> API calls are side effects because they interact with an external system and should not run directly during render.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What happens if you omit the dependency array?",
+    "question_html": "<p>What happens if you omit the dependency array?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "The effect runs after every render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The effect runs after every render.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What happens if the dependency array is empty?",
+    "question_html": "<p>What happens if the dependency array is empty?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "The effect runs after the first render, and its cleanup runs when the component unmounts.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The effect runs after the first render, and its cleanup runs when the component unmounts.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What happens if a dependency changes?",
+    "question_html": "<p>What happens if a dependency changes?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "React runs the cleanup for the previous effect if present, then runs the effect again with the new dependency values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React runs the cleanup for the previous effect if present, then runs the effect again with the new dependency values.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is a stale closure in useEffect?",
+    "question_html": "<p>What is a stale closure in useEffect?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "A stale closure happens when an effect captures old values from a previous render and continues using them.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A stale closure happens when an effect captures old values from a previous render and continues using them.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How can you fix a stale closure problem?",
+    "question_html": "<p>How can you fix a stale closure problem?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "You can fix stale closures by adding missing dependencies, using functional state updates, or using refs for mutable latest values when appropriate.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You can fix stale closures by adding missing dependencies, using functional state updates, or using refs for mutable latest values when appropriate.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why should every value used inside useEffect usually be listed as a dependency?",
+    "question_html": "<p>Why should every value used inside useEffect usually be listed as a dependency?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Dependencies tell React when the effect should re-run so it uses the latest values and avoids stale closures.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Dependencies tell React when the effect should re-run so it uses the latest values and avoids stale closures.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When is it acceptable to intentionally exclude a dependency?",
+    "question_html": "<p>When is it acceptable to intentionally exclude a dependency?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is acceptable only when you intentionally rely on a stable value, functional update, ref, or clearly documented invariant.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It is acceptable only when you intentionally rely on a stable value, functional update, ref, or clearly documented invariant.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is useMemo used for?",
+    "question_html": "<p>What is useMemo used for?</p>",
+    "answers": [
+      {
+        "text": "useMemo memoizes the result of a calculation between renders until its dependencies change.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useMemo memoizes the result of a calculation between renders until its dependencies change.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is useCallback used for?",
+    "question_html": "<p>What is useCallback used for?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "useCallback memoizes a function reference between renders until its dependencies change.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useCallback memoizes a function reference between renders until its dependencies change.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between useMemo and useCallback?",
+    "question_html": "<p>What is the difference between useMemo and useCallback?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "useMemo memoizes a computed value, while useCallback memoizes a function reference.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useMemo memoizes a computed value, while useCallback memoizes a function reference.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Does useMemo always improve performance?",
+    "question_html": "<p>Does useMemo always improve performance?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "No. useMemo has overhead and helps only when the avoided calculation or reference stability is worth it.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No. useMemo has overhead and helps only when the avoided calculation or reference stability is worth it.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Does useCallback always improve performance?",
+    "question_html": "<p>Does useCallback always improve performance?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "No. useCallback also has overhead and is useful mainly when function identity matters for memoized children or effect dependencies.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No. useCallback also has overhead and is useful mainly when function identity matters for memoized children or effect dependencies.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When can useMemo be useful?",
+    "question_html": "<p>When can useMemo be useful?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "useMemo can be useful for expensive calculations or stable object/array references passed to memoized components.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useMemo can be useful for expensive calculations or stable object/array references passed to memoized components.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When can useCallback be useful?",
+    "question_html": "<p>When can useCallback be useful?</p>",
+    "answers": [
+      {
+        "text": "useCallback can be useful when passing callbacks to React.memo components or when a stable function is needed as an effect dependency.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useCallback can be useful when passing callbacks to React.memo components or when a stable function is needed as an effect dependency.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are the downsides of overusing memoization?",
+    "question_html": "<p>What are the downsides of overusing memoization?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Overusing memoization adds complexity, memory overhead, dependency bugs, and sometimes no measurable performance benefit.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Overusing memoization adds complexity, memory overhead, dependency bugs, and sometimes no measurable performance benefit.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How does memoization relate to referential equality?",
+    "question_html": "<p>How does memoization relate to referential equality?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Memoization can preserve the same object or function reference, which helps shallow comparisons see props as unchanged.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Memoization can preserve the same object or function reference, which helps shallow comparisons see props as unchanged.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why can inline objects or functions cause unnecessary re-renders?",
+    "question_html": "<p>Why can inline objects or functions cause unnecessary re-renders?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Inline objects and functions create new references on every render, so memoized children may treat them as changed props.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Inline objects and functions create new references on every render, so memoized children may treat them as changed props.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "usememo-and-usecallback"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is React.memo?",
+    "question_html": "<p>What is React.memo?</p>",
+    "answers": [
+      {
+        "text": "React.memo is a higher-order component that can skip re-rendering a component when its props are shallowly equal.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React.memo is a higher-order component that can skip re-rendering a component when its props are shallowly equal.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How does React.memo decide whether to skip a re-render?",
+    "question_html": "<p>How does React.memo decide whether to skip a re-render?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "By default, React.memo shallowly compares previous and next props and skips the render if they are equal.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> By default, React.memo shallowly compares previous and next props and skips the render if they are equal.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is shallow comparison?",
+    "question_html": "<p>What is shallow comparison?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Shallow comparison checks top-level values and references, but it does not deeply compare nested objects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Shallow comparison checks top-level values and references, but it does not deeply compare nested objects.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why can React.memo fail when props contain new object references?",
+    "question_html": "<p>Why can React.memo fail when props contain new object references?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Because a new object reference is considered different even if it contains the same nested values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because a new object reference is considered different even if it contains the same nested values.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When should you use React.memo?",
+    "question_html": "<p>When should you use React.memo?</p>",
+    "answers": [
+      {
+        "text": "Use React.memo for components that re-render often with the same props and are expensive enough to justify memoization.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use React.memo for components that re-render often with the same props and are expensive enough to justify memoization.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When should you avoid React.memo?",
+    "question_html": "<p>When should you avoid React.memo?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Avoid React.memo when components are cheap, props always change, or memoization makes the code harder to maintain without benefit.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Avoid React.memo when components are cheap, props always change, or memoization makes the code harder to maintain without benefit.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How can you debug unnecessary re-renders?",
+    "question_html": "<p>How can you debug unnecessary re-renders?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "You can use React DevTools Profiler, console logging, why-did-you-render, and inspect changing props or context values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You can use React DevTools Profiler, console logging, why-did-you-render, and inspect changing props or context values.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What tools can help analyze React performance?",
+    "question_html": "<p>What tools can help analyze React performance?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "React DevTools Profiler, browser performance tools, production metrics, and libraries like why-did-you-render can help.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React DevTools Profiler, browser performance tools, production metrics, and libraries like why-did-you-render can help.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the React DevTools Profiler?",
+    "question_html": "<p>What is the React DevTools Profiler?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "The React DevTools Profiler records renders and helps identify which components rendered and how long they took.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The React DevTools Profiler records renders and helps identify which components rendered and how long they took.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What does it mean to optimize rendering?",
+    "question_html": "<p>What does it mean to optimize rendering?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Optimizing rendering means reducing unnecessary work while keeping the UI correct and maintainable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Optimizing rendering means reducing unnecessary work while keeping the UI correct and maintainable.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "react-memo-and-performance"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is React Context used for?",
+    "question_html": "<p>What is React Context used for?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Context is used to pass values through the component tree without manually passing props at every level.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Context is used to pass values through the component tree without manually passing props at every level.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What problem does Context solve?",
+    "question_html": "<p>What problem does Context solve?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Context solves prop drilling for values needed by many components in different parts of the tree.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Context solves prop drilling for values needed by many components in different parts of the tree.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Is Context a state management tool?",
+    "question_html": "<p>Is Context a state management tool?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Context is a dependency injection mechanism for values; it can carry state, but it is not a complete server/cache state management solution by itself.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Context is a dependency injection mechanism for values; it can carry state, but it is not a complete server/cache state management solution by itself.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are common use cases for Context?",
+    "question_html": "<p>What are common use cases for Context?</p>",
+    "answers": [
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Common use cases include theme, authentication user, locale, feature flags, and app-level configuration.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Common use cases include theme, authentication user, locale, feature flags, and app-level configuration.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why can Context cause performance issues?",
+    "question_html": "<p>Why can Context cause performance issues?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "When a context value changes, all consumers of that context may re-render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When a context value changes, all consumers of that context may re-render.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How can you reduce unnecessary re-renders caused by Context?",
+    "question_html": "<p>How can you reduce unnecessary re-renders caused by Context?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Split contexts, memoize provider values, move providers lower, or use selector-based state management when needed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Split contexts, memoize provider values, move providers lower, or use selector-based state management when needed.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between Context and props?",
+    "question_html": "<p>What is the difference between Context and props?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Props are passed explicitly from parent to child, while Context lets descendants read a value from the nearest provider.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Props are passed explicitly from parent to child, while Context lets descendants read a value from the nearest provider.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When should you avoid Context?",
+    "question_html": "<p>When should you avoid Context?</p>",
+    "answers": [
+      {
+        "text": "Avoid Context for highly frequently changing values or state that is only needed by a small local part of the tree.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Avoid Context for highly frequently changing values or state that is only needed by a small local part of the tree.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Can Context replace Redux or Zustand?",
+    "question_html": "<p>Can Context replace Redux or Zustand?</p>",
+    "answers": [
+      {
+        "text": "Context can replace them for simple global values, but Redux or Zustand may be better for complex shared state and optimized updates.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Context can replace them for simple global values, but Redux or Zustand may be better for complex shared state and optimized updates.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How would you structure Context for theme or authentication?",
+    "question_html": "<p>How would you structure Context for theme or authentication?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Create a provider near the app root, expose a typed hook, and keep the context value minimal and stable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Create a provider near the app root, expose a typed hook, and keep the context value minimal and stable.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "context-api"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between controlled and uncontrolled components?",
+    "question_html": "<p>What is the difference between controlled and uncontrolled components?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Controlled components store form value in React state, while uncontrolled components keep value in the DOM and are usually accessed with refs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Controlled components store form value in React state, while uncontrolled components keep value in the DOM and are usually accessed with refs.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are the advantages of controlled components?",
+    "question_html": "<p>What are the advantages of controlled components?</p>",
+    "answers": [
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Controlled components make validation, conditional UI, and state-driven behavior easier because React owns the value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Controlled components make validation, conditional UI, and state-driven behavior easier because React owns the value.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are the disadvantages of controlled components?",
+    "question_html": "<p>What are the disadvantages of controlled components?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "They can add boilerplate and may become slower in very large forms if every keystroke updates React state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They can add boilerplate and may become slower in very large forms if every keystroke updates React state.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "When would you use uncontrolled inputs?",
+    "question_html": "<p>When would you use uncontrolled inputs?</p>",
+    "answers": [
+      {
+        "text": "Use uncontrolled inputs for simple forms, file inputs, or performance-sensitive forms where DOM-managed values are acceptable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use uncontrolled inputs for simple forms, file inputs, or performance-sensitive forms where DOM-managed values are acceptable.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How do you handle form validation in React?",
+    "question_html": "<p>How do you handle form validation in React?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Validate on change, blur, or submit, store errors in state, and also validate on the server.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Validate on change, blur, or submit, store errors in state, and also validate on the server.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is the difference between client-side and server-side validation?",
+    "question_html": "<p>What is the difference between client-side and server-side validation?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Client-side validation improves UX, while server-side validation is required for security and data integrity.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Client-side validation improves UX, while server-side validation is required for security and data integrity.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How do you handle form errors?",
+    "question_html": "<p>How do you handle form errors?</p>",
+    "answers": [
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Store errors in state or form library state, display messages near fields, and clear or update them as the user fixes input.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Store errors in state or form library state, display messages near fields, and clear or update them as the user fixes input.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How do you handle async form submission?",
+    "question_html": "<p>How do you handle async form submission?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Track submitting state, disable duplicate submits, await the request, handle success/error, and reset or show feedback.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Track submitting state, disable duplicate submits, await the request, handle success/error, and reset or show feedback.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why can large controlled forms become slow?",
+    "question_html": "<p>Why can large controlled forms become slow?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Large controlled forms can be slow because many state updates and re-renders may happen on every input change.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Large controlled forms can be slow because many state updates and re-renders may happen on every input change.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How can libraries like React Hook Form improve form performance?",
+    "question_html": "<p>How can libraries like React Hook Form improve form performance?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "React Hook Form uses uncontrolled inputs and subscriptions to reduce re-renders compared with storing every field change in React state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React Hook Form uses uncontrolled inputs and subscriptions to reduce re-renders compared with storing every field change in React state.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "forms-and-controlled-state"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What are common loading states in a React app?",
+    "question_html": "<p>What are common loading states in a React app?</p>",
+    "answers": [
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Common states include idle, loading, success, empty, error, and refetching.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Common states include idle, loading, success, empty, error, and refetching.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How do you handle loading, success, and error states?",
+    "question_html": "<p>How do you handle loading, success, and error states?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Represent each state explicitly and render the appropriate UI for loading, successful data, empty data, or errors.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Represent each state explicitly and render the appropriate UI for loading, successful data, empty data, or errors.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why should you handle request cancellation?",
+    "question_html": "<p>Why should you handle request cancellation?</p>",
+    "answers": [
+      {
+        "text": "It completely prevents all future re-renders.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It completely prevents all future re-renders. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Cancellation prevents outdated requests from updating state after a component unmounts or after a newer request starts.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Cancellation prevents outdated requests from updating state after a component unmounts or after a newer request starts.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What can happen if a component unmounts during an async request?",
+    "question_html": "<p>What can happen if a component unmounts during an async request?</p>",
+    "answers": [
+      {
+        "text": "The request may finish later and try to update state for a component that no longer exists or show outdated data.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The request may finish later and try to update state for a component that no longer exists or show outdated data.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is a race condition in data fetching?",
+    "question_html": "<p>What is a race condition in data fetching?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It automatically fixes every performance problem without trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It automatically fixes every performance problem without trade-offs. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "A race condition happens when multiple requests finish in an unexpected order and an older result overwrites a newer one.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A race condition happens when multiple requests finish in an unexpected order and an older result overwrites a newer one.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How can you avoid race conditions in React?",
+    "question_html": "<p>How can you avoid race conditions in React?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use AbortController, request IDs, cleanup functions, or a data-fetching library that handles stale results.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use AbortController, request IDs, cleanup functions, or a data-fetching library that handles stale results.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why are libraries like TanStack Query useful?",
+    "question_html": "<p>Why are libraries like TanStack Query useful?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "TanStack Query manages server state concerns like caching, loading states, retries, refetching, deduplication, and stale data.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> TanStack Query manages server state concerns like caching, loading states, retries, refetching, deduplication, and stale data.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "What is server state?",
+    "question_html": "<p>What is server state?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Server state is data owned by the backend that the frontend fetches, caches, and synchronizes with the server.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Server state is data owned by the backend that the frontend fetches, caches, and synchronizes with the server.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It only happens on the backend after a database query.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only happens on the backend after a database query. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "How is server state different from client state?",
+    "question_html": "<p>How is server state different from client state?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a CSS feature and does not affect component behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a CSS feature and does not affect component behavior. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Server state is remote, asynchronous, shared, and may become stale; client state is local UI state owned by the frontend.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Server state is remote, asynchronous, shared, and may become stale; client state is local UI state owned by the frontend.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a browser API unrelated to React's rendering model.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a browser API unrelated to React&#x27;s rendering model. This answer does not describe the React concept correctly.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  },
+  {
+    "category_code": "react-architecture-rendering",
+    "difficulty": "medium",
+    "question": "Why is caching important in React applications?",
+    "question_html": "<p>Why is caching important in React applications?</p>",
+    "answers": [
+      {
+        "text": "It means storing all application data in one global variable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means storing all application data in one global variable. This answer does not describe the React concept correctly.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for class components and not functional components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for class components and not functional components. This answer does not describe the React concept correctly.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Caching reduces unnecessary network requests, improves perceived performance, and helps reuse previously fetched data.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Caching reduces unnecessary network requests, improves perceived performance, and helps reuse previously fetched data.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM from scratch. This answer does not describe the React concept correctly.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "medium",
+      "data-fetching-and-async-logic"
+    ]
+  }
+]

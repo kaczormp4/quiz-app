@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is React Fiber and why was it introduced?",
+    "question_html": "<p>What is React Fiber and why was it introduced?</p>",
+    "answers": [
+      {
+        "text": "React Fiber is React's internal reconciliation architecture. It was introduced to make rendering incremental, prioritizable, interruptible, and better suited for scheduling complex UI updates.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React Fiber is React&#x27;s internal reconciliation architecture. It was introduced to make rendering incremental, prioritizable, interruptible, and better suited for scheduling complex UI updates.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does Fiber enable interruptible rendering?",
+    "question_html": "<p>How does Fiber enable interruptible rendering?</p>",
+    "answers": [
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Fiber splits rendering work into small units represented by fiber nodes, allowing React to yield to the browser, resume later, or abandon obsolete work.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Fiber splits rendering work into small units represented by fiber nodes, allowing React to yield to the browser, resume later, or abandon obsolete work.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is the difference between synchronous rendering and concurrent rendering?",
+    "question_html": "<p>What is the difference between synchronous rendering and concurrent rendering?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Synchronous rendering finishes work in one uninterrupted pass, while concurrent rendering can pause, prioritize, resume, or discard work before committing.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Synchronous rendering finishes work in one uninterrupted pass, while concurrent rendering can pause, prioritize, resume, or discard work before committing.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is a Fiber node?",
+    "question_html": "<p>What is a Fiber node?</p>",
+    "answers": [
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "A Fiber node is an internal object that represents a React element/component instance and stores its type, props, state, effects, lanes, child, sibling, and return links.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A Fiber node is an internal object that represents a React element/component instance and stores its type, props, state, effects, lanes, child, sibling, and return links.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does React represent the component tree internally?",
+    "question_html": "<p>How does React represent the component tree internally?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "React represents the UI as a linked Fiber tree where each Fiber points to its child, sibling, and parent return node.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React represents the UI as a linked Fiber tree where each Fiber points to its child, sibling, and parent return node.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is the work loop in React?",
+    "question_html": "<p>What is the work loop in React?</p>",
+    "answers": [
+      {
+        "text": "The work loop is React's internal process that repeatedly performs units of work on Fibers, checks scheduling priorities, and eventually prepares work for commit.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The work loop is React&#x27;s internal process that repeatedly performs units of work on Fibers, checks scheduling priorities, and eventually prepares work for commit.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What does it mean that React can pause, resume, or discard rendering work?",
+    "question_html": "<p>What does it mean that React can pause, resume, or discard rendering work?</p>",
+    "answers": [
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React may start calculating a future UI, yield to more urgent work, continue later, or throw away that unfinished render if it becomes outdated.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It means React may start calculating a future UI, yield to more urgent work, continue later, or throw away that unfinished render if it becomes outdated.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does React prioritize updates?",
+    "question_html": "<p>How does React prioritize updates?</p>",
+    "answers": [
+      {
+        "text": "React assigns updates to priority buckets such as lanes and schedules higher-priority work before lower-priority work.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React assigns updates to priority buckets such as lanes and schedules higher-priority work before lower-priority work.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are lanes in React?",
+    "question_html": "<p>What are lanes in React?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Lanes are React's internal priority model for grouping and scheduling updates with different urgency levels.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Lanes are React&#x27;s internal priority model for grouping and scheduling updates with different urgency levels.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do lanes improve scheduling compared to the older expiration time model?",
+    "question_html": "<p>How do lanes improve scheduling compared to the older expiration time model?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Lanes allow React to represent multiple update priorities more flexibly, merge related work, and schedule concurrent updates more precisely than expiration times.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Lanes allow React to represent multiple update priorities more flexibly, merge related work, and schedule concurrent updates more precisely than expiration times.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "react-internals-and-fiber"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is Concurrent React?",
+    "question_html": "<p>What is Concurrent React?</p>",
+    "answers": [
+      {
+        "text": "Concurrent React is React's rendering model that allows rendering work to be interruptible, prioritized, and coordinated without blocking urgent user interactions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Concurrent React is React&#x27;s rendering model that allows rendering work to be interruptible, prioritized, and coordinated without blocking urgent user interactions.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What problems does concurrent rendering solve?",
+    "question_html": "<p>What problems does concurrent rendering solve?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It helps keep apps responsive during expensive updates by allowing urgent work to interrupt non-urgent rendering.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It helps keep apps responsive during expensive updates by allowing urgent work to interrupt non-urgent rendering.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is the difference between urgent and non-urgent updates?",
+    "question_html": "<p>What is the difference between urgent and non-urgent updates?</p>",
+    "answers": [
+      {
+        "text": "Urgent updates need immediate feedback, such as typing or clicking, while non-urgent updates can be delayed, such as filtering a large list.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Urgent updates need immediate feedback, such as typing or clicking, while non-urgent updates can be delayed, such as filtering a large list.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does startTransition work?",
+    "question_html": "<p>How does startTransition work?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "startTransition marks state updates inside its callback as non-urgent so React can let urgent updates interrupt them.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> startTransition marks state updates inside its callback as non-urgent so React can let urgent updates interrupt them.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "When should you wrap updates in startTransition?",
+    "question_html": "<p>When should you wrap updates in startTransition?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Use startTransition for updates that may be expensive and do not need immediate visual feedback, such as switching tabs with heavy content or filtering large results.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use startTransition for updates that may be expensive and do not need immediate visual feedback, such as switching tabs with heavy content or filtering large results.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is the difference between startTransition and useTransition?",
+    "question_html": "<p>What is the difference between startTransition and useTransition?</p>",
+    "answers": [
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "startTransition marks updates as transitions, while useTransition also gives a pending flag for showing transition progress in a component.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> startTransition marks updates as transitions, while useTransition also gives a pending flag for showing transition progress in a component.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What does isPending from useTransition actually represent?",
+    "question_html": "<p>What does isPending from useTransition actually represent?</p>",
+    "answers": [
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "isPending indicates that a transition update is still in progress and its final committed UI is not ready yet.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> isPending indicates that a transition update is still in progress and its final committed UI is not ready yet.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Can a transition be interrupted?",
+    "question_html": "<p>Can a transition be interrupted?</p>",
+    "answers": [
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Yes. Transition work is non-urgent and can be interrupted by more urgent updates.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes. Transition work is non-urgent and can be interrupted by more urgent updates.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What happens if a newer transition replaces an older transition?",
+    "question_html": "<p>What happens if a newer transition replaces an older transition?</p>",
+    "answers": [
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React can abandon the older unfinished transition and continue with the newer update so stale work is not committed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React can abandon the older unfinished transition and continue with the newer update so stale work is not committed.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What bugs can appear when code assumes rendering is always synchronous?",
+    "question_html": "<p>What bugs can appear when code assumes rendering is always synchronous?</p>",
+    "answers": [
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Bugs can include stale reads, side effects during render, UI tearing, race conditions, and assumptions that intermediate renders always commit.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Bugs can include stale reads, side effects during render, UI tearing, race conditions, and assumptions that intermediate renders always commit.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "concurrent-react"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is Suspense responsible for?",
+    "question_html": "<p>What is Suspense responsible for?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Suspense coordinates loading states by showing fallback UI while a child tree is not ready to render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Suspense coordinates loading states by showing fallback UI while a child tree is not ready to render.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does Suspense work conceptually?",
+    "question_html": "<p>How does Suspense work conceptually?</p>",
+    "answers": [
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "A component can signal that it is not ready, React finds the nearest Suspense boundary, and the boundary shows fallback UI until the work can continue.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A component can signal that it is not ready, React finds the nearest Suspense boundary, and the boundary shows fallback UI until the work can continue.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What does it mean for a component to “suspend”?",
+    "question_html": "<p>What does it mean for a component to “suspend”?</p>",
+    "answers": [
+      {
+        "text": "A component suspends when it cannot finish rendering yet, usually because required code or data is not ready.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A component suspends when it cannot finish rendering yet, usually because required code or data is not ready.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why does Suspense rely on thrown promises internally?",
+    "question_html": "<p>Why does Suspense rely on thrown promises internally?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Thrown promises give React a way to interrupt rendering, attach retry behavior, and resume rendering when the async dependency resolves.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Thrown promises give React a way to interrupt rendering, attach retry behavior, and resume rendering when the async dependency resolves.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is a Suspense boundary?",
+    "question_html": "<p>What is a Suspense boundary?</p>",
+    "answers": [
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "A Suspense boundary is the part of the tree wrapped in <Suspense> that controls which fallback is shown when descendants suspend.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A Suspense boundary is the part of the tree wrapped in &lt;Suspense&gt; that controls which fallback is shown when descendants suspend.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do nested Suspense boundaries affect loading states?",
+    "question_html": "<p>How do nested Suspense boundaries affect loading states?</p>",
+    "answers": [
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Nested boundaries allow independent parts of the UI to reveal progressively instead of blocking the whole page behind one fallback.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Nested boundaries allow independent parts of the UI to reveal progressively instead of blocking the whole page behind one fallback.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is the difference between Suspense for code splitting and Suspense for data fetching?",
+    "question_html": "<p>What is the difference between Suspense for code splitting and Suspense for data fetching?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "For code splitting, Suspense waits for lazy-loaded JavaScript; for data fetching, it waits for data integrated with a Suspense-compatible data source or framework.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> For code splitting, Suspense waits for lazy-loaded JavaScript; for data fetching, it waits for data integrated with a Suspense-compatible data source or framework.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does Suspense improve perceived performance?",
+    "question_html": "<p>How does Suspense improve perceived performance?</p>",
+    "answers": [
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It lets the app show meaningful fallback or already-ready UI while slower parts load, making progress visible to the user.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It lets the app show meaningful fallback or already-ready UI while slower parts load, making progress visible to the user.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are common pitfalls when placing Suspense boundaries?",
+    "question_html": "<p>What are common pitfalls when placing Suspense boundaries?</p>",
+    "answers": [
+      {
+        "text": "Common pitfalls include placing boundaries too high, causing large UI fallbacks, or too low, causing many distracting loading states.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Common pitfalls include placing boundaries too high, causing large UI fallbacks, or too low, causing many distracting loading states.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you design Suspense boundaries for a complex dashboard?",
+    "question_html": "<p>How would you design Suspense boundaries for a complex dashboard?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use a shell boundary for the layout and smaller boundaries around independent widgets so each section can load or fail independently.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a shell boundary for the layout and smaller boundaries around independent widgets so each section can load or fail independently.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "suspense"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are React Server Components?",
+    "question_html": "<p>What are React Server Components?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "React Server Components are components rendered on the server that can access backend resources and send a serialized component payload to the client.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React Server Components are components rendered on the server that can access backend resources and send a serialized component payload to the client.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How are Server Components different from Client Components?",
+    "question_html": "<p>How are Server Components different from Client Components?</p>",
+    "answers": [
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Server Components run on the server and cannot use client-only hooks or browser APIs, while Client Components run in the browser and can handle interactivity.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Server Components run on the server and cannot use client-only hooks or browser APIs, while Client Components run in the browser and can handle interactivity.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why can Server Components access backend resources directly?",
+    "question_html": "<p>Why can Server Components access backend resources directly?</p>",
+    "answers": [
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "They execute on the server, so they can safely read databases, files, internal APIs, or secrets without sending that logic to the browser.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They execute on the server, so they can safely read databases, files, internal APIs, or secrets without sending that logic to the browser.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why can Server Components not use browser-only APIs?",
+    "question_html": "<p>Why can Server Components not use browser-only APIs?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "They do not run in the browser, so APIs like window, document, localStorage, and DOM events are unavailable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They do not run in the browser, so APIs like window, document, localStorage, and DOM events are unavailable.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why can Server Components not use useState?",
+    "question_html": "<p>Why can Server Components not use useState?</p>",
+    "answers": [
+      {
+        "text": "Server Components are not interactive browser components and do not keep client-side state between user interactions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Server Components are not interactive browser components and do not keep client-side state between user interactions.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does React serialize Server Component output?",
+    "question_html": "<p>How does React serialize Server Component output?</p>",
+    "answers": [
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "React serializes the rendered Server Component tree into a special payload that describes component output and references needed Client Components.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React serializes the rendered Server Component tree into a special payload that describes component output and references needed Client Components.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is the RSC payload?",
+    "question_html": "<p>What is the RSC payload?</p>",
+    "answers": [
+      {
+        "text": "The RSC payload is the serialized data format React uses to send Server Component output and Client Component references from server to client.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The RSC payload is the serialized data format React uses to send Server Component output and Client Component references from server to client.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do Server Components reduce client-side JavaScript?",
+    "question_html": "<p>How do Server Components reduce client-side JavaScript?</p>",
+    "answers": [
+      {
+        "text": "Logic that stays in Server Components does not need to be bundled and shipped to the browser.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Logic that stays in Server Components does not need to be bundled and shipped to the browser.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are the trade-offs of moving logic into Server Components?",
+    "question_html": "<p>What are the trade-offs of moving logic into Server Components?</p>",
+    "answers": [
+      {
+        "text": "Trade-offs include server dependency, serialization constraints, boundary complexity, and deciding what must remain interactive on the client.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Trade-offs include server dependency, serialization constraints, boundary complexity, and deciding what must remain interactive on the client.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do you decide whether a component should be server-side or client-side?",
+    "question_html": "<p>How do you decide whether a component should be server-side or client-side?</p>",
+    "answers": [
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use a Server Component by default for data access and static rendering; use a Client Component when you need state, effects, browser APIs, or event handlers.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a Server Component by default for data access and static rendering; use a Client Component when you need state, effects, browser APIs, or event handlers.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "server-components"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is hydration in React?",
+    "question_html": "<p>What is hydration in React?</p>",
+    "answers": [
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Hydration is the process where React attaches event handlers and client behavior to HTML that was already rendered on the server.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Hydration is the process where React attaches event handlers and client behavior to HTML that was already rendered on the server.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is a hydration mismatch?",
+    "question_html": "<p>What is a hydration mismatch?</p>",
+    "answers": [
+      {
+        "text": "A hydration mismatch happens when the HTML produced on the server does not match what the client renders initially.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A hydration mismatch happens when the HTML produced on the server does not match what the client renders initially.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What commonly causes hydration mismatches?",
+    "question_html": "<p>What commonly causes hydration mismatches?</p>",
+    "answers": [
+      {
+        "text": "Common causes include non-deterministic values, time zones, random IDs, browser-only checks, different data, or invalid HTML.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Common causes include non-deterministic values, time zones, random IDs, browser-only checks, different data, or invalid HTML.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do you debug hydration mismatches?",
+    "question_html": "<p>How do you debug hydration mismatches?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Compare server and client output, remove non-deterministic rendering, isolate the component, and use framework warnings or React DevTools.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Compare server and client output, remove non-deterministic rendering, isolate the component, and use framework warnings or React DevTools.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is selective hydration?",
+    "question_html": "<p>What is selective hydration?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Selective hydration lets React prioritize hydrating parts of the page that the user interacts with or that become ready sooner.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Selective hydration lets React prioritize hydrating parts of the page that the user interacts with or that become ready sooner.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does Suspense interact with hydration?",
+    "question_html": "<p>How does Suspense interact with hydration?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Suspense boundaries allow parts of the server-rendered tree to hydrate independently and reveal progressively as code or data becomes ready.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Suspense boundaries allow parts of the server-rendered tree to hydrate independently and reveal progressively as code or data becomes ready.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is streaming SSR?",
+    "question_html": "<p>What is streaming SSR?</p>",
+    "answers": [
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Streaming SSR sends HTML to the client in chunks as parts of the tree become ready instead of waiting for the entire page.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Streaming SSR sends HTML to the client in chunks as parts of the tree become ready instead of waiting for the entire page.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does streaming improve time to first byte and perceived loading?",
+    "question_html": "<p>How does streaming improve time to first byte and perceived loading?</p>",
+    "answers": [
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Streaming can send the shell earlier, improving time to first byte and showing progress while slower parts continue rendering.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Streaming can send the shell earlier, improving time to first byte and showing progress while slower parts continue rendering.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is progressive hydration?",
+    "question_html": "<p>What is progressive hydration?</p>",
+    "answers": [
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Progressive hydration means the page becomes interactive in parts instead of requiring the whole app to hydrate at once.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Progressive hydration means the page becomes interactive in parts instead of requiring the whole app to hydrate at once.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are the risks of rendering non-deterministic values during SSR?",
+    "question_html": "<p>What are the risks of rendering non-deterministic values during SSR?</p>",
+    "answers": [
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Random values, dates, locale differences, or browser-only state can make server and client markup differ, causing hydration warnings or UI bugs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Random values, dates, locale differences, or browser-only state can make server and client markup differ, causing hydration warnings or UI bugs.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "hydration-and-ssr"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What problem does useSyncExternalStore solve?",
+    "question_html": "<p>What problem does useSyncExternalStore solve?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "useSyncExternalStore provides a safe way to subscribe to external stores in concurrent React without inconsistent snapshots.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useSyncExternalStore provides a safe way to subscribe to external stores in concurrent React without inconsistent snapshots.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "When should useSyncExternalStore be used?",
+    "question_html": "<p>When should useSyncExternalStore be used?</p>",
+    "answers": [
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use it when integrating an external state store that React does not own, such as a custom store, browser API, or third-party state source.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use it when integrating an external state store that React does not own, such as a custom store, browser API, or third-party state source.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does useSyncExternalStore prevent tearing?",
+    "question_html": "<p>How does useSyncExternalStore prevent tearing?</p>",
+    "answers": [
+      {
+        "text": "It forces React to read a consistent snapshot and subscribe in a way that works with concurrent rendering.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It forces React to read a consistent snapshot and subscribe in a way that works with concurrent rendering.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is tearing in concurrent rendering?",
+    "question_html": "<p>What is tearing in concurrent rendering?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Tearing is when different parts of the UI show inconsistent versions of external state during the same render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Tearing is when different parts of the UI show inconsistent versions of external state during the same render.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is useDeferredValue used for?",
+    "question_html": "<p>What is useDeferredValue used for?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "useDeferredValue lets React keep showing a previous value while rendering a lower-priority updated value in the background.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useDeferredValue lets React keep showing a previous value while rendering a lower-priority updated value in the background.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How is useDeferredValue different from debouncing?",
+    "question_html": "<p>How is useDeferredValue different from debouncing?</p>",
+    "answers": [
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Debouncing delays when a value changes; useDeferredValue lets the value change but defers rendering work for the consuming UI.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Debouncing delays when a value changes; useDeferredValue lets the value change but defers rendering work for the consuming UI.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "When would useDeferredValue be better than useMemo?",
+    "question_html": "<p>When would useDeferredValue be better than useMemo?</p>",
+    "answers": [
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Use useDeferredValue when the issue is UI responsiveness caused by expensive rendering from a changing value, not just an expensive calculation.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use useDeferredValue when the issue is UI responsiveness caused by expensive rendering from a changing value, not just an expensive calculation.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is useId used for?",
+    "question_html": "<p>What is useId used for?</p>",
+    "answers": [
+      {
+        "text": "useId generates stable unique IDs for accessibility attributes like label htmlFor and input id.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useId generates stable unique IDs for accessibility attributes like label htmlFor and input id.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why is useId useful for SSR?",
+    "question_html": "<p>Why is useId useful for SSR?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "useId creates IDs that are consistent between server and client, helping avoid hydration mismatches.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useId creates IDs that are consistent between server and client, helping avoid hydration mismatches.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why should useId not be used as a list key?",
+    "question_html": "<p>Why should useId not be used as a list key?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "List keys should come from stable data identity, while useId is for accessibility IDs and not for identifying list items.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> List keys should come from stable data identity, while useId is for accessibility IDs and not for identifying list items.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "advanced-hooks"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you design state management for a large React application?",
+    "question_html": "<p>How would you design state management for a large React application?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Separate state by ownership and lifetime: server state in a query cache, URL state in the router, form state in form tools, and local UI state near its consumers.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Separate state by ownership and lifetime: server state in a query cache, URL state in the router, form state in form tools, and local UI state near its consumers.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do you separate server state, client state, URL state, and form state?",
+    "question_html": "<p>How do you separate server state, client state, URL state, and form state?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Classify data by source: backend-owned data is server state, UI-only data is client state, shareable route data is URL state, and input lifecycle data is form state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Classify data by source: backend-owned data is server state, UI-only data is client state, shareable route data is URL state, and input lifecycle data is form state.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why is global state often overused?",
+    "question_html": "<p>Why is global state often overused?</p>",
+    "answers": [
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Developers often put state globally for convenience even when it is local, which increases coupling and unnecessary re-renders.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Developers often put state globally for convenience even when it is local, which increases coupling and unnecessary re-renders.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you decide between Context, Redux Toolkit, Zustand, Jotai, and TanStack Query?",
+    "question_html": "<p>How would you decide between Context, Redux Toolkit, Zustand, Jotai, and TanStack Query?</p>",
+    "answers": [
+      {
+        "text": "Choose TanStack Query for server state, Context for simple dependency values, Redux Toolkit for structured app-wide client state, Zustand for lightweight stores, and Jotai for atom-based state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Choose TanStack Query for server state, Context for simple dependency values, Redux Toolkit for structured app-wide client state, Zustand for lightweight stores, and Jotai for atom-based state.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is normalized state?",
+    "question_html": "<p>What is normalized state?</p>",
+    "answers": [
+      {
+        "text": "Normalized state stores entities by ID and relationships as IDs instead of deeply nested duplicated objects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Normalized state stores entities by ID and relationships as IDs instead of deeply nested duplicated objects.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why is normalized state useful for relational data?",
+    "question_html": "<p>Why is normalized state useful for relational data?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It avoids duplication, simplifies updates, and keeps related data consistent across the app.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It avoids duplication, simplifies updates, and keeps related data consistent across the app.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are selectors in state management?",
+    "question_html": "<p>What are selectors in state management?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Selectors are functions that read and often derive a specific slice of state for a component.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Selectors are functions that read and often derive a specific slice of state for a component.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "Why are memoized selectors useful?",
+    "question_html": "<p>Why are memoized selectors useful?</p>",
+    "answers": [
+      {
+        "text": "Memoized selectors avoid recomputing derived data and can help prevent re-renders when derived outputs stay referentially stable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Memoized selectors avoid recomputing derived data and can help prevent re-renders when derived outputs stay referentially stable.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is optimistic update?",
+    "question_html": "<p>What is optimistic update?</p>",
+    "answers": [
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "An optimistic update updates the UI before the server confirms the change, assuming the request will succeed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An optimistic update updates the UI before the server confirms the change, assuming the request will succeed.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do you safely roll back an optimistic update after a failed request?",
+    "question_html": "<p>How do you safely roll back an optimistic update after a failed request?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Store the previous state or cache snapshot, apply the optimistic change, and restore or invalidate it if the request fails.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Store the previous state or cache snapshot, apply the optimistic change, and restore or invalidate it if the request fails.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "state-management-architecture"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you investigate a slow React page in production?",
+    "question_html": "<p>How would you investigate a slow React page in production?</p>",
+    "answers": [
+      {
+        "text": "Start with real user metrics and profiling, identify whether the bottleneck is network, JavaScript, rendering, or backend latency, then reproduce and measure.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Start with real user metrics and profiling, identify whether the bottleneck is network, JavaScript, rendering, or backend latency, then reproduce and measure.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do you distinguish slow rendering from slow JavaScript execution?",
+    "question_html": "<p>How do you distinguish slow rendering from slow JavaScript execution?</p>",
+    "answers": [
+      {
+        "text": "Use browser performance tools and React Profiler to see whether time is spent in React commits/renders or in non-React long tasks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use browser performance tools and React Profiler to see whether time is spent in React commits/renders or in non-React long tasks.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do you distinguish slow React rendering from slow network requests?",
+    "question_html": "<p>How do you distinguish slow React rendering from slow network requests?</p>",
+    "answers": [
+      {
+        "text": "Compare network waterfall timing with React Profiler timings; slow requests delay data, while slow rendering shows expensive component work after data arrives.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Compare network waterfall timing with React Profiler timings; slow requests delay data, while slow rendering shows expensive component work after data arrives.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is main-thread blocking?",
+    "question_html": "<p>What is main-thread blocking?</p>",
+    "answers": [
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Main-thread blocking happens when long JavaScript, rendering, or layout work prevents the browser from responding to user input.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Main-thread blocking happens when long JavaScript, rendering, or layout work prevents the browser from responding to user input.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How can large React trees block user interactions?",
+    "question_html": "<p>How can large React trees block user interactions?</p>",
+    "answers": [
+      {
+        "text": "Rendering or committing large trees can occupy the main thread long enough to delay input handling and visual updates.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Rendering or committing large trees can occupy the main thread long enough to delay input handling and visual updates.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is windowing or virtualization?",
+    "question_html": "<p>What is windowing or virtualization?</p>",
+    "answers": [
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Virtualization renders only the visible portion of a large list or grid plus a small buffer.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Virtualization renders only the visible portion of a large list or grid plus a small buffer.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "When would you use list virtualization?",
+    "question_html": "<p>When would you use list virtualization?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Use virtualization when rendering many rows or cells causes slow initial render, scrolling, or memory usage.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use virtualization when rendering many rows or cells causes slow initial render, scrolling, or memory usage.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are the trade-offs of virtualized lists?",
+    "question_html": "<p>What are the trade-offs of virtualized lists?</p>",
+    "answers": [
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Trade-offs include more complex layout, accessibility concerns, dynamic height handling, and harder browser find/print behavior.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Trade-offs include more complex layout, accessibility concerns, dynamic height handling, and harder browser find/print behavior.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How can expensive context updates be optimized?",
+    "question_html": "<p>How can expensive context updates be optimized?</p>",
+    "answers": [
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Split contexts, memoize provider values, move providers closer to consumers, or use selector-based stores to reduce broad re-renders.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Split contexts, memoize provider values, move providers closer to consumers, or use selector-based stores to reduce broad re-renders.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How can component boundaries affect rendering performance?",
+    "question_html": "<p>How can component boundaries affect rendering performance?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Good boundaries isolate state and memoization opportunities; poor boundaries can cause large subtrees to re-render unnecessarily.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Good boundaries isolate state and memoization opportunities; poor boundaries can cause large subtrees to re-render unnecessarily.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "performance-engineering"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How does React.lazy work?",
+    "question_html": "<p>How does React.lazy work?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React.lazy wraps a dynamic import and renders the loaded component when the promise resolves, usually inside Suspense.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React.lazy wraps a dynamic import and renders the loaded component when the promise resolves, usually inside Suspense.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are the limitations of React.lazy?",
+    "question_html": "<p>What are the limitations of React.lazy?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React.lazy is mainly for default exports and client-side component code splitting; it still needs Suspense and error handling for failures.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React.lazy is mainly for default exports and client-side component code splitting; it still needs Suspense and error handling for failures.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do dynamic imports affect bundle splitting?",
+    "question_html": "<p>How do dynamic imports affect bundle splitting?</p>",
+    "answers": [
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Dynamic imports tell the bundler to create separate chunks that can be loaded on demand.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Dynamic imports tell the bundler to create separate chunks that can be loaded on demand.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is route-level code splitting?",
+    "question_html": "<p>What is route-level code splitting?</p>",
+    "answers": [
+      {
+        "text": "Route-level code splitting loads JavaScript for a route only when that route is visited.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Route-level code splitting loads JavaScript for a route only when that route is visited.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is component-level code splitting?",
+    "question_html": "<p>What is component-level code splitting?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Component-level code splitting lazy-loads specific heavy components only when they are needed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Component-level code splitting lazy-loads specific heavy components only when they are needed.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How can over-splitting hurt performance?",
+    "question_html": "<p>How can over-splitting hurt performance?</p>",
+    "answers": [
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Too many small chunks can increase request overhead, waterfalls, and coordination cost.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Too many small chunks can increase request overhead, waterfalls, and coordination cost.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is tree shaking?",
+    "question_html": "<p>What is tree shaking?</p>",
+    "answers": [
+      {
+        "text": "Tree shaking is bundler dead-code elimination that removes unused exports from the final bundle.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Tree shaking is bundler dead-code elimination that removes unused exports from the final bundle.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What can prevent tree shaking from working correctly?",
+    "question_html": "<p>What can prevent tree shaking from working correctly?</p>",
+    "answers": [
+      {
+        "text": "Common blockers include side effects, CommonJS modules, dynamic imports/exports, and packages not marked as side-effect free.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Common blockers include side effects, CommonJS modules, dynamic imports/exports, and packages not marked as side-effect free.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you analyze a React bundle?",
+    "question_html": "<p>How would you analyze a React bundle?</p>",
+    "answers": [
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Use bundle analyzer tools, inspect chunk sizes, identify duplicated dependencies, and check which modules are included in client bundles.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use bundle analyzer tools, inspect chunk sizes, identify duplicated dependencies, and check which modules are included in client bundles.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do you reduce unnecessary client-side JavaScript?",
+    "question_html": "<p>How do you reduce unnecessary client-side JavaScript?</p>",
+    "answers": [
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Use Server Components or SSR where appropriate, code split, remove unused dependencies, lazy-load heavy features, and avoid shipping server-only logic.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use Server Components or SSR where appropriate, code split, remove unused dependencies, lazy-load heavy features, and avoid shipping server-only logic.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "code-splitting-and-bundle-optimization"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What are Error Boundaries?",
+    "question_html": "<p>What are Error Boundaries?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Error Boundaries are React components that catch rendering errors in their child tree and show fallback UI.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Error Boundaries are React components that catch rendering errors in their child tree and show fallback UI.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What kinds of errors can Error Boundaries catch?",
+    "question_html": "<p>What kinds of errors can Error Boundaries catch?</p>",
+    "answers": [
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "They catch errors during rendering, lifecycle methods, and constructors of descendant components.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They catch errors during rendering, lifecycle methods, and constructors of descendant components.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What kinds of errors can Error Boundaries not catch?",
+    "question_html": "<p>What kinds of errors can Error Boundaries not catch?</p>",
+    "answers": [
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "They do not catch event handler errors, async callback errors, server-side rendering errors, or errors inside the boundary itself.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They do not catch event handler errors, async callback errors, server-side rendering errors, or errors inside the boundary itself.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you design error handling for a page with multiple independent widgets?",
+    "question_html": "<p>How would you design error handling for a page with multiple independent widgets?</p>",
+    "answers": [
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Wrap independent widgets in separate Error Boundaries so one failed widget does not break the entire page.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Wrap independent widgets in separate Error Boundaries so one failed widget does not break the entire page.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do Error Boundaries interact with Suspense boundaries?",
+    "question_html": "<p>How do Error Boundaries interact with Suspense boundaries?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Suspense handles loading states from suspended work, while Error Boundaries handle thrown errors; they can be nested to separate loading and failure UI.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Suspense handles loading states from suspended work, while Error Boundaries handle thrown errors; they can be nested to separate loading and failure UI.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "What is graceful degradation in a React application?",
+    "question_html": "<p>What is graceful degradation in a React application?</p>",
+    "answers": [
+      {
+        "text": "Graceful degradation means the app continues to provide useful functionality even when some features, data, or components fail.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Graceful degradation means the app continues to provide useful functionality even when some features, data, or components fail.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you recover from a failed lazy-loaded chunk?",
+    "question_html": "<p>How would you recover from a failed lazy-loaded chunk?</p>",
+    "answers": [
+      {
+        "text": "It should be used for every value in the app regardless of trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It should be used for every value in the app regardless of trade-offs. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Show an error fallback, allow retry, possibly reload the page, and monitor chunk load failures because they can happen after deployments.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Show an error fallback, allow retry, possibly reload the page, and monitor chunk load failures because they can happen after deployments.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is only a styling concern and does not affect rendering or scheduling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a styling concern and does not affect rendering or scheduling. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you handle runtime errors in production React apps?",
+    "question_html": "<p>How would you handle runtime errors in production React apps?</p>",
+    "answers": [
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It stores all application data in localStorage automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stores all application data in localStorage automatically. This answer does not match how advanced React works.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is an older class-component-only pattern that does not apply to modern React.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is an older class-component-only pattern that does not apply to modern React. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Use Error Boundaries, global error handlers, logging/monitoring, user-friendly fallbacks, and safe recovery paths.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use Error Boundaries, global error handlers, logging/monitoring, user-friendly fallbacks, and safe recovery paths.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How do you monitor React errors in production?",
+    "question_html": "<p>How do you monitor React errors in production?</p>",
+    "answers": [
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use monitoring tools like Sentry, Datadog, or similar services to capture errors, stack traces, releases, and user impact.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use monitoring tools like Sentry, Datadog, or similar services to capture errors, stack traces, releases, and user impact.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a bundler-only feature unrelated to React runtime behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a bundler-only feature unrelated to React runtime behavior. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It happens only on the backend and has no impact on the browser UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It happens only on the backend and has no impact on the browser UI. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  },
+  {
+    "category_code": "react-internals-fiber",
+    "difficulty": "hard",
+    "question": "How would you design a resilient React application that continues working when part of the UI fails?",
+    "question_html": "<p>How would you design a resilient React application that continues working when part of the UI fails?</p>",
+    "answers": [
+      {
+        "text": "It guarantees that no component will ever re-render again.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees that no component will ever re-render again. This answer does not match how advanced React works.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use isolated boundaries, defensive data handling, retries, graceful fallbacks, feature-level failure isolation, and observability.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use isolated boundaries, defensive data handling, retries, graceful fallbacks, feature-level failure isolation, and observability.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It means React always recreates the entire real DOM synchronously from scratch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It means React always recreates the entire real DOM synchronously from scratch. This answer does not match how advanced React works.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It removes the need for measuring performance or handling errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes the need for measuring performance or handling errors. This answer does not match how advanced React works.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "hard",
+      "error-handling-and-reliability"
+    ]
+  }
+]

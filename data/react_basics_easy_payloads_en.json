@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is React?",
+    "question_html": "<p>What is React?</p>",
+    "answers": [
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "React is a JavaScript library for building user interfaces using components.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React is a JavaScript library for building user interfaces using components.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is React used for?",
+    "question_html": "<p>What is React used for?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React is used to build interactive and reusable user interfaces for web applications.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React is used to build interactive and reusable user interfaces for web applications.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Is React a library or a framework?",
+    "question_html": "<p>Is React a library or a framework?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React is a library, not a full framework, because it mainly focuses on building UI.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React is a library, not a full framework, because it mainly focuses on building UI.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a React component?",
+    "question_html": "<p>What is a React component?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "A React component is a reusable piece of UI that can receive props and return React elements.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A React component is a reusable piece of UI that can receive props and return React elements.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between a functional component and a class component?",
+    "question_html": "<p>What is the difference between a functional component and a class component?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "A functional component is a function, while a class component is an ES class; modern React usually uses functional components with hooks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A functional component is a function, while a class component is an ES class; modern React usually uses functional components with hooks.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What does a React component return?",
+    "question_html": "<p>What does a React component return?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "A React component returns React elements, usually written with JSX.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A React component returns React elements, usually written with JSX.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is JSX?",
+    "question_html": "<p>What is JSX?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "JSX is a JavaScript syntax extension that lets you write UI markup inside JavaScript.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> JSX is a JavaScript syntax extension that lets you write UI markup inside JavaScript.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Is JSX required to use React?",
+    "question_html": "<p>Is JSX required to use React?</p>",
+    "answers": [
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "No. JSX is not required, but it is the most common and convenient way to write React components.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No. JSX is not required, but it is the most common and convenient way to write React components.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What does JSX compile to?",
+    "question_html": "<p>What does JSX compile to?</p>",
+    "answers": [
+      {
+        "text": "JSX compiles to JavaScript calls that create React elements, such as React.createElement or the JSX runtime.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> JSX compiles to JavaScript calls that create React elements, such as React.createElement or the JSX runtime.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why do we use className instead of class in JSX?",
+    "question_html": "<p>Why do we use className instead of class in JSX?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "React uses className because class is a reserved word in JavaScript and className maps to the HTML class attribute.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React uses className because class is a reserved word in JavaScript and className maps to the HTML class attribute.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "react-basics"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you create a functional component?",
+    "question_html": "<p>How do you create a functional component?</p>",
+    "answers": [
+      {
+        "text": "You create a functional component by writing a JavaScript function that returns JSX.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You create a functional component by writing a JavaScript function that returns JSX.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you export a component?",
+    "question_html": "<p>How do you export a component?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "You export a component with export or export default so it can be imported in another file.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You export a component with export or export default so it can be imported in another file.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you import a component?",
+    "question_html": "<p>How do you import a component?</p>",
+    "answers": [
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "You import a component with an import statement from the file where it was exported.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You import a component with an import statement from the file where it was exported.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is component composition?",
+    "question_html": "<p>What is component composition?</p>",
+    "answers": [
+      {
+        "text": "Component composition means building UI by combining smaller components together.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Component composition means building UI by combining smaller components together.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why should components be reusable?",
+    "question_html": "<p>Why should components be reusable?</p>",
+    "answers": [
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Reusable components reduce duplication and make the UI easier to maintain.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Reusable components reduce duplication and make the UI easier to maintain.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between a parent and a child component?",
+    "question_html": "<p>What is the difference between a parent and a child component?</p>",
+    "answers": [
+      {
+        "text": "A parent component renders another component, and that rendered component is its child.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A parent component renders another component, and that rendered component is its child.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Can a component render another component?",
+    "question_html": "<p>Can a component render another component?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Yes. A component can render another component as part of its JSX.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes. A component can render another component as part of its JSX.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the purpose of splitting UI into components?",
+    "question_html": "<p>What is the purpose of splitting UI into components?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Splitting UI into components makes code more organized, reusable, and easier to test.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Splitting UI into components makes code more organized, reusable, and easier to test.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a presentational component?",
+    "question_html": "<p>What is a presentational component?</p>",
+    "answers": [
+      {
+        "text": "A presentational component focuses mainly on how the UI looks and receives data through props.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A presentational component focuses mainly on how the UI looks and receives data through props.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a container component?",
+    "question_html": "<p>What is a container component?</p>",
+    "answers": [
+      {
+        "text": "A container component usually handles data, state, or logic and passes data to other components.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A container component usually handles data, state, or logic and passes data to other components.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "components"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What are props in React?",
+    "question_html": "<p>What are props in React?</p>",
+    "answers": [
+      {
+        "text": "Props are data passed from a parent component to a child component.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Props are data passed from a parent component to a child component.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Are props mutable or immutable?",
+    "question_html": "<p>Are props mutable or immutable?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Props should be treated as immutable by the component that receives them.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Props should be treated as immutable by the component that receives them.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you pass data from a parent component to a child component?",
+    "question_html": "<p>How do you pass data from a parent component to a child component?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "You pass data from parent to child by providing props on the child component.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You pass data from parent to child by providing props on the child component.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you receive props inside a component?",
+    "question_html": "<p>How do you receive props inside a component?</p>",
+    "answers": [
+      {
+        "text": "A component receives props as its function parameter, often using destructuring.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A component receives props as its function parameter, often using destructuring.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is props destructuring?",
+    "question_html": "<p>What is props destructuring?</p>",
+    "answers": [
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Props destructuring means extracting values from the props object, for example function User({ name }).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Props destructuring means extracting values from the props object, for example function User({ name }).</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is props.children?",
+    "question_html": "<p>What is props.children?</p>",
+    "answers": [
+      {
+        "text": "props.children contains the content placed between a component's opening and closing tags.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> props.children contains the content placed between a component&#x27;s opening and closing tags.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you pass a function as a prop?",
+    "question_html": "<p>How do you pass a function as a prop?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "You pass a function as a prop like any other value, for example <Button onClick={handleClick} />.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You pass a function as a prop like any other value, for example &lt;Button onClick={handleClick} /&gt;.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Can a child component directly change parent props?",
+    "question_html": "<p>Can a child component directly change parent props?</p>",
+    "answers": [
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "No. A child component should not directly mutate props received from its parent.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No. A child component should not directly mutate props received from its parent.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How can a child component communicate with a parent component?",
+    "question_html": "<p>How can a child component communicate with a parent component?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "A child can communicate with a parent by calling a callback function passed through props.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A child can communicate with a parent by calling a callback function passed through props.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between props and state?",
+    "question_html": "<p>What is the difference between props and state?</p>",
+    "answers": [
+      {
+        "text": "Props are passed from outside a component, while state is managed inside the component.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Props are passed from outside a component, while state is managed inside the component.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "props"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is state in React?",
+    "question_html": "<p>What is state in React?</p>",
+    "answers": [
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "State is data managed inside a component that can change over time and trigger re-renders.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> State is data managed inside a component that can change over time and trigger re-renders.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the useState hook?",
+    "question_html": "<p>What is the useState hook?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "useState is a React hook that lets functional components store and update local state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useState is a React hook that lets functional components store and update local state.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What does useState return?",
+    "question_html": "<p>What does useState return?</p>",
+    "answers": [
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "useState returns an array with the current state value and a setter function.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useState returns an array with the current state value and a setter function.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you update state?",
+    "question_html": "<p>How do you update state?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "You update state by calling the setter function returned by useState.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You update state by calling the setter function returned by useState.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why should you not mutate state directly?",
+    "question_html": "<p>Why should you not mutate state directly?</p>",
+    "answers": [
+      {
+        "text": "Directly mutating state can prevent React from detecting changes correctly and can cause UI bugs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Directly mutating state can prevent React from detecting changes correctly and can cause UI bugs.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What happens when state changes?",
+    "question_html": "<p>What happens when state changes?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "When state changes, React schedules a re-render so the UI can reflect the new value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When state changes, React schedules a re-render so the UI can reflect the new value.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Does changing state cause a component to re-render?",
+    "question_html": "<p>Does changing state cause a component to re-render?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "State changes, prop changes, context changes, or a parent re-render can cause a component to re-render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> State changes, prop changes, context changes, or a parent re-render can cause a component to re-render.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you store a boolean value in state?",
+    "question_html": "<p>How do you store a boolean value in state?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "You can store a boolean in state with useState(false) or useState(true).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You can store a boolean in state with useState(false) or useState(true).</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you store an array in state?",
+    "question_html": "<p>How do you store an array in state?</p>",
+    "answers": [
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "You can store an array with useState([]) and update it immutably.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You can store an array with useState([]) and update it immutably.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you store an object in state?",
+    "question_html": "<p>How do you store an object in state?</p>",
+    "answers": [
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "You can store an object with useState({}) and update it immutably.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You can store an object with useState({}) and update it immutably.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "state"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you create a counter with useState?",
+    "question_html": "<p>How do you create a counter with useState?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Create a count state value and update it with a setter, for example setCount(prev => prev + 1).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Create a count state value and update it with a setter, for example setCount(prev =&gt; prev + 1).</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why is setCount(prev => prev + 1) sometimes better than setCount(count + 1)?",
+    "question_html": "<p>Why is setCount(prev =&gt; prev + 1) sometimes better than setCount(count + 1)?</p>",
+    "answers": [
+      {
+        "text": "The callback form uses the latest previous state value, which is safer when updates are batched.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The callback form uses the latest previous state value, which is safer when updates are batched.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you add an item to an array in state?",
+    "question_html": "<p>How do you add an item to an array in state?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Create a new array, for example setItems(prev => [...prev, newItem]).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Create a new array, for example setItems(prev =&gt; [...prev, newItem]).</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you remove an item from an array in state?",
+    "question_html": "<p>How do you remove an item from an array in state?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Use filter to create a new array without the removed item.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use filter to create a new array without the removed item.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you update one item inside an array in state?",
+    "question_html": "<p>How do you update one item inside an array in state?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Use map and return a new object for the item that should be changed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use map and return a new object for the item that should be changed.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you update a property inside an object in state?",
+    "question_html": "<p>How do you update a property inside an object in state?</p>",
+    "answers": [
+      {
+        "text": "Use object spread, for example setUser(prev => ({ ...prev, name: 'Anna' })).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use object spread, for example setUser(prev =&gt; ({ ...prev, name: &#x27;Anna&#x27; })).</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why is the spread operator often used when updating state?",
+    "question_html": "<p>Why is the spread operator often used when updating state?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "The spread operator helps create new arrays or objects without mutating existing state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The spread operator helps create new arrays or objects without mutating existing state.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why should you avoid using push() directly on a state array?",
+    "question_html": "<p>Why should you avoid using push() directly on a state array?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "push mutates the existing array, so React may not detect a proper immutable state change.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> push mutates the existing array, so React may not detect a proper immutable state change.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Is state update synchronous or asynchronous?",
+    "question_html": "<p>Is state update synchronous or asynchronous?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "State updates may be batched and are not guaranteed to be immediately reflected in the current render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> State updates may be batched and are not guaranteed to be immediately reflected in the current render.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why can console.log(state) after setState show the old value?",
+    "question_html": "<p>Why can console.log(state) after setState show the old value?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Because the setter schedules an update for a future render, while the current state variable still has the old value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because the setter schedules an update for a future render, while the current state variable still has the old value.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "usestate-practice"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you handle a click event in React?",
+    "question_html": "<p>How do you handle a click event in React?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Pass a function to onClick, for example <button onClick={handleClick}>.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Pass a function to onClick, for example &lt;button onClick={handleClick}&gt;.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is onClick?",
+    "question_html": "<p>What is onClick?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "onClick is a React event handler prop used to handle click events.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> onClick is a React event handler prop used to handle click events.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you pass an argument to an event handler?",
+    "question_html": "<p>How do you pass an argument to an event handler?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use an arrow function, for example onClick={() => handleClick(id)}.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use an arrow function, for example onClick={() =&gt; handleClick(id)}.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why is onClick={handleClick()} usually wrong?",
+    "question_html": "<p>Why is onClick={handleClick()} usually wrong?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It calls the function during render instead of passing a function to run after the click.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It calls the function during render instead of passing a function to run after the click.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a SyntheticEvent in React?",
+    "question_html": "<p>What is a SyntheticEvent in React?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "SyntheticEvent is React's wrapper around native browser events.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> SyntheticEvent is React&#x27;s wrapper around native browser events.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you handle input changes?",
+    "question_html": "<p>How do you handle input changes?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use onChange and read the new value from event.target.value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use onChange and read the new value from event.target.value.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What does event.target.value mean?",
+    "question_html": "<p>What does event.target.value mean?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "event.target.value is the current value of the form element that triggered the event.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> event.target.value is the current value of the form element that triggered the event.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you handle form submission?",
+    "question_html": "<p>How do you handle form submission?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use the form onSubmit handler to process the submitted form data.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the form onSubmit handler to process the submitted form data.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you prevent the default form submit behavior?",
+    "question_html": "<p>How do you prevent the default form submit behavior?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Call event.preventDefault() inside the submit handler.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Call event.preventDefault() inside the submit handler.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is event.preventDefault() used for?",
+    "question_html": "<p>What is event.preventDefault() used for?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "event.preventDefault() prevents the browser's default behavior, such as reloading the page on form submit.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> event.preventDefault() prevents the browser&#x27;s default behavior, such as reloading the page on form submit.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "events"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a controlled component?",
+    "question_html": "<p>What is a controlled component?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "A controlled component is a form element whose value is controlled by React state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A controlled component is a form element whose value is controlled by React state.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is an uncontrolled component?",
+    "question_html": "<p>What is an uncontrolled component?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "An uncontrolled component keeps its value in the DOM instead of being fully controlled by React state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An uncontrolled component keeps its value in the DOM instead of being fully controlled by React state.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why should an input with value also have onChange?",
+    "question_html": "<p>Why should an input with value also have onChange?</p>",
+    "answers": [
+      {
+        "text": "Because value makes the input controlled, and onChange is needed to update the state value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because value makes the input controlled, and onChange is needed to update the state value.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you control an input value with state?",
+    "question_html": "<p>How do you control an input value with state?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Set value to a state variable and update that state in onChange.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Set value to a state variable and update that state in onChange.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between value and defaultValue?",
+    "question_html": "<p>What is the difference between value and defaultValue?</p>",
+    "answers": [
+      {
+        "text": "value controls the current value through React, while defaultValue only sets the initial value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> value controls the current value through React, while defaultValue only sets the initial value.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you clear a form after submit?",
+    "question_html": "<p>How do you clear a form after submit?</p>",
+    "answers": [
+      {
+        "text": "Reset the state values used by the form fields after submitting.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Reset the state values used by the form fields after submitting.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you handle a checkbox in React?",
+    "question_html": "<p>How do you handle a checkbox in React?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Use checked and event.target.checked for checkbox boolean state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use checked and event.target.checked for checkbox boolean state.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you handle a select input in React?",
+    "question_html": "<p>How do you handle a select input in React?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Use value and onChange, similarly to a controlled text input.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use value and onChange, similarly to a controlled text input.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you handle multiple inputs in one form?",
+    "question_html": "<p>How do you handle multiple inputs in one form?</p>",
+    "answers": [
+      {
+        "text": "Use a shared change handler and update state based on the input name.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a shared change handler and update state based on the input name.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between checked and value for a checkbox?",
+    "question_html": "<p>What is the difference between checked and value for a checkbox?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "checked represents whether the checkbox is selected, while value is the submitted value string.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> checked represents whether the checkbox is selected, while value is the submitted value string.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "forms"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you render a list in React?",
+    "question_html": "<p>How do you render a list in React?</p>",
+    "answers": [
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Use map to transform an array of data into an array of JSX elements.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use map to transform an array of data into an array of JSX elements.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why is map() commonly used in React?",
+    "question_html": "<p>Why is map() commonly used in React?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "map is commonly used because it returns a new array of JSX elements from an array of data.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> map is commonly used because it returns a new array of JSX elements from an array of data.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a key in React?",
+    "question_html": "<p>What is a key in React?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "A key is a special value that helps React identify list items between renders.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A key is a special value that helps React identify list items between renders.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why are keys important?",
+    "question_html": "<p>Why are keys important?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Keys help React match list items correctly between renders.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Keys help React match list items correctly between renders.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Can you use an array index as a key?",
+    "question_html": "<p>Can you use an array index as a key?</p>",
+    "answers": [
+      {
+        "text": "You can use an index as a key only when the list is static and does not change order.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> You can use an index as a key only when the list is static and does not change order.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "When is using an index as a key acceptable?",
+    "question_html": "<p>When is using an index as a key acceptable?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is acceptable when the list is static and items are not reordered, inserted, or removed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It is acceptable when the list is static and items are not reordered, inserted, or removed.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What can happen if keys are unstable?",
+    "question_html": "<p>What can happen if keys are unstable?</p>",
+    "answers": [
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "React may preserve state incorrectly, remount items unnecessarily, or show UI bugs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> React may preserve state incorrectly, remount items unnecessarily, or show UI bugs.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Is key passed to the component as a normal prop?",
+    "question_html": "<p>Is key passed to the component as a normal prop?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "No. key is used internally by React and is not available as a normal prop.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No. key is used internally by React and is not available as a normal prop.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you render a list of objects?",
+    "question_html": "<p>How do you render a list of objects?</p>",
+    "answers": [
+      {
+        "text": "Use map to transform an array of data into an array of JSX elements.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use map to transform an array of data into an array of JSX elements.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you filter a list before rendering it?",
+    "question_html": "<p>How do you filter a list before rendering it?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Use filter before map, for example items.filter(condition).map(...).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use filter before map, for example items.filter(condition).map(...).</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "lists-and-keys"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the useEffect hook used for?",
+    "question_html": "<p>What is the useEffect hook used for?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "useEffect is used for side effects such as fetching data, subscriptions, timers, and DOM interactions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useEffect is used for side effects such as fetching data, subscriptions, timers, and DOM interactions.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "When does useEffect run without a dependency array?",
+    "question_html": "<p>When does useEffect run without a dependency array?</p>",
+    "answers": [
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "useEffect runs after every render when no dependency array is provided.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useEffect runs after every render when no dependency array is provided.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "When does useEffect run with an empty dependency array?",
+    "question_html": "<p>When does useEffect run with an empty dependency array?</p>",
+    "answers": [
+      {
+        "text": "useEffect with [] runs after the first render, and cleanup runs on unmount.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useEffect with [] runs after the first render, and cleanup runs on unmount.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "When does useEffect run with dependencies?",
+    "question_html": "<p>When does useEffect run with dependencies?</p>",
+    "answers": [
+      {
+        "text": "useEffect runs after the first render and again when one of its dependencies changes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> useEffect runs after the first render and again when one of its dependencies changes.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a dependency array?",
+    "question_html": "<p>What is a dependency array?</p>",
+    "answers": [
+      {
+        "text": "A dependency array is the list of values that controls when an effect should re-run.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A dependency array is the list of values that controls when an effect should re-run.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why is the dependency array important?",
+    "question_html": "<p>Why is the dependency array important?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It helps control when the effect runs and avoids stale values or unnecessary work.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It helps control when the effect runs and avoids stale values or unnecessary work.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you fetch data inside useEffect?",
+    "question_html": "<p>How do you fetch data inside useEffect?</p>",
+    "answers": [
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Define or call an async function inside useEffect and store the response in state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define or call an async function inside useEffect and store the response in state.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a cleanup function in useEffect?",
+    "question_html": "<p>What is a cleanup function in useEffect?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "A cleanup function is returned from useEffect to clean up subscriptions, timers, or event listeners.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A cleanup function is returned from useEffect to clean up subscriptions, timers, or event listeners.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "When does the cleanup function run?",
+    "question_html": "<p>When does the cleanup function run?</p>",
+    "answers": [
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Cleanup runs before the effect runs again and when the component unmounts.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Cleanup runs before the effect runs again and when the component unmounts.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "How do you remove an event listener in cleanup?",
+    "question_html": "<p>How do you remove an event listener in cleanup?</p>",
+    "answers": [
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Return a cleanup function that calls removeEventListener with the same event type and handler.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Return a cleanup function that calls removeEventListener with the same event type and handler.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "useeffect"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is a re-render?",
+    "question_html": "<p>What is a re-render?</p>",
+    "answers": [
+      {
+        "text": "A re-render is React running a component again to calculate the updated UI.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A re-render is React running a component again to calculate the updated UI.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What can cause a component to re-render?",
+    "question_html": "<p>What can cause a component to re-render?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "State changes, prop changes, context changes, or a parent re-render can cause a component to re-render.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> State changes, prop changes, context changes, or a parent re-render can cause a component to re-render.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Does a re-render always mean the real DOM changes?",
+    "question_html": "<p>Does a re-render always mean the real DOM changes?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "No. React may re-render and then update the real DOM only where something actually changed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No. React may re-render and then update the real DOM only where something actually changed.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the Virtual DOM?",
+    "question_html": "<p>What is the Virtual DOM?</p>",
+    "answers": [
+      {
+        "text": "The Virtual DOM is an in-memory representation of the UI used by React to compare changes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The Virtual DOM is an in-memory representation of the UI used by React to compare changes.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is reconciliation?",
+    "question_html": "<p>What is reconciliation?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Reconciliation is React's process of comparing previous and next UI trees to decide what to update.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Reconciliation is React&#x27;s process of comparing previous and next UI trees to decide what to update.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "Why does React need keys when rendering lists?",
+    "question_html": "<p>Why does React need keys when rendering lists?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Keys help React identify list items during reconciliation.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Keys help React identify list items during reconciliation.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What does declarative UI mean?",
+    "question_html": "<p>What does declarative UI mean?</p>",
+    "answers": [
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "Declarative UI means describing what the UI should look like for a given state, instead of manually changing the DOM step by step.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Declarative UI means describing what the UI should look like for a given state, instead of manually changing the DOM step by step.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between declarative and imperative programming?",
+    "question_html": "<p>What is the difference between declarative and imperative programming?</p>",
+    "answers": [
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "Declarative code describes the desired result, while imperative code describes step-by-step instructions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Declarative code describes the desired result, while imperative code describes step-by-step instructions.</p>",
+        "id": "B"
+      },
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What is conditional rendering?",
+    "question_html": "<p>What is conditional rendering?</p>",
+    "answers": [
+      {
+        "text": "It disables React rendering completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables React rendering completely. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It is a CSS-only mechanism used only for styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS-only mechanism used only for styling. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "Conditional rendering means showing different UI depending on a condition.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Conditional rendering means showing different UI depending on a condition.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It replaces JavaScript with HTML only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces JavaScript with HTML only. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  },
+  {
+    "category_code": "react-basics",
+    "difficulty": "easy",
+    "question": "What are the basic React hooks every developer should know?",
+    "question_html": "<p>What are the basic React hooks every developer should know?</p>",
+    "answers": [
+      {
+        "text": "It is mainly a database feature and is not related to React UI.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is mainly a database feature and is not related to React UI. This does not correctly answer the question.</p>",
+        "id": "A"
+      },
+      {
+        "text": "It always runs only on the backend server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs only on the backend server. This does not correctly answer the question.</p>",
+        "id": "B"
+      },
+      {
+        "text": "The basic hooks include useState, useEffect, useRef, useMemo, useCallback, and useContext.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The basic hooks include useState, useEffect, useRef, useMemo, useCallback, and useContext.</p>",
+        "id": "C"
+      },
+      {
+        "text": "It is required only for routing and has no effect on components.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is required only for routing and has no effect on components. This does not correctly answer the question.</p>",
+        "id": "D"
+      }
+    ],
+    "tags": [
+      "react",
+      "easy",
+      "rendering-and-react-internals"
+    ]
+  }
+]
