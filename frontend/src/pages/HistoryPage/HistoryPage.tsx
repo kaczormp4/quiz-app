@@ -1,11 +1,11 @@
-﻿import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import { useAuth } from "../app/providers/AuthProvider";
-import { useBillingAccess } from "../features/billing/hooks";
-import { LockedFeaturePreview } from "../shared/ui/LockedFeaturePreview";
-import { getAnswerHistoryRequest } from "../features/auth/api";
+import { useAuth } from "../../app/providers/AuthProvider";
+import { useBillingAccess } from "../../features/billing/hooks";
+import { LockedFeaturePreview } from "../../shared/ui/LockedFeaturePreview";
+import { getAnswerHistoryRequest } from "../../features/auth/api";
 
 export default function HistoryPage() {
   const { t } = useTranslation();
@@ -136,3 +136,4 @@ export default function HistoryPage() {
     </main>
   );
 }
+

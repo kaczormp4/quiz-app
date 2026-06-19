@@ -1,7 +1,7 @@
-﻿import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
-import { useAuth } from "../app/providers/AuthProvider";
-import RankingPage from "./RankingPage";
+import { useAuth } from "../../app/providers/AuthProvider";
+import RankingPage from "../RankingPage";
 
 export default function HomePage() {
   const { isAuthenticated, isLoadingUser } = useAuth();
@@ -22,3 +22,4 @@ export default function HomePage() {
 
   return <RankingPage />;
 }
+

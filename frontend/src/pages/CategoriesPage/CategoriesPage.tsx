@@ -1,8 +1,8 @@
-﻿import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import { getCategories } from "../features/quizzes/api";
+import { getCategories } from "../../features/quizzes/api";
 
 export default function CategoriesPage() {
   const { t } = useTranslation();
@@ -61,3 +61,4 @@ export default function CategoriesPage() {
     </main>
   );
 }
+

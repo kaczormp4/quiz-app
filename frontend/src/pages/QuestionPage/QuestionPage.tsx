@@ -1,10 +1,10 @@
-﻿import DOMPurify from "dompurify";
+import DOMPurify from "dompurify";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
 
-import { getQuestion, submitAnswer } from "../features/quizzes/api";
-import type { SubmitAnswerResponse } from "../features/quizzes/types";
+import { getQuestion, submitAnswer } from "../../features/quizzes/api";
+import type { SubmitAnswerResponse } from "../../features/quizzes/types";
 
 function QuestionMeta({
   createdBy,
@@ -189,3 +189,4 @@ export default function QuestionPage() {
     </main>
   );
 }
+

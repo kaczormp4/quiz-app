@@ -1,18 +1,18 @@
-﻿import { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import type { FormEvent } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
-import { useAuth } from "../app/providers/AuthProvider";
-import { useBillingAccess } from "../features/billing/hooks";
-import { LockedFeaturePreview } from "../shared/ui/LockedFeaturePreview";
+import { useAuth } from "../../app/providers/AuthProvider";
+import { useBillingAccess } from "../../features/billing/hooks";
+import { LockedFeaturePreview } from "../../shared/ui/LockedFeaturePreview";
 import {
   createCategoryRequest,
   getCategories,
   getMyPendingQuestionsRequest,
   submitPendingQuestionRequest,
-} from "../features/quizzes/api";
-import type { PendingAnswerCreatePayload } from "../features/quizzes/types";
+} from "../../features/quizzes/api";
+import type { PendingAnswerCreatePayload } from "../../features/quizzes/types";
 
 const defaultAnswers: PendingAnswerCreatePayload[] = [
   { text: "", is_correct: true, position: 1 },
@@ -378,3 +378,4 @@ export default function ContributePage() {
     </main>
   );
 }
+

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 type ConfirmState = "loading" | "success" | "error";
 
@@ -14,17 +15,20 @@ function getAuthToken() {
 }
 
 export function BillingSuccessPage() {
+  const { t } = useTranslation();
   const [searchParams] = useSearchParams();
   const sessionId = searchParams.get("session_id");
 
   const [state, setState] = useState<ConfirmState>("loading");
-  const [message, setMessage] = useState("Confirming your payment...");
+  const [message, setMessage] = useState<string | null>(null);
   const hasConfirmedRef = useRef(false);
 
   useEffect(() => {
     if (!sessionId) {
       setState("error");
-      setMessage("Missing Stripe checkout session ID.");
+      setMessage(
+        t("billingSuccess.missingSession", "Missing Stripe checkout session ID."),
+      );
       return;
     }
 
@@ -39,7 +43,12 @@ export function BillingSuccessPage() {
 
       if (!token) {
         setState("error");
-        setMessage("You are not logged in. Please log in and check your billing status.");
+        setMessage(
+          t(
+            "billingSuccess.notLoggedIn",
+            "You are not logged in. Please log in and check your billing status.",
+          ),
+        );
         return;
       }
 
@@ -58,23 +67,36 @@ export function BillingSuccessPage() {
         const data = await response.json().catch(() => null);
 
         if (!response.ok) {
-          throw new Error(data?.detail ?? "Payment confirmation failed.");
+          throw new Error(
+            data?.detail ??
+              t("billingSuccess.confirmationFailed", "Payment confirmation failed."),
+          );
         }
 
         setState("success");
         setMessage(
           data?.status === "already_confirmed"
-            ? "Your premium access was already activated."
-            : "Your premium access has been activated successfully.",
+            ? t(
+                "billingSuccess.alreadyActivated",
+                "Your premium access was already activated.",
+              )
+            : t(
+                "billingSuccess.activated",
+                "Your premium access has been activated successfully.",
+              ),
         );
       } catch (error) {
         setState("error");
-        setMessage(error instanceof Error ? error.message : "Payment confirmation failed.");
+        setMessage(
+          error instanceof Error
+            ? error.message
+            : t("billingSuccess.confirmationFailed", "Payment confirmation failed."),
+        );
       }
     };
 
     confirmPayment();
-  }, [sessionId]);
+  }, [sessionId, t]);
 
   const isSuccess = state === "success";
   const isLoading = state === "loading";
@@ -94,14 +116,20 @@ export function BillingSuccessPage() {
         </div>
 
         <h1 className="text-3xl font-bold text-slate-900">
-          {isLoading ? "Confirming payment" : isSuccess ? "Payment successful" : "Payment confirmation failed"}
+          {isLoading
+            ? t("billingSuccess.confirmingTitle", "Confirming payment")
+            : isSuccess
+              ? t("billingSuccess.successTitle", "Payment successful")
+              : t("billingSuccess.errorTitle", "Payment confirmation failed")}
         </h1>
 
-        <p className="mt-4 text-slate-600">{message}</p>
+        <p className="mt-4 text-slate-600">
+          {message ?? t("billingSuccess.confirmingMessage", "Confirming your payment...")}
+        </p>
 
         {sessionId ? (
           <p className="mt-4 break-all rounded-xl bg-slate-50 p-3 text-xs text-slate-500">
-            Session ID: {sessionId}
+            {t("billingSuccess.sessionId", "Session ID")}: {sessionId}
           </p>
         ) : null}
 
@@ -110,14 +138,14 @@ export function BillingSuccessPage() {
             to="/"
             className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800"
           >
-            Go to app
+            {t("billingSuccess.goToApp", "Go to app")}
           </Link>
 
           <Link
             to="/pricing"
             className="rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50"
           >
-            Back to pricing
+            {t("billingSuccess.backToPricing", "Back to pricing")}
           </Link>
         </div>
       </div>

@@ -1,22 +1,22 @@
-﻿import DOMPurify from "dompurify";
+import DOMPurify from "dompurify";
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
-import { useAuth } from "../app/providers/AuthProvider";
-import { useBillingAccess } from "../features/billing/hooks";
+import { useAuth } from "../../app/providers/AuthProvider";
+import { useBillingAccess } from "../../features/billing/hooks";
 import {
   addWrongAnswerRequest,
   recordAnswerRequest,
-} from "../features/auth/api";
+} from "../../features/auth/api";
 import {
   getCategoryQuestions,
   getQuestion,
   submitAnswer,
-} from "../features/quizzes/api";
-import type { SubmitAnswerResponse } from "../features/quizzes/types";
-import { LockedFeaturePreview } from "../shared/ui/LockedFeaturePreview";
+} from "../../features/quizzes/api";
+import type { SubmitAnswerResponse } from "../../features/quizzes/types";
+import { LockedFeaturePreview } from "../../shared/ui/LockedFeaturePreview";
 
 function QuestionMeta({
   createdBy,
@@ -390,3 +390,4 @@ export default function QuestionsPage() {
     </main>
   );
 }
+

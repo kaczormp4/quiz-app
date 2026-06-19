@@ -1,9 +1,9 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import type { FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import { useAuth } from "../app/providers/AuthProvider";
+import { useAuth } from "../../app/providers/AuthProvider";
 
 export default function LoginPage() {
   const { t } = useTranslation();
@@ -99,3 +99,4 @@ export default function LoginPage() {
     </main>
   );
 }
+

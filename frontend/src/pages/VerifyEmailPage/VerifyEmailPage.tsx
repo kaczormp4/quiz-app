@@ -1,5 +1,6 @@
-﻿import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_URL ??
@@ -11,6 +12,7 @@ const API_BASE_URL =
 type VerifyState = "idle" | "loading" | "success" | "error";
 
 export default function VerifyEmailPage() {
+  const { t } = useTranslation();
   const [searchParams] = useSearchParams();
   const token = searchParams.get("token");
 
@@ -23,7 +25,7 @@ export default function VerifyEmailPage() {
   useEffect(() => {
     if (!token) {
       setState("error");
-      setMessage("Verification token is missing.");
+      setMessage(t("verifyEmail.missingToken", "Verification token is missing."));
       return;
     }
 
@@ -50,23 +52,25 @@ export default function VerifyEmailPage() {
         const data = await response.json().catch(() => null);
 
         if (!response.ok) {
-          throw new Error(data?.detail ?? "Email verification failed.");
+          throw new Error(
+            data?.detail ?? t("verifyEmail.failed", "Email verification failed."),
+          );
         }
 
         setState("success");
-        setMessage(data?.message ?? "Email has been verified.");
+        setMessage(data?.message ?? t("verifyEmail.verified", "Email has been verified."));
       } catch (error) {
         setState("error");
         setMessage(
           error instanceof Error
             ? error.message
-            : "Email verification failed.",
+            : t("verifyEmail.failed", "Email verification failed."),
         );
       }
     };
 
     verifyEmail();
-  }, [token]);
+  }, [token, t]);
 
   return (
     <main className="mx-auto flex min-h-[70vh] max-w-xl items-center px-4 py-12">
@@ -77,14 +81,16 @@ export default function VerifyEmailPage() {
 
         <h1 className="mt-6 text-3xl font-black text-slate-950">
           {state === "success"
-            ? "Email verified"
+            ? t("verifyEmail.successTitle", "Email verified")
             : state === "loading"
-              ? "Verifying email"
-              : "Email verification"}
+              ? t("verifyEmail.loadingTitle", "Verifying email")
+              : t("verifyEmail.title", "Email verification")}
         </h1>
 
         <p className="mt-3 text-sm leading-6 text-slate-600">
-          {hasToken ? message || "Please wait..." : "Verification token is missing."}
+          {hasToken
+            ? message || t("verifyEmail.wait", "Please wait...")
+            : t("verifyEmail.missingToken", "Verification token is missing.")}
         </p>
 
         <div className="mt-8 flex justify-center gap-3">
@@ -92,14 +98,14 @@ export default function VerifyEmailPage() {
             to="/login"
             className="rounded-2xl bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-slate-800"
           >
-            Go to login
+            {t("verifyEmail.goToLogin", "Go to login")}
           </Link>
 
           <Link
             to="/"
             className="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-black text-slate-700 transition hover:bg-slate-50"
           >
-            Home
+            {t("common.home", "Home")}
           </Link>
         </div>
       </section>

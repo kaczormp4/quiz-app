@@ -1,16 +1,16 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import type { FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
-import { useAuth } from "../app/providers/AuthProvider";
+import { useAuth } from "../../app/providers/AuthProvider";
 import {
   changePasswordRequest,
   updateProfileRequest,
-} from "../features/auth/api";
-import { getMyBillingStatusRequest } from "../features/billing/api";
-import type { BillingStatus } from "../features/billing/types";
+} from "../../features/auth/api";
+import { getMyBillingStatusRequest } from "../../features/billing/api";
+import type { BillingStatus } from "../../features/billing/types";
 
 function formatDate(value: string | null): string {
   if (!value) {
@@ -407,3 +407,4 @@ export default function ProfilePage() {
     </main>
   );
 }
+

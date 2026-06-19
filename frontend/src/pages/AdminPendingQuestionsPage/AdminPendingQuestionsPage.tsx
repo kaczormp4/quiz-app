@@ -3,13 +3,13 @@ import DOMPurify from "dompurify";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
-import { useAuth } from "../app/providers/AuthProvider";
+import { useAuth } from "../../app/providers/AuthProvider";
 import {
   approvePendingQuestionRequest,
   getAdminPendingQuestionsRequest,
   importAdminQuestionPayloadRequest,
   rejectPendingQuestionRequest,
-} from "../features/quizzes/api";
+} from "../../features/quizzes/api";
 
 export default function AdminPendingQuestionsPage() {
   const { t } = useTranslation();
@@ -281,7 +281,7 @@ export default function AdminPendingQuestionsPage() {
                     }`}
                   >
                     {answer.position}. {answer.text}
-                    {answer.is_correct ? " ✅" : ""}
+                    {answer.is_correct ? " âś…" : ""}
                   </div>
                 ))}
               </div>
@@ -323,3 +323,4 @@ export default function AdminPendingQuestionsPage() {
     </main>
   );
 }
+

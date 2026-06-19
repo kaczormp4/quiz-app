@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
 
-import { useAuth } from "../app/providers/AuthProvider";
+import { useAuth } from "../../app/providers/AuthProvider";
 
 type Plan = {
   id?: string;
@@ -430,7 +430,7 @@ export default function PricingPage() {
                           : "bg-slate-100 text-slate-950"
                       }`}
                     >
-                      ✓
+                      âś“
                     </span>
 
                     <span>{feature}</span>
@@ -487,3 +487,4 @@ export default function PricingPage() {
     </main>
   );
 }
+

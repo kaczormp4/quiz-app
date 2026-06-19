@@ -1,12 +1,12 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
-import { useAuth } from "../app/providers/AuthProvider";
-import { getAnswerHistoryRequest, getWrongAnswersRequest } from "../features/auth/api";
-import { useBillingAccess } from "../features/billing/hooks";
-import { getCategories, getMyPendingQuestionsRequest } from "../features/quizzes/api";
-import { LockedFeaturePreview } from "../shared/ui/LockedFeaturePreview";
+import { useAuth } from "../../app/providers/AuthProvider";
+import { getAnswerHistoryRequest, getWrongAnswersRequest } from "../../features/auth/api";
+import { useBillingAccess } from "../../features/billing/hooks";
+import { getCategories, getMyPendingQuestionsRequest } from "../../features/quizzes/api";
+import { LockedFeaturePreview } from "../../shared/ui/LockedFeaturePreview";
 
 type DashboardCardProps = {
   title: string;
@@ -333,3 +333,4 @@ export default function DashboardPage() {
     </main>
   );
 }
+
