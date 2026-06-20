@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is TypeScript?",
+    "question_html": "<p>What is TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A typed superset of JavaScript that adds static type checking and compiles to JavaScript.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A typed superset of JavaScript that adds static type checking and compiles to JavaScript.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How is TypeScript different from JavaScript?",
+    "question_html": "<p>How is TypeScript different from JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "TypeScript adds static types and compile-time type checking on top of JavaScript.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> TypeScript adds static types and compile-time type checking on top of JavaScript.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Why would you use TypeScript?",
+    "question_html": "<p>Why would you use TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "To catch many mistakes earlier, improve autocomplete, document contracts, and make refactoring safer.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> To catch many mistakes earlier, improve autocomplete, document contracts, and make refactoring safer.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Does TypeScript run directly in the browser?",
+    "question_html": "<p>Does TypeScript run directly in the browser?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "No, browsers run JavaScript, so TypeScript must be compiled to JavaScript first.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No, browsers run JavaScript, so TypeScript must be compiled to JavaScript first.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does TypeScript compile to?",
+    "question_html": "<p>What does TypeScript compile to?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "JavaScript.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> JavaScript.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is static typing?",
+    "question_html": "<p>What is static typing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Checking types before the code runs, usually during development or build time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Checking types before the code runs, usually during development or build time.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is type checking?",
+    "question_html": "<p>What is type checking?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Verifying that values are used according to their declared or inferred types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Verifying that values are used according to their declared or inferred types.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is type inference?",
+    "question_html": "<p>What is type inference?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "TypeScript’s ability to determine a type automatically from context or assigned values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> TypeScript’s ability to determine a type automatically from context or assigned values.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a type annotation?",
+    "question_html": "<p>What is a type annotation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An explicit type written by the developer, such as const name: string.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An explicit type written by the developer, such as const name: string.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Can TypeScript prevent all runtime errors?",
+    "question_html": "<p>Can TypeScript prevent all runtime errors?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "No, TypeScript reduces many type-related errors but cannot prevent all runtime errors.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No, TypeScript reduces many type-related errors but cannot prevent all runtime errors.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-basics"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the string type?",
+    "question_html": "<p>What is the string type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A type for text values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type for text values.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the number type?",
+    "question_html": "<p>What is the number type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A type for numeric values, including integers and floating-point numbers.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type for numeric values, including integers and floating-point numbers.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the boolean type?",
+    "question_html": "<p>What is the boolean type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A type for true or false values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type for true or false values.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the null type?",
+    "question_html": "<p>What is the null type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A type representing an intentionally empty value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type representing an intentionally empty value.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the undefined type?",
+    "question_html": "<p>What is the undefined type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type representing a value that has not been assigned.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type representing a value that has not been assigned.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the symbol type?",
+    "question_html": "<p>What is the symbol type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A type for unique symbol values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type for unique symbol values.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the bigint type?",
+    "question_html": "<p>What is the bigint type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type for integers larger than the safe range of the number type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type for integers larger than the safe range of the number type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a string variable?",
+    "question_html": "<p>How do you type a string variable?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use the string type, for example const name: string = 'Ana'.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the string type, for example const name: string = &#x27;Ana&#x27;.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a number variable?",
+    "question_html": "<p>How do you type a number variable?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use the number type, for example const age: number = 30.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the number type, for example const age: number = 30.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a boolean variable?",
+    "question_html": "<p>How do you type a boolean variable?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use the boolean type, for example const isActive: boolean = true.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the boolean type, for example const isActive: boolean = true.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "primitive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an array of strings?",
+    "question_html": "<p>How do you type an array of strings?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use string[] or Array<string>.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use string[] or Array&lt;string&gt;.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an array of numbers?",
+    "question_html": "<p>How do you type an array of numbers?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use number[] or Array<number>.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use number[] or Array&lt;number&gt;.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between string[] and Array<string>?",
+    "question_html": "<p>What is the difference between string[] and Array&lt;string&gt;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are two equivalent syntaxes for an array of strings.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They are two equivalent syntaxes for an array of strings.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an array of objects?",
+    "question_html": "<p>How do you type an array of objects?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Define the object shape and use an array type, for example { id: number; name: string }[].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define the object shape and use an array type, for example { id: number; name: string }[].</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a tuple?",
+    "question_html": "<p>What is a tuple?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An array type with a fixed order and known type for each position.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An array type with a fixed order and known type for each position.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How is a tuple different from an array?",
+    "question_html": "<p>How is a tuple different from an array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A tuple has specific types at specific positions, while an array usually has one element type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A tuple has specific types at specific positions, while an array usually has one element type.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a tuple with a string and a number?",
+    "question_html": "<p>How do you type a tuple with a string and a number?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use [string, number].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use [string, number].</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Can a tuple have optional elements?",
+    "question_html": "<p>Can a tuple have optional elements?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Yes, tuple elements can be optional with ? syntax.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, tuple elements can be optional with ? syntax.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a readonly array?",
+    "question_html": "<p>What is a readonly array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An array type that prevents mutation methods at type-checking time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An array type that prevents mutation methods at type-checking time.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you prevent array mutation in TypeScript?",
+    "question_html": "<p>How do you prevent array mutation in TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use readonly arrays, ReadonlyArray<T>, or readonly tuple types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use readonly arrays, ReadonlyArray&lt;T&gt;, or readonly tuple types.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "arrays-tuples"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an object?",
+    "question_html": "<p>How do you type an object?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Write an object shape with property names and types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Write an object shape with property names and types.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you define an object with name and age properties?",
+    "question_html": "<p>How do you define an object with name and age properties?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use a shape like { name: string; age: number }.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a shape like { name: string; age: number }.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does an optional property mean?",
+    "question_html": "<p>What does an optional property mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A property that may be missing from the object.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A property that may be missing from the object.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you mark a property as optional?",
+    "question_html": "<p>How do you mark a property as optional?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Add ? after the property name, for example name?: string.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Add ? after the property name, for example name?: string.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does a readonly property mean?",
+    "question_html": "<p>What does a readonly property mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A property that cannot be reassigned after initialization at type-checking time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A property that cannot be reassigned after initialization at type-checking time.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you mark a property as readonly?",
+    "question_html": "<p>How do you mark a property as readonly?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use the readonly modifier before the property name.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the readonly modifier before the property name.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a nested object?",
+    "question_html": "<p>How do you type a nested object?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Define the nested property as another object shape.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define the nested property as another object shape.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an object with dynamic keys?",
+    "question_html": "<p>How do you type an object with dynamic keys?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use an index signature or Record type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use an index signature or Record type.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is an index signature?",
+    "question_html": "<p>What is an index signature?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A syntax for describing objects with dynamic keys and consistent value types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A syntax for describing objects with dynamic keys and consistent value types.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is excess property checking?",
+    "question_html": "<p>What is excess property checking?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A check that warns when an object literal contains unexpected properties for a target type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A check that warns when an object literal contains unexpected properties for a target type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "objects"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type function parameters?",
+    "question_html": "<p>How do you type function parameters?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Add type annotations to parameters, for example function greet(name: string).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Add type annotations to parameters, for example function greet(name: string).</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a function return value?",
+    "question_html": "<p>How do you type a function return value?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Add a return type after the parameter list, for example function add(): number.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Add a return type after the parameter list, for example function add(): number.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does void mean?",
+    "question_html": "<p>What does void mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A function return type meaning the return value is intentionally not used.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function return type meaning the return value is intentionally not used.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does never mean?",
+    "question_html": "<p>What does never mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type for values that never occur, such as functions that always throw.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type for values that never occur, such as functions that always throw.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between void and undefined?",
+    "question_html": "<p>What is the difference between void and undefined?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "void means the return value should not be used, while undefined is a specific value/type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> void means the return value should not be used, while undefined is a specific value/type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an arrow function?",
+    "question_html": "<p>How do you type an arrow function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Annotate parameters and optionally the return type, for example const add = (a: number): number => a.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Annotate parameters and optionally the return type, for example const add = (a: number): number =&gt; a.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an optional function parameter?",
+    "question_html": "<p>How do you type an optional function parameter?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Add ? after the parameter name, for example name?: string.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Add ? after the parameter name, for example name?: string.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a default function parameter?",
+    "question_html": "<p>How do you type a default function parameter?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Give the parameter a default value; TypeScript usually infers the type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Give the parameter a default value; TypeScript usually infers the type.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a rest parameter?",
+    "question_html": "<p>How do you type a rest parameter?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use an array type, for example ...values: number[].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use an array type, for example ...values: number[].</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a callback function?",
+    "question_html": "<p>How do you type a callback function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use a function type, for example (value: string) => void.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a function type, for example (value: string) =&gt; void.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "functions"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a type alias?",
+    "question_html": "<p>What is a type alias?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A custom name for a type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A custom name for a type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is an interface?",
+    "question_html": "<p>What is an interface?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A TypeScript construct used to describe object shapes and contracts.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A TypeScript construct used to describe object shapes and contracts.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you define a type alias?",
+    "question_html": "<p>How do you define a type alias?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use the type keyword, for example type User = { name: string }.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the type keyword, for example type User = { name: string }.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you define an interface?",
+    "question_html": "<p>How do you define an interface?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use the interface keyword, for example interface User { name: string }.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the interface keyword, for example interface User { name: string }.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between type and interface?",
+    "question_html": "<p>What is the difference between type and interface?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Both can describe object shapes; interfaces can merge and extend, while type aliases are more flexible for unions and primitives.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Both can describe object shapes; interfaces can merge and extend, while type aliases are more flexible for unions and primitives.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Can an interface extend another interface?",
+    "question_html": "<p>Can an interface extend another interface?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Yes, using the extends keyword.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, using the extends keyword.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Can a type alias combine multiple types?",
+    "question_html": "<p>Can a type alias combine multiple types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Yes, using intersections with & or unions with |.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, using intersections with &amp; or unions with |.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is intersection type?",
+    "question_html": "<p>What is intersection type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type that combines multiple types into one using &.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type that combines multiple types into one using &amp;.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does the & operator mean in types?",
+    "question_html": "<p>What does the &amp; operator mean in types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It creates an intersection type that combines requirements.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates an intersection type that combines requirements.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does the | operator mean in types?",
+    "question_html": "<p>What does the | operator mean in types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It creates a union type that allows one of several types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates a union type that allows one of several types.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-aliases-interfaces"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a union type?",
+    "question_html": "<p>What is a union type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A type that allows a value to be one of several possible types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type that allows a value to be one of several possible types.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "When would you use a union type?",
+    "question_html": "<p>When would you use a union type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "When a value can validly have more than one possible type or state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When a value can validly have more than one possible type or state.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a value that can be string or number?",
+    "question_html": "<p>How do you type a value that can be string or number?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use string | number.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use string | number.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a literal type?",
+    "question_html": "<p>What is a literal type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A type that allows only a specific literal value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type that allows only a specific literal value.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you restrict a value to specific strings?",
+    "question_html": "<p>How do you restrict a value to specific strings?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use a union of string literal types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a union of string literal types.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a status like \"idle\" | \"loading\" | \"success\" | \"error\"?",
+    "question_html": "<p>How do you type a status like &quot;idle&quot; | &quot;loading&quot; | &quot;success&quot; | &quot;error&quot;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use a string literal union such as type Status = 'idle' | 'loading' | 'success' | 'error'.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a string literal union such as type Status = &#x27;idle&#x27; | &#x27;loading&#x27; | &#x27;success&#x27; | &#x27;error&#x27;.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a boolean literal type?",
+    "question_html": "<p>What is a boolean literal type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type that allows only true or only false.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type that allows only true or only false.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a numeric literal type?",
+    "question_html": "<p>What is a numeric literal type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type that allows only a specific number value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type that allows only a specific number value.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do union types improve safety?",
+    "question_html": "<p>How do union types improve safety?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They force code to handle allowed possibilities explicitly.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They force code to handle allowed possibilities explicitly.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is narrowing?",
+    "question_html": "<p>What is narrowing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The process of reducing a broad type to a more specific type based on checks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The process of reducing a broad type to a more specific type based on checks.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "union-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is type narrowing?",
+    "question_html": "<p>What is type narrowing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Using runtime checks to refine a variable’s TypeScript type inside a branch.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Using runtime checks to refine a variable’s TypeScript type inside a branch.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How does typeof help with narrowing?",
+    "question_html": "<p>How does typeof help with narrowing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "typeof checks primitive runtime types and helps TypeScript narrow unions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> typeof checks primitive runtime types and helps TypeScript narrow unions.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How does instanceof help with narrowing?",
+    "question_html": "<p>How does instanceof help with narrowing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "instanceof checks whether a value is created from a constructor and narrows object/class types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> instanceof checks whether a value is created from a constructor and narrows object/class types.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How does the in operator help with narrowing?",
+    "question_html": "<p>How does the in operator help with narrowing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It checks whether a property exists in an object and can narrow union members.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It checks whether a property exists in an object and can narrow union members.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do conditional statements narrow types?",
+    "question_html": "<p>How do conditional statements narrow types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Conditions let TypeScript infer more specific types inside each branch.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Conditions let TypeScript infer more specific types inside each branch.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you narrow string | undefined?",
+    "question_html": "<p>How do you narrow string | undefined?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Check that the value is not undefined before using it as a string.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Check that the value is not undefined before using it as a string.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you narrow number | null?",
+    "question_html": "<p>How do you narrow number | null?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Check that the value is not null before using it as a number.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Check that the value is not null before using it as a number.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a type guard?",
+    "question_html": "<p>What is a type guard?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A runtime check that helps TypeScript narrow a type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A runtime check that helps TypeScript narrow a type.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is a user-defined type guard?",
+    "question_html": "<p>What is a user-defined type guard?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function returning a type predicate such as value is User.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function returning a type predicate such as value is User.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Why is narrowing important?",
+    "question_html": "<p>Why is narrowing important?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It lets code safely use values after proving their specific type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It lets code safely use values after proving their specific type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "type-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does any mean?",
+    "question_html": "<p>What does any mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type that disables most type checking for a value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type that disables most type checking for a value.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Why should any be avoided?",
+    "question_html": "<p>Why should any be avoided?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because it removes type safety and can hide bugs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because it removes type safety and can hide bugs.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does unknown mean?",
+    "question_html": "<p>What does unknown mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type-safe top type for values whose type is not known yet.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type-safe top type for values whose type is not known yet.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "Why is unknown safer than any?",
+    "question_html": "<p>Why is unknown safer than any?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because unknown must be checked or narrowed before use.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because unknown must be checked or narrowed before use.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does never represent?",
+    "question_html": "<p>What does never represent?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A value that should never occur.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A value that should never occur.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "When can a function return never?",
+    "question_html": "<p>When can a function return never?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "When it always throws or never finishes, such as an infinite loop.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When it always throws or never finishes, such as an infinite loop.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What does void represent?",
+    "question_html": "<p>What does void represent?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function return type where the return value is intentionally ignored.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function return type where the return value is intentionally ignored.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between object and {}?",
+    "question_html": "<p>What is the difference between object and {}?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "object means non-primitive values, while {} is broader and allows most non-nullish values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> object means non-primitive values, while {} is broader and allows most non-nullish values.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is the difference between unknown and never?",
+    "question_html": "<p>What is the difference between unknown and never?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "unknown can be any value but must be checked; never represents no possible value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> unknown can be any value but must be checked; never represents no possible value.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "What is type assertion?",
+    "question_html": "<p>What is type assertion?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A way to tell TypeScript to treat a value as a specific type when you know more than the compiler.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A way to tell TypeScript to treat a value as a specific type when you know more than the compiler.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "special-types"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type React component props?",
+    "question_html": "<p>How do you type React component props?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Define a props type or interface and use it in the component parameter.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define a props type or interface and use it in the component parameter.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type optional props?",
+    "question_html": "<p>How do you type optional props?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Mark the prop with ?, for example title?: string.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Mark the prop with ?, for example title?: string.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type children in React?",
+    "question_html": "<p>How do you type children in React?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use React.ReactNode for children in most common cases.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use React.ReactNode for children in most common cases.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type useState?",
+    "question_html": "<p>How do you type useState?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Let TypeScript infer the type or provide a generic such as useState<User | null>(null).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Let TypeScript infer the type or provide a generic such as useState&lt;User | null&gt;(null).</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "When does useState need an explicit type?",
+    "question_html": "<p>When does useState need an explicit type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "When the initial value is not enough information, such as null, empty arrays, or unions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When the initial value is not enough information, such as null, empty arrays, or unions.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an event handler?",
+    "question_html": "<p>How do you type an event handler?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use the appropriate React event type, such as React.ChangeEvent or React.MouseEvent.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use the appropriate React event type, such as React.ChangeEvent or React.MouseEvent.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type an input change event?",
+    "question_html": "<p>How do you type an input change event?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use React.ChangeEvent<HTMLInputElement>.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use React.ChangeEvent&lt;HTMLInputElement&gt;.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a button click event?",
+    "question_html": "<p>How do you type a button click event?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use React.MouseEvent<HTMLButtonElement>.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use React.MouseEvent&lt;HTMLButtonElement&gt;.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How do you type a function passed as a prop?",
+    "question_html": "<p>How do you type a function passed as a prop?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Define the prop as a function type, for example onSave: (value: string) => void.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define the prop as a function type, for example onSave: (value: string) =&gt; void.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-basics",
+    "difficulty": "easy",
+    "question": "How does TypeScript improve React development?",
+    "question_html": "<p>How does TypeScript improve React development?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is used only for CSS styling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is used only for CSS styling. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a JavaScript runtime feature with no compile-time effect.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a JavaScript runtime feature with no compile-time effect. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It catches prop and state mistakes earlier, improves autocomplete, documents component contracts, and makes refactoring safer.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It catches prop and state mistakes earlier, improves autocomplete, documents component contracts, and makes refactoring safer.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a database query feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a database query feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "easy",
+      "typescript-react"
+    ]
+  }
+]

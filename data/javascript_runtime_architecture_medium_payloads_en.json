@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the JavaScript runtime?",
+    "question_html": "<p>What is the JavaScript runtime?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A CSS engine used by the browser.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS engine used by the browser. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The environment that provides the JavaScript engine plus APIs and mechanisms to execute JavaScript code.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The environment that provides the JavaScript engine plus APIs and mechanisms to execute JavaScript code.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A database where JavaScript stores variables permanently.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A database where JavaScript stores variables permanently. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Only the syntax rules of JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only the syntax rules of JavaScript. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the call stack?",
+    "question_html": "<p>What is the call stack?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A queue where completed promises are stored forever.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A queue where completed promises are stored forever. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A stack structure that tracks currently executing function calls.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A stack structure that tracks currently executing function calls.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A browser API for scheduling timers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser API for scheduling timers. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A memory area used only for objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A memory area used only for objects. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the heap?",
+    "question_html": "<p>What is the heap?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A special type of Promise callback.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A special type of Promise callback. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A syntax rule for declaring variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax rule for declaring variables. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A list of functions waiting to execute.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A list of functions waiting to execute. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A memory area where objects and reference values are allocated.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A memory area where objects and reference values are allocated.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the event loop?",
+    "question_html": "<p>What is the event loop?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A loop statement written with for or while.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A loop statement written with for or while. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A memory structure used only for arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A memory structure used only for arrays. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A way to block JavaScript until all timers finish.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to block JavaScript until all timers finish. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A mechanism that coordinates the call stack, task queues, and asynchronous callbacks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A mechanism that coordinates the call stack, task queues, and asynchronous callbacks.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between synchronous and asynchronous code?",
+    "question_html": "<p>What is the difference between synchronous and asynchronous code?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Synchronous code runs step by step, while asynchronous code can continue later after an operation completes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Synchronous code runs step by step, while asynchronous code can continue later after an operation completes.</p>"
+      },
+      {
+        "id": "B",
+        "text": "There is no difference in execution behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> There is no difference in execution behavior. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Asynchronous code always runs faster than synchronous code.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Asynchronous code always runs faster than synchronous code. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Synchronous code only exists in Node.js.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Synchronous code only exists in Node.js. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a blocking operation?",
+    "question_html": "<p>What is a blocking operation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An operation that always runs in another thread.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An operation that always runs in another thread. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A function that returns a Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that returns a Promise. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An operation that prevents other code from continuing until it finishes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An operation that prevents other code from continuing until it finishes.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A browser event that is ignored.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser event that is ignored. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a non-blocking operation?",
+    "question_html": "<p>What is a non-blocking operation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An operation that allows the program to continue while the work completes later.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An operation that allows the program to continue while the work completes later.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An operation that freezes the call stack.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An operation that freezes the call stack. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A syntax error in asynchronous code.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax error in asynchronous code. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A loop that never stops.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A loop that never stops. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between concurrency and parallelism?",
+    "question_html": "<p>What is the difference between concurrency and parallelism?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Concurrency means code cannot be asynchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Concurrency means code cannot be asynchronous. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Concurrency is managing multiple tasks over time; parallelism is executing tasks at the same time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Concurrency is managing multiple tasks over time; parallelism is executing tasks at the same time.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They mean exactly the same thing.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They mean exactly the same thing. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Parallelism happens only in CSS.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Parallelism happens only in CSS. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What are Web APIs in the browser?",
+    "question_html": "<p>What are Web APIs in the browser?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Node.js-only modules.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Node.js-only modules. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Browser-provided APIs such as DOM, timers, fetch, events, and storage.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Browser-provided APIs such as DOM, timers, fetch, events, and storage.</p>"
+      },
+      {
+        "id": "C",
+        "text": "JavaScript language keywords.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> JavaScript language keywords. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A replacement for the JavaScript engine.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A replacement for the JavaScript engine. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between the JavaScript engine and the JavaScript runtime?",
+    "question_html": "<p>What is the difference between the JavaScript engine and the JavaScript runtime?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The engine runs CSS, while the runtime runs HTML.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The engine runs CSS, while the runtime runs HTML. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The engine executes JavaScript, while the runtime includes the engine plus surrounding APIs and queues.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The engine executes JavaScript, while the runtime includes the engine plus surrounding APIs and queues.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are the same thing in every environment.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are the same thing in every environment. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The runtime is only the parser, while the engine is only the DOM.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The runtime is only the parser, while the engine is only the DOM. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "execution-model-runtime"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is hoisting?",
+    "question_html": "<p>What is hoisting?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Moving all values to global scope.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Moving all values to global scope. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A runtime optimization that sorts variables alphabetically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A runtime optimization that sorts variables alphabetically. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A way to import modules dynamically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to import modules dynamically. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "JavaScript’s behavior of processing declarations before code execution within their scope.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> JavaScript’s behavior of processing declarations before code execution within their scope.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How does hoisting work with var?",
+    "question_html": "<p>How does hoisting work with var?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "var is hoisted and initialized with null.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> var is hoisted and initialized with null. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "var declarations are not hoisted.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> var declarations are not hoisted. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "var can only be used after strict mode is enabled.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> var can only be used after strict mode is enabled. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "var declarations are hoisted and initialized with undefined.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> var declarations are hoisted and initialized with undefined.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How does hoisting work with let and const?",
+    "question_html": "<p>How does hoisting work with let and const?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "let and const declarations are hoisted but remain uninitialized until their declaration is evaluated.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> let and const declarations are hoisted but remain uninitialized until their declaration is evaluated.</p>"
+      },
+      {
+        "id": "B",
+        "text": "const is hoisted but let is not.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> const is hoisted but let is not. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "let and const are not hoisted at all.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> let and const are not hoisted at all. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "let and const are initialized with undefined like var.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> let and const are initialized with undefined like var. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the Temporal Dead Zone?",
+    "question_html": "<p>What is the Temporal Dead Zone?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A deprecated JavaScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A deprecated JavaScript feature. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The period between entering a scope and the initialization of a let or const variable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The period between entering a scope and the initialization of a let or const variable.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A memory leak in closures.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A memory leak in closures. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A timer delay caused by setTimeout.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A timer delay caused by setTimeout. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Why can accessing let before initialization throw an error?",
+    "question_html": "<p>Why can accessing let before initialization throw an error?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because let can only store objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because let can only store objects. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because JavaScript forbids reading any local variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because JavaScript forbids reading any local variables. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because let is never hoisted.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because let is never hoisted. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because the variable is in the Temporal Dead Zone until its declaration is executed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because the variable is in the Temporal Dead Zone until its declaration is executed.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is lexical environment?",
+    "question_html": "<p>What is lexical environment?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A type of module export.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A type of module export. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An internal structure that stores identifier bindings and references to outer environments.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An internal structure that stores identifier bindings and references to outer environments.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A browser-only object for DOM nodes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser-only object for DOM nodes. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A list of all installed packages.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A list of all installed packages. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is scope chain?",
+    "question_html": "<p>What is scope chain?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A list of object prototypes only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A list of object prototypes only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A chain of promises created by then().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A chain of promises created by then(). This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A sequence of event listeners.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A sequence of event listeners. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The chain of lexical environments JavaScript searches to resolve variables.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The chain of lexical environments JavaScript searches to resolve variables.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How does JavaScript resolve variable names?",
+    "question_html": "<p>How does JavaScript resolve variable names?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It uses the DOM tree to find variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It uses the DOM tree to find variables. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It searches every object in memory.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It searches every object in memory. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It looks in the current scope and then moves outward through the scope chain.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It looks in the current scope and then moves outward through the scope chain.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It always searches global scope first.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always searches global scope first. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is closure?",
+    "question_html": "<p>What is closure?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An object with no prototype.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An object with no prototype. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A function that cannot accept parameters.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that cannot accept parameters. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function retaining access to variables from its outer lexical scope after that scope has executed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function retaining access to variables from its outer lexical scope after that scope has executed.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A loop that has finished running.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A loop that has finished running. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Why are closures useful?",
+    "question_html": "<p>Why are closures useful?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They make all code synchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They make all code synchronous. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They prevent every memory leak automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They prevent every memory leak automatically. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They allow data encapsulation, persistent state, and reusable function factories.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They allow data encapsulation, persistent state, and reusable function factories.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They are required for every object literal.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are required for every object literal. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "hoisting-scope"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How can closures be used to create private variables?",
+    "question_html": "<p>How can closures be used to create private variables?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "By declaring variables with var globally.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By declaring variables with var globally. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "By keeping variables inside an outer function and exposing inner functions that access them.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> By keeping variables inside an outer function and exposing inner functions that access them.</p>"
+      },
+      {
+        "id": "C",
+        "text": "By storing variables in localStorage.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By storing variables in localStorage. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "By using only public object properties.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> By using only public object properties. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a higher-order function?",
+    "question_html": "<p>What is a higher-order function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function that takes another function as an argument or returns a function.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function that takes another function as an argument or returns a function.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A function that mutates the DOM.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that mutates the DOM. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function that can only run in strict mode.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that can only run in strict mode. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function that always has more than ten lines.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that always has more than ten lines. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a callback function?",
+    "question_html": "<p>What is a callback function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function that can never return a value.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that can never return a value. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A built-in array object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A built-in array object. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function passed to another function to be executed later or at a specific time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function passed to another function to be executed later or at a specific time.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function that always runs first.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that always runs first. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a pure function?",
+    "question_html": "<p>What is a pure function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function that must use async/await.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that must use async/await. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A function that only works with numbers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that only works with numbers. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function that mutates global state.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that mutates global state. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function that returns the same output for the same input and has no side effects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function that returns the same output for the same input and has no side effects.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is an impure function?",
+    "question_html": "<p>What is an impure function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function that is always invalid JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that is always invalid JavaScript. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A function without parameters.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function without parameters. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function that depends on or changes external state or causes side effects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function that depends on or changes external state or causes side effects.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function that returns a boolean only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that returns a boolean only. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is function composition?",
+    "question_html": "<p>What is function composition?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Declaring functions in alphabetical order.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Declaring functions in alphabetical order. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Calling the same function recursively forever.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Calling the same function recursively forever. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Combining CSS classes into one string only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Combining CSS classes into one string only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Combining functions so the output of one becomes the input of another.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Combining functions so the output of one becomes the input of another.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is currying?",
+    "question_html": "<p>What is currying?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A way to catch errors in promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to catch errors in promises. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Removing arguments from a function call randomly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Removing arguments from a function call randomly. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Converting a function into an object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Converting a function into an object. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Transforming a function with multiple arguments into a sequence of functions each taking one argument.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Transforming a function with multiple arguments into a sequence of functions each taking one argument.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is partial application?",
+    "question_html": "<p>What is partial application?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A syntax for importing part of a module only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax for importing part of a module only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Creating a new function by pre-filling some arguments of an existing function.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Creating a new function by pre-filling some arguments of an existing function.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Calling a function with no arguments.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Calling a function with no arguments. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A method that works only on arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method that works only on arrays. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is recursion?",
+    "question_html": "<p>What is recursion?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A loop that is always asynchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A loop that is always asynchronous. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A way to copy objects deeply by default.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to copy objects deeply by default. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A technique where a function calls itself to solve smaller parts of a problem.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A technique where a function calls itself to solve smaller parts of a problem.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function passed as a callback.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function passed as a callback. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What are the risks of recursion?",
+    "question_html": "<p>What are the risks of recursion?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Recursion always prevents errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Recursion always prevents errors. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Recursion only works in browsers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Recursion only works in browsers. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Too many recursive calls can cause stack overflow and performance issues.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Too many recursive calls can cause stack overflow and performance issues.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Recursive functions cannot return values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Recursive functions cannot return values. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "closures-functions"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is this in JavaScript?",
+    "question_html": "<p>What is this in JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A keyword that always points to the function itself.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A keyword that always points to the function itself. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A keyword that always points to the global object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A keyword that always points to the global object. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A keyword used only inside classes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A keyword used only inside classes. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A dynamic value representing the execution context of a function call.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A dynamic value representing the execution context of a function call.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How is this determined in a normal function?",
+    "question_html": "<p>How is this determined in a normal function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is determined only by where the function is written.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is determined only by where the function is written. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is determined by how the function is called.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It is determined by how the function is called.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It always points to undefined.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always points to undefined. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It always points to the nearest object literal.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always points to the nearest object literal. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How is this different in an arrow function?",
+    "question_html": "<p>How is this different in an arrow function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Arrow functions always bind this to the global object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Arrow functions always bind this to the global object. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Arrow functions do not bind their own this; they use this from the surrounding lexical scope.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Arrow functions do not bind their own this; they use this from the surrounding lexical scope.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Arrow functions create a new this on every call.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Arrow functions create a new this on every call. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Arrow functions require call() to access this.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Arrow functions require call() to access this. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is implicit binding?",
+    "question_html": "<p>What is implicit binding?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "When this is set using call() or apply().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When this is set using call() or apply(). This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "When this is always undefined.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When this is always undefined. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "When this is created by a Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When this is created by a Promise. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "When this is set to the object before the dot in a method call.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When this is set to the object before the dot in a method call.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is explicit binding?",
+    "question_html": "<p>What is explicit binding?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Calling a function as an object method.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Calling a function as an object method. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Declaring a variable with const.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Declaring a variable with const. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Using a callback inside setTimeout.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using a callback inside setTimeout. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Setting this explicitly using call(), apply(), or bind().",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Setting this explicitly using call(), apply(), or bind().</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does call() do?",
+    "question_html": "<p>What does call() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It invokes a function with arguments provided as an array only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It invokes a function with arguments provided as an array only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It invokes a function immediately with a chosen this value and arguments listed individually.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It invokes a function immediately with a chosen this value and arguments listed individually.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It schedules a function for the next event loop tick.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It schedules a function for the next event loop tick. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It returns a new permanently bound function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns a new permanently bound function. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does apply() do?",
+    "question_html": "<p>What does apply() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It only works with arrow functions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only works with arrow functions. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It invokes a function immediately with a chosen this value and arguments provided as an array-like list.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It invokes a function immediately with a chosen this value and arguments provided as an array-like list.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It returns a new bound function without calling it.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns a new bound function without calling it. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It copies properties between objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It copies properties between objects. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does bind() do?",
+    "question_html": "<p>What does bind() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It immediately invokes the function and returns its result.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It immediately invokes the function and returns its result. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It removes this from a function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It removes this from a function. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It returns a new function with this and optionally some arguments pre-bound.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It returns a new function with this and optionally some arguments pre-bound.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It converts a function into a Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts a function into a Promise. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between call, apply, and bind?",
+    "question_html": "<p>What is the difference between call, apply, and bind?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They are array methods used for iteration.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are array methods used for iteration. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only bind can set this; call and apply cannot.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only bind can set this; call and apply cannot. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "call and apply invoke immediately; bind returns a new function. call takes arguments separately, apply takes them as an array.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> call and apply invoke immediately; bind returns a new function. call takes arguments separately, apply takes them as an array.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They all return new functions without invoking.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They all return new functions without invoking. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What happens to this when a method is passed as a callback?",
+    "question_html": "<p>What happens to this when a method is passed as a callback?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The method is automatically converted to an arrow function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The method is automatically converted to an arrow function. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The callback cannot be executed.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The callback cannot be executed. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "this always stays bound to the original object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> this always stays bound to the original object. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The original object binding can be lost, so this may become undefined or another value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The original object binding can be lost, so this may become undefined or another value.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "this-binding-context"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is prototypal inheritance?",
+    "question_html": "<p>What is prototypal inheritance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A class-only inheritance system unrelated to objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A class-only inheritance system unrelated to objects. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A way to copy arrays deeply.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to copy arrays deeply. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An inheritance model where objects can inherit properties and methods from other objects through prototypes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An inheritance model where objects can inherit properties and methods from other objects through prototypes.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A browser API for DOM inheritance only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser API for DOM inheritance only. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the prototype chain?",
+    "question_html": "<p>What is the prototype chain?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A chain of promises created by async/await.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A chain of promises created by async/await. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The chain of linked prototype objects used when looking up properties.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The chain of linked prototype objects used when looking up properties.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A list of function parameters.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A list of function parameters. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A queue of browser events.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A queue of browser events. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is Object.create() used for?",
+    "question_html": "<p>What is Object.create() used for?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Creating an array from a string.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Creating an array from a string. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Creating a DOM element.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Creating a DOM element. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Creating a new object with a specified prototype.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Creating a new object with a specified prototype.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Creating a deep copy of any object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Creating a deep copy of any object. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between __proto__ and prototype?",
+    "question_html": "<p>What is the difference between __proto__ and prototype?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "__proto__ exists only on functions, while prototype exists only on arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> __proto__ exists only on functions, while prototype exists only on arrays. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are identical properties on every value.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are identical properties on every value. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "__proto__ is an object’s internal prototype link, while prototype is a property on functions used for new instances.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> __proto__ is an object’s internal prototype link, while prototype is a property on functions used for new instances.</p>"
+      },
+      {
+        "id": "D",
+        "text": "prototype is used for DOM nodes only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> prototype is used for DOM nodes only. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a constructor function?",
+    "question_html": "<p>What is a constructor function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function intended to create objects when called with new.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A function intended to create objects when called with new.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A function used only to import modules.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function used only to import modules. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function that always returns a Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that always returns a Promise. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function that cannot use this.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that cannot use this. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What happens when you use the new keyword?",
+    "question_html": "<p>What happens when you use the new keyword?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It executes the function asynchronously.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It executes the function asynchronously. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "JavaScript creates a new object, links its prototype, binds this to it, and returns it unless another object is returned.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> JavaScript creates a new object, links its prototype, binds this to it, and returns it unless another object is returned.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It creates a new block scope only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new block scope only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It imports a module automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It imports a module automatically. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between own properties and inherited properties?",
+    "question_html": "<p>What is the difference between own properties and inherited properties?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Own properties only exist on arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Own properties only exist on arrays. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "There is no difference.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> There is no difference. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Inherited properties are always private.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Inherited properties are always private. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Own properties exist directly on the object; inherited properties come from the prototype chain.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Own properties exist directly on the object; inherited properties come from the prototype chain.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does hasOwnProperty() do?",
+    "question_html": "<p>What does hasOwnProperty() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It checks whether a property exists directly on an object, not on its prototype chain.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It checks whether a property exists directly on an object, not on its prototype chain.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It deletes a property from the object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It deletes a property from the object. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It checks every inherited property only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks every inherited property only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It returns all object values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns all object values. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does Object.assign() do?",
+    "question_html": "<p>What does Object.assign() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It freezes an object permanently.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It freezes an object permanently. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It copies enumerable own properties from source objects to a target object.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It copies enumerable own properties from source objects to a target object.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It creates a guaranteed deep copy.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a guaranteed deep copy. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It checks if two objects are equal.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks if two objects are equal. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is object destructuring?",
+    "question_html": "<p>What is object destructuring?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A syntax used only for arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax used only for arrays. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A way to destroy an object in memory.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to destroy an object in memory. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A method for deleting all properties.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method for deleting all properties. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A syntax for extracting properties from objects into variables.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A syntax for extracting properties from objects into variables.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "objects-prototypes"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between slice() and splice()?",
+    "question_html": "<p>What is the difference between slice() and splice()?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Both only work on strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Both only work on strings. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are identical methods.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are identical methods. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "slice() returns a copy without mutating; splice() mutates the array by removing or inserting items.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> slice() returns a copy without mutating; splice() mutates the array by removing or inserting items.</p>"
+      },
+      {
+        "id": "D",
+        "text": "slice() mutates and splice() never mutates.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> slice() mutates and splice() never mutates. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between mutable and immutable array methods?",
+    "question_html": "<p>What is the difference between mutable and immutable array methods?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Immutable methods always run faster.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Immutable methods always run faster. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Mutable methods change the original array; immutable methods return a new value without changing it.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Mutable methods change the original array; immutable methods return a new value without changing it.</p>"
+      },
+      {
+        "id": "C",
+        "text": "There is no difference.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> There is no difference. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Mutable methods work only on strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Mutable methods work only on strings. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Which common array methods mutate the original array?",
+    "question_html": "<p>Which common array methods mutate the original array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "push, pop, shift, unshift, splice, sort, reverse, and fill mutate the array.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> push, pop, shift, unshift, splice, sort, reverse, and fill mutate the array.</p>"
+      },
+      {
+        "id": "B",
+        "text": "every and some mutate the array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> every and some mutate the array. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "includes and find mutate the array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> includes and find mutate the array. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "map, filter, slice, and concat always mutate.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> map, filter, slice, and concat always mutate. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Which common array methods return a new array?",
+    "question_html": "<p>Which common array methods return a new array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "push, pop, and splice return new arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> push, pop, and splice return new arrays. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "sort and reverse always return new arrays without mutation.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> sort and reverse always return new arrays without mutation. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "delete and typeof return arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> delete and typeof return arrays. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "map, filter, slice, concat, toSorted, toReversed, and toSpliced return new arrays.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> map, filter, slice, concat, toSorted, toReversed, and toSpliced return new arrays.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between sort() and toSorted()?",
+    "question_html": "<p>What is the difference between sort() and toSorted()?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "toSorted() returns a boolean.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> toSorted() returns a boolean. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "sort() mutates the original array, while toSorted() returns a sorted copy.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> sort() mutates the original array, while toSorted() returns a sorted copy.</p>"
+      },
+      {
+        "id": "C",
+        "text": "sort() works only with numbers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> sort() works only with numbers. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "toSorted() mutates and sort() does not.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> toSorted() mutates and sort() does not. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between Map and plain object?",
+    "question_html": "<p>What is the difference between Map and plain object?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Objects can use any key type without conversion, while Map cannot.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Objects can use any key type without conversion, while Map cannot. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Map is designed for key-value collections with any key type and predictable iteration, while objects are general property containers.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Map is designed for key-value collections with any key type and predictable iteration, while objects are general property containers.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Map is only for arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Map is only for arrays. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "There is no difference.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> There is no difference. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between Set and array?",
+    "question_html": "<p>What is the difference between Set and array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Set stores unique values, while arrays can contain duplicates and preserve indexed order.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Set stores unique values, while arrays can contain duplicates and preserve indexed order.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Set is only available in Node.js.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Set is only available in Node.js. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Arrays cannot contain duplicates.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Arrays cannot contain duplicates. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Set values are accessed by numeric index.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Set values are accessed by numeric index. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How do you remove duplicates from an array?",
+    "question_html": "<p>How do you remove duplicates from an array?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use pop() repeatedly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use pop() repeatedly. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use Object.values() only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Object.values() only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use typeof on every item.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use typeof on every item. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Create a Set from the array and convert it back to an array.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Create a Set from the array and convert it back to an array.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is WeakMap?",
+    "question_html": "<p>What is WeakMap?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A key-value collection whose keys must be objects and are weakly held for garbage collection.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A key-value collection whose keys must be objects and are weakly held for garbage collection.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A Map that cannot store objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Map that cannot store objects. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A Map that stores only strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Map that stores only strings. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A Map that is always slower and never useful.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Map that is always slower and never useful. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is WeakSet?",
+    "question_html": "<p>What is WeakSet?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A Set that can be iterated like a normal Set.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Set that can be iterated like a normal Set. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A collection of objects held weakly, allowing garbage collection when there are no other references.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A collection of objects held weakly, allowing garbage collection when there are no other references.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A Set that stores duplicate primitive values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Set that stores duplicate primitive values. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An array method for filtering values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An array method for filtering values. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "arrays-collections"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a Promise?",
+    "question_html": "<p>What is a Promise?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A function that always blocks the call stack.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that always blocks the call stack. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A synchronous loop construct.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A synchronous loop construct. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An object representing the eventual completion or failure of an asynchronous operation.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An object representing the eventual completion or failure of an asynchronous operation.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A browser-only CSS feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser-only CSS feature. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What are the states of a Promise?",
+    "question_html": "<p>What are the states of a Promise?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "waiting, done, and failed only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> waiting, done, and failed only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "start, stop, and reset.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> start, stop, and reset. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "pending, fulfilled, and rejected.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> pending, fulfilled, and rejected.</p>"
+      },
+      {
+        "id": "D",
+        "text": "open, closed, and paused.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> open, closed, and paused. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does then() do?",
+    "question_html": "<p>What does then() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It registers a callback to run when a Promise is fulfilled and returns a new Promise.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It registers a callback to run when a Promise is fulfilled and returns a new Promise.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It cancels the Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It cancels the Promise. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It catches only syntax errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It catches only syntax errors. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It immediately blocks until the Promise completes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It immediately blocks until the Promise completes. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does catch() do?",
+    "question_html": "<p>What does catch() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It handles fulfilled values only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It handles fulfilled values only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It stops all future asynchronous code.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It stops all future asynchronous code. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It registers a callback to handle a rejected Promise.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It registers a callback to handle a rejected Promise.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It makes a Promise synchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It makes a Promise synchronous. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does finally() do?",
+    "question_html": "<p>What does finally() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It runs only when a Promise is fulfilled.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It runs only when a Promise is fulfilled. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It converts rejection into fulfillment automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts rejection into fulfillment automatically. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It registers a callback that runs after a Promise settles, regardless of fulfillment or rejection.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It registers a callback that runs after a Promise settles, regardless of fulfillment or rejection.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It runs before the Promise starts.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It runs before the Promise starts. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is Promise chaining?",
+    "question_html": "<p>What is Promise chaining?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Running all Promises in parallel automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Running all Promises in parallel automatically. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A way to make callbacks global.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to make callbacks global. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Returning or handling Promises in sequence using then(), catch(), or finally().",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Returning or handling Promises in sequence using then(), catch(), or finally().</p>"
+      },
+      {
+        "id": "D",
+        "text": "A syntax that only works with arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax that only works with arrays. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is async/await?",
+    "question_html": "<p>What is async/await?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A replacement for every function declaration.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A replacement for every function declaration. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A browser API unrelated to Promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser API unrelated to Promises. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Syntax built on Promises that lets asynchronous code look more like synchronous code.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Syntax built on Promises that lets asynchronous code look more like synchronous code.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A way to create new threads directly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to create new threads directly. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How does await work?",
+    "question_html": "<p>How does await work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It pauses the entire JavaScript runtime.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It pauses the entire JavaScript runtime. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It pauses the async function until the Promise settles and then resumes with the fulfilled value or throws on rejection.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It pauses the async function until the Promise settles and then resumes with the fulfilled value or throws on rejection.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It can be used anywhere outside async functions without restrictions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It can be used anywhere outside async functions without restrictions. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It makes every Promise run in parallel.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It makes every Promise run in parallel. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What happens if an awaited Promise rejects?",
+    "question_html": "<p>What happens if an awaited Promise rejects?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The await expression throws, so it can be handled with try/catch.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The await expression throws, so it can be handled with try/catch.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It always crashes the browser immediately.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always crashes the browser immediately. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The async function continues as if it fulfilled.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The async function continues as if it fulfilled. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The rejection is ignored automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The rejection is ignored automatically. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How do you handle errors with async/await?",
+    "question_html": "<p>How do you handle errors with async/await?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use only finally without catch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use only finally without catch. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use try/catch around awaited operations.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use try/catch around awaited operations.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use Object.assign() on the error.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Object.assign() on the error. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use if statements before every await.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use if statements before every await. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "async-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a macrotask?",
+    "question_html": "<p>What is a macrotask?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A variable in global scope.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A variable in global scope. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A Promise reaction callback.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Promise reaction callback. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A large object stored in the heap.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A large object stored in the heap. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A task scheduled in the task queue, such as setTimeout callbacks, events, and script execution.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A task scheduled in the task queue, such as setTimeout callbacks, events, and script execution.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a microtask?",
+    "question_html": "<p>What is a microtask?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A DOM element with a small size.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A DOM element with a small size. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A callback that always waits one second.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A callback that always waits one second. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A higher-priority queued job such as Promise callbacks and queueMicrotask callbacks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A higher-priority queued job such as Promise callbacks and queueMicrotask callbacks.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A function that runs only on servers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that runs only on servers. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between microtasks and macrotasks?",
+    "question_html": "<p>What is the difference between microtasks and macrotasks?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Microtasks run after the current stack and before the next macrotask.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Microtasks run after the current stack and before the next macrotask.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Macrotasks always run before all microtasks.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Macrotasks always run before all microtasks. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are identical queues.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are identical queues. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Microtasks run only in Node.js.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Microtasks run only in Node.js. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Where do Promise callbacks go in the event loop?",
+    "question_html": "<p>Where do Promise callbacks go in the event loop?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The macrotask queue.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The macrotask queue. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Promise callbacks go into the microtask queue.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Promise callbacks go into the microtask queue.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The prototype chain.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The prototype chain. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The heap.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The heap. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Where do setTimeout callbacks go in the event loop?",
+    "question_html": "<p>Where do setTimeout callbacks go in the event loop?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "setTimeout callbacks go into the macrotask/task queue after the timer expires.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> setTimeout callbacks go into the macrotask/task queue after the timer expires.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The call stack before synchronous code.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The call stack before synchronous code. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The microtask queue immediately.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The microtask queue immediately. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The lexical environment.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The lexical environment. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Why does a Promise callback run before setTimeout(..., 0)?",
+    "question_html": "<p>Why does a Promise callback run before setTimeout(..., 0)?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because Promises are synchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because Promises are synchronous. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because microtasks are processed before the next macrotask.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because microtasks are processed before the next macrotask.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because timers run only after page reload.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because timers run only after page reload. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because setTimeout is always broken with zero delay.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because setTimeout is always broken with zero delay. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does queueMicrotask() do?",
+    "question_html": "<p>What does queueMicrotask() do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It blocks the call stack.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It blocks the call stack. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It schedules a function as a setTimeout callback.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It schedules a function as a setTimeout callback. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It schedules a function to run in the microtask queue.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It schedules a function to run in the microtask queue.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It cancels all Promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It cancels all Promises. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between setTimeout and setInterval?",
+    "question_html": "<p>What is the difference between setTimeout and setInterval?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "setInterval runs once and setTimeout repeats.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> setInterval runs once and setTimeout repeats. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "setTimeout runs once after a delay; setInterval runs repeatedly at an interval.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> setTimeout runs once after a delay; setInterval runs repeatedly at an interval.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Both are Promise methods.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Both are Promise methods. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Both always run immediately.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Both always run immediately. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How can you stop setInterval?",
+    "question_html": "<p>How can you stop setInterval?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use delete on the callback.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use delete on the callback. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Call clearTimeout() with no arguments.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Call clearTimeout() with no arguments. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Return false from the callback.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Return false from the callback. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Call clearInterval() with the interval id.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Call clearInterval() with the interval id.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What problems can happen with timers in JavaScript?",
+    "question_html": "<p>What problems can happen with timers in JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Timers always run exactly on time.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Timers always run exactly on time. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Timers cannot be cancelled.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Timers cannot be cancelled. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Timers prevent any asynchronous code from running.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Timers prevent any asynchronous code from running. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Timers can drift, overlap with slow work, or run later than expected when the main thread is busy.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Timers can drift, overlap with slow work, or run later than expected when the main thread is busy.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "tasks-microtasks-timers"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between throw and return?",
+    "question_html": "<p>What is the difference between throw and return?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They are identical in try/catch.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are identical in try/catch. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "return gives a value back normally; throw stops normal execution and raises an error.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> return gives a value back normally; throw stops normal execution and raises an error.</p>"
+      },
+      {
+        "id": "C",
+        "text": "throw returns a value to the caller normally.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> throw returns a value to the caller normally. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "return can only be used in async functions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> return can only be used in async functions. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How does try/catch work?",
+    "question_html": "<p>How does try/catch work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "try/catch is only for syntax errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> try/catch is only for syntax errors. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "try runs code that may throw, and catch handles errors thrown synchronously inside it.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> try runs code that may throw, and catch handles errors thrown synchronously inside it.</p>"
+      },
+      {
+        "id": "C",
+        "text": "catch runs before try.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> catch runs before try. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "try/catch handles every Promise rejection automatically without await.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> try/catch handles every Promise rejection automatically without await. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Does try/catch catch asynchronous errors?",
+    "question_html": "<p>Does try/catch catch asynchronous errors?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "No, it never catches any async errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> No, it never catches any async errors. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only in browser JavaScript, not Node.js.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only in browser JavaScript, not Node.js. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It catches asynchronous errors only when they are awaited or thrown inside the same async flow.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It catches asynchronous errors only when they are awaited or thrown inside the same async flow.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Yes, it catches every future callback error automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Yes, it catches every future callback error automatically. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How do you catch errors from Promises?",
+    "question_html": "<p>How do you catch errors from Promises?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use Object.keys() on the Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Object.keys() on the Promise. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use typeof to detect rejection.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use typeof to detect rejection. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use only setTimeout.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use only setTimeout. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use catch() or await inside try/catch.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use catch() or await inside try/catch.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is a custom error?",
+    "question_html": "<p>What is a custom error?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An Error subclass or custom Error object used to represent a specific failure type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An Error subclass or custom Error object used to represent a specific failure type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A syntax error written by the browser.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax error written by the browser. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A Promise that cannot reject.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Promise that cannot reject. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A string printed with console.log only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A string printed with console.log only. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "Why should you not silently swallow errors?",
+    "question_html": "<p>Why should you not silently swallow errors?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because hidden errors make debugging difficult and can leave the app in an invalid state.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because hidden errors make debugging difficult and can leave the app in an invalid state.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because it improves performance to ignore them.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because it improves performance to ignore them. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because JavaScript forbids catch blocks.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because JavaScript forbids catch blocks. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because errors are always harmless.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because errors are always harmless. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between operational errors and programmer errors?",
+    "question_html": "<p>What is the difference between operational errors and programmer errors?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Programmer errors are always recoverable user actions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Programmer errors are always recoverable user actions. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are the same category.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are the same category. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Operational errors happen only during compilation.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Operational errors happen only during compilation. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Operational errors are expected runtime failures; programmer errors are bugs in the code.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Operational errors are expected runtime failures; programmer errors are bugs in the code.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is stack trace?",
+    "question_html": "<p>What is stack trace?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A list of all variables in memory.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A list of all variables in memory. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A CSS layout report.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS layout report. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A list of function calls showing where an error occurred.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A list of function calls showing where an error occurred.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A browser cache key.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser cache key. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is error propagation?",
+    "question_html": "<p>What is error propagation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A DOM event for form validation.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A DOM event for form validation. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The automatic deletion of errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The automatic deletion of errors. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The process of an error moving up through calls or Promise chains until handled.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The process of an error moving up through calls or Promise chains until handled.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A way to convert errors to strings only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to convert errors to strings only. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "How can you rethrow an error?",
+    "question_html": "<p>How can you rethrow an error?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Return the error string only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Return the error string only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Call clearInterval().",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Call clearInterval(). This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use console.log and continue.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use console.log and continue. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Catch it and then use throw error to pass it upward again.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Catch it and then use throw error to pass it upward again.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "error-handling"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What are JavaScript modules?",
+    "question_html": "<p>What are JavaScript modules?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Files that can import and export code with their own module scope.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Files that can import and export code with their own module scope.</p>"
+      },
+      {
+        "id": "B",
+        "text": "CSS files loaded through JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> CSS files loaded through JavaScript. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Global scripts that must share all variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Global scripts that must share all variables. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Objects stored in localStorage.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Objects stored in localStorage. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between named export and default export?",
+    "question_html": "<p>What is the difference between named export and default export?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Default exports must always be objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Default exports must always be objects. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are identical in syntax and behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are identical in syntax and behavior. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Named exports cannot be imported.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Named exports cannot be imported. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Named exports are imported by name; a default export is the main export imported with any chosen name.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Named exports are imported by name; a default export is the main export imported with any chosen name.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between static import and dynamic import?",
+    "question_html": "<p>What is the difference between static import and dynamic import?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Static imports are loaded at module initialization; dynamic import() loads modules asynchronously when called.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Static imports are loaded at module initialization; dynamic import() loads modules asynchronously when called.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Dynamic imports are synchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Dynamic imports are synchronous. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Dynamic imports cannot return a Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Dynamic imports cannot return a Promise. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Static imports work only in Node.js.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Static imports work only in Node.js. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What does tree shaking mean?",
+    "question_html": "<p>What does tree shaking mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Removing unused code from the final bundle during build optimization.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Removing unused code from the final bundle during build optimization.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Converting JavaScript to CSS.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Converting JavaScript to CSS. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Running tests before deployment.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Running tests before deployment. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Sorting object keys alphabetically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Sorting object keys alphabetically. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What can prevent tree shaking?",
+    "question_html": "<p>What can prevent tree shaking?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Using named exports always prevents it.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using named exports always prevents it. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Using strict mode always prevents it.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using strict mode always prevents it. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Side effects, CommonJS modules, dynamic access patterns, or unclear exports can prevent effective tree shaking.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Side effects, CommonJS modules, dynamic access patterns, or unclear exports can prevent effective tree shaking.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Using const variables always prevents it.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using const variables always prevents it. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is strict mode?",
+    "question_html": "<p>What is strict mode?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A mode that makes JavaScript asynchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A mode that makes JavaScript asynchronous. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A mode used only for CSS parsing.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A mode used only for CSS parsing. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A mode that makes JavaScript behave more strictly and catches certain mistakes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A mode that makes JavaScript behave more strictly and catches certain mistakes.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A mode that disables all errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A mode that disables all errors. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What changes in strict mode?",
+    "question_html": "<p>What changes in strict mode?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Promises stop working.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Promises stop working. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "All variables become global automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> All variables become global automatically. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Arrays cannot be created.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Arrays cannot be created. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Some unsafe actions are disallowed, silent errors may throw, and this is undefined in unbound functions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Some unsafe actions are disallowed, silent errors may throw, and this is undefined in unbound functions.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What are template literals?",
+    "question_html": "<p>What are template literals?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A replacement for every function call.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A replacement for every function call. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "String literals using backticks that support interpolation and multi-line strings.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> String literals using backticks that support interpolation and multi-line strings.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A way to create HTML templates only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to create HTML templates only. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A special object type for arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A special object type for arrays. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What are tagged template literals?",
+    "question_html": "<p>What are tagged template literals?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Template strings that can only contain HTML tags.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Template strings that can only contain HTML tags. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Template literals processed by a tag function before producing a result.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Template literals processed by a tag function before producing a result.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A syntax for importing modules.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax for importing modules. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Template literals that are automatically escaped by the browser.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Template literals that are automatically escaped by the browser. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  },
+  {
+    "category_code": "javascript-runtime-architecture",
+    "difficulty": "medium",
+    "question": "What is the difference between shallow copy and deep copy?",
+    "question_html": "<p>What is the difference between shallow copy and deep copy?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They are exactly the same in JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are exactly the same in JavaScript. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A shallow copy copies top-level properties, while a deep copy also copies nested objects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A shallow copy copies top-level properties, while a deep copy also copies nested objects.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A shallow copy always copies every nested object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A shallow copy always copies every nested object. This answer does not match the JavaScript concept being tested.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A deep copy copies only references.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A deep copy copies only references. This answer does not match the JavaScript concept being tested.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "medium",
+      "modules-modern-javascript"
+    ]
+  }
+]

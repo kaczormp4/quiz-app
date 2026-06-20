@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is structural typing in TypeScript?",
+    "question_html": "<p>What is structural typing in TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A type system where compatibility is based on the shape of values rather than explicit names.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type system where compatibility is based on the shape of values rather than explicit names.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How is structural typing different from nominal typing?",
+    "question_html": "<p>How is structural typing different from nominal typing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Structural typing compares members and shape, while nominal typing requires explicit declared type identity.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Structural typing compares members and shape, while nominal typing requires explicit declared type identity.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does “duck typing” mean in TypeScript?",
+    "question_html": "<p>What does “duck typing” mean in TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "If a value has the required shape, TypeScript can treat it as compatible with that type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> If a value has the required shape, TypeScript can treat it as compatible with that type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Why can two different interfaces be compatible if they have the same shape?",
+    "question_html": "<p>Why can two different interfaces be compatible if they have the same shape?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because TypeScript uses structural compatibility based on required properties and their types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because TypeScript uses structural compatibility based on required properties and their types.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is type compatibility?",
+    "question_html": "<p>What is type compatibility?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The rules TypeScript uses to decide whether one type can be used where another type is expected.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The rules TypeScript uses to decide whether one type can be used where another type is expected.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is assignment compatibility?",
+    "question_html": "<p>What is assignment compatibility?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Whether a value of one type can be assigned to a variable or parameter of another type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Whether a value of one type can be assigned to a variable or parameter of another type.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is excess property checking?",
+    "question_html": "<p>What is excess property checking?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A check that warns when an object literal has properties not expected by the target type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A check that warns when an object literal has properties not expected by the target type.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "When does excess property checking apply?",
+    "question_html": "<p>When does excess property checking apply?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Mostly when assigning object literals directly to a typed variable or passing them directly as arguments.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Mostly when assigning object literals directly to a typed variable or passing them directly as arguments.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Why does excess property checking behave differently for object literals and variables?",
+    "question_html": "<p>Why does excess property checking behave differently for object literals and variables?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Object literals are checked more strictly, while variables are checked by structural compatibility after inference.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Object literals are checked more strictly, while variables are checked by structural compatibility after inference.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is widening in TypeScript?",
+    "question_html": "<p>What is widening in TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The process where TypeScript generalizes a specific literal type to a broader type like string or number.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The process where TypeScript generalizes a specific literal type to a broader type like string or number.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-system-fundamentals"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How does TypeScript infer variable types?",
+    "question_html": "<p>How does TypeScript infer variable types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It looks at the assigned value, declaration kind, and context to choose a suitable type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It looks at the assigned value, declaration kind, and context to choose a suitable type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How does TypeScript infer function return types?",
+    "question_html": "<p>How does TypeScript infer function return types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It analyzes return statements and infers the union or common type of returned values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It analyzes return statements and infers the union or common type of returned values.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "When should you rely on type inference?",
+    "question_html": "<p>When should you rely on type inference?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "When the inferred type is clear, accurate, and easy to understand from the code.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When the inferred type is clear, accurate, and easy to understand from the code.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "When should you explicitly annotate types?",
+    "question_html": "<p>When should you explicitly annotate types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "When inference is unclear, public APIs need documentation, or you want to enforce a specific contract.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When inference is unclear, public APIs need documentation, or you want to enforce a specific contract.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is literal type widening?",
+    "question_html": "<p>What is literal type widening?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "When a literal like 'idle' is widened to string or 1 is widened to number.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When a literal like &#x27;idle&#x27; is widened to string or 1 is widened to number.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How can you prevent literal type widening?",
+    "question_html": "<p>How can you prevent literal type widening?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use const declarations, explicit literal annotations, or as const.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use const declarations, explicit literal annotations, or as const.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does as const do?",
+    "question_html": "<p>What does as const do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It tells TypeScript to infer the most specific readonly literal types for a value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It tells TypeScript to infer the most specific readonly literal types for a value.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How does as const affect object properties?",
+    "question_html": "<p>How does as const affect object properties?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It makes properties readonly and preserves literal value types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It makes properties readonly and preserves literal value types.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How does as const affect arrays?",
+    "question_html": "<p>How does as const affect arrays?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It turns arrays into readonly tuples with literal element types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It turns arrays into readonly tuples with literal element types.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is contextual typing?",
+    "question_html": "<p>What is contextual typing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Type inference based on the context where an expression is used.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Type inference based on the context where an expression is used.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "type-inference"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is a discriminated union?",
+    "question_html": "<p>What is a discriminated union?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A union of object types that share a common literal property used to identify each variant.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A union of object types that share a common literal property used to identify each variant.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is a discriminator field?",
+    "question_html": "<p>What is a discriminator field?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A common literal property, such as type or status, used to narrow union members.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A common literal property, such as type or status, used to narrow union members.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Why are discriminated unions useful?",
+    "question_html": "<p>Why are discriminated unions useful?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They model state clearly and make narrowing, switch statements, and exhaustive checks safer.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They model state clearly and make narrowing, switch statements, and exhaustive checks safer.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you narrow a union by checking a property?",
+    "question_html": "<p>How do you narrow a union by checking a property?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Check a discriminator or unique property, and TypeScript narrows to the matching union member.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Check a discriminator or unique property, and TypeScript narrows to the matching union member.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How does TypeScript narrow union types inside switch statements?",
+    "question_html": "<p>How does TypeScript narrow union types inside switch statements?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "When switching on a discriminator, each case narrows to the corresponding union member.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When switching on a discriminator, each case narrows to the corresponding union member.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is exhaustive checking?",
+    "question_html": "<p>What is exhaustive checking?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Ensuring all possible union variants are handled.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Ensuring all possible union variants are handled.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How can never help with exhaustive checking?",
+    "question_html": "<p>How can never help with exhaustive checking?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Assigning an unhandled value to never makes TypeScript error when a union case is missing.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Assigning an unhandled value to never makes TypeScript error when a union case is missing.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you model async state with a discriminated union?",
+    "question_html": "<p>How do you model async state with a discriminated union?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use variants such as idle, loading, success with data, and error with message.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use variants such as idle, loading, success with data, and error with message.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you model form states with union types?",
+    "question_html": "<p>How do you model form states with union types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use explicit states like editing, submitting, success, and error instead of many loosely related booleans.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use explicit states like editing, submitting, success, and error instead of many loosely related booleans.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is the benefit of replacing booleans with union states?",
+    "question_html": "<p>What is the benefit of replacing booleans with union states?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It prevents impossible combinations and makes valid states explicit.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It prevents impossible combinations and makes valid states explicit.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "unions-narrowing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "When would you choose interface over type?",
+    "question_html": "<p>When would you choose interface over type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Often for object shapes that may be extended or declaration-merged.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Often for object shapes that may be extended or declaration-merged.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "When would you choose type over interface?",
+    "question_html": "<p>When would you choose type over interface?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "For unions, intersections, primitives, tuples, mapped types, or complex type expressions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> For unions, intersections, primitives, tuples, mapped types, or complex type expressions.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is declaration merging?",
+    "question_html": "<p>What is declaration merging?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A feature where multiple interface declarations with the same name are combined.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A feature where multiple interface declarations with the same name are combined.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Can type aliases be declaration-merged?",
+    "question_html": "<p>Can type aliases be declaration-merged?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "No, type aliases cannot be declaration-merged.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> No, type aliases cannot be declaration-merged.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Can interfaces describe function types?",
+    "question_html": "<p>Can interfaces describe function types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Yes, interfaces can describe callable signatures.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, interfaces can describe callable signatures.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Can type aliases describe function types?",
+    "question_html": "<p>Can type aliases describe function types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Yes, type aliases can describe function types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, type aliases can describe function types.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Can interfaces extend type aliases?",
+    "question_html": "<p>Can interfaces extend type aliases?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Yes, if the type alias resolves to an object type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, if the type alias resolves to an object type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Can type aliases use intersections?",
+    "question_html": "<p>Can type aliases use intersections?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Yes, type aliases can combine types with intersection types using &.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, type aliases can combine types with intersection types using &amp;.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you extend an existing object type?",
+    "question_html": "<p>How do you extend an existing object type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use interface extends or an intersection type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use interface extends or an intersection type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you override a property type safely?",
+    "question_html": "<p>How do you override a property type safely?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use Omit to remove the original property and intersect with the replacement property type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use Omit to remove the original property and intersect with the replacement property type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "interfaces-type-aliases"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What are generics in TypeScript?",
+    "question_html": "<p>What are generics in TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Type parameters that allow functions, interfaces, and types to work with different types while preserving type information.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Type parameters that allow functions, interfaces, and types to work with different types while preserving type information.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Why are generics useful?",
+    "question_html": "<p>Why are generics useful?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They make reusable code type-safe without losing information to any.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They make reusable code type-safe without losing information to any.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you write a generic function?",
+    "question_html": "<p>How do you write a generic function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Add a type parameter, for example function identity<T>(value: T): T.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Add a type parameter, for example function identity&lt;T&gt;(value: T): T.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you write a generic interface?",
+    "question_html": "<p>How do you write a generic interface?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Add a type parameter to the interface, for example interface Box<T> { value: T }.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Add a type parameter to the interface, for example interface Box&lt;T&gt; { value: T }.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you write a generic type alias?",
+    "question_html": "<p>How do you write a generic type alias?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Add a type parameter to the alias, for example type Box<T> = { value: T }.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Add a type parameter to the alias, for example type Box&lt;T&gt; = { value: T }.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is a generic constraint?",
+    "question_html": "<p>What is a generic constraint?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A restriction on what types can be passed to a generic parameter.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A restriction on what types can be passed to a generic parameter.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does T extends object mean?",
+    "question_html": "<p>What does T extends object mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The generic type T must be assignable to object.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The generic type T must be assignable to object.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does T extends keyof U mean?",
+    "question_html": "<p>What does T extends keyof U mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "T must be one of the property keys of U.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> T must be one of the property keys of U.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you provide a default generic type?",
+    "question_html": "<p>How do you provide a default generic type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use syntax like <T = string>.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use syntax like &lt;T = string&gt;.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How can generics improve reusable components?",
+    "question_html": "<p>How can generics improve reusable components?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They let components preserve the specific item, value, or callback types passed by the user.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They let components preserve the specific item, value, or callback types passed by the user.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "generics"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does keyof do?",
+    "question_html": "<p>What does keyof do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It creates a union of the property keys of a type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates a union of the property keys of a type.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does keyof typeof do?",
+    "question_html": "<p>What does keyof typeof do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It gets the keys of the type inferred from a runtime value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It gets the keys of the type inferred from a runtime value.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you get the type of a property from another type?",
+    "question_html": "<p>How do you get the type of a property from another type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use indexed access types such as User['id'].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use indexed access types such as User[&#x27;id&#x27;].</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is indexed access type?",
+    "question_html": "<p>What is indexed access type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A type expression that accesses the type of a property using bracket syntax.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type expression that accesses the type of a property using bracket syntax.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does User[\"id\"] mean?",
+    "question_html": "<p>What does User[&quot;id&quot;] mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The type of the id property on the User type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The type of the id property on the User type.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type a function that receives an object key?",
+    "question_html": "<p>How do you type a function that receives an object key?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use a generic key constrained with keyof the object type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a generic key constrained with keyof the object type.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you ensure a key exists on an object?",
+    "question_html": "<p>How do you ensure a key exists on an object?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Constrain the key type to keyof the object type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Constrain the key type to keyof the object type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type a safe object property getter?",
+    "question_html": "<p>How do you type a safe object property getter?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use generics like get<T, K extends keyof T>(obj: T, key: K): T[K].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use generics like get&lt;T, K extends keyof T&gt;(obj: T, key: K): T[K].</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Why is keyof useful with generic functions?",
+    "question_html": "<p>Why is keyof useful with generic functions?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It connects accepted keys to the actual properties of the provided object.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It connects accepted keys to the actual properties of the provided object.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is the difference between keyof any and string?",
+    "question_html": "<p>What is the difference between keyof any and string?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "keyof any is string | number | symbol, while string is only string keys.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> keyof any is string | number | symbol, while string is only string keys.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "keyof-indexed-access"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Partial<T> do?",
+    "question_html": "<p>What does Partial&lt;T&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It makes all properties of T optional.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It makes all properties of T optional.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Required<T> do?",
+    "question_html": "<p>What does Required&lt;T&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It makes all properties of T required.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It makes all properties of T required.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Readonly<T> do?",
+    "question_html": "<p>What does Readonly&lt;T&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It makes all properties of T readonly.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It makes all properties of T readonly.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Pick<T, K> do?",
+    "question_html": "<p>What does Pick&lt;T, K&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates a type by selecting specific keys K from T.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates a type by selecting specific keys K from T.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Omit<T, K> do?",
+    "question_html": "<p>What does Omit&lt;T, K&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It creates a type by removing specific keys K from T.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates a type by removing specific keys K from T.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Record<K, T> do?",
+    "question_html": "<p>What does Record&lt;K, T&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It creates an object type with keys K and values T.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates an object type with keys K and values T.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Exclude<T, U> do?",
+    "question_html": "<p>What does Exclude&lt;T, U&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It removes from union T the members assignable to U.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It removes from union T the members assignable to U.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Extract<T, U> do?",
+    "question_html": "<p>What does Extract&lt;T, U&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It keeps from union T only the members assignable to U.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It keeps from union T only the members assignable to U.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does NonNullable<T> do?",
+    "question_html": "<p>What does NonNullable&lt;T&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It removes null and undefined from T.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It removes null and undefined from T.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does ReturnType<T> do?",
+    "question_html": "<p>What does ReturnType&lt;T&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It extracts the return type of a function type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It extracts the return type of a function type.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "utility-types"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type a function overload?",
+    "question_html": "<p>How do you type a function overload?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Write multiple overload signatures followed by one compatible implementation signature.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Write multiple overload signatures followed by one compatible implementation signature.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "When would you use function overloads?",
+    "question_html": "<p>When would you use function overloads?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "When one function supports multiple call shapes with different parameter and return relationships.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When one function supports multiple call shapes with different parameter and return relationships.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is the difference between overload signatures and implementation signature?",
+    "question_html": "<p>What is the difference between overload signatures and implementation signature?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Overload signatures are visible to callers, while the implementation signature is used for the function body.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Overload signatures are visible to callers, while the implementation signature is used for the function body.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type a callback with generic arguments?",
+    "question_html": "<p>How do you type a callback with generic arguments?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use a generic function type or generic callback parameter.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a generic function type or generic callback parameter.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type a function that returns another function?",
+    "question_html": "<p>How do you type a function that returns another function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use a function return type that is itself a function type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a function return type that is itself a function type.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type a function that accepts another function?",
+    "question_html": "<p>How do you type a function that accepts another function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Declare a parameter with a function type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Declare a parameter with a function type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is parameter bivariance?",
+    "question_html": "<p>What is parameter bivariance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A relaxed function parameter compatibility behavior used in certain callback positions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A relaxed function parameter compatibility behavior used in certain callback positions.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Why can function parameter variance be tricky?",
+    "question_html": "<p>Why can function parameter variance be tricky?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because safe substitution depends on whether parameter types are consumed, produced, or both.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because safe substitution depends on whether parameter types are consumed, produced, or both.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Parameters<T> do?",
+    "question_html": "<p>What does Parameters&lt;T&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It extracts the parameter tuple type from a function type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It extracts the parameter tuple type from a function type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does Awaited<T> do?",
+    "question_html": "<p>What does Awaited&lt;T&gt; do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It recursively unwraps the resolved value type of Promises or thenables.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It recursively unwraps the resolved value type of Promises or thenables.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "function-typing"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is the difference between public, private, and protected?",
+    "question_html": "<p>What is the difference between public, private, and protected?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "public is accessible everywhere, private only inside the class, and protected inside the class and subclasses.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> public is accessible everywhere, private only inside the class, and protected inside the class and subclasses.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is the difference between TypeScript private and JavaScript #private?",
+    "question_html": "<p>What is the difference between TypeScript private and JavaScript #private?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "TypeScript private is mainly compile-time, while #private is enforced by JavaScript at runtime.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> TypeScript private is mainly compile-time, while #private is enforced by JavaScript at runtime.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is an abstract class?",
+    "question_html": "<p>What is an abstract class?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A class that cannot be instantiated directly and can contain shared implementation plus abstract members.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A class that cannot be instantiated directly and can contain shared implementation plus abstract members.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What is an abstract method?",
+    "question_html": "<p>What is an abstract method?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A method declared in an abstract class that subclasses must implement.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A method declared in an abstract class that subclasses must implement.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "When would you use an abstract class instead of an interface?",
+    "question_html": "<p>When would you use an abstract class instead of an interface?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "When you need shared implementation or protected members in addition to a contract.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When you need shared implementation or protected members in addition to a contract.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does implements do?",
+    "question_html": "<p>What does implements do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It checks that a class satisfies an interface or object type contract.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It checks that a class satisfies an interface or object type contract.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What does extends do?",
+    "question_html": "<p>What does extends do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It creates inheritance from a class or extension from an interface.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It creates inheritance from a class or extension from an interface.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "Can a class implement multiple interfaces?",
+    "question_html": "<p>Can a class implement multiple interfaces?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Yes, a class can implement multiple interfaces.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, a class can implement multiple interfaces.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "What are constructor parameter properties?",
+    "question_html": "<p>What are constructor parameter properties?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A shorthand for declaring and initializing class properties directly in the constructor parameters.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A shorthand for declaring and initializing class properties directly in the constructor parameters.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type this in a class method?",
+    "question_html": "<p>How do you type this in a class method?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Usually TypeScript infers it, but explicit this parameter types can be used in methods or functions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Usually TypeScript infers it, but explicit this parameter types can be used in methods or functions.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "classes-oop"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type component props with generics?",
+    "question_html": "<p>How do you type component props with generics?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Define generic props and pass the type parameter to the component function.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define generic props and pass the type parameter to the component function.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type a reusable list component?",
+    "question_html": "<p>How do you type a reusable list component?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use a generic item type and props such as items: T[] and renderItem: (item: T) => ReactNode.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a generic item type and props such as items: T[] and renderItem: (item: T) =&gt; ReactNode.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type useState when the initial value is null?",
+    "question_html": "<p>How do you type useState when the initial value is null?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Provide a generic union such as useState<User | null>(null).",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Provide a generic union such as useState&lt;User | null&gt;(null).</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type useReducer state and actions?",
+    "question_html": "<p>How do you type useReducer state and actions?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Define State and Action types and use them in the reducer function.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define State and Action types and use them in the reducer function.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type useRef for a DOM element?",
+    "question_html": "<p>How do you type useRef for a DOM element?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use useRef<HTMLInputElement | null>(null) or the appropriate DOM element type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use useRef&lt;HTMLInputElement | null&gt;(null) or the appropriate DOM element type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type useRef for a mutable value?",
+    "question_html": "<p>How do you type useRef for a mutable value?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use useRef<Type>(initialValue) for a mutable ref value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use useRef&lt;Type&gt;(initialValue) for a mutable ref value.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type React.ChangeEvent<HTMLInputElement>?",
+    "question_html": "<p>How do you type React.ChangeEvent&lt;HTMLInputElement&gt;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use it for input change handlers, for example (event: React.ChangeEvent<HTMLInputElement>) => void.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use it for input change handlers, for example (event: React.ChangeEvent&lt;HTMLInputElement&gt;) =&gt; void.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type React.MouseEvent<HTMLButtonElement>?",
+    "question_html": "<p>How do you type React.MouseEvent&lt;HTMLButtonElement&gt;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use it for button click handlers.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use it for button click handlers.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you type a custom hook return value?",
+    "question_html": "<p>How do you type a custom hook return value?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Let it infer simple returns or explicitly annotate an object/tuple return type for stable public APIs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Let it infer simple returns or explicitly annotate an object/tuple return type for stable public APIs.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-type-system",
+    "difficulty": "medium",
+    "question": "How do you avoid overusing React.FC?",
+    "question_html": "<p>How do you avoid overusing React.FC?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to avoid compiler errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to avoid compiler errors. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Type props directly on function parameters and use React.FC only when its behavior is actually desired.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Type props directly on function parameters and use React.FC only when its behavior is actually desired.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript type-system feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript type-system feature. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no effect on TypeScript types.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no effect on TypeScript types. This answer does not accurately describe the TypeScript concept in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "medium",
+      "typescript-react"
+    ]
+  }
+]

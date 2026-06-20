@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does a JavaScript engine parse and execute code?",
+    "question_html": "<p>How does a JavaScript engine parse and execute code?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It tokenizes and parses source into an AST, compiles or interprets it into executable instructions, and runs it with runtime optimizations.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It tokenizes and parses source into an AST, compiles or interprets it into executable instructions, and runs it with runtime optimizations.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It only reads code line by line without parsing.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only reads code line by line without parsing. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It converts JavaScript directly into HTML.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts JavaScript directly into HTML. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It sends every line to the DOM before execution.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It sends every line to the DOM before execution. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between parsing, compilation, and interpretation in modern JavaScript engines?",
+    "question_html": "<p>What is the difference between parsing, compilation, and interpretation in modern JavaScript engines?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Compilation happens only in TypeScript, never JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Compilation happens only in TypeScript, never JavaScript. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Parsing builds a syntactic representation, compilation transforms code into executable form, and interpretation executes instructions without full ahead-of-time compilation.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Parsing builds a syntactic representation, compilation transforms code into executable form, and interpretation executes instructions without full ahead-of-time compilation.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are three names for exactly the same step.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are three names for exactly the same step. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Parsing executes code, compilation builds the DOM, and interpretation stores objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Parsing executes code, compilation builds the DOM, and interpretation stores objects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is Just-In-Time compilation?",
+    "question_html": "<p>What is Just-In-Time compilation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A technique where code is compiled manually before deployment only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A technique where code is compiled manually before deployment only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A technique where code is compiled during execution, often after profiling hot paths.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A technique where code is compiled during execution, often after profiling hot paths.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A browser API for delaying timers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser API for delaying timers. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A Promise feature for parallel execution.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Promise feature for parallel execution. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does V8 optimize frequently executed code?",
+    "question_html": "<p>How does V8 optimize frequently executed code?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables garbage collection for hot functions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables garbage collection for hot functions. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It only optimizes code that uses var.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only optimizes code that uses var. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It profiles hot code paths and uses optimizing compilers to generate faster machine code when assumptions hold.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It profiles hot code paths and uses optimizing compilers to generate faster machine code when assumptions hold.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It rewrites all JavaScript into CSS.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It rewrites all JavaScript into CSS. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What are hidden classes in V8?",
+    "question_html": "<p>What are hidden classes in V8?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Internal structures V8 uses to describe object shapes and optimize property access.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Internal structures V8 uses to describe object shapes and optimize property access.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Private fields declared with # syntax.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Private fields declared with # syntax. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A way to encrypt object properties.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to encrypt object properties. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "CSS classes hidden from the DOM.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> CSS classes hidden from the DOM. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How can object shape changes affect performance?",
+    "question_html": "<p>How can object shape changes affect performance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Object shape changes always improve performance.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Object shape changes always improve performance. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only arrays have shapes, not objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only arrays have shapes, not objects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Shape changes affect CSS rendering only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Shape changes affect CSS rendering only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Changing object property layout can create different hidden classes and reduce optimization opportunities.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Changing object property layout can create different hidden classes and reduce optimization opportunities.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is inline caching?",
+    "question_html": "<p>What is inline caching?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A method for caching images in CSS.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method for caching images in CSS. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An optimization that caches information about previous property lookups or calls to speed up repeated access.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An optimization that caches information about previous property lookups or calls to speed up repeated access.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A cache stored inside localStorage.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A cache stored inside localStorage. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A browser cache for HTTP responses.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser cache for HTTP responses. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How can polymorphic object access slow down JavaScript execution?",
+    "question_html": "<p>How can polymorphic object access slow down JavaScript execution?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Accessing the same property on many differently shaped objects can make inline caches less efficient and trigger slower paths.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Accessing the same property on many differently shaped objects can make inline caches less efficient and trigger slower paths.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Polymorphism always makes engines faster.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Polymorphism always makes engines faster. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It only affects TypeScript types, not runtime.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only affects TypeScript types, not runtime. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It prevents garbage collection completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It prevents garbage collection completely. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is deoptimization?",
+    "question_html": "<p>What is deoptimization?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "When dead code is removed from a bundle.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When dead code is removed from a bundle. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "When code is compressed for production.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When code is compressed for production. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "When optimized code is discarded and execution falls back to less optimized code because assumptions became invalid.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When optimized code is discarded and execution falls back to less optimized code because assumptions became invalid.</p>"
+      },
+      {
+        "id": "D",
+        "text": "When the browser clears localStorage.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When the browser clears localStorage. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What kinds of code patterns can trigger deoptimization?",
+    "question_html": "<p>What kinds of code patterns can trigger deoptimization?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Using const variables always triggers it.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using const variables always triggers it. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Changing object shapes, using unpredictable types, arguments misuse, eval, or invalidating optimized assumptions can trigger deoptimization.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Changing object shapes, using unpredictable types, arguments misuse, eval, or invalidating optimized assumptions can trigger deoptimization.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Using comments in code triggers it.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using comments in code triggers it. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Using strict equality always triggers it.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using strict equality always triggers it. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "engine-internals"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does garbage collection work in JavaScript?",
+    "question_html": "<p>How does garbage collection work in JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Developers must manually free every object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Developers must manually free every object. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It only removes strings, not objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only removes strings, not objects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The engine automatically finds objects that are no longer reachable and frees their memory.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The engine automatically finds objects that are no longer reachable and frees their memory.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Garbage collection deletes variables after every function call regardless of references.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Garbage collection deletes variables after every function call regardless of references. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is reachability in garbage collection?",
+    "question_html": "<p>What is reachability in garbage collection?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An object is reachable only if it is in the DOM.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An object is reachable only if it is in the DOM. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Reachability means an object has a numeric id.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Reachability means an object has a numeric id. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Reachability is a CSS visibility property.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Reachability is a CSS visibility property. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An object is reachable if it can still be accessed from roots such as global objects, stack variables, or closures.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An object is reachable if it can still be accessed from roots such as global objects, stack variables, or closures.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is mark-and-sweep garbage collection?",
+    "question_html": "<p>What is mark-and-sweep garbage collection?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A browser rendering technique.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser rendering technique. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An algorithm that sorts arrays by memory address.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An algorithm that sorts arrays by memory address. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A GC algorithm that marks reachable objects and then sweeps unmarked objects as garbage.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A GC algorithm that marks reachable objects and then sweeps unmarked objects as garbage.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A Promise scheduling strategy.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Promise scheduling strategy. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What are common causes of memory leaks in JavaScript?",
+    "question_html": "<p>What are common causes of memory leaks in JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Declaring variables with const.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Declaring variables with const. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Unremoved event listeners, retained closures, global references, timers, caches, and detached DOM nodes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Unremoved event listeners, retained closures, global references, timers, caches, and detached DOM nodes.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Using strict equality.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using strict equality. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Using map instead of forEach.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using map instead of forEach. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How can closures accidentally cause memory leaks?",
+    "question_html": "<p>How can closures accidentally cause memory leaks?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Closures only exist in CSS.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Closures only exist in CSS. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A closure can retain references to large objects longer than expected if the inner function remains reachable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A closure can retain references to large objects longer than expected if the inner function remains reachable.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Closures cannot reference objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Closures cannot reference objects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Closures always delete outer variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Closures always delete outer variables. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How can event listeners cause memory leaks?",
+    "question_html": "<p>How can event listeners cause memory leaks?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Listeners automatically delete every DOM node.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Listeners automatically delete every DOM node. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Listeners can only leak primitive values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Listeners can only leak primitive values. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Listeners can keep DOM nodes or objects reachable if they are not removed when no longer needed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Listeners can keep DOM nodes or objects reachable if they are not removed when no longer needed.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Listeners are garbage collected immediately even when referenced.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Listeners are garbage collected immediately even when referenced. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How can detached DOM nodes cause memory leaks?",
+    "question_html": "<p>How can detached DOM nodes cause memory leaks?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Detached nodes exist only on the server.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Detached nodes exist only on the server. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Detached nodes cannot be referenced by JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Detached nodes cannot be referenced by JavaScript. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Detached nodes can remain in memory if JavaScript still holds references to them.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Detached nodes can remain in memory if JavaScript still holds references to them.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Detached nodes are always deleted instantly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Detached nodes are always deleted instantly. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is a retained object in memory profiling?",
+    "question_html": "<p>What is a retained object in memory profiling?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A Promise that was resolved.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Promise that was resolved. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An object that was already garbage collected.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An object that was already garbage collected. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A CSS object kept in the render tree only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS object kept in the render tree only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An object still kept alive by references from other reachable objects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An object still kept alive by references from other reachable objects.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you investigate a memory leak in a browser application?",
+    "question_html": "<p>How would you investigate a memory leak in a browser application?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use console.log on every variable only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use console.log on every variable only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Only restart the browser and assume it is fixed.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only restart the browser and assume it is fixed. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use browser DevTools memory heap snapshots, allocation timelines, and retainers to identify objects that keep growing.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use browser DevTools memory heap snapshots, allocation timelines, and retainers to identify objects that keep growing.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Disable JavaScript execution.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Disable JavaScript execution. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between stack memory and heap memory?",
+    "question_html": "<p>What is the difference between stack memory and heap memory?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The stack stores execution frames and local primitives/references, while the heap stores dynamically allocated objects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The stack stores execution frames and local primitives/references, while the heap stores dynamically allocated objects.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The stack exists only in Node.js.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The stack exists only in Node.js. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are identical memory areas.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are identical memory areas. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The heap stores function calls, while the stack stores DOM nodes only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The heap stores function calls, while the stack stores DOM nodes only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "memory-management"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the exact execution order between call stack, microtask queue, macrotask queue, and rendering?",
+    "question_html": "<p>What is the exact execution order between call stack, microtask queue, macrotask queue, and rendering?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Synchronous stack runs first, then microtasks drain, then the browser may render, then the next macrotask runs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Synchronous stack runs first, then microtasks drain, then the browser may render, then the next macrotask runs.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Microtasks run only after all timers finish.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Microtasks run only after all timers finish. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Rendering always happens before microtasks.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Rendering always happens before microtasks. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Macrotasks always run before synchronous code.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Macrotasks always run before synchronous code. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How do microtasks affect browser rendering?",
+    "question_html": "<p>How do microtasks affect browser rendering?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Microtasks run before the browser gets a chance to render, so many microtasks can delay visual updates.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Microtasks run before the browser gets a chance to render, so many microtasks can delay visual updates.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Microtasks are rendered as DOM nodes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Microtasks are rendered as DOM nodes. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Microtasks always force immediate rendering.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Microtasks always force immediate rendering. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Microtasks are ignored by browsers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Microtasks are ignored by browsers. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Can too many microtasks block rendering?",
+    "question_html": "<p>Can too many microtasks block rendering?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Only macrotasks can block rendering.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only macrotasks can block rendering. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Yes, continuously scheduling microtasks can starve rendering and make the UI unresponsive.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Yes, continuously scheduling microtasks can starve rendering and make the UI unresponsive.</p>"
+      },
+      {
+        "id": "C",
+        "text": "No, microtasks never affect rendering.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> No, microtasks never affect rendering. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Microtasks are executed by the GPU only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Microtasks are executed by the GPU only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is microtask starvation?",
+    "question_html": "<p>What is microtask starvation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A lack of Promise support.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A lack of Promise support. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A memory leak caused by small objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A memory leak caused by small objects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A CSS animation issue.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS animation issue. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A situation where microtasks keep scheduling more microtasks, delaying macrotasks and rendering.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A situation where microtasks keep scheduling more microtasks, delaying macrotasks and rendering.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does requestAnimationFrame fit into the browser event loop?",
+    "question_html": "<p>How does requestAnimationFrame fit into the browser event loop?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It runs only after the page unloads.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It runs only after the page unloads. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It replaces the call stack.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It replaces the call stack. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It schedules a callback after every microtask forever.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It schedules a callback after every microtask forever. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It schedules a callback before the next repaint, making it suitable for visual updates.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It schedules a callback before the next repaint, making it suitable for visual updates.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does requestIdleCallback fit into scheduling work?",
+    "question_html": "<p>How does requestIdleCallback fit into scheduling work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It schedules low-priority work during idle periods when the browser has spare time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It schedules low-priority work during idle periods when the browser has spare time.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It runs only in Node.js.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It runs only in Node.js. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It blocks all user input until work is done.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It blocks all user input until work is done. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It guarantees immediate execution before rendering.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It guarantees immediate execution before rendering. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between setTimeout, queueMicrotask, requestAnimationFrame, and requestIdleCallback?",
+    "question_html": "<p>What is the difference between setTimeout, queueMicrotask, requestAnimationFrame, and requestIdleCallback?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They all schedule work in the same queue.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They all schedule work in the same queue. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are all Promise methods.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are all Promise methods. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Only setTimeout can schedule callbacks.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only setTimeout can schedule callbacks. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "setTimeout schedules a task later, queueMicrotask schedules a microtask, requestAnimationFrame runs before paint, and requestIdleCallback runs during idle time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> setTimeout schedules a task later, queueMicrotask schedules a microtask, requestAnimationFrame runs before paint, and requestIdleCallback runs during idle time.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why can setTimeout(fn, 0) still be delayed?",
+    "question_html": "<p>Why can setTimeout(fn, 0) still be delayed?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It waits until the current stack, microtasks, and earlier tasks finish, and browsers may apply minimum delays.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It waits until the current stack, microtasks, and earlier tasks finish, and browsers may apply minimum delays.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It always runs exactly after zero milliseconds.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always runs exactly after zero milliseconds. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Zero delay means it runs before synchronous code.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Zero delay means it runs before synchronous code. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is executed by the compiler during parsing.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is executed by the compiler during parsing. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is timer clamping?",
+    "question_html": "<p>What is timer clamping?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A technique for preventing memory leaks.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A technique for preventing memory leaks. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A method for freezing arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method for freezing arrays. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A browser behavior that enforces minimum timer delays, especially for nested timers or background tabs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A browser behavior that enforces minimum timer delays, especially for nested timers or background tabs.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A way to merge Promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to merge Promises. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does the event loop differ between browser and Node.js?",
+    "question_html": "<p>How does the event loop differ between browser and Node.js?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Browsers use libuv for all rendering.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Browsers use libuv for all rendering. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Node.js has a DOM rendering phase.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Node.js has a DOM rendering phase. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Browsers integrate rendering and Web APIs, while Node.js has libuv phases and server-side APIs.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Browsers integrate rendering and Web APIs, while Node.js has libuv phases and server-side APIs.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They are exactly identical in all details.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are exactly identical in all details. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-event-loop"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does async/await behave internally?",
+    "question_html": "<p>How does async/await behave internally?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It bypasses Promises entirely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It bypasses Promises entirely. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "async/await is syntax over Promises; await pauses the async function and resumes it through the microtask queue.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> async/await is syntax over Promises; await pauses the async function and resumes it through the microtask queue.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It creates real blocking synchronous code.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates real blocking synchronous code. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It creates a new OS thread for every await.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a new OS thread for every await. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why does every async function return a Promise?",
+    "question_html": "<p>Why does every async function return a Promise?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because async functions cannot return values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because async functions cannot return values. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because async functions are executed by the DOM.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because async functions are executed by the DOM. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because JavaScript converts every function into a Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because JavaScript converts every function into a Promise. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because async functions wrap returned values in a resolved Promise and thrown errors in rejected Promises.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because async functions wrap returned values in a resolved Promise and thrown errors in rejected Promises.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What happens when an error is thrown inside an async function?",
+    "question_html": "<p>What happens when an error is thrown inside an async function?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The error is ignored automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The error is ignored automatically. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The function returns null.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The function returns null. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "The returned Promise is rejected with that error.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The returned Promise is rejected with that error.</p>"
+      },
+      {
+        "id": "D",
+        "text": "The browser reloads the page.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The browser reloads the page. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you run async operations sequentially?",
+    "question_html": "<p>How would you run async operations sequentially?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Await each operation one after another, usually in a loop or chained flow.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Await each operation one after another, usually in a loop or chained flow.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Call every async function without await.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Call every async function without await. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use Promise.all on all operations.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Promise.all on all operations. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use setInterval for each operation.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use setInterval for each operation. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you run async operations in parallel?",
+    "question_html": "<p>How would you run async operations in parallel?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use JSON.stringify on the operations.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use JSON.stringify on the operations. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use only a forEach loop with await inside.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use only a forEach loop with await inside. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Start all Promises first and then await Promise.all or a similar combinator.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Start all Promises first and then await Promise.all or a similar combinator.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Await each operation before starting the next.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Await each operation before starting the next. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What are the trade-offs between sequential and parallel async execution?",
+    "question_html": "<p>What are the trade-offs between sequential and parallel async execution?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "There are no trade-offs.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> There are no trade-offs. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Sequential always uses more network requests.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Sequential always uses more network requests. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Parallel is always safer and cheaper.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Parallel is always safer and cheaper. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Sequential execution is simpler and respects dependencies; parallel execution is faster for independent work but may increase load and complexity.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Sequential execution is simpler and respects dependencies; parallel execution is faster for independent work but may increase load and complexity.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is controlled concurrency?",
+    "question_html": "<p>What is controlled concurrency?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Cancelling all Promises after one failure.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Cancelling all Promises after one failure. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Running exactly one Promise in the whole app.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Running exactly one Promise in the whole app. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Limiting how many asynchronous operations run at the same time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Limiting how many asynchronous operations run at the same time.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Making asynchronous code synchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Making asynchronous code synchronous. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you implement a promise pool?",
+    "question_html": "<p>How would you implement a promise pool?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Run every task recursively without awaiting.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Run every task recursively without awaiting. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use setTimeout with zero delay for every task.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use setTimeout with zero delay for every task. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use Promise.all without limits.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Promise.all without limits. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Keep a queue of tasks and start only a fixed number of Promises at a time until all complete.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Keep a queue of tasks and start only a fixed number of Promises at a time until all complete.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you retry a failed async operation with exponential backoff?",
+    "question_html": "<p>How would you retry a failed async operation with exponential backoff?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Retry only by refreshing the browser.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Retry only by refreshing the browser. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Retry by converting the Promise to JSON.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Retry by converting the Promise to JSON. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Retry immediately forever.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Retry immediately forever. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Retry after increasing delays such as 100ms, 200ms, 400ms, usually with a maximum retry count.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Retry after increasing delays such as 100ms, 200ms, 400ms, usually with a maximum retry count.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you cancel an async operation in JavaScript?",
+    "question_html": "<p>How would you cancel an async operation in JavaScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Call clearInterval on every Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Call clearInterval on every Promise. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use AbortController for supported APIs such as fetch, or design cancellable logic for custom async work.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use AbortController for supported APIs such as fetch, or design cancellable logic for custom async work.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Promises can always be cancelled directly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Promises can always be cancelled directly. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use delete on the Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use delete on the Promise. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-async"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is Promise resolution procedure?",
+    "question_html": "<p>What is Promise resolution procedure?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A browser setting for display resolution.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser setting for display resolution. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The specification process that resolves a Promise with a value, adopts thenables, and prevents invalid self-resolution.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The specification process that resolves a Promise with a value, adopts thenables, and prevents invalid self-resolution.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A way to make Promises synchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to make Promises synchronous. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A method for sorting Promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method for sorting Promises. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is a thenable?",
+    "question_html": "<p>What is a thenable?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An object with a then method that can be assimilated by Promise resolution.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An object with a then method that can be assimilated by Promise resolution.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A special DOM element.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A special DOM element. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A function that always returns undefined.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A function that always returns undefined. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A Promise that cannot reject.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Promise that cannot reject. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does Promise chaining flatten nested Promises?",
+    "question_html": "<p>How does Promise chaining flatten nested Promises?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Promises cannot be nested.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Promises cannot be nested. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The chain ignores returned Promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The chain ignores returned Promises. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Nested Promises are converted to arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Nested Promises are converted to arrays. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "If a then callback returns a Promise, the outer chain adopts its eventual state and value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> If a then callback returns a Promise, the outer chain adopts its eventual state and value.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between Promise.all, Promise.allSettled, Promise.race, and Promise.any?",
+    "question_html": "<p>What is the difference between Promise.all, Promise.allSettled, Promise.race, and Promise.any?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They all behave exactly like Promise.all.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They all behave exactly like Promise.all. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "allSettled rejects on the first rejection.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> allSettled rejects on the first rejection. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "all fulfills when all fulfill and rejects on first rejection; allSettled waits for all outcomes; race settles on first settled; any fulfills on first fulfillment.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> all fulfills when all fulfill and rejects on first rejection; allSettled waits for all outcomes; race settles on first settled; any fulfills on first fulfillment.</p>"
+      },
+      {
+        "id": "D",
+        "text": "race waits for every Promise to settle.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> race waits for every Promise to settle. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does Promise.any handle multiple rejections?",
+    "question_html": "<p>How does Promise.any handle multiple rejections?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It resolves with an array of rejections.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It resolves with an array of rejections. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It rejects on the first rejection.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It rejects on the first rejection. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It rejects with an AggregateError only if all input Promises reject.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It rejects with an AggregateError only if all input Promises reject.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It ignores all rejections forever.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It ignores all rejections forever. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is AggregateError?",
+    "question_html": "<p>What is AggregateError?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An error type that represents multiple errors, commonly used by Promise.any when all Promises reject.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An error type that represents multiple errors, commonly used by Promise.any when all Promises reject.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A browser rendering error.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A browser rendering error. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A syntax error for arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A syntax error for arrays. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A method that combines objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method that combines objects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is an unhandled Promise rejection?",
+    "question_html": "<p>What is an unhandled Promise rejection?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A synchronous exception inside a try block.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A synchronous exception inside a try block. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A Promise that resolves to undefined.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Promise that resolves to undefined. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A Promise rejection that has no rejection handler attached in time.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A Promise rejection that has no rejection handler attached in time.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A Promise that is still pending.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A Promise that is still pending. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How do browsers and Node.js handle unhandled rejections differently?",
+    "question_html": "<p>How do browsers and Node.js handle unhandled rejections differently?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They handle them identically in all versions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They handle them identically in all versions. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Both report them, but Node.js behavior can depend on version and settings and may terminate the process in stricter modes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Both report them, but Node.js behavior can depend on version and settings and may terminate the process in stricter modes.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Node.js silently ignores every rejection.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Node.js silently ignores every rejection. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Browsers always terminate the OS process.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Browsers always terminate the OS process. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you implement a custom Promise.all?",
+    "question_html": "<p>How would you implement a custom Promise.all?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Resolve immediately with the input array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Resolve immediately with the input array. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Create a new Promise, collect results by index, resolve when all fulfill, and reject immediately on the first rejection.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Create a new Promise, collect results by index, resolve when all fulfill, and reject immediately on the first rejection.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Reject after all Promises fulfill.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Reject after all Promises fulfill. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Run Promises synchronously in a loop.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Run Promises synchronously in a loop. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you implement a custom Promise.race?",
+    "question_html": "<p>How would you implement a custom Promise.race?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Return only the fastest fulfilled value and never reject.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Return only the fastest fulfilled value and never reject. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Ignore rejected Promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Ignore rejected Promises. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Wait for all Promises to fulfill.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Wait for all Promises to fulfill. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Create a new Promise and settle it as soon as any input Promise settles.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Create a new Promise and settle it as soon as any input Promise settles.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "promises-in-depth"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does property lookup work through the prototype chain?",
+    "question_html": "<p>How does property lookup work through the prototype chain?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "JavaScript checks the object first, then follows its prototype chain until the property is found or the chain ends.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> JavaScript checks the object first, then follows its prototype chain until the property is found or the chain ends.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It checks prototypes before own properties.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks prototypes before own properties. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It checks every object in memory.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks every object in memory. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It checks only the global object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It checks only the global object. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What happens if a property exists both on the object and its prototype?",
+    "question_html": "<p>What happens if a property exists both on the object and its prototype?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "The object’s own property shadows the prototype property.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> The object’s own property shadows the prototype property.</p>"
+      },
+      {
+        "id": "B",
+        "text": "The prototype property always wins.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> The prototype property always wins. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Both values are returned as an array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Both values are returned as an array. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "JavaScript throws a duplicate property error.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> JavaScript throws a duplicate property error. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does method overriding work with prototypes?",
+    "question_html": "<p>How does method overriding work with prototypes?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Only arrow functions can override methods.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only arrow functions can override methods. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Overriding requires changing the JavaScript engine.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Overriding requires changing the JavaScript engine. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "An object or child prototype can define a method with the same name, shadowing the inherited method.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An object or child prototype can define a method with the same name, shadowing the inherited method.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Methods cannot be overridden in JavaScript.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Methods cannot be overridden in JavaScript. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between classical inheritance and prototypal delegation?",
+    "question_html": "<p>What is the difference between classical inheritance and prototypal delegation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Prototypal delegation is a CSS feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Prototypal delegation is a CSS feature. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are identical models.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are identical models. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "JavaScript only supports classical inheritance internally.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> JavaScript only supports classical inheritance internally. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Classical inheritance models classes and instances; prototypal delegation lets objects delegate behavior to other objects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Classical inheritance models classes and instances; prototypal delegation lets objects delegate behavior to other objects.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does class syntax map to prototypes internally?",
+    "question_html": "<p>How does class syntax map to prototypes internally?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Every class method becomes an own property automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Every class method becomes an own property automatically. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Classes are compiled to HTML elements.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Classes are compiled to HTML elements. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Class methods are placed on the constructor’s prototype, while instances delegate to that prototype.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Class methods are placed on the constructor’s prototype, while instances delegate to that prototype.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Class syntax creates no prototypes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Class syntax creates no prototypes. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What does super do in JavaScript classes?",
+    "question_html": "<p>What does super do in JavaScript classes?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables prototype lookup.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables prototype lookup. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It converts a class into a function.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts a class into a function. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It calls the parent constructor or accesses methods on the parent prototype.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It calls the parent constructor or accesses methods on the parent prototype.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It makes a method private.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It makes a method private. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does new.target work?",
+    "question_html": "<p>How does new.target work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It works only in arrow functions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It works only in arrow functions. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It returns the newest DOM node.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It returns the newest DOM node. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It identifies the constructor originally called with new, useful in constructors and subclassing.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It identifies the constructor originally called with new, useful in constructors and subclassing.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It identifies the newest Promise.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It identifies the newest Promise. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between public fields, private fields, and prototype methods in classes?",
+    "question_html": "<p>What is the difference between public fields, private fields, and prototype methods in classes?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Public fields are instance properties, private fields are inaccessible outside the class body, and prototype methods are shared through the prototype.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Public fields are instance properties, private fields are inaccessible outside the class body, and prototype methods are shared through the prototype.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Prototype methods are copied into every instance as own properties.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Prototype methods are copied into every instance as own properties. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "All are stored on the prototype.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> All are stored on the prototype. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Private fields are just naming conventions with underscores.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Private fields are just naming conventions with underscores. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How do private class fields work internally from a language perspective?",
+    "question_html": "<p>How do private class fields work internally from a language perspective?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They can be accessed with bracket notation.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They can be accessed with bracket notation. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are part of the language’s private name mechanism and cannot be accessed by normal property lookup.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They are part of the language’s private name mechanism and cannot be accessed by normal property lookup.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are only TypeScript syntax.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are only TypeScript syntax. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They are normal properties with hidden string names.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are normal properties with hidden string names. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why are arrow functions as class fields different from prototype methods?",
+    "question_html": "<p>Why are arrow functions as class fields different from prototype methods?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Prototype methods cannot access this.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Prototype methods cannot access this. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They compile to the same memory layout.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They compile to the same memory layout. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Arrow class fields create per-instance functions with lexical this, while prototype methods are shared and have dynamic this.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Arrow class fields create per-instance functions with lexical this, while prototype methods are shared and have dynamic this.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Arrow fields are always faster and shared.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Arrow fields are always faster and shared. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "prototypes-object-model"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does abstract equality comparison work?",
+    "question_html": "<p>How does abstract equality comparison work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It only works with numbers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only works with numbers. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It follows coercion rules that may convert types before comparing values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It follows coercion rules that may convert types before comparing values.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It converts everything to JSON first.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts everything to JSON first. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It compares values and types without conversion.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It compares values and types without conversion. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why does [] == false evaluate to true?",
+    "question_html": "<p>Why does [] == false evaluate to true?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because false becomes an empty array.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because false becomes an empty array. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because arrays are always false.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because arrays are always false. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because [] and false are the same type.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because [] and false are the same type. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because [] is coerced through ToPrimitive to an empty string, and both sides eventually compare as 0.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because [] is coerced through ToPrimitive to an empty string, and both sides eventually compare as 0.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why does null == undefined evaluate to true, but null === undefined evaluates to false?",
+    "question_html": "<p>Why does null == undefined evaluate to true, but null === undefined evaluates to false?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because strict equality coerces both values to zero.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because strict equality coerces both values to zero. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because null and undefined are the same primitive type.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because null and undefined are the same primitive type. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Loose equality treats null and undefined as equal, while strict equality requires the same type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Loose equality treats null and undefined as equal, while strict equality requires the same type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because null is converted to an object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because null is converted to an object. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does ToPrimitive conversion work?",
+    "question_html": "<p>How does ToPrimitive conversion work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It always returns a boolean.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It always returns a boolean. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It converts objects to primitive values using Symbol.toPrimitive, valueOf, and toString according to a preferred hint.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It converts objects to primitive values using Symbol.toPrimitive, valueOf, and toString according to a preferred hint.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It only runs during JSON serialization.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only runs during JSON serialization. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It converts primitives into objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It converts primitives into objects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between valueOf() and toString() during coercion?",
+    "question_html": "<p>What is the difference between valueOf() and toString() during coercion?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "valueOf tries to provide a primitive value, while toString provides a string representation; order depends on the coercion hint.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> valueOf tries to provide a primitive value, while toString provides a string representation; order depends on the coercion hint.</p>"
+      },
+      {
+        "id": "B",
+        "text": "toString always runs before valueOf for every operation.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> toString always runs before valueOf for every operation. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are never used in coercion.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are never used in coercion. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "valueOf always returns a string.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> valueOf always returns a string. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is Symbol.toPrimitive?",
+    "question_html": "<p>What is Symbol.toPrimitive?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A method for converting strings into symbols.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A method for converting strings into symbols. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A symbol used only for private class fields.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A symbol used only for private class fields. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A replacement for JSON.stringify.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A replacement for JSON.stringify. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A well-known symbol method that customizes how an object converts to a primitive.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A well-known symbol method that customizes how an object converts to a primitive.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does JavaScript compare objects?",
+    "question_html": "<p>How does JavaScript compare objects?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Objects are compared by reference, not by structural equality.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Objects are compared by reference, not by structural equality.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Objects are compared by their JSON output.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Objects are compared by their JSON output. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Objects are always equal if they have the same keys.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Objects are always equal if they have the same keys. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Objects are compared deeply by default.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Objects are compared deeply by default. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is SameValueZero comparison?",
+    "question_html": "<p>What is SameValueZero comparison?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Strict equality with no exceptions.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Strict equality with no exceptions. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A comparison algorithm where NaN equals NaN and +0 equals -0, used by includes, Map, and Set.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A comparison algorithm where NaN equals NaN and +0 equals -0, used by includes, Map, and Set.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A deep object comparison algorithm.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A deep object comparison algorithm. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A CSS comparison rule.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS comparison rule. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why does NaN !== NaN?",
+    "question_html": "<p>Why does NaN !== NaN?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because NaN is always null.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because NaN is always null. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because NaN is an object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because NaN is an object. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because NaN is converted to undefined.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because NaN is converted to undefined. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because NaN is defined as not equal to any value, including itself, under strict equality.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because NaN is defined as not equal to any value, including itself, under strict equality.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does Object.is() differ from ===?",
+    "question_html": "<p>How does Object.is() differ from ===?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Object.is works only on objects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Object.is works only on objects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Object.is treats NaN as equal to itself and distinguishes +0 from -0.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Object.is treats NaN as equal to itself and distinguishes +0 from -0.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Object.is performs deep equality.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Object.is performs deep equality. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Object.is coerces types before comparison.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Object.is coerces types before comparison. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "equality-coercion-semantics"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does the ES module loading algorithm work?",
+    "question_html": "<p>How does the ES module loading algorithm work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It only works after bundling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It only works after bundling. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It runs every module immediately without resolving dependencies.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It runs every module immediately without resolving dependencies. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It loads modules with setTimeout.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It loads modules with setTimeout. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It resolves module specifiers, fetches and parses modules, links dependencies, then evaluates modules in dependency order.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It resolves module specifiers, fetches and parses modules, links dependencies, then evaluates modules in dependency order.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between live bindings and copied values in ES modules?",
+    "question_html": "<p>What is the difference between live bindings and copied values in ES modules?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Exports cannot change after initialization.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Exports cannot change after initialization. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "ES module imports are live bindings that reflect changes to exported bindings, not copied snapshots.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> ES module imports are live bindings that reflect changes to exported bindings, not copied snapshots.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Live bindings exist only in CommonJS.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Live bindings exist only in CommonJS. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Imports are always deep copies.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Imports are always deep copies. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How do circular dependencies work in ES modules?",
+    "question_html": "<p>How do circular dependencies work in ES modules?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Modules can reference each other through live bindings, but values may be unavailable until initialization completes.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Modules can reference each other through live bindings, but values may be unavailable until initialization completes.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Circular dependencies are always syntax errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Circular dependencies are always syntax errors. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They only work in browsers, never bundlers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They only work in browsers, never bundlers. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They are resolved by duplicating modules.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are resolved by duplicating modules. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What problems can circular dependencies cause?",
+    "question_html": "<p>What problems can circular dependencies cause?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They always improve modularity.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They always improve modularity. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They automatically optimize tree shaking.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They automatically optimize tree shaking. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They prevent any module from loading.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They prevent any module from loading. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They can cause undefined or uninitialized values, confusing initialization order, and hard-to-maintain coupling.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They can cause undefined or uninitialized values, confusing initialization order, and hard-to-maintain coupling.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does dynamic import affect code splitting?",
+    "question_html": "<p>How does dynamic import affect code splitting?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It forces all code into one bundle.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It forces all code into one bundle. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Dynamic import creates an asynchronous module boundary that bundlers can split into a separate chunk.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Dynamic import creates an asynchronous module boundary that bundlers can split into a separate chunk.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables lazy loading.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables lazy loading. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It makes modules synchronous.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It makes modules synchronous. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is module side effect detection?",
+    "question_html": "<p>What is module side effect detection?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Bundlers analyze whether importing a module changes global state or has observable effects beyond exports.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Bundlers analyze whether importing a module changes global state or has observable effects beyond exports.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Checking if CSS files contain animations.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Checking if CSS files contain animations. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Detecting runtime errors inside modules.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Detecting runtime errors inside modules. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Finding unused variables in local scope only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Finding unused variables in local scope only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why can side effects prevent tree shaking?",
+    "question_html": "<p>Why can side effects prevent tree shaking?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Side effects always make code smaller.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Side effects always make code smaller. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Tree shaking only works on side effects.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Tree shaking only works on side effects. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "If importing a module may run important side effects, bundlers cannot safely remove it even if exports seem unused.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> If importing a module may run important side effects, bundlers cannot safely remove it even if exports seem unused.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Side effects are removed by browsers automatically.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Side effects are removed by browsers automatically. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is dead code elimination?",
+    "question_html": "<p>What is dead code elimination?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A memory garbage collection algorithm.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A memory garbage collection algorithm. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "An event loop phase.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> An event loop phase. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A DOM cleanup method.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A DOM cleanup method. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A build optimization that removes code proven to be unreachable or unused.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A build optimization that removes code proven to be unreachable or unused.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is scope hoisting in bundlers?",
+    "question_html": "<p>What is scope hoisting in bundlers?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A CSS bundling technique.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS bundling technique. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Moving variables into global scope at runtime.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Moving variables into global scope at runtime. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A way to hoist DOM nodes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to hoist DOM nodes. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An optimization that merges modules into fewer function wrappers to reduce overhead and improve optimization.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An optimization that merges modules into fewer function wrappers to reduce overhead and improve optimization.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How can package exports and sideEffects fields affect bundling?",
+    "question_html": "<p>How can package exports and sideEffects fields affect bundling?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They tell bundlers which entry points are available and whether files can be considered safe to remove when unused.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They tell bundlers which entry points are available and whether files can be considered safe to remove when unused.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They only affect TypeScript type checking.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They only affect TypeScript type checking. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They force all code to be included.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They force all code to be included. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They are ignored by modern bundlers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are ignored by modern bundlers. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "modules-bundling"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "When would you use Map instead of an object in a large application?",
+    "question_html": "<p>When would you use Map instead of an object in a large application?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use Map when you need JSON serialization by default.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Map when you need JSON serialization by default. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use Map only when keys are CSS selectors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Map only when keys are CSS selectors. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use Map for dynamic key-value collections, non-string keys, frequent additions/removals, or predictable iteration.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use Map for dynamic key-value collections, non-string keys, frequent additions/removals, or predictable iteration.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use Map because objects cannot store values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use Map because objects cannot store values. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "When would you use WeakMap for private metadata?",
+    "question_html": "<p>When would you use WeakMap for private metadata?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use WeakMap to associate metadata with object keys without preventing those objects from being garbage collected.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use WeakMap to associate metadata with object keys without preventing those objects from being garbage collected.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use WeakMap when you need iteration over every key.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use WeakMap when you need iteration over every key. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use WeakMap for primitive keys.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use WeakMap for primitive keys. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use WeakMap to store data permanently.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use WeakMap to store data permanently. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why are WeakMap keys weakly held?",
+    "question_html": "<p>Why are WeakMap keys weakly held?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "So WeakMap can be sorted faster.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> So WeakMap can be sorted faster. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "So the presence of a key in the WeakMap does not prevent the key object from being garbage collected.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> So the presence of a key in the WeakMap does not prevent the key object from being garbage collected.</p>"
+      },
+      {
+        "id": "C",
+        "text": "So keys can be strings and numbers.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> So keys can be strings and numbers. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "So keys are encrypted.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> So keys are encrypted. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why can WeakMap not be iterated?",
+    "question_html": "<p>Why can WeakMap not be iterated?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because WeakMap only works in strict mode.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because WeakMap only works in strict mode. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because iteration would make it a normal object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because iteration would make it a normal object. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because WeakMap stores no values.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because WeakMap stores no values. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because exposing keys would conflict with garbage collection semantics and key lifetime uncertainty.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because exposing keys would conflict with garbage collection semantics and key lifetime uncertainty.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How can WeakRef be used?",
+    "question_html": "<p>How can WeakRef be used?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It deep copies an object.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It deep copies an object. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It can hold a weak reference to an object without preventing garbage collection.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It can hold a weak reference to an object without preventing garbage collection.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It creates a strong reference that prevents GC.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It creates a strong reference that prevents GC. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It serializes objects to JSON.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It serializes objects to JSON. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why is WeakRef usually dangerous or rarely needed?",
+    "question_html": "<p>Why is WeakRef usually dangerous or rarely needed?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because garbage collection timing is nondeterministic, making logic based on WeakRef fragile.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because garbage collection timing is nondeterministic, making logic based on WeakRef fragile.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because WeakRef always leaks memory.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because WeakRef always leaks memory. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because WeakRef can only store strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because WeakRef can only store strings. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because WeakRef blocks the event loop.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because WeakRef blocks the event loop. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is FinalizationRegistry?",
+    "question_html": "<p>What is FinalizationRegistry?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "An API that lets code register a cleanup callback that may run after an object is garbage collected.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An API that lets code register a cleanup callback that may run after an object is garbage collected.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A way to force garbage collection immediately.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to force garbage collection immediately. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A module registry for dynamic imports.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A module registry for dynamic imports. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A registry of all final variables.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A registry of all final variables. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "Why should application logic not rely on FinalizationRegistry timing?",
+    "question_html": "<p>Why should application logic not rely on FinalizationRegistry timing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because cleanup callbacks are not guaranteed to run at a specific time, or sometimes at all before program exit.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because cleanup callbacks are not guaranteed to run at a specific time, or sometimes at all before program exit.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Because it is called before an object becomes unreachable.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because it is called before an object becomes unreachable. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Because it always runs synchronously.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because it always runs synchronously. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Because it works only for arrays.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Because it works only for arrays. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is structured cloning?",
+    "question_html": "<p>What is structured cloning?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A CSS layout algorithm.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A CSS layout algorithm. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A way to convert all objects into JSON strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A way to convert all objects into JSON strings. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A shallow copy of object properties only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> A shallow copy of object properties only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "An algorithm for deep cloning many JavaScript values used by APIs like postMessage and structuredClone().",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> An algorithm for deep cloning many JavaScript values used by APIs like postMessage and structuredClone().</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How is structured cloning different from JSON serialization?",
+    "question_html": "<p>How is structured cloning different from JSON serialization?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Structured cloning supports more types and preserves richer data structures, while JSON loses unsupported values and requires text serialization.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Structured cloning supports more types and preserves richer data structures, while JSON loses unsupported values and requires text serialization.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Structured cloning only works for strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Structured cloning only works for strings. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They are exactly the same process.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are exactly the same process. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "JSON supports every JavaScript type better.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> JSON supports every JavaScript type better. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "advanced-data-structures-apis"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What causes layout thrashing?",
+    "question_html": "<p>What causes layout thrashing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Using const instead of let.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using const instead of let. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Using too many object literals.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using too many object literals. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Repeatedly mixing DOM reads that force layout with writes that invalidate layout.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Repeatedly mixing DOM reads that force layout with writes that invalidate layout.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Using promises in a loop.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Using promises in a loop. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How can you avoid forced synchronous layout?",
+    "question_html": "<p>How can you avoid forced synchronous layout?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Disable CSS completely.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Disable CSS completely. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Call getBoundingClientRect after every style change.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Call getBoundingClientRect after every style change. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use more synchronous loops.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use more synchronous loops. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Batch DOM reads and writes, avoid layout-triggering reads after mutations, and use tools like requestAnimationFrame.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Batch DOM reads and writes, avoid layout-triggering reads after mutations, and use tools like requestAnimationFrame.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What is the difference between layout, paint, and compositing?",
+    "question_html": "<p>What is the difference between layout, paint, and compositing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Layout calculates geometry, paint fills pixels, and compositing combines layers on screen.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Layout calculates geometry, paint fills pixels, and compositing combines layers on screen.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They are all names for JavaScript parsing.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> They are all names for JavaScript parsing. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Paint calculates object prototypes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Paint calculates object prototypes. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Compositing executes Promises.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Compositing executes Promises. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How does JavaScript execution affect rendering performance?",
+    "question_html": "<p>How does JavaScript execution affect rendering performance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Rendering always runs on a separate thread unaffected by JS.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Rendering always runs on a separate thread unaffected by JS. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "JavaScript never affects rendering.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> JavaScript never affects rendering. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "JavaScript only affects server rendering.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> JavaScript only affects server rendering. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Long JavaScript tasks block the main thread and delay input handling, style, layout, paint, and rendering.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Long JavaScript tasks block the main thread and delay input handling, style, layout, paint, and rendering.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What are long tasks in the browser?",
+    "question_html": "<p>What are long tasks in the browser?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Main-thread tasks that take longer than about 50ms and can hurt responsiveness.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Main-thread tasks that take longer than about 50ms and can hurt responsiveness.</p>"
+      },
+      {
+        "id": "B",
+        "text": "CSS animations longer than 50 seconds.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> CSS animations longer than 50 seconds. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Network requests larger than 50KB.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Network requests larger than 50KB. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Tasks with long variable names.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Tasks with long variable names. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you split heavy JavaScript work to keep the UI responsive?",
+    "question_html": "<p>How would you split heavy JavaScript work to keep the UI responsive?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Run everything synchronously in one loop.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Run everything synchronously in one loop. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Chunk work across frames, yield to the event loop, use requestIdleCallback, or move work to Web Workers.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Chunk work across frames, yield to the event loop, use requestIdleCallback, or move work to Web Workers.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Disable event listeners.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Disable event listeners. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use alert() between operations.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use alert() between operations. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "When would you move work to a Web Worker?",
+    "question_html": "<p>When would you move work to a Web Worker?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "When code needs to manipulate the DOM directly.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When code needs to manipulate the DOM directly. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "When every task is tiny and UI is idle.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When every task is tiny and UI is idle. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "When CPU-heavy work can run off the main thread without direct DOM access.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When CPU-heavy work can run off the main thread without direct DOM access.</p>"
+      },
+      {
+        "id": "D",
+        "text": "When you need synchronous access to local component state.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> When you need synchronous access to local component state. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What can and cannot be shared with a Web Worker?",
+    "question_html": "<p>What can and cannot be shared with a Web Worker?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Data can be passed by structured cloning or transferables, but workers cannot directly access the DOM.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Data can be passed by structured cloning or transferables, but workers cannot directly access the DOM.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Workers can directly share all objects and DOM nodes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Workers can directly share all objects and DOM nodes. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Workers cannot communicate with the main thread.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Workers cannot communicate with the main thread. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Workers can only receive strings.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Workers can only receive strings. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "What are transferable objects?",
+    "question_html": "<p>What are transferable objects?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Objects moved between prototypes.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Objects moved between prototypes. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Objects like ArrayBuffer that can transfer ownership between threads without copying.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Objects like ArrayBuffer that can transfer ownership between threads without copying.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Objects automatically stored in localStorage.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Objects automatically stored in localStorage. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Objects that can be copied by JSON only.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Objects that can be copied by JSON only. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  },
+  {
+    "category_code": "javascript-engine-internals",
+    "difficulty": "hard",
+    "question": "How would you profile and optimize a JavaScript-heavy web application?",
+    "question_html": "<p>How would you profile and optimize a JavaScript-heavy web application?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use Performance and Memory tools, identify long tasks, measure rendering/network/CPU costs, optimize hot paths, split work, and reduce bundle size.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use Performance and Memory tools, identify long tasks, measure rendering/network/CPU costs, optimize hot paths, split work, and reduce bundle size.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use console.log timestamps as the only measurement.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Use console.log timestamps as the only measurement. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Remove all comments and stop profiling.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Remove all comments and stop profiling. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Only minify CSS and assume JavaScript is fixed.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> Only minify CSS and assume JavaScript is fixed. This answer does not accurately describe the advanced JavaScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "javascript",
+      "hard",
+      "browser-performance-architecture"
+    ]
+  }
+]

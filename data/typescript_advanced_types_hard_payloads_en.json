@@ -1,0 +1,3702 @@
+[
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What are conditional types in TypeScript?",
+    "question_html": "<p>What are conditional types in TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Types that choose between two branches based on whether one type extends another.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Types that choose between two branches based on whether one type extends another.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do conditional types work with generic parameters?",
+    "question_html": "<p>How do conditional types work with generic parameters?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They evaluate after substituting the generic type and can branch based on assignability.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They evaluate after substituting the generic type and can branch based on assignability.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What does T extends U ? X : Y mean?",
+    "question_html": "<p>What does T extends U ? X : Y mean?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "If T is assignable to U, the resulting type is X; otherwise it is Y.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> If T is assignable to U, the resulting type is X; otherwise it is Y.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What is distributive conditional typing?",
+    "question_html": "<p>What is distributive conditional typing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A behavior where conditional types distribute over union members when the checked type is a naked type parameter.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A behavior where conditional types distribute over union members when the checked type is a naked type parameter.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "When do conditional types distribute over unions?",
+    "question_html": "<p>When do conditional types distribute over unions?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "When the checked type is a naked generic type parameter, such as T extends U ? X : Y.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When the checked type is a naked generic type parameter, such as T extends U ? X : Y.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How can you prevent distributive behavior?",
+    "question_html": "<p>How can you prevent distributive behavior?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Wrap the checked type in a tuple, for example [T] extends [U] ? X : Y.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Wrap the checked type in a tuple, for example [T] extends [U] ? X : Y.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What does wrapping a type in a tuple do in conditional types?",
+    "question_html": "<p>What does wrapping a type in a tuple do in conditional types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It prevents distributive behavior over unions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It prevents distributive behavior over unions.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do you implement a custom NonNullable<T>?",
+    "question_html": "<p>How do you implement a custom NonNullable&lt;T&gt;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use T extends null | undefined ? never : T.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use T extends null | undefined ? never : T.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do you implement a custom Exclude<T, U>?",
+    "question_html": "<p>How do you implement a custom Exclude&lt;T, U&gt;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use T extends U ? never : T.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use T extends U ? never : T.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do you implement a custom Extract<T, U>?",
+    "question_html": "<p>How do you implement a custom Extract&lt;T, U&gt;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use T extends U ? T : never.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use T extends U ? T : never.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-type-system"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What does infer do in conditional types?",
+    "question_html": "<p>What does infer do in conditional types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It declares a type variable that TypeScript can infer from a matched type pattern.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It declares a type variable that TypeScript can infer from a matched type pattern.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "Where can infer be used?",
+    "question_html": "<p>Where can infer be used?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Inside the true branch pattern of conditional types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Inside the true branch pattern of conditional types.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you extract the return type of a function using infer?",
+    "question_html": "<p>How would you extract the return type of a function using infer?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use T extends (...args: any[]) => infer R ? R : never.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use T extends (...args: any[]) =&gt; infer R ? R : never.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you extract function argument types using infer?",
+    "question_html": "<p>How would you extract function argument types using infer?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use T extends (...args: infer P) => any ? P : never.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use T extends (...args: infer P) =&gt; any ? P : never.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you extract the resolved value from a Promise?",
+    "question_html": "<p>How would you extract the resolved value from a Promise?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use T extends Promise<infer U> ? U : T, or a recursive Awaited-like type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use T extends Promise&lt;infer U&gt; ? U : T, or a recursive Awaited-like type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you implement a custom Awaited<T>?",
+    "question_html": "<p>How would you implement a custom Awaited&lt;T&gt;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Recursively infer Promise-like values until reaching a non-Promise type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Recursively infer Promise-like values until reaching a non-Promise type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you extract array element type using infer?",
+    "question_html": "<p>How would you extract array element type using infer?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use T extends Array<infer U> ? U : never, or T extends readonly (infer U)[] ? U : never.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use T extends Array&lt;infer U&gt; ? U : never, or T extends readonly (infer U)[] ? U : never.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you extract tuple head and tail using infer?",
+    "question_html": "<p>How would you extract tuple head and tail using infer?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use T extends [infer Head, ...infer Tail] ? [Head, Tail] : never.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use T extends [infer Head, ...infer Tail] ? [Head, Tail] : never.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you infer nested object property types?",
+    "question_html": "<p>How would you infer nested object property types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use conditional types with infer on nested object patterns.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use conditional types with infer on nested object patterns.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What are the limitations of infer?",
+    "question_html": "<p>What are the limitations of infer?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It only works inside conditional types and depends on the structure being matched.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It only works inside conditional types and depends on the structure being matched.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "infer"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What are mapped types?",
+    "question_html": "<p>What are mapped types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Types that create new object types by iterating over keys of another type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Types that create new object types by iterating over keys of another type.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do mapped types iterate over keys?",
+    "question_html": "<p>How do mapped types iterate over keys?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They use syntax like [K in keyof T] to iterate through property keys.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They use syntax like [K in keyof T] to iterate through property keys.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How does [K in keyof T] work?",
+    "question_html": "<p>How does [K in keyof T] work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "K iterates over each key of T and defines a corresponding property in the new type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> K iterates over each key of T and defines a corresponding property in the new type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do you make all properties optional using a mapped type?",
+    "question_html": "<p>How do you make all properties optional using a mapped type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use [K in keyof T]?: T[K].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use [K in keyof T]?: T[K].</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do you make all properties readonly using a mapped type?",
+    "question_html": "<p>How do you make all properties readonly using a mapped type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use readonly [K in keyof T]: T[K].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use readonly [K in keyof T]: T[K].</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do you remove readonly from properties?",
+    "question_html": "<p>How do you remove readonly from properties?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use -readonly [K in keyof T]: T[K].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use -readonly [K in keyof T]: T[K].</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do you remove optional modifiers from properties?",
+    "question_html": "<p>How do you remove optional modifiers from properties?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use [K in keyof T]-?: T[K].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use [K in keyof T]-?: T[K].</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What does -readonly mean in mapped types?",
+    "question_html": "<p>What does -readonly mean in mapped types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It removes the readonly modifier from mapped properties.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It removes the readonly modifier from mapped properties.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What does -? mean in mapped types?",
+    "question_html": "<p>What does -? mean in mapped types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It removes the optional modifier from mapped properties.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It removes the optional modifier from mapped properties.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do you create a deeply readonly type?",
+    "question_html": "<p>How do you create a deeply readonly type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use a recursive mapped type that applies readonly to nested object properties.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a recursive mapped type that applies readonly to nested object properties.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "mapped-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What is key remapping in mapped types?",
+    "question_html": "<p>What is key remapping in mapped types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A feature that lets you transform, rename, or filter keys using the as clause.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A feature that lets you transform, rename, or filter keys using the as clause.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How does the as clause work in mapped types?",
+    "question_html": "<p>How does the as clause work in mapped types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It lets you compute a new key name or map a key to never to remove it.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It lets you compute a new key name or map a key to never to remove it.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you rename object keys at the type level?",
+    "question_html": "<p>How would you rename object keys at the type level?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use key remapping with the as clause and template literal or conditional logic.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use key remapping with the as clause and template literal or conditional logic.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you remove keys from a type using key remapping?",
+    "question_html": "<p>How would you remove keys from a type using key remapping?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Map unwanted keys to never in the as clause.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Map unwanted keys to never in the as clause.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you filter keys by value type?",
+    "question_html": "<p>How would you filter keys by value type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use a conditional mapped type that keeps keys whose values match a target type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a conditional mapped type that keeps keys whose values match a target type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you extract only function properties from a type?",
+    "question_html": "<p>How would you extract only function properties from a type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Keep keys where T[K] extends (...args: any[]) => any.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Keep keys where T[K] extends (...args: any[]) =&gt; any.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you extract only non-function properties from a type?",
+    "question_html": "<p>How would you extract only non-function properties from a type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Exclude keys whose values extend function types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Exclude keys whose values extend function types.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you prefix all keys of an object type?",
+    "question_html": "<p>How would you prefix all keys of an object type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use key remapping with template literals such as `prefix_${string & K}`.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use key remapping with template literals such as `prefix_${string &amp; K}`.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you convert object keys to getter method names?",
+    "question_html": "<p>How would you convert object keys to getter method names?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use template literal types and Capitalize, such as get${Capitalize<string & K>}.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use template literal types and Capitalize, such as get${Capitalize&lt;string &amp; K&gt;}.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you build an event handler map from a domain model?",
+    "question_html": "<p>How would you build an event handler map from a domain model?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Map model keys to event names or handler names using key remapping and template literal types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Map model keys to event names or handler names using key remapping and template literal types.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "key-remapping"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What are template literal types?",
+    "question_html": "<p>What are template literal types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Types that build string literal types using template literal syntax.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Types that build string literal types using template literal syntax.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do template literal types combine string literal unions?",
+    "question_html": "<p>How do template literal types combine string literal unions?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They produce combinations of the union members inside the template.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They produce combinations of the union members inside the template.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you create event names like ${Key}Changed from object keys?",
+    "question_html": "<p>How would you create event names like ${Key}Changed from object keys?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use `${string & keyof T}Changed` or a mapped type over keys.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use `${string &amp; keyof T}Changed` or a mapped type over keys.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you infer the original key from an event name string?",
+    "question_html": "<p>How would you infer the original key from an event name string?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use a conditional template literal type with infer, such as S extends `${infer K}Changed`.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a conditional template literal type with infer, such as S extends `${infer K}Changed`.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type a CSS size value like \"12px\" or \"2rem\"?",
+    "question_html": "<p>How would you type a CSS size value like &quot;12px&quot; or &quot;2rem&quot;?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use template literal unions like `${number}px` | `${number}rem`.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use template literal unions like `${number}px` | `${number}rem`.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type route paths like /users/${string}?",
+    "question_html": "<p>How would you type route paths like /users/${string}?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use a template literal type such as `/users/${string}`.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a template literal type such as `/users/${string}`.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type API endpoint names using template literals?",
+    "question_html": "<p>How would you type API endpoint names using template literals?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Combine HTTP method or resource unions inside template literal types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Combine HTTP method or resource unions inside template literal types.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do template literal types interact with unions?",
+    "question_html": "<p>How do template literal types interact with unions?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They distribute across union combinations to create all possible string literal combinations.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They distribute across union combinations to create all possible string literal combinations.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What are intrinsic string manipulation types?",
+    "question_html": "<p>What are intrinsic string manipulation types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Built-in types like Uppercase, Lowercase, Capitalize, and Uncapitalize.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Built-in types like Uppercase, Lowercase, Capitalize, and Uncapitalize.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How do Uppercase, Lowercase, Capitalize, and Uncapitalize work?",
+    "question_html": "<p>How do Uppercase, Lowercase, Capitalize, and Uncapitalize work?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They transform string literal types at the type level.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They transform string literal types at the type level.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "template-literal-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What are recursive types?",
+    "question_html": "<p>What are recursive types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Types that reference themselves directly or indirectly.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Types that reference themselves directly or indirectly.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you define a recursive JSON value type?",
+    "question_html": "<p>How would you define a recursive JSON value type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use a union of primitives, arrays of JSON values, and objects with JSON values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a union of primitives, arrays of JSON values, and objects with JSON values.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you create a DeepPartial<T> type?",
+    "question_html": "<p>How would you create a DeepPartial&lt;T&gt; type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use a recursive mapped type that makes each property optional and recurses into objects.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a recursive mapped type that makes each property optional and recurses into objects.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you create a DeepRequired<T> type?",
+    "question_html": "<p>How would you create a DeepRequired&lt;T&gt; type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use a recursive mapped type that removes optional modifiers at every nested level.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a recursive mapped type that removes optional modifiers at every nested level.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you create a DeepReadonly<T> type?",
+    "question_html": "<p>How would you create a DeepReadonly&lt;T&gt; type?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use a recursive mapped type that adds readonly at every nested object level.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a recursive mapped type that adds readonly at every nested object level.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you create a type-safe path union for nested object keys?",
+    "question_html": "<p>How would you create a type-safe path union for nested object keys?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use recursive template literal and mapped types to build dot-separated paths.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use recursive template literal and mapped types to build dot-separated paths.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type a function that receives a nested object path?",
+    "question_html": "<p>How would you type a function that receives a nested object path?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Constrain the path parameter to a recursive path union and resolve the value type by that path.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Constrain the path parameter to a recursive path union and resolve the value type by that path.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What are the risks of deeply recursive types?",
+    "question_html": "<p>What are the risks of deeply recursive types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "They can become hard to understand and may hit compiler recursion or performance limits.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They can become hard to understand and may hit compiler recursion or performance limits.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What is TypeScript’s type instantiation depth limit?",
+    "question_html": "<p>What is TypeScript’s type instantiation depth limit?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A compiler limit that prevents infinitely or excessively deep type expansions.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A compiler limit that prevents infinitely or excessively deep type expansions.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How can overly complex recursive types affect compiler performance?",
+    "question_html": "<p>How can overly complex recursive types affect compiler performance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "They can slow type checking, increase memory usage, and produce confusing errors.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They can slow type checking, increase memory usage, and produce confusing errors.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "recursive-types"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What is covariance?",
+    "question_html": "<p>What is covariance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A relationship where a type constructor preserves subtype relationships.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A relationship where a type constructor preserves subtype relationships.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What is contravariance?",
+    "question_html": "<p>What is contravariance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "A relationship where subtype relationships are reversed, often relevant for function parameters.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A relationship where subtype relationships are reversed, often relevant for function parameters.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What is invariance?",
+    "question_html": "<p>What is invariance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "A relationship where neither subtype direction is safely assignable.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A relationship where neither subtype direction is safely assignable.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What is bivariance?",
+    "question_html": "<p>What is bivariance?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A relaxed relationship allowing assignment in both parameter directions, sometimes unsound.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A relaxed relationship allowing assignment in both parameter directions, sometimes unsound.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "Why are function parameters contravariant under strictFunctionTypes?",
+    "question_html": "<p>Why are function parameters contravariant under strictFunctionTypes?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "To prevent unsafe callbacks that accept narrower parameter types than callers may provide.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> To prevent unsafe callbacks that accept narrower parameter types than callers may provide.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "Why are method parameters historically bivariant in TypeScript?",
+    "question_html": "<p>Why are method parameters historically bivariant in TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "For backward compatibility with common JavaScript and DOM patterns.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> For backward compatibility with common JavaScript and DOM patterns.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How can variance cause unsafe assignments?",
+    "question_html": "<p>How can variance cause unsafe assignments?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Assigning a container or callback with an incompatible direction can allow invalid values at runtime.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Assigning a container or callback with an incompatible direction can allow invalid values at runtime.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How does variance apply to arrays?",
+    "question_html": "<p>How does variance apply to arrays?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Mutable arrays can be unsafely assignable because writing through a widened type can insert invalid values.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Mutable arrays can be unsafely assignable because writing through a widened type can insert invalid values.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "Why can mutable arrays be problematic from a type-safety perspective?",
+    "question_html": "<p>Why can mutable arrays be problematic from a type-safety perspective?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Because if treated covariantly, writes can violate the original element type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Because if treated covariantly, writes can violate the original element type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How can readonly arrays improve variance safety?",
+    "question_html": "<p>How can readonly arrays improve variance safety?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "They remove mutating writes, making covariance safer for read-only usage.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They remove mutating writes, making covariance safer for read-only usage.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "variance-assignability"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What does the satisfies operator do?",
+    "question_html": "<p>What does the satisfies operator do?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It checks that a value satisfies a target type while preserving the value’s inferred literal type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It checks that a value satisfies a target type while preserving the value’s inferred literal type.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How is satisfies different from as?",
+    "question_html": "<p>How is satisfies different from as?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "satisfies checks compatibility without forcing the expression to become the target type; as asserts and can be unsafe.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> satisfies checks compatibility without forcing the expression to become the target type; as asserts and can be unsafe.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How is satisfies different from a type annotation?",
+    "question_html": "<p>How is satisfies different from a type annotation?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "A type annotation changes the variable’s type, while satisfies preserves the inferred type while checking it.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A type annotation changes the variable’s type, while satisfies preserves the inferred type while checking it.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "When would you use satisfies for configuration objects?",
+    "question_html": "<p>When would you use satisfies for configuration objects?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "When you want to validate a config shape while keeping precise literal types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When you want to validate a config shape while keeping precise literal types.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How can satisfies preserve literal types?",
+    "question_html": "<p>How can satisfies preserve literal types?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It validates against a target type without widening the expression to that target type.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> It validates against a target type without widening the expression to that target type.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "Why can type assertions be unsafe?",
+    "question_html": "<p>Why can type assertions be unsafe?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "They tell the compiler to trust you and may hide real type mismatches.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> They tell the compiler to trust you and may hide real type mismatches.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "What is double assertion, for example value as unknown as T?",
+    "question_html": "<p>What is double assertion, for example value as unknown as T?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "A way to force a value through unknown into another type when direct assertion is not allowed.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> A way to force a value through unknown into another type when direct assertion is not allowed.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "When is double assertion a code smell?",
+    "question_html": "<p>When is double assertion a code smell?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "When it bypasses the type system instead of proving or validating the value safely.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> When it bypasses the type system instead of proving or validating the value safely.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you safely parse unknown JSON?",
+    "question_html": "<p>How would you safely parse unknown JSON?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Parse as unknown and validate the shape at runtime before using a typed value.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Parse as unknown and validate the shape at runtime before using a typed value.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you combine runtime validation with static typing?",
+    "question_html": "<p>How would you combine runtime validation with static typing?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use schema validation or type guards and derive or align TypeScript types with those schemas.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use schema validation or type guards and derive or align TypeScript types with those schemas.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "satisfies-assertions-type-safety"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you design a type-safe API client?",
+    "question_html": "<p>How would you design a type-safe API client?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Define endpoint maps with typed params, body, and responses, then use generics keyed by endpoint names.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define endpoint maps with typed params, body, and responses, then use generics keyed by endpoint names.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you infer response types from an endpoint definition map?",
+    "question_html": "<p>How would you infer response types from an endpoint definition map?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use indexed access and generics, for example EndpointMap[K]['response'].",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use indexed access and generics, for example EndpointMap[K][&#x27;response&#x27;].</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type request params, body, and response based on route keys?",
+    "question_html": "<p>How would you type request params, body, and response based on route keys?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use a generic route key constrained to keyof the route map and index into the route definition.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a generic route key constrained to keyof the route map and index into the route definition.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you model domain events with discriminated unions?",
+    "question_html": "<p>How would you model domain events with discriminated unions?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Create event variants with a shared type field and payload per event.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Create event variants with a shared type field and payload per event.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you enforce exhaustive handling of domain events?",
+    "question_html": "<p>How would you enforce exhaustive handling of domain events?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use switch on the discriminator and a never check in the default case.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use switch on the discriminator and a never check in the default case.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type a Redux-style reducer with strongly typed actions?",
+    "question_html": "<p>How would you type a Redux-style reducer with strongly typed actions?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use a discriminated union for actions and a typed reducer State, Action signature.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a discriminated union for actions and a typed reducer State, Action signature.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you create a type-safe event emitter?",
+    "question_html": "<p>How would you create a type-safe event emitter?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use an event map where each event key maps to its payload type and generic methods use keyof that map.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use an event map where each event key maps to its payload type and generic methods use keyof that map.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type a plugin system?",
+    "question_html": "<p>How would you type a plugin system?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Define plugin interfaces with generic extension points and constrained capabilities.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Define plugin interfaces with generic extension points and constrained capabilities.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type feature flags with compile-time safety?",
+    "question_html": "<p>How would you type feature flags with compile-time safety?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Represent flags as a typed key union or record, avoiding arbitrary string access.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Represent flags as a typed key union or record, avoiding arbitrary string access.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type permissions and roles without stringly typed code?",
+    "question_html": "<p>How would you type permissions and roles without stringly typed code?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use literal unions, enums, or const objects with derived key/value types.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use literal unions, enums, or const objects with derived key/value types.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "type-level-architecture"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type a polymorphic React component with an as prop?",
+    "question_html": "<p>How would you type a polymorphic React component with an as prop?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use a generic element type and merge custom props with ComponentPropsWithoutRef<T>.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a generic element type and merge custom props with ComponentPropsWithoutRef&lt;T&gt;.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you preserve correct props when changing the as element?",
+    "question_html": "<p>How would you preserve correct props when changing the as element?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Tie the as generic to React component props and omit conflicting custom props.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Tie the as generic to React component props and omit conflicting custom props.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type forwardRef with generics?",
+    "question_html": "<p>How would you type forwardRef with generics?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use explicit generic helper types or cast the forwarded component to a generic call signature.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use explicit generic helper types or cast the forwarded component to a generic call signature.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "Why is generic forwardRef difficult in TypeScript?",
+    "question_html": "<p>Why is generic forwardRef difficult in TypeScript?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "forwardRef erases or fixes generics in a way that makes inference hard without helper typing.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> forwardRef erases or fixes generics in a way that makes inference hard without helper typing.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type a compound component API?",
+    "question_html": "<p>How would you type a compound component API?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Type the main component and attach typed static subcomponents or export a typed object namespace.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Type the main component and attach typed static subcomponents or export a typed object namespace.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type controlled vs uncontrolled component props as mutually exclusive?",
+    "question_html": "<p>How would you type controlled vs uncontrolled component props as mutually exclusive?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "Use a union with never fields to prevent mixing value and defaultValue patterns.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a union with never fields to prevent mixing value and defaultValue patterns.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you enforce that either value or defaultValue is provided, but not both?",
+    "question_html": "<p>How would you enforce that either value or defaultValue is provided, but not both?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "Use an XOR-style union where each branch marks the opposite prop as never.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use an XOR-style union where each branch marks the opposite prop as never.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type render props with generic data?",
+    "question_html": "<p>How would you type render props with generic data?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Use a generic data type and a render prop such as children: (item: T) => ReactNode.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use a generic data type and a render prop such as children: (item: T) =&gt; ReactNode.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you type a headless UI component API?",
+    "question_html": "<p>How would you type a headless UI component API?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "Expose generic state and prop-getter types while keeping rendering controlled by the consumer.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Expose generic state and prop-getter types while keeping rendering controlled by the consumer.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  },
+  {
+    "category_code": "typescript-advanced-types",
+    "difficulty": "hard",
+    "question": "How would you design types for a reusable form component library?",
+    "question_html": "<p>How would you design types for a reusable form component library?</p>",
+    "answers": [
+      {
+        "id": "A",
+        "text": "Use generics for field values, path types for field names, schema integration, and typed callbacks.",
+        "is_correct": true,
+        "explanation_html": "<p><strong>Correct.</strong> Use generics for field values, path types for field names, schema integration, and typed callbacks.</p>"
+      },
+      {
+        "id": "B",
+        "text": "It is only a JavaScript runtime feature and has no type-system behavior.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is only a JavaScript runtime feature and has no type-system behavior. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "C",
+        "text": "It disables type checking and should be used to silence errors.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It disables type checking and should be used to silence errors. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      },
+      {
+        "id": "D",
+        "text": "It is a CSS or browser rendering concept, not a TypeScript feature.",
+        "is_correct": false,
+        "explanation_html": "<p><strong>Incorrect.</strong> It is a CSS or browser rendering concept, not a TypeScript feature. This answer does not accurately describe the advanced TypeScript topic in the question.</p>"
+      }
+    ],
+    "tags": [
+      "typescript",
+      "hard",
+      "advanced-typescript-react"
+    ]
+  }
+]
